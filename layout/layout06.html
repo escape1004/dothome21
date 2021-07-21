@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습5</title>
+    <style>
+        @font-face {
+            font-family: 'twayfly';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayfly.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            font-family: 'twayfly';
+            font-size: 50px;
+            width: 100%;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        #header {
+            width: 100%;
+            height: 110px;
+            background-color: #e3f2fd;
+        }
+
+        #banner {
+            width: 100%;
+            height: 750px;
+            background-color: #bbdefb;
+        }
+
+        #content1 {
+            width: 100%;
+            height: 2280px;
+            background-color: #90caf9;
+        }
+
+        #content2 {
+            width: 100%;
+            height: 1570px;
+            background-color: #64b5f6;
+        }
+
+        #content3 {
+            width: 100%;
+            height: 530px;
+            background-color: #42a5f5;
+        }
+
+        #footer {
+            width: 100%;
+            height: 270px;
+            background-color: #2196f3;
+        }
+
+        .header-inner {
+            width: 1200px;
+            height: 110px;
+            background-color: #d1c4e9;
+            margin: 0 auto;
+            line-height: 110px;
+        }
+
+        .banner-inner {
+            width: 1200px;
+            height: 750px;
+            background-color: #b39ddb;
+            margin: 0 auto;
+            line-height: 750px;
+        }
+
+        .content1-inner {
+            width: 1200px;
+            height: 2280px;
+            background-color: #9575cd;
+            margin: 0 auto;
+            line-height: 2280px;
+        }
+
+        .content2-inner {
+            width: 1200px;
+            height: 1570px;
+            background-color: #7e57c2;
+            margin: 0 auto;
+            line-height: 1570px;
+        }
+
+        .content3-inner {
+            width: 1200px;
+            height: 530px;
+            background-color: #673ab7;
+            margin: 0 auto;
+            line-height: 530px;
+        }
+
+        .footer-inner {
+            width: 1200px;
+            height: 270px;
+            background-color: #5e35b1;
+            margin: 0 auto;
+            line-height: 270px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="header-inner">header</div>
+        </div>
+        <div id="banner">
+            <div class="banner-inner">banner</div>
+        </div>
+        <div id="content1">
+            <div class="content1-inner">content1</div>
+        </div>
+        <div id="content2">
+            <div class="content2-inner">content2</div>
+        </div>
+        <div id="content3">
+            <div class="content3-inner">content3</div>
+        </div>
+        <div id="footer">
+            <div class="footer-inner">footer</div>
+        </div>
+    </div>
+</body>
+
+</html>

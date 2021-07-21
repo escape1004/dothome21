@@ -253,6 +253,7 @@
         <li><a href="#sample14">14. continue문</a></li>
         <li><a href="#sample100">100. 구구단 만들기</a></li>
         <li><a href="#sample101">101. 테이블 만들기</a></li>
+        <li><a href="#sample102">102. 테이블 만들기</a></li>
     </ul>
 
     <hr>
@@ -549,6 +550,35 @@ switch (num) {
     </div>
     <hr>
     <!-- //sample101 -->
+
+    <!-- sample102 -->
+    <div id="sample102" class="sample">
+        <h2>102. 테이블 만들기 <span class="dot"></span></h2>
+        <div class="code">
+            <pre class="line-numbers"><code class="language-js">{
+    document.write("*** 102. 테이블 만들기 ***");
+
+    let num = 100;
+    let table = "&lt;table&gt;";
+    
+    for (let i = 1; i &lt;= 10; i++) {
+        table += "&lt;tr&gt;";
+        for (let j = 1; j &lt;= 10; j++) {
+            table += "&lt;td&gt;" + num + "&lt;/td&gt;";
+            num--;
+        }
+        table += "&lt;/tr&gt;";
+    }
+    
+    table += "&lt;/table&gt;";
+    
+    document.write(table);
+}
+</code></pre>
+        </div>
+    </div>
+    <hr>
+    <!-- //sample102 -->
 
     <!-- test table -->
     <!-- <hr>
@@ -933,6 +963,8 @@ switch (num) {
             document.write("<br>");
         }
 
+        //sample102
+        //테이블 만들기
         {
             document.write("*** 102. 테이블 만들기 ***<br>");
 
