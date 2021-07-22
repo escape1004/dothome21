@@ -5,31 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 연습5</title>
+    <title>레이아웃 연습6</title>
     <style>
-        @font-face {
-            font-family: 'twayfly';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayfly.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
-        }
-
         * {
             margin: 0;
             padding: 0;
         }
 
-        #wrap {
-            font-family: 'twayfly';
-            font-size: 50px;
-            width: 100%;
-            color: #fff;
-            text-align: center;
-        }
+        /* #wrap {} */
 
         #header {
             width: 100%;
-            height: 110px;
+            height: 115px;
             background-color: #e3f2fd;
         }
 
@@ -38,6 +25,11 @@
             height: 750px;
             background-color: #bbdefb;
         }
+
+        /* #contents {
+            width: 100%;
+            height: 4380px;
+        } */
 
         #contents1 {
             width: 100%;
@@ -63,52 +55,11 @@
             background-color: #2196f3;
         }
 
-        .header-inner {
+        .container {
             width: 1200px;
-            height: 110px;
-            background-color: #d1c4e9;
+            height: inherit;
             margin: 0 auto;
-            line-height: 110px;
-        }
-
-        .banner-inner {
-            width: 1200px;
-            height: 750px;
-            background-color: #b39ddb;
-            margin: 0 auto;
-            line-height: 750px;
-        }
-
-        .contents1-inner {
-            width: 1200px;
-            height: 2280px;
-            background-color: #9575cd;
-            margin: 0 auto;
-            line-height: 2280px;
-        }
-
-        .contents2-inner {
-            width: 1200px;
-            height: 1570px;
-            background-color: #7e57c2;
-            margin: 0 auto;
-            line-height: 1570px;
-        }
-
-        .contents3-inner {
-            width: 1200px;
-            height: 530px;
-            background-color: #673ab7;
-            margin: 0 auto;
-            line-height: 530px;
-        }
-
-        .footer-inner {
-            width: 1200px;
-            height: 270px;
-            background-color: #5e35b1;
-            margin: 0 auto;
-            line-height: 270px;
+            background-color: rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -116,24 +67,34 @@
 <body>
     <div id="wrap">
         <div id="header">
-            <div class="header-inner">HEADER(1200px * 115px)</div>
+            <div class="container"></div>
         </div>
+        <!-- //header -->
+
         <div id="banner">
-            <div class="banner-inner">BANNER(1200px * 750px)</div>
+            <div class="container"></div>
         </div>
-        <div id="contents1">
-            <div class="contents1-inner">CONTENTS1(1200px * 2280px)</div>
+        <!-- //banner -->
+
+        <div id="contents">
+            <div id="contents1">
+                <div class="container"></div>
+            </div>
+            <div id="contents2">
+                <div class="container"></div>
+            </div>
+            <div id="contents3">
+                <div class="container"></div>
+            </div>
         </div>
-        <div id="contents2">
-            <div class="contents2-inner">CONTENTS2(1200px * 1570px)</div>
-        </div>
-        <div id="contents3">
-            <div class="contents3-inner">CONTENTS3(1200px * 530px)</div>
-        </div>
+        <!-- //contents -->
+
         <div id="footer">
-            <div class="footer-inner">FOOTER(1200px * 270px)</div>
+            <div class="container"></div>
         </div>
+        <!-- //footer -->
     </div>
+
 </body>
 
 </html>
