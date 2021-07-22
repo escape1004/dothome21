@@ -215,6 +215,7 @@
         table tr td {
             border: 1px solid #989898;
             padding: 5px;
+            text-align: center;
         }
     </style>
 </head>
@@ -253,7 +254,7 @@
         <li><a href="#sample14">14. continue문</a></li>
         <li><a href="#sample100">100. 구구단 만들기</a></li>
         <li><a href="#sample101">101. 테이블 만들기</a></li>
-        <li><a href="#sample102">102. 테이블 만들기</a></li>
+        <li><a href="#sample102">102. 테이블 만들기2</a></li>
     </ul>
 
     <hr>
@@ -553,10 +554,10 @@ switch (num) {
 
     <!-- sample102 -->
     <div id="sample102" class="sample">
-        <h2>102. 테이블 만들기 <span class="dot"></span></h2>
+        <h2>102. 테이블 만들기2 <span class="dot"></span></h2>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 102. 테이블 만들기 ***");
+    document.write("*** 102. 테이블 만들기2 ***");
 
     let num = 100;
     let table = "&lt;table&gt;";
@@ -964,9 +965,9 @@ switch (num) {
         }
 
         //sample102
-        //테이블 만들기
+        //테이블 만들기2
         {
-            document.write("*** 102. 테이블 만들기 ***<br>");
+            document.write("*** 102. 테이블 만들기2 ***<br>");
 
             let num = 100;
             let table = "<table>";
@@ -976,6 +977,29 @@ switch (num) {
                 for (let j = 1; j <= 10; j++) {
                     table += "<td>" + num + "</td>";
                     num--;
+                }
+                table += "</tr>";
+            }
+
+            table += "</table>";
+
+            document.write(table);
+            document.write("<br>");
+        }
+
+        //sample103
+        //테이블 만들기3 (짝수만 나오게)
+        {
+            document.write("*** 103. 테이블 만들기3 ***<br>");
+
+            let num = 1;
+            let table = "<table>";
+
+            for (let i = 1; i <= 10; i++) {
+                table += "<tr>";
+                for (let j = 1; j <= 10; j++) {
+                    table += "<td>" + num + "</td>";
+                    num++;
                 }
                 table += "</tr>";
             }
