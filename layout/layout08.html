@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습 08</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #ede7f6;
+        }
+
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: #d1c4e9;
+        }
+
+        main {
+            overflow: hidden;
+        }
+
+        aside {
+            width: 30%;
+            height: 600px;
+            background-color: #b39ddb;
+            float: left;
+        }
+
+        section {
+            width: 70%;
+            height: 600px;
+            background-color: #9575cd;
+            float: left;
+        }
+
+        footer {
+            width: 100%;
+            height: 150px;
+            background-color: #7e57c2;
+        }
+
+        @media (max-width: 1210px) {
+            #wrap {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 800px) {
+            #wrap {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            aside {
+                float: none;
+                width: 100%;
+                height: 300px;
+            }
+
+            section {
+                float: none;
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <main>
+            <aside></aside>
+            <section></section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
