@@ -5,19 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 연습 08</title>
+    <title>레이아웃 연습 10</title>
     <style>
         * {
             padding: 0;
             margin: 0;
         }
 
-        /* #wrap {} */
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
 
         header {
             width: 100%;
             height: 150px;
-            background-color: #c8e6c9;
+            background-color: #b3e5fc;
         }
 
         main {
@@ -25,82 +28,97 @@
         }
 
         aside {
-            width: 25%;
-            height: 800px;
-            background-color: #a5d6a7;
+            width: 30%;
+            height: 900px;
             float: left;
+            background-color: #81d4fa;
         }
 
         section {
-            width: 50%;
-            height: 800px;
-            background-color: #81c784;
+            width: 70%;
+            height: 300px;
             float: left;
+            background-color: #4fc3f7;
         }
 
         article {
-            width: 25%;
-            height: 800px;
-            background-color: #66bb6a;
+            width: 70%;
+            height: 300px;
             float: left;
+            background-color: #29b6f6;
+        }
+
+        main span {
+            width: 70%;
+            height: 300px;
+            float: left;
+            background-color: #03a9f4;
         }
 
         footer {
             width: 100%;
             height: 150px;
-            background-color: #4caf50;
+            background-color: #039be5;
         }
 
         @media (max-width: 1220px) {
-            aside {
-                width: 30%;
+            #wrap {
+                width: 100%;
             }
 
             section {
-                width: 70%;
+                height: 450px;
             }
 
             article {
-                width: 100%;
-                height: 300px;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            aside {
-                width: 100%;
-                height: 300px;
+                height: 450px;
             }
 
-            section {
-                width: 100%;
-                height: 300px;
-            }
-
-            article {
+            main span {
                 width: 100%;
             }
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 900px) {
+            aside {
+                width: 100%;
+                height: 300px;
+            }
+
+            section {
+                width: 50%;
+            }
+
+            article {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
             header {
-                height: 100px;
+                height: 200px;
             }
 
             aside {
-                height: 250px;
+                height: 350px;
             }
 
             section {
-                height: 250px;
+                height: 350px;
+                width: 100%;
             }
 
             article {
-                height: 250px;
+                height: 350px;
+                width: 100%;
+            }
+
+            main span {
+                height: 350px;
             }
 
             footer {
-                height: 100px;
+                height: 200px;
             }
         }
     </style>
@@ -113,6 +131,7 @@
             <aside></aside>
             <section></section>
             <article></article>
+            <span></span>
         </main>
         <footer></footer>
     </div>
