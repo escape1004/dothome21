@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습 08</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* #wrap {} */
+
+        header {
+            width: 100%;
+            height: 150px;
+            background-color: #c8e6c9;
+        }
+
+        main {
+            overflow: hidden;
+        }
+
+        aside {
+            width: 25%;
+            height: 800px;
+            background-color: #a5d6a7;
+            float: left;
+        }
+
+        section {
+            width: 50%;
+            height: 800px;
+            background-color: #81c784;
+            float: left;
+        }
+
+        article {
+            width: 25%;
+            height: 800px;
+            background-color: #66bb6a;
+            float: left;
+        }
+
+        footer {
+            width: 100%;
+            height: 150px;
+            background-color: #4caf50;
+        }
+
+        @media (max-width: 1220px) {
+            aside {
+                width: 30%;
+            }
+
+            section {
+                width: 70%;
+            }
+
+            article {
+                float: none;
+                width: 100%;
+                height: 300px;
+                clear: both;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            aside {
+                float: none;
+                width: 100%;
+                height: 300px;
+            }
+
+            section {
+                float: none;
+                width: 100%;
+                height: 300px;
+            }
+
+            article {
+                float: none;
+                width: 100%;
+                height: 300px;
+                clear: both;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                width: 100%;
+                height: 200px;
+            }
+
+            aside {
+                float: none;
+                width: 100%;
+                height: 350px;
+            }
+
+            section {
+                float: none;
+                width: 100%;
+                height: 350px;
+            }
+
+            article {
+                float: none;
+                width: 100%;
+                height: 350px;
+                clear: both;
+            }
+
+            footer {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header></header>
+        <main>
+            <aside></aside>
+            <section></section>
+            <article></article>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
