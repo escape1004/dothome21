@@ -754,7 +754,21 @@
             </table>
         </div>
         <div class="code">
-            <pre class="line-numbers"><code class="language-js">
+            <pre class="line-numbers"><code class="language-js">{
+    const str = "자바스크립트(javascript) 공부";
+    const text = str.charAt(4);
+
+    document.querySelector(".sample06_Q1").innerHTML = str;
+    document.querySelector(".sample06_M1").innerHTML = ".charAt(4)";
+    document.querySelector(".sample06_R1").innerHTML = text;
+
+    const str2 = "자바스크립트(javascript) 공부";
+    const text2 = str2.charAt();
+
+    document.querySelector(".sample06_Q2").innerHTML = str2;
+    document.querySelector(".sample06_M2").innerHTML = ".charAt()";
+    document.querySelector(".sample06_R2").innerHTML = text2;
+}
 </code></pre>
         </div>
     </div>
