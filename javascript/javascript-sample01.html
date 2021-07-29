@@ -55,7 +55,7 @@
         }
 
         .board {
-            margin: 10vw;
+            margin: 5vw 10vw 10vw 10vw;
             width: 80vw;
             background-color: #F1F3F6;
             border: 2px solid #000;
@@ -85,6 +85,7 @@
             padding: 10px 30px;
             border: 1px solid #000;
             border-radius: 40px;
+            display: none;
         }
 
         .board .search input {
@@ -116,17 +117,10 @@
         }
 
         @media (max-width: 800px) {
-            .girl img {
-                right: 5%;
-            }
-
-            .dog img {
-                left: 5%;
-            }
-
             .board {
-                width: 80vw;
-                padding: 5%;
+                width: 92vw;
+                padding: 6% 3% 3% 3%;
+                margin: 4vw;
             }
 
             .board h1 {
@@ -135,7 +129,26 @@
             }
 
             .board span {
-                font-size: 18px;
+                font-size: 12px;
+            }
+
+            .board .search input {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 16px;
+                padding: 10px 10px 10px 20px;
+            }
+
+            .board .list {
+                margin-top: 20px;
+            }
+
+            .girl {
+                width: 200px;
+            }
+
+            .dog {
+                width: 100px;
             }
         }
     </style>
@@ -166,7 +179,7 @@
                     <li data-name="animation-play-state" data-topic="애니메이션">animation-play-state</li>
                     <li data-name="animation-timing-function" data-topic="애니메이션">animation-timing-function</li>
                     <li data-name="backface-visibility" data-topic="백페이스">backface-visibility</li>
-                    <li data-name="background" data-topic="백그라운드">background</li>
+                    <li data-name="background" data-topic="백그라운드">background 속성은 백그라운드 속성을 일괄적으로 설정합니다.</li>
                     <li data-name="background-attachment" data-topic="백그라운드">background-attachment</li>
                     <li data-name="background-blend-mode" data-topic="백그라운드">background-blend-mode</li>
                     <li data-name="background-clip" data-topic="백그라운드">background-clip</li>
@@ -380,7 +393,8 @@
                 // console.log(cssName);
                 // console.log(cssTopic);
 
-                if (searchWord.charAt(0) === cssName.charAt(0) || searchWord.charAt(0) === cssTopic.charAt(0)) {
+                if (searchWord.charAt(0) === cssName.charAt(0) || searchWord.charAt(0) === cssTopic
+                    .charAt(0)) {
                     el.classList.remove("hide");
                 } else {
                     el.classList.add("hide");
