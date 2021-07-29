@@ -380,13 +380,7 @@
                 // console.log(cssName);
                 // console.log(cssTopic);
 
-                if (searchWord.charAt(0) === cssName.charAt(0)) {
-                    el.classList.remove("hide");
-                } else {
-                    el.classList.add("hide");
-                }
-
-                if (searchWord.charAt(0) === cssTopic.charAt(0)) {
+                if (searchWord.charAt(0) === cssName.charAt(0) || searchWord.charAt(0) === cssTopic.charAt(0)) {
                     el.classList.remove("hide");
                 } else {
                     el.classList.add("hide");
