@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 속성 검색하기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'GyeonggiBatang';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            background-image: url(img/search_bg.jpg);
+            background-size: cover;
+            background-position: center bottom;
+            background-attachment: fixed;
+        }
+
+        .girl {
+            width: 250px;
+            position: fixed;
+            bottom: -60px;
+            right: 5%;
+        }
+
+        .dog {
+            width: 150px;
+            position: fixed;
+            bottom: -40px;
+            left: 5%;
+        }
+
+        .board {
+            margin: 5vw 10vw 10vw 10vw;
+            width: 80vw;
+            background-color: #F1F3F6;
+            border: 2px solid #000;
+            padding: 3%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .board h1 {
+            font-family: 'TmonMonsori';
+            color: #223547;
+            font-size: 60px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .board span {
+            font-family: 'GyeonggiBatang';
+            color: #223547;
+            font-size: 20px;
+        }
+
+        .board .search label {
+            font-family: 'GyeonggiBatang';
+            background-color: #BFE6FE;
+            font-size: 26px;
+            padding: 10px 30px;
+            border: 1px solid #000;
+            border-radius: 40px;
+            display: none;
+        }
+
+        .board .search input {
+            font-family: 'GyeonggiBatang';
+            font-size: 24px;
+            border: 1px solid #000;
+            padding: 10px 10px 10px 30px;
+            border-radius: 40px;
+            outline: none;
+        }
+
+        .board .list {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .board .list ul li {
+            font-family: 'GyeonggiBatang';
+            line-height: 1.6;
+            list-style: none;
+            background-color: #BDD6E6;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .board .list ul li.hide {
+            display: none;
+        }
+
+        @media (max-width: 800px) {
+            .board {
+                width: 92vw;
+                padding: 6% 3% 3% 3%;
+                margin: 4vw;
+            }
+
+            .board h1 {
+                font-size: 30px;
+                margin-top: 5px;
+            }
+
+            .board span {
+                font-size: 12px;
+            }
+
+            .board .search input {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 16px;
+                padding: 10px 10px 10px 20px;
+            }
+
+            .board .list {
+                margin-top: 20px;
+            }
+
+            .girl {
+                width: 200px;
+            }
+
+            .dog {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="board">
+            <span>속성 중에 첫 글자만 넣어주세요!</span>
+            <h1>HTML 속성 검색하기</h1>
+            <div class="search">
+                <label for="search-box">검색하기</label>
+                <input id="search-box" type="text">
+            </div>
+            <div class="list">
+                <ul>
+                    <li data-name="a" data-topic="에이">&lt;a&gt; 태그는 다른 페이지 이동을 설정합니다.</li>
+                    <li data-name="abbr" data-topic="에이비비알">&lt;abbr&gt;</li>
+                    <li data-name="acronym" data-topic="아크로늄">&lt;acronym&gt;</li>
+                    <li data-name="address" data-topic="어드레스">&lt;address&gt;</li>
+                    <li data-name="applet" data-topic="앱렛">&lt;applet&gt;</li>
+                    <li data-name="area" data-topic="아레아">&lt;area&gt;</li>
+                    <li data-name="article" data-topic="아티클">&lt;article&gt; 태그는 문서내에 독립적인 컨텐츠를 정의합니다.</li>
+                    <li data-name="aside" data-topic="어사이드">&lt;aside&gt; 태그는 문서내에 사이드 컨텐츠를 정의합니다.</li>
+                    <li data-name="audio" data-topic="오디오">&lt;audio&gt;</li>
+                    <li data-name="b" data-topic="비">&lt;b&gt; 태그는 글씨를 두껍게 표현할 때 사용합니다.</li>
+                    <li data-name="base" data-topic="베이스">&lt;base&gt;</li>
+                    <li data-name="basefont" data-topic="베이스폰트">&lt;basefont&gt;</li>
+                    <li data-name="bdi" data-topic="비디아이">&lt;bdi&gt;</li>
+                    <li data-name="bdo" data-topic="비디오">&lt;bdo&gt;</li>
+                    <li data-name="big" data-topic="빅">&lt;big&gt;</li>
+                    <li data-name="blockquote" data-topic="블럭쿼트">&lt;blockquote&gt;</li>
+                    <li data-name="blink" data-topic="블링크">&lt;blink&gt;</li>
+                    <li data-name="body" data-topic="바디">&lt;body&gt; 태그는 문서 본문에 해당하는 콘텐츠를 포함하는 영역입니다.</li>
+                    <li data-name="br" data-topic="비알">&lt;br&gt; 태그는 텍스트를 줄바꿈 할 때 사용합니다.</li>
+                    <li data-name="button" data-topic="버튼">&lt;button&gt;</li>
+                    <li data-name="canvas" data-topic="캔버스">&lt;canvas&gt;</li>
+                    <li data-name="caption" data-topic="캡션">&lt;caption&gt; 태그는 table 요소의 제목을 설정합니다.</li>
+                    <li data-name="center" data-topic="센터">&lt;center&gt;</li>
+                    <li data-name="cite" data-topic="사이트">&lt;cite&gt;</li>
+                    <li data-name="code" data-topic="코드">&lt;code&gt;</li>
+                    <li data-name="col" data-topic="콜">&lt;col&gt; 태그는 테이블 요소의 행을 나타냅니다.</li>
+                    <li data-name="colgroup" data-topic="콜그룹">&lt;colgroup&gt; 태그는 테이블 요소의 행을 그룹화합니다.</li>
+                    <li data-name="data" data-topic="데이터">&lt;data&gt;</li>
+                    <li data-name="datalist" data-topic="데이터리스트">&lt;datalist&gt;</li>
+                    <li data-name="dd" data-topic="디디">&lt;dd&gt;</li>
+                    <li data-name="del" data-topic="델">&lt;del&gt;</li>
+                    <li data-name="details" data-topic="디테일">&lt;details&gt;</li>
+                    <li data-name="dfn" data-topic="디에프엔">&lt;dfn&gt;</li>
+                    <li data-name="dialog" data-topic="다이얼로그">&lt;dialog&gt;</li>
+                    <li data-name="dir" data-topic="디렉토리">&lt;dir&gt; 태그는 디렉토리 제목을 나열하는데 사용합니다.</li>
+                    <li data-name="div" data-topic="디아이브이">&lt;div&gt; 태그는 문서의 섹션을 만들거나 영역을 나눌 때 사용합니다.</li>
+                    <li data-name="dl" data-topic="디엘">&lt;dl&gt;</li>
+                    <li data-name="dt" data-topic="디티">&lt;dt&gt;</li>
+                    <li data-name="em" data-topic="이엠">&lt;em&gt;</li>
+                    <li data-name="embed" data-topic="임베드">&lt;embed&gt;</li>
+                    <li data-name="fieldset" data-topic="필드셋">&lt;fieldset&gt;</li>
+                    <li data-name="figcaption" data-topic="피그캡션">&lt;figcaption&gt;</li>
+                    <li data-name="figure" data-topic="피규어">&lt;figure&gt;</li>
+                    <li data-name="font" data-topic="폰트">&lt;font&gt; 태그는 폰트의 크기, 색, 종류를 설정합니다.</li>
+                    <li data-name="footer" data-topic="푸터">&lt;footer&gt; 태그는 사이트 푸터부분을 정의합니다.</li>
+                    <li data-name="form" data-topic="폼">&lt;form&gt;</li>
+                    <li data-name="frame" data-topic="프레임">&lt;frame&gt;</li>
+                    <li data-name="frameset" data-topic="프리엠셋">&lt;frameset&gt;</li>
+                    <li data-name="h1 ~ h6" data-topic="에이치">&lt;h1&gt; ~ &lt;h6&gt; 태그는 섹션의 제목을 정의합니다.</li>
+                    <li data-name="head" data-topic="헤드">&lt;head&gt; 태그는 사이트의 헤더 요소들을 정의합니다.</li>
+                    <li data-name="header" data-topic="헤더">&lt;header&gt; 태그는 소개 컨텐츠 및 네비게이션 링크를 포함한 섹션입니다.</li>
+                    <li data-name="hgroup" data-topic="에이치그룹">&lt;hgroup&gt;</li>
+                    <li data-name="hr" data-topic="에이치알">&lt;hr&gt; 태그는 문서의 주제를 분리할 때 사용합니다.</li>
+                    <li data-name="html" data-topic="에이치티엠엘">&lt;html&gt; 태그는 HTML 문서의 루트를 나타냅니다.</li>
+                    <li data-name="i" data-topic="아이">&lt;i&gt;</li>
+                    <li data-name="iframeHTML" data-topic="아이프레임에이치티엠엘">&lt;iframeHTML&gt;</li>
+                    <li data-name="img" data-topic="이미지">&lt;img&gt; 태그는 문서에 이미지를 표현할 때 사용합니다.</li>
+                    <li data-name="input" data-topic="인풋">&lt;input&gt;</li>
+                    <li data-name="ins" data-topic="인스">&lt;ins&gt;</li>
+                    <li data-name="kbd" data-topic="케이비디">&lt;kbd&gt;</li>
+                    <li data-name="keygen" data-topic="키겐">&lt;keygen&gt;</li>
+                    <li data-name="label input" data-topic="라벨인풋">&lt;label input&gt;</li>
+                    <li data-name="legend fieldset" data-topic="레전드필드셋">&lt;legend fieldset&gt;</li>
+                    <li data-name="li" data-topic="엘이아">&lt;li&gt; 태그는 목록의 항목을 정의합니다.</li>
+                    <li data-name="link" data-topic="링크">&lt;link&gt;</li>
+                    <li data-name="main" data-topic="메인">&lt;main&gt; 태그는 문서의 주요 콘텐츠를 정의합니다.</li>
+                    <li data-name="map" data-topic="맵">&lt;map&gt;</li>
+                    <li data-name="mark" data-topic="마크">&lt;mark&gt;</li>
+                    <li data-name="marquee" data-topic="마퀴">&lt;marquee&gt;</li>
+                    <li data-name="menu" data-topic="메뉴">&lt;menu&gt;</li>
+                    <li data-name="menuitem" data-topic="메뉴아이템">&lt;menuitem&gt;</li>
+                    <li data-name="meta" data-topic="메타">&lt;meta&gt;</li>
+                    <li data-name="meter" data-topic="미터">&lt;meter&gt;</li>
+                    <li data-name="nav" data-topic="네비">&lt;nav&gt; 태그는 네비게이션 링크를 정의합니다.</li>
+                    <li data-name="noframes" data-topic="노프레임">&lt;noframes&gt;</li>
+                    <li data-name="noscript" data-topic="노스크립트">&lt;noscript&gt;</li>
+                    <li data-name="object" data-topic="오브젝트">&lt;object&gt;</li>
+                    <li data-name="ol" data-topic="오엘">&lt;ol&gt; 태그는 순서가 있는 목록을 정의합니다.</li>
+                    <li data-name="optgroup option" data-topic="오피티그룹옵션">&lt;optgroup option&gt;</li>
+                    <li data-name="option select" data-topic="옵션셀렉트">&lt;option select&gt;</li>
+                    <li data-name="output" data-topic="아웃풋">&lt;output&gt;</li>
+                    <li data-name="p" data-topic="피">&lt;p&gt; 태그는 문단을 정의합니다.</li>
+                    <li data-name="param object" data-topic="파람오브젝트">&lt;param object&gt;</li>
+                    <li data-name="picture" data-topic="픽쳐">&lt;picture&gt;</li>
+                    <li data-name="pre" data-topic="프리">&lt;pre&gt;</li>
+                    <li data-name="pregress" data-topic="프리그레스">&lt;pregress&gt;</li>
+                    <li data-name="q" data-topic="큐">&lt;q&gt;</li>
+                    <li data-name="rp" data-topic="알피">&lt;rp&gt;</li>
+                    <li data-name="rt" data-topic="알티">&lt;rt&gt;</li>
+                    <li data-name="rtc" data-topic="알티씨">&lt;rtc&gt;</li>
+                    <li data-name="ruby" data-topic="루비">&lt;ruby&gt;</li>
+                    <li data-name="s" data-topic="에스">&lt;s&gt;</li>
+                    <li data-name="samp" data-topic="샘프">&lt;samp&gt;</li>
+                    <li data-name="script" data-topic="스크립트">&lt;script&gt; 태그는 스크립트를 정의하는데 사용합니다.</li>
+                    <li data-name="section" data-topic="섹션">&lt;section&gt; 태그는 주제별 그룹의 콘텐츠 섹션을 정의합니다.</li>
+                    <li data-name="select" data-topic="셀렉트">&lt;select&gt;</li>
+                    <li data-name="small" data-topic="스몰">&lt;small&gt;</li>
+                    <li data-name="source" data-topic="소스">&lt;source&gt;</li>
+                    <li data-name="span" data-topic="스팬">&lt;span&gt; 태그는 인라인 요소 그룹화를 정의합니다.</li>
+                    <li data-name="strike" data-topic="스트라이크">&lt;strike&gt;</li>
+                    <li data-name="strong" data-topic="스트롱">&lt;strong&gt;</li>
+                    <li data-name="style" data-topic="스타일">&lt;style&gt; 태그는 문서에 대한 스타일 정보를 정의합니다.</li>
+                    <li data-name="sub" data-topic="서브">&lt;sub&gt;</li>
+                    <li data-name="summary details" data-topic="서머리디테일">&lt;summary details&gt;</li>
+                    <li data-name="sup" data-topic="섭">&lt;sup&gt;</li>
+                    <li data-name="supSVG" data-topic="섭에스브이쥐">&lt;supSVG&gt;</li>
+                    <li data-name="table" data-topic="테이블">&lt;table&gt; 태그는 표를 정의합니다.</li>
+                    <li data-name="tbody" data-topic="티바디">&lt;tbody&gt; 태그는 표의 본문을 그룹화합니다.</li>
+                    <li data-name="td" data-topic="티디">&lt;td&gt; 태그는 표의 셀을 정의합니다.</li>
+                    <li data-name="template" data-topic="템플릿">&lt;template&gt;</li>
+                    <li data-name="textarea" data-topic="텍스트아레아">&lt;textarea&gt;</li>
+                    <li data-name="tfoot" data-topic="티풋">&lt;tfoot&gt; 태그는 표의 푸터를 그룹화합니다.</li>
+                    <li data-name="th" data-topic="티에이치">&lt;th&gt; 태그는 표의 행이나 열에 머리말을 정의합니다.</li>
+                    <li data-name="thead" data-topic="티헤드">&lt;thead&gt; 태그는 표의 헤더를 그룹화합니다.</li>
+                    <li data-name="time" data-topic="타임">&lt;time&gt;</li>
+                    <li data-name="title" data-topic="타이틀">&lt;title&gt; 태그는 HTML문서의 타이틀을 정의합니다.</li>
+                    <li data-name="tt" data-topic="티티">&lt;tt&gt;</li>
+                    <li data-name="u" data-topic="유">&lt;u&gt;</li>
+                    <li data-name="ul" data-topic="유엘">&lt;ul&gt; 태그는 순서가 없는 목록을 정의합니다.</li>
+                    <li data-name="var" data-topic="바">&lt;var&gt; 태그는 프로그램 코드에서 변수를 정의합니다.</li>
+                    <li data-name="video" data-topic="비디오">&lt;video&gt;</li>
+                    <li data-name="wbr" data-topic="더블유비알">&lt;wbr&gt;</li>
+                </ul>
+            </div>
+        </div>
+        <div class="girl">
+            <img src="img/search_girl.png" alt="girl">
+        </div>
+        <div class="dog">
+            <img src="img/search_dog.png" alt="dog">
+        </div>
+    </div>
+
+    <script>
+        const searchBox = document.querySelector("#search-box");
+        const cssList = document.querySelectorAll(".list ul li");
+
+        searchBox.addEventListener("keyup", () => { //키보드 이벤트
+            const searchWord = searchBox.value; //사용자가 입력한 정보
+
+            //console.log(searchWord);
+
+            cssList.forEach((el) => { //리스트 개수
+                // console.log(el);
+
+                const cssName = el.dataset.name; //리스트에 name 속성 값을 가져옴
+                const cssTopic = el.dataset.topic; //리스트에 topic 속성 값을 가져옴
+
+                // console.log(cssName);
+                // console.log(cssTopic);
+
+                if (searchWord.charAt(0) === cssName.charAt(0) || searchWord.charAt(0) === cssTopic
+                    .charAt(0)) {
+                    el.classList.remove("hide");
+                } else {
+                    el.classList.add("hide");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
