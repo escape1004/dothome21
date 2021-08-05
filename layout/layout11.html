@@ -7,12 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>레이아웃 연습 11</title>
     <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
 
+        header {
+            background-color: #FBE4EC;
+            width: 100%;
+            height: 200px;
+        }
+
+        section {
+            background-color: #F48FB1;
+            width: 100%;
+            height: 300px;
+        }
+
+        article {
+            background-color: #EC407A;
+            width: 100%;
+            height: 800px;
+        }
+
+        footer {
+            background-color: #D81A60;
+            width: 100%;
+            height: 150px;
+        }
+
+        .container {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            background-color: rgba(189, 11, 94, 0.384);
+        }
     </style>
 </head>
 
 <body>
-
+    <div id="wrap">
+        <header>
+            <div class="container"></div>
+        </header>
+        <section>
+            <div class="container"></div>
+        </section>
+        <article>
+            <div class="container"></div>
+        </article>
+        <footer>
+            <div class="container"></div>
+        </footer>
+    </div>
 </body>
 
 </html>
