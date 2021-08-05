@@ -190,6 +190,72 @@
 
             document.write("<br>");
         }
+
+
+        //for문을 이용해서 각 데이터 불러오기
+        {
+            const arr = [100, 200, 300, 400, 500]
+
+            for (let i = 0; i < arr.length; i++) {
+                document.write(arr[i], "<br>");
+            }
+
+            document.write("<br>");
+        }
+
+        //forEach문을 이용해서 각 데이터를 출력하세요.
+        {
+            const arr = [100, 200, 300, 400, 500]
+
+            arr.forEach(function (element) {
+                document.write(element, '<br>');
+            });
+
+            document.write("<br>");
+
+            for (let element of arr) document.write(element, '&nbsp');
+            for (let element in arr) document.write(element, '&nbsp');
+            for (let element in arr) document.write(arr[element], '&nbsp');
+
+            document.write("<br><br>");
+        }
+
+        //배열에서 300을 찾아 출력하세요.
+        {
+            const arr = [100, 200, 300, 400, 500]
+
+            const find = arr.find(element => element === 300);
+            document.write(find);
+
+            document.write("<br><br>");
+        }
+
+        //"함수가 실행되었습니다." 를 function을 이용해 출력
+        {
+            function func1() {  //선언적 함수
+                document.write("함수가 실행되었습니다. <br>");
+            }
+
+            const func2 = function () { //익명 함수
+                document.write("함수가 실행되었습니다. <br>");
+            }
+
+            function func3(str) {   //매개변수 함수
+                document.write(str, '<br>');
+            }
+
+            function func4() {  //리턴값 함수
+                const str = "함수가 실행되었습니다. <br>";
+                return str;
+            }
+
+            func1();
+            func2();
+            func3("함수가 실행되었습니다.");
+            document.write(func4());
+
+            document.write("<br>");
+        }
     </script>
 </body>
 
