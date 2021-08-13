@@ -19,6 +19,13 @@
             font-style: normal;
         }
 
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -34,13 +41,19 @@
         h1 {
             padding-top: 40px;
             padding-bottom: 20px;
+            text-align: center;
+        }
+
+        h1 a {
+            font-family: 'TmonMonsori';
         }
 
         hr {
             margin: 5% 0;
             border-style: dashed;
-            border-color: #e6e6e6;
-            border-width: 1px;
+            border-color: #E6E6E6;
+            border-width: 0px;
+            border-bottom-width: 1px;
         }
 
         img {
@@ -59,16 +72,16 @@
         }
 
         .sample {
-            border: 1px solid #e6e6e6;
+            border: 1px solid #E6E6E6;
             border-radius: 5px;
         }
 
         .sample h2 {
             position: relative;
             font-size: 16px;
-            background-color: #f2f2f2;
+            background-color: #F2F2F2;
             padding: 15px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
             border-radius: 5px 5px 0 0;
         }
 
@@ -115,7 +128,7 @@
 
         .sample .re {
             padding: 20px;
-            border-top: 1px solid #e6e6e6;
+            border-top: 1px solid #E6E6E6;
         }
 
         .sample .re a {
@@ -135,19 +148,18 @@
 
         .sample .problem {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
             line-height: 1.6;
         }
 
         .sample pre {
             margin: 0 !important;
             border-radius: 0;
-            ;
         }
 
         .sample .desc {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
         }
 
         .sample .desc dt {
@@ -162,7 +174,7 @@
 
         .sample .sam {
             padding: 25px;
-            border-bottom: 1px solid #e6e6e6;
+            border-bottom: 1px solid #E6E6E6;
         }
 
         .sample .sam dt {
@@ -174,67 +186,8 @@
             padding: 3px 0 16px 0;
         }
 
-        ol {
-            list-style: none;
-        }
-
-        ol li {
-            display: inline;
-            text-align: center;
-            line-height: 40px;
-            margin-bottom: 5px;
-        }
-
-        ol li a {
-            display: inline-block;
-            border-radius: 30px;
-            padding: 2px 20px 0px 20px;
-            border: 1px solid #000;
-        }
-
-        ol li a:hover {
-            background: #000;
-            color: #fff;
-        }
-
-        ol li.active {
-            background: #000;
-        }
-
-        ol li.active a {
-            color: #fff;
-        }
-
         .mt20 {
             margin-top: 20px;
-        }
-
-        .ol1::before {
-            content: "데이터 저장하기 : ";
-        }
-
-        .ol2::before {
-            content: "데이터 불러오기 : ";
-        }
-
-        .ol3::before {
-            content: "데이터 실행하기 : ";
-        }
-
-        .ol4::before {
-            content: "데이터 제어하기 : ";
-        }
-
-        .ol5::before {
-            content: "데이터 내장 객체 : "
-        }
-
-        .ol6::before {
-            content: "데이터 공부하기 : ";
-        }
-
-        .view {
-            padding: 20px;
         }
 
         .view table {
@@ -246,6 +199,12 @@
         }
 
         .view table th {
+            /*
+            padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
+            padding: 13px 5px 11px;         상 / 좌우 / 하
+            padding: 13px 5px;              상하 / 좌우
+            padding: 13px;                  상항좌우
+            */
             padding: 13px 5px 11px 5px;
         }
 
@@ -269,7 +228,8 @@
             background-color: #000;
             color: #fff;
             border-radius: 30px;
-            padding: 0 20px;
+            padding: 0.1em 1.5em;
+            font-size: 0.8em;
         }
 
         .page {
@@ -279,7 +239,7 @@
         }
 
         .page li {
-            display: inline;
+            display: inline-block;
             list-style: none;
         }
 
@@ -292,6 +252,29 @@
             color: #098a4c;
         }
 
+        .menu li {
+            display: inline;
+        }
+
+        .menu li a {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            color: #000;
+            border: 1px dashed #000;
+            padding: 10px 30px;
+            display: inline-block;
+            border-radius: 50px;
+            font-size: 16px;
+            margin: 4px 1px;
+            box-shadow: inset 0 0 0 #000;
+            transition: all 0.4s;
+        }
+
+        .menu li a:hover {
+            box-shadow: inset 0 -100px #000;
+            color: white;
+            border-style: solid;
+        }
+
         @media (max-width: 800px) {
             body {
                 font-size: 13px;
@@ -299,6 +282,19 @@
 
             h1 {
                 text-align: center;
+            }
+
+            .menu li a {
+                font-size: 12px;
+                padding: 5px 20px;
+            }
+
+            .list li {
+                line-height: 1.2;
+            }
+
+            .list a {
+                font-size: 12px;
             }
 
             .sample h2 {
@@ -311,6 +307,10 @@
                 display: none;
             }
 
+            .sample pre {
+                font-size: 14px;
+            }
+
             .view {
                 padding: 5px;
                 max-width: 800px;
@@ -321,7 +321,7 @@
                 font-weight: normal;
             }
 
-            .view table td.result {
+            .view table td .result {
                 color: #000;
             }
         }
@@ -329,45 +329,35 @@
 </head>
 
 <body>
-    <h1>Javascript 문법 정리</h1>
+    <h1><a href="index.html">Javascript 레퍼런스</a></h1>
+
     <ul class="page">
         <li><a href="../refer-html/index.html">HTML</a></li>
         <li><a href="../refer-css/index.html">CSS</a></li>
-        <li><a href="../javascript/javascript100.html">JAVASCRIPT</a></li>
+        <li><a href="../javascript/index.html">JAVASCRIPT</a></li>
     </ul>
-    <ol class="ol1">
-        <li><a href="javascript100.html">변수</a></li>
-        <li><a href="javascript100.html">상수</a></li>
-        <li><a href="javascript100.html">배열(Array)</a></li>
-        <li><a href="javascript100.html">객체(Object)</a></li>
-    </ol>
-    <ol class="ol2">
-        <li><a href="javascript500.html">변수</a></li>
-        <li><a href="javascript500.html">상수</a></li>
-        <li><a href="javascript500.html">배열(Array)</a></li>
-        <li><a href="javascript500.html">객체(Object)</a></li>
-    </ol>
-    <ol class="ol3">
-        <li><a href="javascript300.html">함수(Function)</a></li>
-    </ol>
-    <ol class="ol4">
-        <li><a href="javascript200.html">조건문</a></li>
-        <li><a href="javascript200.html">반복문</a></li>
-    </ol>
-    <ol class="ol5">
-        <li><a href="javascript602.html">문자열 객체</a></li>
-        <li><a href="javascript601.html">배열 객체</a></li>
-        <li><a href="javascript604.html">날짜 객체</a></li>
-        <li><a href="javascript609.html">수학 객체</a></li>
-        <li><a href="javascript608.html">숫자 객체</a></li>
-        <li><a href="javascript603.html">브라우저 객체</a></li>
-        <li><a href="javascript607.html">요소 객체</a></li>
-        <li><a href="javascript605.html">이벤트 객체</a></li>
-    </ol>
-    <ol class="ol6">
-        <li><a href="javascript606.html">샘플</a></li>
-        <li><a href="javascript400.html">알고리즘</a></li>
-    </ol>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="javascriptRefer01.html">데이터 저장하기</a></li>
+            <li><a href="javascriptRefer02.html">데이터 불러오기</a></li>
+            <li><a href="javascriptRefer03.html">데이터 실행하기</a></li>
+            <li><a href="javascriptRefer04.html">데이터 제어하기</a></li>
+        </ul>
+        <ul>
+            <li><a href="javascriptRefer05.html">문자열 객체</a></li>
+            <li><a href="javascriptRefer06.html">배열 객체</a></li>
+            <li><a href="javascriptRefer07.html">날짜 객체</a></li>
+            <li><a href="javascriptRefer08.html">수학 객체</a></li>
+            <li><a href="javascriptRefer09.html">브라우저 객체</a></li>
+            <li><a href="javascriptRefer10.html">요소 객체</a></li>
+            <li><a href="javascriptRefer11.html">이벤트 객체</a></li>
+        </ul>
+        <ul>
+            <li><a href="javascriptRefer12.html">샘플</a></li>
+            <li><a href="javascriptRefer13.html">알고리즘</a></li>
+        </ul>
+    </nav>
 
     <h2 class="mt20">문자열 객체</h2>
     <ul>
@@ -382,8 +372,7 @@
         <li><a href=#sample05>05. 문자열 메서드 : includes() : 문자열 포함 여부 : 반환(불린)</a></li>
         <li><a href=#sample05>05. 문자열 메서드 : startsWith() : 문자열 포함 여부 : 반환(불린)</a></li>
         <li><a href=#sample05>05. 문자열 메서드 : endsWith() : 문자열 포함 여부 : 반환(불린)</a></li>
-        <li><a href=#sample06>06. 문자열 메서드 : charAt() : 지정한 인덱스의 문자를 추출 : 반환(문자)</a> <a class="sam"
-                href="javascriptSample01.html">sample</a></li>
+        <li><a href=#sample06>06. 문자열 메서드 : charAt() : 지정한 인덱스의 문자를 추출 : 반환(문자)</a></li>
         <li><a href=#sample07>07. 문자열 메서드 : slice() : 지정한 범위 내 문자열을 추출 : 반환(문자열)</a></li>
         <li><a href=#sample07>07. 문자열 메서드 : substring() : 지정한 범위 내 문자열을 추출 : 반환(문자열)</a></li>
         <li><a href=#sample07>07. 문자열 메서드 : substr() : 지정한 범위 내 문자열을 추출 : 반환(문자열)</a></li>
@@ -448,27 +437,27 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str1 = "자바스크립트 ";
-    const str2 = "제이쿼리";
+const str1 = "자바스크립트 ";
+const str2 = "제이쿼리";
 
-    document.querySelector(".sample01_R1").innerHTML = str1 + str2;
+document.querySelector(".sample01_R1").innerHTML = str1 + str2;
 
-    const num1 = 100;
-    const num2 = 200;
+const num1 = 100;
+const num2 = 200;
 
-    document.querySelector(".sample01_R2").innerHTML = num1 + num2;
+document.querySelector(".sample01_R2").innerHTML = num1 + num2;
 
-    const txt1 = "모던 ";
-    const txt2 = "자바스크립트 ";
-    const txt3 = "핵심";
+const txt1 = "모던 ";
+const txt2 = "자바스크립트 ";
+const txt3 = "핵심";
 
-    document.querySelector(".sample01_R3").innerHTML = "나는 " + txt1 + "(modern) " + txt2 + "(javascript) " + txt3 + "을 배우고 싶다";
+document.querySelector(".sample01_R3").innerHTML = "나는 " + txt1 + "(modern) " + txt2 + "(javascript) " + txt3 + "을 배우고 싶다";
 
-    const tem1 = "모던 ";
-    const tem2 = "자바스크립트 ";
-    const tem3 = "핵심";
+const tem1 = "모던 ";
+const tem2 = "자바스크립트 ";
+const tem3 = "핵심";
 
-    document.querySelector(".sample01_R4").innerHTML = `나는 ${txt1}(modern) ${txt2}(javascript) ${txt3}을 배우고 싶다`;
+document.querySelector(".sample01_R4").innerHTML = `나는 ${txt1}(modern) ${txt2}(javascript) ${txt3}을 배우고 싶다`;
 }
 </code></pre>
         </div>
@@ -513,17 +502,17 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str1 = "자바스크립트";
-    const currentStr1 = str1.length;
+const str1 = "자바스크립트";
+const currentStr1 = str1.length;
 
-    document.querySelector(".sample02_Q1").innerHTML = str1;
-    document.querySelector(".sample02_R1").innerHTML = currentStr1;
+document.querySelector(".sample02_Q1").innerHTML = str1;
+document.querySelector(".sample02_R1").innerHTML = currentStr1;
 
-    const str2 = "javascript";
-    const currentStr2 = str2.length;
+const str2 = "javascript";
+const currentStr2 = str2.length;
 
-    document.querySelector(".sample02_Q2").innerHTML = str2;
-    document.querySelector(".sample02_R2").innerHTML = currentStr2;
+document.querySelector(".sample02_Q2").innerHTML = str2;
+document.querySelector(".sample02_R2").innerHTML = currentStr2;
 }
 </code></pre>
         </div>
@@ -568,17 +557,17 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str1 = "javascript";
-    const currentStr1 = str1.toUpperCase();
+const str1 = "javascript";
+const currentStr1 = str1.toUpperCase();
 
-    document.querySelector(".sample03_Q1").innerHTML = str1;
-    document.querySelector(".sample03_R1").innerHTML = currentStr1;
+document.querySelector(".sample03_Q1").innerHTML = str1;
+document.querySelector(".sample03_R1").innerHTML = currentStr1;
 
-    const str2 = "JAVASCRIPT"
-    const currentStr2 = str2.toLowerCase();
+const str2 = "JAVASCRIPT"
+const currentStr2 = str2.toLowerCase();
 
-    document.querySelector(".sample03_Q2").innerHTML = str2;
-    document.querySelector(".sample03_R2").innerHTML = currentStr2;
+document.querySelector(".sample03_Q2").innerHTML = str2;
+document.querySelector(".sample03_R2").innerHTML = currentStr2;
 }
 </code></pre>
         </div>
@@ -617,10 +606,10 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str1 = "      ' javacript '       ";
-    const currentStr1 = str1.trim();
+const str1 = "      ' javacript '       ";
+const currentStr1 = str1.trim();
 
-    document.querySelector(".sample04_R1").innerHTML = currentStr1;
+document.querySelector(".sample04_R1").innerHTML = currentStr1;
 }
 </code></pre>
         </div>
@@ -719,40 +708,40 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str = "자바스크립트(javascript) 공부"
+const str = "자바스크립트(javascript) 공부"
 
-    const text1 = str.indexOf("javascript");
-    document.querySelector(".sample05_R1").innerHTML = text1;
+const text1 = str.indexOf("javascript");
+document.querySelector(".sample05_R1").innerHTML = text1;
 
-    const text2 = str.indexOf("자바스크립트");
-    document.querySelector(".sample05_R2").innerHTML = text2;
+const text2 = str.indexOf("자바스크립트");
+document.querySelector(".sample05_R2").innerHTML = text2;
 
-    const text3 = str.indexOf("제이쿼리");
-    document.querySelector(".sample05_R3").innerHTML = text3;
+const text3 = str.indexOf("제이쿼리");
+document.querySelector(".sample05_R3").innerHTML = text3;
 
-    const text4 = str.indexOf("a");
-    document.querySelector(".sample05_R4").innerHTML = text4;
+const text4 = str.indexOf("a");
+document.querySelector(".sample05_R4").innerHTML = text4;
 
-    const text5 = str.lastIndexOf("a");
-    document.querySelector(".sample05_R5").innerHTML = text5;
+const text5 = str.lastIndexOf("a");
+document.querySelector(".sample05_R5").innerHTML = text5;
 
-    const text6 = str.search(/javascript/);
-    document.querySelector(".sample05_R6").innerHTML = text6;
+const text6 = str.search(/javascript/);
+document.querySelector(".sample05_R6").innerHTML = text6;
 
-    const text7 = str.search(/jquery/);
-    document.querySelector(".sample05_R7").innerHTML = text7;
+const text7 = str.search(/jquery/);
+document.querySelector(".sample05_R7").innerHTML = text7;
 
-    const text8 = str.includes("javascript");
-    document.querySelector(".sample05_R8").innerHTML = text8;
+const text8 = str.includes("javascript");
+document.querySelector(".sample05_R8").innerHTML = text8;
 
-    const text9 = str.includes("jquery");
-    document.querySelector(".sample05_R9").innerHTML = text9;
+const text9 = str.includes("jquery");
+document.querySelector(".sample05_R9").innerHTML = text9;
 
-    const text10 = str.startsWith("자바스크립트");
-    document.querySelector(".sample05_R10").innerHTML = text10;
+const text10 = str.startsWith("자바스크립트");
+document.querySelector(".sample05_R10").innerHTML = text10;
 
-    const text11 = str.endsWith("javascript");
-    document.querySelector(".sample05_R11").innerHTML = text11;
+const text11 = str.endsWith("javascript");
+document.querySelector(".sample05_R11").innerHTML = text11;
 }
 </code></pre>
         </div>
@@ -797,13 +786,13 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str = "자바스크립트(javascript) 공부";
+const str = "자바스크립트(javascript) 공부";
 
-    const text = str.charAt(4);
-    document.querySelector(".sample06_R1").innerHTML = text;
+const text = str.charAt(4);
+document.querySelector(".sample06_R1").innerHTML = text;
 
-    const text2 = str.charAt();
-    document.querySelector(".sample06_R2").innerHTML = text2;
+const text2 = str.charAt();
+document.querySelector(".sample06_R2").innerHTML = text2;
 }
 </code></pre>
         </div>
@@ -878,28 +867,28 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str = "자바스크립트(javascript) 공부";
+const str = "자바스크립트(javascript) 공부";
 
-    const text = str.slice(1, 4);
-    document.querySelector(".sample07_R1").innerHTML = text;
+const text = str.slice(1, 4);
+document.querySelector(".sample07_R1").innerHTML = text;
 
-    const text2 = str.slice(1);
-    document.querySelector(".sample07_R2").innerHTML = text2;
+const text2 = str.slice(1);
+document.querySelector(".sample07_R2").innerHTML = text2;
 
-    const text3 = str.slice(3, -1);
-    document.querySelector(".sample07_R3").innerHTML = text3;
+const text3 = str.slice(3, -1);
+document.querySelector(".sample07_R3").innerHTML = text3;
 
-    const text4 = str.slice(-14, -4);
-    document.querySelector(".sample07_R4").innerHTML = text4;
+const text4 = str.slice(-14, -4);
+document.querySelector(".sample07_R4").innerHTML = text4;
 
-    const text5 = str.slice(5, 1);
-    document.querySelector(".sample07_R5").innerHTML = text5;
+const text5 = str.slice(5, 1);
+document.querySelector(".sample07_R5").innerHTML = text5;
 
-    const text6 = str.substring(5, 1);
-    document.querySelector(".sample07_R6").innerHTML = text6;
+const text6 = str.substring(5, 1);
+document.querySelector(".sample07_R6").innerHTML = text6;
 
-    const text7 = str.substr(4, 2);
-    document.querySelector(".sample07_R7").innerHTML = text7;
+const text7 = str.substr(4, 2);
+document.querySelector(".sample07_R7").innerHTML = text7;
 }
 </code></pre>
         </div>
@@ -956,25 +945,25 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str = "자바스크립트(javascript) 공부";
-    const text = str.replace("공부", "스터디");
+const str = "자바스크립트(javascript) 공부";
+const text = str.replace("공부", "스터디");
 
-    document.querySelector(".sample08_R1").innerHTML = text;
+document.querySelector(".sample08_R1").innerHTML = text;
 
-    const str2 = "img01.jpg";
-    const text2 = str2.replace("img01.jpg", "img02.jpg");
+const str2 = "img01.jpg";
+const text2 = str2.replace("img01.jpg", "img02.jpg");
 
-    document.querySelector(".sample08_R2").innerHTML = text2;
+document.querySelector(".sample08_R2").innerHTML = text2;
 
-    const str3 = "010-3848-0398";
-    const text3 = str3.replace('-', '');
+const str3 = "010-3848-0398";
+const text3 = str3.replace('-', '');
 
-    document.querySelector(".sample08_R3").innerHTML = text3;
+document.querySelector(".sample08_R3").innerHTML = text3;
 
-    const str4 = "010-3848-0398";
-    const text4 = str4.replace(/-/g, ' ');
+const str4 = "010-3848-0398";
+const text4 = str4.replace(/-/g, ' ');
 
-    document.querySelector(".sample08_R4").innerHTML = text4;
+document.querySelector(".sample08_R4").innerHTML = text4;
 }
 </code></pre>
         </div>
@@ -1037,25 +1026,25 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const str = "자바스크립트(javascript) 공부";
+const str = "자바스크립트(javascript) 공부";
 
-    const text = str.split('');
-    document.querySelector(".sample09_R1").innerHTML = text;
+const text = str.split('');
+document.querySelector(".sample09_R1").innerHTML = text;
 
-    const text2 = str.split(' ');
-    document.querySelector(".sample09_R2").innerHTML = text2;
+const text2 = str.split(' ');
+document.querySelector(".sample09_R2").innerHTML = text2;
 
-    const text3 = str.split('').join('/');
-    document.querySelector(".sample09_R3").innerHTML = text3;
+const text3 = str.split('').join('/');
+document.querySelector(".sample09_R3").innerHTML = text3;
 
-    const str2 = "https://webstoryboy.co.kr/main.html?id=1234&name=webs"
+const str2 = "https://webstoryboy.co.kr/main.html?id=1234&name=webs"
 
-    const text4 = str2.split('&')
-    document.querySelector(".sample09_R4").innerHTML = text4;
+const text4 = str2.split('&')
+document.querySelector(".sample09_R4").innerHTML = text4;
 
-    const text5 = str2.split(/&|\?/);
-    document.querySelector(".sample09_R5").innerHTML = text5;
-    console.log(text5);
+const text5 = str2.split(/&|\?/);
+document.querySelector(".sample09_R5").innerHTML = text5;
+console.log(text5);
 }
 </code></pre>
         </div>
@@ -1136,45 +1125,45 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const num = "7";
-    const text = num.padStart(2, '0');
+const num = "7";
+const text = num.padStart(2, '0');
 
-    document.querySelector(".sample10_R1").innerHTML = text;
+document.querySelector(".sample10_R1").innerHTML = text;
 
-    const num2 = "456";
-    const text2 = num2.padStart(6, '123');
+const num2 = "456";
+const text2 = num2.padStart(6, '123');
 
-    document.querySelector(".sample10_R2").innerHTML = text2;
+document.querySelector(".sample10_R2").innerHTML = text2;
 
-    const num3 = "abc";
-    const text3 = num3.padStart(3, '0');
+const num3 = "abc";
+const text3 = num3.padStart(3, '0');
 
-    document.querySelector(".sample10_R3").innerHTML = text3;
+document.querySelector(".sample10_R3").innerHTML = text3;
 
-    const num4 = "abc";
-    const text4 = num4.padStart(6);
+const num4 = "abc";
+const text4 = num4.padStart(6);
 
-    document.querySelector(".sample10_R4").innerHTML = text4;
+document.querySelector(".sample10_R4").innerHTML = text4;
 
-    const num5 = "7";
-    const text5 = num5.padEnd(2, '0');
+const num5 = "7";
+const text5 = num5.padEnd(2, '0');
 
-    document.querySelector(".sample10_R5").innerHTML = text5;
+document.querySelector(".sample10_R5").innerHTML = text5;
 
-    const num6 = "456";
-    const text6 = num6.padEnd(6, '123');
+const num6 = "456";
+const text6 = num6.padEnd(6, '123');
 
-    document.querySelector(".sample10_R6").innerHTML = text6;
+document.querySelector(".sample10_R6").innerHTML = text6;
 
-    const num7 = "abc";
-    const text7 = num7.padEnd(3, '0');
+const num7 = "abc";
+const text7 = num7.padEnd(3, '0');
 
-    document.querySelector(".sample10_R7").innerHTML = text7;
+document.querySelector(".sample10_R7").innerHTML = text7;
 
-    const num8 = "abc";
-    const text8 = num8.padEnd(6);
+const num8 = "abc";
+const text8 = num8.padEnd(6);
 
-    document.querySelector(".sample10_R8").innerHTML = text8";
+document.querySelector(".sample10_R8").innerHTML = text8";
 }
 </code></pre>
         </div>
@@ -1184,8 +1173,7 @@
 
     <!-- sample11 -->
     <div id="sample11" class="sample">
-        <h2>11. 문자열 메서드 : encodeURI()/encodeURIComponent()/decodeURI()/decodeURIComponent : 문자열을 인코딩/디코딩 : 반환(문자열)<span
-                class="dot"></span></h2>
+        <h2>11. 문자열 메서드 : 문자열을 인코딩/디코딩 : 반환(문자열)<span class="dot"></span></h2>
         <div class="view">
             <table>
                 <colgroup>
@@ -1232,25 +1220,25 @@
         </div>
         <div class="code">
             <pre class="line-numbers"><code class="language-js">{
-    const text = "https://escape1004.github.io/dothome21/인덱스.html";
-    const url = encodeURI(text)
+const text = "https://escape1004.github.io/dothome21/인덱스.html";
+const url = encodeURI(text)
 
-    document.querySelector(".sample11_R1").innerHTML = url;
+document.querySelector(".sample11_R1").innerHTML = url;
 
-    const text2 = "https://escape1004.github.io/dothome21/인덱스.html";
-    const url2 = encodeURIComponent(text2)
+const text2 = "https://escape1004.github.io/dothome21/인덱스.html";
+const url2 = encodeURIComponent(text2)
 
-    document.querySelector(".sample11_R2").innerHTML = url2;
+document.querySelector(".sample11_R2").innerHTML = url2;
 
-    const text3 = "https://escape1004.github.io/dothome21/%EC%9D%B8%EB%8D%B1%EC%8A%A4.html";
-    const url3 = decodeURIComponent(text3)
+const text3 = "https://escape1004.github.io/dothome21/%EC%9D%B8%EB%8D%B1%EC%8A%A4.html";
+const url3 = decodeURIComponent(text3)
 
-    document.querySelector(".sample11_R3").innerHTML = url3;
+document.querySelector(".sample11_R3").innerHTML = url3;
 
-    const text4 = "https%3A%2F%2Fescape1004.github.io%2Fdothome21%2F%EC%9D%B8%EB%8D%B1%EC%8A%A4.html";
-    const url4 = decodeURIComponent(text4)
+const text4 = "https%3A%2F%2Fescape1004.github.io%2Fdothome21%2F%EC%9D%B8%EB%8D%B1%EC%8A%A4.html";
+const url4 = decodeURIComponent(text4)
 
-    document.querySelector(".sample11_R4").innerHTML = url4;
+document.querySelector(".sample11_R4").innerHTML = url4;
 }
 </code></pre>
         </div>
