@@ -38,6 +38,14 @@
             margin-bottom: 400px;
         }
 
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            padding-left: 26px;
+        }
+
         h1 {
             padding-top: 40px;
             padding-bottom: 20px;
@@ -199,11 +207,11 @@
 
         .view table th {
             /*
-                padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
-                padding: 13px 5px 11px;         상 / 좌우 / 하
-                padding: 13px 5px;              상하 / 좌우
-                padding: 13px;                  상항좌우
-                */
+                        padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
+                        padding: 13px 5px 11px;         상 / 좌우 / 하
+                        padding: 13px 5px;              상하 / 좌우
+                        padding: 13px;                  상항좌우
+                        */
             padding: 13px 5px 11px 5px;
         }
 
@@ -311,8 +319,8 @@
             }
 
             .view {
-                padding: 5px;
-                max-width: 800px;
+                border-right: 1px solid #E6E6E6;
+                border-left: 1px solid #E6E6E6;
                 overflow: auto;
             }
 
@@ -320,8 +328,20 @@
                 font-weight: normal;
             }
 
-            .view table td .result {
-                color: #000;
+            .view table {
+                border-left: 0px;
+                border-right: 0px;
+            }
+
+            .view table th,
+            .view table td {
+                white-space: nowrap;
+                font-size: 13px;
+            }
+
+            .view table td.result {
+                color: #bdbdbd;
+                background-color: #f1f1f1;
             }
         }
     </style>
@@ -358,36 +378,38 @@
         </ul>
     </nav>
 
+    <hr>
+    
     <h2 class="mt20">데이터 실행하기</h2>
-    <ul>
-        <li><a href=#sample01>01. 선언적 함수</a></li>
-        <li><a href=#sample02>02. 익명 함수</a></li>
-        <li><a href=#sample03>03. 매개변수 함수</a></li>
-        <li><a href=#sample04>04. 리턴값 함수</a></li>
-        <li><a href=#sample05>05. 화살표 함수 : 선언적 함수</a></li>
-        <li><a href=#sample06>06. 화살표 함수 : 익명 함수</a></li>
-        <li><a href=#sample07>07. 화살표 함수 : 리턴값 함수</a></li>
-        <li><a href=#sample08>08. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값</a></li>
-        <li><a href=#sample09>09. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략</a></li>
-        <li><a href=#sample10>10. 화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략</a></li>
-        <li><a href=#sample11>11. 화살표 함수 : 선언적 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략</a></li>
-        <li><a href=#sample12>12. 내부 함수</a></li>
-        <li><a href=#sample13>13. 즉시실행 함수</a></li>
-        <li><a href=#sample14>14. 파라미터 함수</a></li>
-        <li><a href=#sample15>15. 아규먼트 함수</a></li>
-        <li><a href=#sample16>16. 재귀 함수</a></li>
-        <li><a href=#sample17>17. 콜백 함수</a></li>
-        <li><a href=#sample18>18. 콜백 함수 : 반복문</a></li>
-        <li><a href=#sample19>19. 콜백 함수 : 동기/비동기</a></li>
-    </ul>
+    <ol>
+        <li><a href=#sample01>선언적 함수</a></li>
+        <li><a href=#sample02>익명 함수</a></li>
+        <li><a href=#sample03>매개변수 함수</a></li>
+        <li><a href=#sample04>리턴값 함수</a></li>
+        <li><a href=#sample05>화살표 함수 : 선언적 함수</a></li>
+        <li><a href=#sample06>화살표 함수 : 익명 함수</a></li>
+        <li><a href=#sample07>화살표 함수 : 리턴값 함수</a></li>
+        <li><a href=#sample08>화살표 함수 : 익명 함수 + 매개변수 + 리턴값</a></li>
+        <li><a href=#sample09>화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략</a></li>
+        <li><a href=#sample10>화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략</a></li>
+        <li><a href=#sample11>화살표 함수 : 선언적 함수 + 매개변수 + 리턴값 + 괄호 생략 + 리턴 생략</a></li>
+        <li><a href=#sample12>내부 함수</a></li>
+        <li><a href=#sample13>즉시실행 함수</a></li>
+        <li><a href=#sample14>파라미터 함수</a></li>
+        <li><a href=#sample15>아규먼트 함수</a></li>
+        <li><a href=#sample16>재귀 함수</a></li>
+        <li><a href=#sample17>콜백 함수</a></li>
+        <li><a href=#sample18>콜백 함수 : 반복문</a></li>
+        <li><a href=#sample19>콜백 함수 : 동기/비동기</a></li>
+    </ol>
 
     <h2 class="mt20">데이터 실행하기 : 메서드</h2>
-    <ul>
-        <li>01. setInterval()</li>
-        <li>02. clearInterval()</li>
-        <li>03. setTimeout()</li>
-        <li>04. clearTimeout()</li>
-    </ul>
+    <ol>
+        <li>setInterval()</li>
+        <li>clearInterval()</li>
+        <li>setTimeout()</li>
+        <li>clearTimeout()</li>
+    </ol>
 
     <hr>
 

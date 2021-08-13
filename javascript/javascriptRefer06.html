@@ -38,6 +38,14 @@
             margin-bottom: 400px;
         }
 
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            padding-left: 26px;
+        }
+
         h1 {
             padding-top: 40px;
             padding-bottom: 20px;
@@ -199,11 +207,11 @@
 
         .view table th {
             /*
-                padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
-                padding: 13px 5px 11px;         상 / 좌우 / 하
-                padding: 13px 5px;              상하 / 좌우
-                padding: 13px;                  상항좌우
-                */
+                        padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
+                        padding: 13px 5px 11px;         상 / 좌우 / 하
+                        padding: 13px 5px;              상하 / 좌우
+                        padding: 13px;                  상항좌우
+                        */
             padding: 13px 5px 11px 5px;
         }
 
@@ -311,8 +319,8 @@
             }
 
             .view {
-                padding: 5px;
-                max-width: 800px;
+                border-right: 1px solid #E6E6E6;
+                border-left: 1px solid #E6E6E6;
                 overflow: auto;
             }
 
@@ -320,8 +328,20 @@
                 font-weight: normal;
             }
 
-            .view table td .result {
-                color: #000;
+            .view table {
+                border-left: 0px;
+                border-right: 0px;
+            }
+
+            .view table th,
+            .view table td {
+                white-space: nowrap;
+                font-size: 13px;
+            }
+
+            .view table td.result {
+                color: #bdbdbd;
+                background-color: #f1f1f1;
             }
         }
     </style>
@@ -358,30 +378,32 @@
         </ul>
     </nav>
 
+    <hr>
+    
     <h2 class="mt20">배열 객체</h2>
-    <ul>
-        <li><a href=#sample01>01. 배열 메서드 : length : 배열 길이 구하기 : 반환(숫자)</a></li>
-        <li><a href=#sample02>02. 배열 메서드 : join() : 배열 요소 결합하기 : 반환(문자열)</a></li>
-        <li><a href=#sample03>03. 배열 메서드 : push() : 배열 마지막 요소에 추가하기 : 반환(숫자)</a></li>
-        <li><a href=#sample03>03. 배열 메서드 : unshift() : 배열 처음 요소에 추가하기 : 반환(숫자)</a></li>
-        <li><a href=#sample04>04. 배열 메서드 : shift() : 배열 첫 요소 삭제하기 : 반환(삭제된 요소)</a></li>
-        <li><a href=#sample04>04. 배열 메서드 : pop() : 배열 마지막 요소 삭제하기 : 반환(삭제된 요소)</a></li>
-        <li><a href=#sample05>05. 배열 메서드 : indexOf() : 배열 요소 검색하기 : 반환(숫자)</a></li>
-        <li><a href=#sample05>05. 배열 메서드 : lastIndexOf() : 배열 요소 끝에서 검색하기 : 반환(숫자)</a></li>
-        <li><a href=#sample05>05. 배열 메서드 : includes() : 배열 요소 검색하기 : 반환(불린)</a></li>
-        <li><a href=#sample06>06. 배열 메서드 : reverse() : 배열 요소의 순서를 반대로 정렬할 때 : 반환(불린)</a></li>
-        <li><a href=#sample06>06. 배열 메서드 : sort() : 배열 요소의 순서를 정렬할 때 : 반환(배열)</a></li>
-        <li><a href=#sample07>07. 배열 메서드 : concat() : 배열 요소를 결합할 때 : 반환(배열)</a></li>
-        <li><a href=#sample08>08. 배열 메서드 : slice() : 배열 요소를 다른 요소로 변경할 때 : 반환(배열)</a></li>
-        <li><a href=#sample09>09. 배열 메서드 : splice() : 배열 요소를 다른 요소로 변경할 때 : 반환(배열)</a></li>
-        <li><a href=#sample10>10. 배열 메서드 : find() : 배열 요소 검색하기 : 반환(요소)</a></li>
-        <li><a href=#sample10>10. 배열 메서드 : findIndex() : 배열 첫 요소 검색하기 : 반환(요소)</a></li>
-        <li><a href=#sample11>11. 배열 메서드 : filter() : 조건에 만족하는 배열 요소 검색하기 : 반환(배열)</a></li>
-        <li><a href=#sample12>12. 배열 메서드 : map() : 배열 요소를 추출하여 새로운 배열로 만들기 : 반환(배열)</a></li>
-        <li><a href=#sample13>13. 배열 메서드 : reduce() : 배열 요소를 하나로 만들기 : 반환(결과값)</a></li>
-        <li><a href=#sample13>13. 배열 메서드 : reduceRight() : 배열 요소를 하나로 만들기 : 반환(결과값)</a></li>
-        <li><a href=#sample14>14. 배열 메서드 : Array.from() : 배열로 변환하기 : 반환(배열)</a></li>
-    </ul>
+    <ol>
+        <li><a href=#sample01>배열 메서드 : length : 배열 길이 구하기 : 반환(숫자)</a></li>
+        <li><a href=#sample02>배열 메서드 : join() : 배열 요소 결합하기 : 반환(문자열)</a></li>
+        <li><a href=#sample03>배열 메서드 : push() : 배열 마지막 요소에 추가하기 : 반환(숫자)</a></li>
+        <li><a href=#sample03>배열 메서드 : unshift() : 배열 처음 요소에 추가하기 : 반환(숫자)</a></li>
+        <li><a href=#sample04>배열 메서드 : shift() : 배열 첫 요소 삭제하기 : 반환(삭제된 요소)</a></li>
+        <li><a href=#sample04>배열 메서드 : pop() : 배열 마지막 요소 삭제하기 : 반환(삭제된 요소)</a></li>
+        <li><a href=#sample05>배열 메서드 : indexOf() : 배열 요소 검색하기 : 반환(숫자)</a></li>
+        <li><a href=#sample05>배열 메서드 : lastIndexOf() : 배열 요소 끝에서 검색하기 : 반환(숫자)</a></li>
+        <li><a href=#sample05>배열 메서드 : includes() : 배열 요소 검색하기 : 반환(불린)</a></li>
+        <li><a href=#sample06>배열 메서드 : reverse() : 배열 요소의 순서를 반대로 정렬할 때 : 반환(불린)</a></li>
+        <li><a href=#sample06>배열 메서드 : sort() : 배열 요소의 순서를 정렬할 때 : 반환(배열)</a></li>
+        <li><a href=#sample07>배열 메서드 : concat() : 배열 요소를 결합할 때 : 반환(배열)</a></li>
+        <li><a href=#sample08>배열 메서드 : slice() : 배열 요소를 다른 요소로 변경할 때 : 반환(배열)</a></li>
+        <li><a href=#sample09>배열 메서드 : splice() : 배열 요소를 다른 요소로 변경할 때 : 반환(배열)</a></li>
+        <li><a href=#sample10>배열 메서드 : find() : 배열 요소 검색하기 : 반환(요소)</a></li>
+        <li><a href=#sample10>배열 메서드 : findIndex() : 배열 첫 요소 검색하기 : 반환(요소)</a></li>
+        <li><a href=#sample11>배열 메서드 : filter() : 조건에 만족하는 배열 요소 검색하기 : 반환(배열)</a></li>
+        <li><a href=#sample12>배열 메서드 : map() : 배열 요소를 추출하여 새로운 배열로 만들기 : 반환(배열)</a></li>
+        <li><a href=#sample13>배열 메서드 : reduce() : 배열 요소를 하나로 만들기 : 반환(결과값)</a></li>
+        <li><a href=#sample13>배열 메서드 : reduceRight() : 배열 요소를 하나로 만들기 : 반환(결과값)</a></li>
+        <li><a href=#sample14>배열 메서드 : Array.from() : 배열로 변환하기 : 반환(배열)</a></li>
+    </ol>
 
     <hr>
 

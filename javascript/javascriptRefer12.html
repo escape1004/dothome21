@@ -38,6 +38,14 @@
             margin-bottom: 400px;
         }
 
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            padding-left: 26px;
+        }
+
         h1 {
             padding-top: 40px;
             padding-bottom: 20px;
@@ -199,11 +207,11 @@
 
         .view table th {
             /*
-                padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
-                padding: 13px 5px 11px;         상 / 좌우 / 하
-                padding: 13px 5px;              상하 / 좌우
-                padding: 13px;                  상항좌우
-                */
+                        padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
+                        padding: 13px 5px 11px;         상 / 좌우 / 하
+                        padding: 13px 5px;              상하 / 좌우
+                        padding: 13px;                  상항좌우
+                        */
             padding: 13px 5px 11px 5px;
         }
 
@@ -311,8 +319,8 @@
             }
 
             .view {
-                padding: 5px;
-                max-width: 800px;
+                border-right: 1px solid #E6E6E6;
+                border-left: 1px solid #E6E6E6;
                 overflow: auto;
             }
 
@@ -320,8 +328,20 @@
                 font-weight: normal;
             }
 
-            .view table td .result {
-                color: #000;
+            .view table {
+                border-left: 0px;
+                border-right: 0px;
+            }
+
+            .view table th,
+            .view table td {
+                white-space: nowrap;
+                font-size: 13px;
+            }
+
+            .view table td.result {
+                color: #bdbdbd;
+                background-color: #f1f1f1;
             }
         }
     </style>
@@ -358,24 +378,30 @@
         </ul>
     </nav>
 
+    <hr>
+    
     <h2 class="mt20">문자열 객체 샘플</h2>
-    <ul>
-        <li><a href="javascriptSample01.html">01. CSS 속성 첫 글자만 검색하기</a> <a class="sam" href="javascriptRefer05.html">charAt()</a></li>
-        <li><a href="javascriptSample02.html">02. CSS 속성 검색하면 설명 보여주기</a> <a class="sam" href="javascriptRefer05.html">find()</a></li>
-        <li><a href="javascriptSample03.html">03. CSS 속성 정렬하기</a> <a class="sam" href="javascriptRefer06.html">sort()</a></li>
-    </ul>
+    <ol>
+        <li><a href="javascriptSample01.html">CSS 속성 첫 글자만 검색하기</a> <a class="sam"
+                href="javascriptRefer05.html">charAt()</a></li>
+        <li><a href="javascriptSample02.html">CSS 속성 검색하면 설명 보여주기</a> <a class="sam"
+                href="javascriptRefer05.html">find()</a></li>
+        <li><a href="javascriptSample03.html">CSS 속성 정렬하기</a> <a class="sam"
+                href="javascriptRefer06.html">sort()</a></li>
+    </ol>
 
     <h2 class="mt20">샘플</h2>
-    <ul>
-        <li><a href="javascriptSample603-1.html">01. HTML 속성 첫 글자만 검색하기</a></li>
-        <li><a href="javascriptSample603-2.html">02. HTML 속성 검색하면 설명 보여주기</a></li>
-        <li><a href="javascriptSample603-3.html">03. HTML 속성 정렬하기</a></li>
-    </ul>
+    <ol>
+        <li><a href="javascriptSample603-1.html">HTML 속성 첫 글자만 검색하기</a></li>
+        <li><a href="javascriptSample603-2.html">HTML 속성 검색하면 설명 보여주기</a></li>
+        <li><a href="javascriptSample603-3.html">HTML 속성 정렬하기</a></li>
+    </ol>
 
     <h2 class="mt20">날짜 객체 샘플</h2>
-    <ul>
-        <li><a href="javascriptSample04.html">01. 시계 만들기</a> <a class="sam" href="javascriptRefer07.html">getHours()</a></li>
-    </ul>
+    <ol>
+        <li><a href="javascriptSample04.html">시계 만들기</a> <a class="sam" href="javascriptRefer07.html">getHours()</a>
+        </li>
+    </ol>
 
     <hr>
 

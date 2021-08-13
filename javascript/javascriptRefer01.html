@@ -38,6 +38,14 @@
             margin-bottom: 400px;
         }
 
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            padding-left: 26px;
+        }
+
         h1 {
             padding-top: 40px;
             padding-bottom: 20px;
@@ -199,11 +207,11 @@
 
         .view table th {
             /*
-                padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
-                padding: 13px 5px 11px;         상 / 좌우 / 하
-                padding: 13px 5px;              상하 / 좌우
-                padding: 13px;                  상항좌우
-                */
+                    padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
+                    padding: 13px 5px 11px;         상 / 좌우 / 하
+                    padding: 13px 5px;              상하 / 좌우
+                    padding: 13px;                  상항좌우
+                    */
             padding: 13px 5px 11px 5px;
         }
 
@@ -293,7 +301,7 @@
             }
 
             .list a {
-                font-size: 12px;
+                font-size: 13px;
             }
 
             .sample h2 {
@@ -311,8 +319,8 @@
             }
 
             .view {
-                padding: 5px;
-                max-width: 800px;
+                border-right: 1px solid #E6E6E6;
+                border-left: 1px solid #E6E6E6;
                 overflow: auto;
             }
 
@@ -320,8 +328,20 @@
                 font-weight: normal;
             }
 
-            .view table td .result {
-                color: #000;
+            .view table {
+                border-left: 0px;
+                border-right: 0px;
+            }
+
+            .view table th,
+            .view table td {
+                white-space: nowrap;
+                font-size: 13px;
+            }
+
+            .view table td.result {
+                color: #bdbdbd;
+                background-color: #f1f1f1;
             }
         }
     </style>
@@ -358,32 +378,34 @@
         </ul>
     </nav>
 
+    <hr>
+    
     <h2 class="mt20">데이터 저장하기</h2>
-    <ul class="list">
-        <li><a href=#sample01>01. 변수 : 데이터 저장</a></li>
-        <li><a href=#sample02>02. 변수 : 데이터 저장 + 데이터 변경</a></li>
-        <li><a href=#sample03>03. 변수 : 데이터 저장 + 데이터 변경 + 데이터 추가</a></li>
-        <li><a href=#sample04>04. 상수 : 데이터 저장(변하지 않음)</a></li>
-        <li><a href=#sample05>05. 배열 : 데이터 저장(여러개) : 표현 방법1</a></li>
-        <li><a href=#sample06>06. 배열 : 데이터 저장(여러개) : 표현 방법2</a></li>
-        <li><a href=#sample07>07. 배열 : 데이터 저장(여러개) : 표현 방법3</a></li>
-        <li><a href=#sample08>08. 배열 : 데이터 저장(여러개) : 표현 방법4</a></li>
-        <li><a href=#sample09>09. 객체 : 데이터 저장(키와 값) : 표현 방법1 : 배열 스타일</a></li>
-        <li><a href=#sample10>10. 객체 : 데이터 저장(키와 값) : 표현 방법2 : 객체 스타일</a></li>
-        <li><a href=#sample11>11. 객체 : 데이터 저장(키와 값) : 표현 방법3</a></li>
-        <li><a href=#sample12>12. 객체 : 데이터 저장(키와 값) : 표현 방법4</a></li>
-        <li><a href=#sample13>13. 객체 : 데이터 저장(키와 값) : 표현 방법5 : 배열 속에 객체</a></li>
-        <li><a href=#sample14>14. 객체 : 데이터 저장(키와 값) : 표현 방법6 : 객체 속에 배열</a></li>
-        <li><a href=#sample15>15. 객체 : 데이터 저장(키와 값) : 표현 방법7 : 객체 속에 변수</a></li>
-        <li><a href=#sample16>16. 객체 : 데이터 저장(키와 값) : 표현 방법8 : 객체 속에 함수</a></li>
-    </ul>
+    <ol class="list">
+        <li><a href=#sample01>변수 : 데이터 저장</a></li>
+        <li><a href=#sample02>변수 : 데이터 저장 + 데이터 변경</a></li>
+        <li><a href=#sample03>변수 : 데이터 저장 + 데이터 변경 + 데이터 추가</a></li>
+        <li><a href=#sample04>상수 : 데이터 저장(변하지 않음)</a></li>
+        <li><a href=#sample05>배열 : 데이터 저장(여러개) : 표현 방법1</a></li>
+        <li><a href=#sample06>배열 : 데이터 저장(여러개) : 표현 방법2</a></li>
+        <li><a href=#sample07>배열 : 데이터 저장(여러개) : 표현 방법3</a></li>
+        <li><a href=#sample08>배열 : 데이터 저장(여러개) : 표현 방법4</a></li>
+        <li><a href=#sample09>객체 : 데이터 저장(키와 값) : 표현 방법1 : 배열 스타일</a></li>
+        <li><a href=#sample10>객체 : 데이터 저장(키와 값) : 표현 방법2 : 객체 스타일</a></li>
+        <li><a href=#sample11>객체 : 데이터 저장(키와 값) : 표현 방법3</a></li>
+        <li><a href=#sample12>객체 : 데이터 저장(키와 값) : 표현 방법4</a></li>
+        <li><a href=#sample13>객체 : 데이터 저장(키와 값) : 표현 방법5 : 배열 속에 객체</a></li>
+        <li><a href=#sample14>객체 : 데이터 저장(키와 값) : 표현 방법6 : 객체 속에 배열</a></li>
+        <li><a href=#sample15>객체 : 데이터 저장(키와 값) : 표현 방법7 : 객체 속에 변수</a></li>
+        <li><a href=#sample16>객체 : 데이터 저장(키와 값) : 표현 방법8 : 객체 속에 함수</a></li>
+    </ol>
 
     <h2 class="mt20">추가</h2>
-    <ul class="list">
-        <li><a href=#sample17>01. 변수의 종류 : 변수 (전역/지역)</a></li>
-        <li><a href=#sample18>02. 변수의 변환 : 형 변환</a></li>
-        <li><a href=#sample19>03. 변수의 유형</a></li>
-    </ul>
+    <ol class="list">
+        <li><a href=#sample17>변수의 종류 : 변수 (전역/지역)</a></li>
+        <li><a href=#sample18>변수의 변환 : 형 변환</a></li>
+        <li><a href=#sample19>변수의 유형</a></li>
+    </ol>
 
     <hr>
 

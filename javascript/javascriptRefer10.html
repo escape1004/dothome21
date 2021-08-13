@@ -38,6 +38,14 @@
             margin-bottom: 400px;
         }
 
+        ul {
+            list-style: none;
+        }
+
+        ol {
+            padding-left: 26px;
+        }
+
         h1 {
             padding-top: 40px;
             padding-bottom: 20px;
@@ -199,11 +207,11 @@
 
         .view table th {
             /*
-                padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
-                padding: 13px 5px 11px;         상 / 좌우 / 하
-                padding: 13px 5px;              상하 / 좌우
-                padding: 13px;                  상항좌우
-                */
+                        padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
+                        padding: 13px 5px 11px;         상 / 좌우 / 하
+                        padding: 13px 5px;              상하 / 좌우
+                        padding: 13px;                  상항좌우
+                        */
             padding: 13px 5px 11px 5px;
         }
 
@@ -311,8 +319,8 @@
             }
 
             .view {
-                padding: 5px;
-                max-width: 800px;
+                border-right: 1px solid #E6E6E6;
+                border-left: 1px solid #E6E6E6;
                 overflow: auto;
             }
 
@@ -320,8 +328,20 @@
                 font-weight: normal;
             }
 
-            .view table td .result {
-                color: #000;
+            .view table {
+                border-left: 0px;
+                border-right: 0px;
+            }
+
+            .view table th,
+            .view table td {
+                white-space: nowrap;
+                font-size: 13px;
+            }
+
+            .view table td.result {
+                color: #bdbdbd;
+                background-color: #f1f1f1;
             }
         }
     </style>
@@ -358,10 +378,12 @@
         </ul>
     </nav>
 
+    <hr>
+    
     <h2 class="mt20">요소 객체</h2>
-    <ul>
-        <li><a href=#sample01>01.</a></li>
-    </ul>
+    <ol>
+        <li><a href=#sample01></a></li>
+    </ol>
 
     <hr>
 
