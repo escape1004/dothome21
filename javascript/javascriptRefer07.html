@@ -29,13 +29,12 @@
         * {
             margin: 0;
             padding: 0;
-            font-family: 'NEXON Lv1 Gothic OTF';
-            line-height: 1.6;
+            box-sizing: border-box;
         }
 
         body {
-            padding: 5%;
-            margin-bottom: 400px;
+            padding: 2%;
+            font-family: 'NEXON Lv1 Gothic OTF';
         }
 
         ul {
@@ -46,50 +45,81 @@
             padding-left: 26px;
         }
 
-        h1 {
-            padding-top: 40px;
-            padding-bottom: 20px;
-        }
-
-        h1 a {
-            font-family: 'TmonMonsori';
+        a {
+            text-decoration: none;
         }
 
         hr {
             margin: 5% 0;
             border-style: dashed;
-            border-color: #E6E6E6;
+            border-color: #e6e6e6;
             border-width: 0px;
             border-bottom-width: 1px;
         }
 
-        img {
-            vertical-align: top;
-            border-radius: 5px;
-            margin: 5px;
+        .title {
+            border-top: 3px solid #0e43f1;
+            border-bottom: 1px solid #0e43f1;
+            margin-bottom: 20px;
         }
 
-        ul {
-            list-style: none;
+        .title h1 a {
+            font-family: 'TmonMonsori';
+            color: #0e43f1;
+            font-size: 50px;
+            display: inline-block;
+            padding: 15px 0 12px;
+            text-transform: uppercase;
         }
 
-        a {
-            text-decoration: none;
-            color: #333;
+        .menu li {
+            display: inline;
+        }
+
+        .menu li a {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            color: #0e43f1;
+            border: 1px dashed #0e43f1;
+            padding: 10px 30px;
+            display: inline-block;
+            border-radius: 50px;
+            font-size: 16px;
+            margin: 4px 1px;
+            box-shadow: inset 0 0 0 #0e43f1;
+            transition: all 0.4s;
+        }
+
+        .menu li a:hover {
+            box-shadow: inset 0 -100px 0 #0e43f1;
+            color: #fff;
+            border-style: solid;
+        }
+
+        .menu li.active a {
+            background: #0e43f1;
+            color: #fff;
+        }
+
+        .list li a {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            font-size: 14px;
+            line-height: 1.6;
+            color: #000;
         }
 
         .sample {
-            border: 1px solid #E6E6E6;
             border-radius: 5px;
+            font-family: 'NEXON Lv1 Gothic OTF';
         }
 
         .sample h2 {
             position: relative;
             font-size: 16px;
-            background-color: #F2F2F2;
+            line-height: 1.4;
+            background-color: #f2f2f2;
             padding: 15px;
-            border-bottom: 1px solid #E6E6E6;
             border-radius: 5px 5px 0 0;
+            font-weight: normal;
         }
 
         .sample h2 .dot {
@@ -125,94 +155,20 @@
             top: 0;
         }
 
-        .sample .ex {
-            padding: 20px;
-        }
-
-        .sample .ex .text {
-            margin: 10px 0;
-        }
-
-        .sample .re {
-            padding: 20px;
-            border-top: 1px solid #E6E6E6;
-        }
-
-        .sample .re a {
-            color: #333;
-            text-decoration: none;
-            border: 1px solid #333;
-            border-radius: 30px;
-            padding: 10px 30px;
-            margin: 5px;
-            display: inline-block;
-        }
-
-        .sample .re a:hover {
-            background-color: #000;
-            color: #fff;
-        }
-
-        .sample .problem {
-            padding: 25px;
-            border-bottom: 1px solid #E6E6E6;
-            line-height: 1.6;
-        }
-
         .sample pre {
             margin: 0 !important;
-            border-radius: 0;
+            border-radius: 0 0 5px 5px;
         }
 
-        .sample .desc {
-            padding: 25px;
-            border-bottom: 1px solid #E6E6E6;
-        }
-
-        .sample .desc dt {
-            padding: 3px 0;
-            margin-bottom: 6px;
-        }
-
-        .sample .desc dd {
-            padding: 3px 0 16px 0;
-            line-height: 1.6;
-        }
-
-        .sample .sam {
-            padding: 25px;
-            border-bottom: 1px solid #E6E6E6;
-        }
-
-        .sample .sam dt {
-            padding: 3px 0;
-            margin-bottom: 6px;
-        }
-
-        .sample .sam dd {
-            padding: 3px 0 16px 0;
-        }
-
-        .mt20 {
-            margin-top: 20px;
+        .sample code {
+            font-family: 'NEXON Lv1 Gothic OTF';
         }
 
         .view table {
-            width: 100%;
             border: 1px solid #e6e6e6;
+            width: 100%;
             text-align: center;
             vertical-align: middle;
-            border-collapse: collapse;
-        }
-
-        .view table th {
-            /*
-                        padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
-                        padding: 13px 5px 11px;         상 / 좌우 / 하
-                        padding: 13px 5px;              상하 / 좌우
-                        padding: 13px;                  상항좌우
-                        */
-            padding: 13px 5px 11px 5px;
         }
 
         .view table td {
@@ -220,10 +176,17 @@
             padding: 13px 5px 11px 5px;
         }
 
+        .view table th {
+            padding: 13px 5px 11px 5px;
+            border-bottom: 1px solid #e6e6e6;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
         .view table td.result {
-            color: #fff;
             transition: all 0.3s;
-            cursor: zoom-in;
+            cursor: pointer;
+            color: #fff;
         }
 
         .view table td.result:hover {
@@ -231,83 +194,50 @@
             background-color: #f5f5f5;
         }
 
-        .sam {
-            background-color: #000;
-            color: #fff;
-            border-radius: 30px;
-            padding: 0.1em 1.5em;
-            font-size: 0.8em;
-        }
-
-        .page {
-            position: absolute;
-            right: 20px;
-            top: 15px;
-        }
-
-        .page li {
-            display: inline-block;
-            list-style: none;
-        }
-
-        .page li a {
-            text-decoration: none;
-            color: #222;
-        }
-
-        .page li a:hover {
-            color: #098a4c;
-        }
-
-        .menu li {
-            display: inline;
-        }
-
-        .menu li a {
-            font-family: 'NEXON Lv1 Gothic OTF';
-            color: #000;
-            border: 1px dashed #000;
-            padding: 10px 30px;
-            display: inline-block;
-            border-radius: 50px;
-            font-size: 16px;
-            margin: 4px 1px;
-            box-shadow: inset 0 0 0 #000;
-            transition: all 0.4s;
-        }
-
-        .menu li a:hover {
-            box-shadow: inset 0 -100px #000;
-            color: white;
-            border-style: solid;
-        }
-
         @media (max-width: 800px) {
             body {
+                padding: 5%;
                 font-size: 13px;
             }
 
-            h1 {
+            #wrap {
+                margin: 0;
+                border-width: 6px;
+                border-radius: 18px;
+            }
+
+            #contents {
+                border-width: 6px;
+            }
+
+            .title {
+                border-top-width: 2px;
+            }
+
+            .title h1 {
+                text-align: center;
+            }
+
+            .title h1 a {
+                font-size: 40px;
+            }
+
+            .menu {
                 text-align: center;
             }
 
             .menu li a {
-                font-size: 12px;
+                font-size: 13px;
                 padding: 5px 20px;
             }
 
-            .list li {
-                line-height: 1.2;
-            }
-
-            .list a {
-                font-size: 12px;
+            .list li a {
+                font-size: 13px;
             }
 
             .sample h2 {
-                font-size: 14px;
-                font-weight: normal;
-                padding: 7px 5px 5px;
+                font-size: 13px;
+                padding: 12px 10px 10px;
             }
 
             .sample h2 .dot {
@@ -315,17 +245,17 @@
             }
 
             .sample pre {
-                font-size: 14px;
+                line-height: 1.2 !important;
+            }
+
+            .sample code {
+                font-size: 13px;
             }
 
             .view {
-                border-right: 1px solid #E6E6E6;
-                border-left: 1px solid #E6E6E6;
+                border-right: 1px solid #e6e6e6;
+                border-left: 1px solid #e6e6e6;
                 overflow: auto;
-            }
-
-            .view th {
-                font-weight: normal;
             }
 
             .view table {
@@ -341,136 +271,141 @@
 
             .view table td.result {
                 color: #bdbdbd;
-                background-color: #f1f1f1;
+                background: #f1f1f1;
             }
         }
     </style>
 </head>
 
 <body>
-    <h1><a href="index.html">Javascript 레퍼런스</a></h1>
+    <div id="wrap">
+        <main id="contents">
+            <div class="title">
+                <h1><a href="index.html">날짜 객체</a></h1>
+            </div>
 
-    <ul class="page">
-        <li><a href="../refer-html/index.html">HTML</a></li>
-        <li><a href="../refer-css/index.html">CSS</a></li>
-        <li><a href="../javascript/index.html">JAVASCRIPT</a></li>
-    </ul>
+            <!-- <ul class="page">
+                <li><a href="../refer-html/index.html">HTML</a></li>
+                <li><a href="../refer-css/index.html">CSS</a></li>
+                <li><a href="../javascript/index.html">JAVASCRIPT</a></li>
+            </ul> -->
 
-    <nav class="menu">
-        <ul>
-            <li><a href="javascriptRefer01.html">데이터 저장하기</a></li>
-            <li><a href="javascriptRefer02.html">데이터 불러오기</a></li>
-            <li><a href="javascriptRefer03.html">데이터 실행하기</a></li>
-            <li><a href="javascriptRefer04.html">데이터 제어하기</a></li>
-        </ul>
-        <ul>
-            <li><a href="javascriptRefer05.html">문자열 객체</a></li>
-            <li><a href="javascriptRefer06.html">배열 객체</a></li>
-            <li><a href="javascriptRefer07.html">날짜 객체</a></li>
-            <li><a href="javascriptRefer08.html">수학 객체</a></li>
-            <li><a href="javascriptRefer09.html">브라우저 객체</a></li>
-            <li><a href="javascriptRefer10.html">요소 객체</a></li>
-            <li><a href="javascriptRefer11.html">이벤트 객체</a></li>
-        </ul>
-        <ul>
-            <li><a href="javascriptRefer12.html">샘플</a></li>
-            <li><a href="javascriptRefer13.html">알고리즘</a></li>
-        </ul>
-    </nav>
+            <nav class="menu">
+                <ul>
+                    <li><a href="javascriptRefer01.html">데이터 저장하기</a></li>
+                    <li><a href="javascriptRefer02.html">데이터 불러오기</a></li>
+                    <li><a href="javascriptRefer03.html">데이터 실행하기</a></li>
+                    <li><a href="javascriptRefer04.html">데이터 제어하기</a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascriptRefer05.html">문자열 객체</a></li>
+                    <li><a href="javascriptRefer06.html">배열 객체</a></li>
+                    <li class="active"><a href="javascriptRefer07.html">날짜 객체</a></li>
+                    <li><a href="javascriptRefer08.html">수학 객체</a></li>
+                    <li><a href="javascriptRefer09.html">브라우저 객체</a></li>
+                    <li><a href="javascriptRefer10.html">요소 객체</a></li>
+                    <li><a href="javascriptRefer11.html">이벤트 객체</a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascriptRefer12.html">샘플</a></li>
+                    <li><a href="javascriptRefer13.html">알고리즘</a></li>
+                </ul>
+            </nav>
 
-    <hr>
-    
-    <h2 class="mt20">날짜 객체</h2>
-    <ol>
-        <li><a href=#sample01>날짜 메서드 : getFullYear() : 연도 불러오기</a></li>
-        <li><a href=#sample01>날짜 메서드 : getMonth() : 월 불러오기</a></li>
-        <li><a href=#sample01>날짜 메서드 : getDate() : 일 불러오기</a></li>
-        <li><a href=#sample01>날짜 메서드 : getHours() : 시간 불러오기</a></li>
-        <li><a href=#sample01>날짜 메서드 : getMinutes() : 분 불러오기</a></li>
-        <li><a href=#sample01>날짜 메서드 : getSeconds() : 초 불러오기</a></li>
-        <li><a href=#sample01>날짜 메서드 : getMilliSeconds() : 밀리초 불러오기</a></li>
-        <li><a href=#sample01>날짜 메서드 : getDay() : 요일 불러오기</a></li>
-        <li><a href=#sample02>날짜 메서드 : String() : 현재 날짜와 시각 문자열 불러오기</a></li>
-        <li><a href=#sample02>날짜 메서드 : toLocaleDateString() : 현재 날짜를 문자열 불러오기</a></li>
-        <li><a href=#sample02>날짜 메서드 : toLocaleTimeString() : 현재 시각을 문자열 불러오기</a></li>
-        <li><a href=#sample03>날짜 메서드 : Date.parse() : 날짜 문자열 타임스탬프 불러오기</a></li>
-    </ol>
+            <hr>
 
-    <hr>
+            <div class="list">
+                <ol>
+                    <li><a href=#sample01>날짜 메서드 : getFullYear() : 연도 불러오기</a></li>
+                    <li><a href=#sample01>날짜 메서드 : getMonth() : 월 불러오기</a></li>
+                    <li><a href=#sample01>날짜 메서드 : getDate() : 일 불러오기</a></li>
+                    <li><a href=#sample01>날짜 메서드 : getHours() : 시간 불러오기</a></li>
+                    <li><a href=#sample01>날짜 메서드 : getMinutes() : 분 불러오기</a></li>
+                    <li><a href=#sample01>날짜 메서드 : getSeconds() : 초 불러오기</a></li>
+                    <li><a href=#sample01>날짜 메서드 : getMilliSeconds() : 밀리초 불러오기</a></li>
+                    <li><a href=#sample01>날짜 메서드 : getDay() : 요일 불러오기</a></li>
+                    <li><a href=#sample02>날짜 메서드 : String() : 현재 날짜와 시각 문자열 불러오기</a></li>
+                    <li><a href=#sample02>날짜 메서드 : toLocaleDateString() : 현재 날짜를 문자열 불러오기</a></li>
+                    <li><a href=#sample02>날짜 메서드 : toLocaleTimeString() : 현재 시각을 문자열 불러오기</a></li>
+                    <li><a href=#sample03>날짜 메서드 : Date.parse() : 날짜 문자열 타임스탬프 불러오기</a></li>
+                </ol>
+            </div>
 
-    <!-- sample01 -->
-    <div id="sample01" class="sample">
-        <h2>01. 날짜 불러오기<span class="dot"></span></h2>
-        <div class="view">
-            <table>
-                <colgroup>
-                    <col style="width: 4%">
-                    <col style="width: 22%">
-                    <col style="width: 22%">
-                    <col style="width: 52%">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>기본값</th>
-                        <th>메서드</th>
-                        <th>결과값</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="sample01_N1"></td>
-                        <td class="sample01_Q1"></td>
-                        <td class="sample01_M1"></td>
-                        <td class="sample01_R1"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample01_N2"></td>
-                        <td class="sample01_Q2"></td>
-                        <td class="sample01_M2"></td>
-                        <td class="sample01_R2"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample01_N3"></td>
-                        <td class="sample01_Q3"></td>
-                        <td class="sample01_M3"></td>
-                        <td class="sample01_R3"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample01_N4"></td>
-                        <td class="sample01_Q4"></td>
-                        <td class="sample01_M4"></td>
-                        <td class="sample01_R4"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample01_N5"></td>
-                        <td class="sample01_Q5"></td>
-                        <td class="sample01_M5"></td>
-                        <td class="sample01_R5"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample01_N6"></td>
-                        <td class="sample01_Q6"></td>
-                        <td class="sample01_M6"></td>
-                        <td class="sample01_R6"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample01_N7"></td>
-                        <td class="sample01_Q7"></td>
-                        <td class="sample01_M7"></td>
-                        <td class="sample01_R7"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample01_N8"></td>
-                        <td class="sample01_Q8"></td>
-                        <td class="sample01_M8"></td>
-                        <td class="sample01_R8"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <hr>
+
+            <!-- sample01 -->
+            <div id="sample01" class="sample">
+                <h2>01. 날짜 불러오기<span class="dot"></span></h2>
+                <div class="view">
+                    <table>
+                        <colgroup>
+                            <col style="width: 4%">
+                            <col style="width: 22%">
+                            <col style="width: 22%">
+                            <col style="width: 52%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>기본값</th>
+                                <th>메서드</th>
+                                <th>결과값</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="sample01_N1"></td>
+                                <td class="sample01_Q1"></td>
+                                <td class="sample01_M1"></td>
+                                <td class="sample01_R1"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample01_N2"></td>
+                                <td class="sample01_Q2"></td>
+                                <td class="sample01_M2"></td>
+                                <td class="sample01_R2"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample01_N3"></td>
+                                <td class="sample01_Q3"></td>
+                                <td class="sample01_M3"></td>
+                                <td class="sample01_R3"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample01_N4"></td>
+                                <td class="sample01_Q4"></td>
+                                <td class="sample01_M4"></td>
+                                <td class="sample01_R4"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample01_N5"></td>
+                                <td class="sample01_Q5"></td>
+                                <td class="sample01_M5"></td>
+                                <td class="sample01_R5"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample01_N6"></td>
+                                <td class="sample01_Q6"></td>
+                                <td class="sample01_M6"></td>
+                                <td class="sample01_R6"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample01_N7"></td>
+                                <td class="sample01_Q7"></td>
+                                <td class="sample01_M7"></td>
+                                <td class="sample01_R7"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample01_N8"></td>
+                                <td class="sample01_Q8"></td>
+                                <td class="sample01_M8"></td>
+                                <td class="sample01_R8"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
 const date = new Date();
 
 const year = date.getFullYear();
@@ -499,54 +434,54 @@ const dayList = ['일', '월', '화', '수', '목', '금', '토'];
 document.querySelector(".sample01_R8").innerHTML = "지금은 " + dayList[day] + "요일 입니다.";
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample01 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample01 -->
 
-    <!-- sample02 -->
-    <div id="sample02" class="sample">
-        <h2>02. 현재 날짜/시각을 문자열 불러오기<span class="dot"></span></h2>
-        <div class="view">
-            <table>
-                <colgroup>
-                    <col style="width: 4%">
-                    <col style="width: 22%">
-                    <col style="width: 22%">
-                    <col style="width: 52%">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>기본값</th>
-                        <th>메서드</th>
-                        <th>결과값</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="sample02_N1"></td>
-                        <td class="sample02_Q1"></td>
-                        <td class="sample02_M1"></td>
-                        <td class="sample02_R1"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample02_N2"></td>
-                        <td class="sample02_Q2"></td>
-                        <td class="sample02_M2"></td>
-                        <td class="sample02_R2"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample02_N3"></td>
-                        <td class="sample02_Q3"></td>
-                        <td class="sample02_M3"></td>
-                        <td class="sample02_R3"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample02 -->
+            <div id="sample02" class="sample">
+                <h2>02. 현재 날짜/시각을 문자열 불러오기<span class="dot"></span></h2>
+                <div class="view">
+                    <table>
+                        <colgroup>
+                            <col style="width: 4%">
+                            <col style="width: 22%">
+                            <col style="width: 22%">
+                            <col style="width: 52%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>기본값</th>
+                                <th>메서드</th>
+                                <th>결과값</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="sample02_N1"></td>
+                                <td class="sample02_Q1"></td>
+                                <td class="sample02_M1"></td>
+                                <td class="sample02_R1"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample02_N2"></td>
+                                <td class="sample02_Q2"></td>
+                                <td class="sample02_M2"></td>
+                                <td class="sample02_R2"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample02_N3"></td>
+                                <td class="sample02_Q3"></td>
+                                <td class="sample02_M3"></td>
+                                <td class="sample02_R3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
 const date = new Date();
 const locale = date.toLocaleString();
 const localeDate = date.toLocaleDateString();
@@ -559,54 +494,54 @@ document.querySelector(".sample02_R2").innerHTML = localeDate;
 document.querySelector(".sample02_R3").innerHTML = localeTime;
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample02 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample02 -->
 
-    <!-- sample03 -->
-    <div id="sample03" class="sample">
-        <h2>03. 날짜 문자열 타임스탬프 불러오기<span class="dot"></span></h2>
-        <div class="view">
-            <table>
-                <colgroup>
-                    <col style="width: 4%">
-                    <col style="width: 22%">
-                    <col style="width: 22%">
-                    <col style="width: 52%">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>번호</th>
-                        <th>기본값</th>
-                        <th>메서드</th>
-                        <th>결과값</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="sample03_N1"></td>
-                        <td class="sample03_Q1"></td>
-                        <td class="sample03_M1"></td>
-                        <td class="sample03_R1"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample03_N2"></td>
-                        <td class="sample03_Q2"></td>
-                        <td class="sample03_M2"></td>
-                        <td class="sample03_R2"></td>
-                    </tr>
-                    <tr>
-                        <td class="sample03_N3"></td>
-                        <td class="sample03_Q3"></td>
-                        <td class="sample03_M3"></td>
-                        <td class="sample03_R3"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample03 -->
+            <div id="sample03" class="sample">
+                <h2>03. 날짜 문자열 타임스탬프 불러오기<span class="dot"></span></h2>
+                <div class="view">
+                    <table>
+                        <colgroup>
+                            <col style="width: 4%">
+                            <col style="width: 22%">
+                            <col style="width: 22%">
+                            <col style="width: 52%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>기본값</th>
+                                <th>메서드</th>
+                                <th>결과값</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="sample03_N1"></td>
+                                <td class="sample03_Q1"></td>
+                                <td class="sample03_M1"></td>
+                                <td class="sample03_R1"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample03_N2"></td>
+                                <td class="sample03_Q2"></td>
+                                <td class="sample03_M2"></td>
+                                <td class="sample03_R2"></td>
+                            </tr>
+                            <tr>
+                                <td class="sample03_N3"></td>
+                                <td class="sample03_Q3"></td>
+                                <td class="sample03_M3"></td>
+                                <td class="sample03_R3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
 const date = Date.parse("2021/8/11");
 document.querySelector(".sample03_R1").innerHTML = date;
 
@@ -617,10 +552,13 @@ const date3 = Date.now();
 document.querySelector(".sample03_R3").innerHTML = date3;
 }
 </code></pre>
-        </div>
+                </div>
+            </div>
+            <hr>
+            <!-- //sample03 -->
+
+        </main>
     </div>
-    <hr>
-    <!-- //sample03 -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>

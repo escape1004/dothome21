@@ -29,13 +29,12 @@
         * {
             margin: 0;
             padding: 0;
-            font-family: 'NEXON Lv1 Gothic OTF';
-            line-height: 1.6;
+            box-sizing: border-box;
         }
 
         body {
-            padding: 5%;
-            margin-bottom: 400px;
+            padding: 2%;
+            font-family: 'NEXON Lv1 Gothic OTF';
         }
 
         ul {
@@ -46,50 +45,81 @@
             padding-left: 26px;
         }
 
-        h1 {
-            padding-top: 40px;
-            padding-bottom: 20px;
-        }
-
-        h1 a {
-            font-family: 'TmonMonsori';
+        a {
+            text-decoration: none;
         }
 
         hr {
             margin: 5% 0;
             border-style: dashed;
-            border-color: #E6E6E6;
+            border-color: #e6e6e6;
             border-width: 0px;
             border-bottom-width: 1px;
         }
 
-        img {
-            vertical-align: top;
-            border-radius: 5px;
-            margin: 5px;
+        .title {
+            border-top: 3px solid #0e43f1;
+            border-bottom: 1px solid #0e43f1;
+            margin-bottom: 20px;
         }
 
-        ul {
-            list-style: none;
+        .title h1 a {
+            font-family: 'TmonMonsori';
+            color: #0e43f1;
+            font-size: 50px;
+            display: inline-block;
+            padding: 15px 0 12px;
+            text-transform: uppercase;
         }
 
-        a {
-            text-decoration: none;
-            color: #333;
+        .menu li {
+            display: inline;
+        }
+
+        .menu li a {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            color: #0e43f1;
+            border: 1px dashed #0e43f1;
+            padding: 10px 30px;
+            display: inline-block;
+            border-radius: 50px;
+            font-size: 16px;
+            margin: 4px 1px;
+            box-shadow: inset 0 0 0 #0e43f1;
+            transition: all 0.4s;
+        }
+
+        .menu li a:hover {
+            box-shadow: inset 0 -100px 0 #0e43f1;
+            color: #fff;
+            border-style: solid;
+        }
+
+        .menu li.active a {
+            background: #0e43f1;
+            color: #fff;
+        }
+
+        .list li a {
+            font-family: 'NEXON Lv1 Gothic OTF';
+            font-size: 14px;
+            line-height: 1.6;
+            color: #000;
         }
 
         .sample {
-            border: 1px solid #E6E6E6;
             border-radius: 5px;
+            font-family: 'NEXON Lv1 Gothic OTF';
         }
 
         .sample h2 {
             position: relative;
             font-size: 16px;
-            background-color: #F2F2F2;
+            line-height: 1.4;
+            background-color: #f2f2f2;
             padding: 15px;
-            border-bottom: 1px solid #E6E6E6;
             border-radius: 5px 5px 0 0;
+            font-weight: normal;
         }
 
         .sample h2 .dot {
@@ -125,94 +155,20 @@
             top: 0;
         }
 
-        .sample .ex {
-            padding: 20px;
-        }
-
-        .sample .ex .text {
-            margin: 10px 0;
-        }
-
-        .sample .re {
-            padding: 20px;
-            border-top: 1px solid #E6E6E6;
-        }
-
-        .sample .re a {
-            color: #333;
-            text-decoration: none;
-            border: 1px solid #333;
-            border-radius: 30px;
-            padding: 10px 30px;
-            margin: 5px;
-            display: inline-block;
-        }
-
-        .sample .re a:hover {
-            background-color: #000;
-            color: #fff;
-        }
-
-        .sample .problem {
-            padding: 25px;
-            border-bottom: 1px solid #E6E6E6;
-            line-height: 1.6;
-        }
-
         .sample pre {
             margin: 0 !important;
-            border-radius: 0;
+            border-radius: 0 0 5px 5px;
         }
 
-        .sample .desc {
-            padding: 25px;
-            border-bottom: 1px solid #E6E6E6;
-        }
-
-        .sample .desc dt {
-            padding: 3px 0;
-            margin-bottom: 6px;
-        }
-
-        .sample .desc dd {
-            padding: 3px 0 16px 0;
-            line-height: 1.6;
-        }
-
-        .sample .sam {
-            padding: 25px;
-            border-bottom: 1px solid #E6E6E6;
-        }
-
-        .sample .sam dt {
-            padding: 3px 0;
-            margin-bottom: 6px;
-        }
-
-        .sample .sam dd {
-            padding: 3px 0 16px 0;
-        }
-
-        .mt20 {
-            margin-top: 20px;
+        .sample code {
+            font-family: 'NEXON Lv1 Gothic OTF';
         }
 
         .view table {
-            width: 100%;
             border: 1px solid #e6e6e6;
+            width: 100%;
             text-align: center;
             vertical-align: middle;
-            border-collapse: collapse;
-        }
-
-        .view table th {
-            /*
-                        padding: 13px 5px 11px 5px;     상 / 우 / 하 / 좌
-                        padding: 13px 5px 11px;         상 / 좌우 / 하
-                        padding: 13px 5px;              상하 / 좌우
-                        padding: 13px;                  상항좌우
-                        */
-            padding: 13px 5px 11px 5px;
         }
 
         .view table td {
@@ -220,10 +176,17 @@
             padding: 13px 5px 11px 5px;
         }
 
+        .view table th {
+            padding: 13px 5px 11px 5px;
+            border-bottom: 1px solid #e6e6e6;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+
         .view table td.result {
-            color: #fff;
             transition: all 0.3s;
-            cursor: zoom-in;
+            cursor: pointer;
+            color: #fff;
         }
 
         .view table td.result:hover {
@@ -231,83 +194,50 @@
             background-color: #f5f5f5;
         }
 
-        .sam {
-            background-color: #000;
-            color: #fff;
-            border-radius: 30px;
-            padding: 0.1em 1.5em;
-            font-size: 0.8em;
-        }
-
-        .page {
-            position: absolute;
-            right: 20px;
-            top: 15px;
-        }
-
-        .page li {
-            display: inline-block;
-            list-style: none;
-        }
-
-        .page li a {
-            text-decoration: none;
-            color: #222;
-        }
-
-        .page li a:hover {
-            color: #098a4c;
-        }
-
-        .menu li {
-            display: inline;
-        }
-
-        .menu li a {
-            font-family: 'NEXON Lv1 Gothic OTF';
-            color: #000;
-            border: 1px dashed #000;
-            padding: 10px 30px;
-            display: inline-block;
-            border-radius: 50px;
-            font-size: 16px;
-            margin: 4px 1px;
-            box-shadow: inset 0 0 0 #000;
-            transition: all 0.4s;
-        }
-
-        .menu li a:hover {
-            box-shadow: inset 0 -100px #000;
-            color: white;
-            border-style: solid;
-        }
-
         @media (max-width: 800px) {
             body {
+                padding: 5%;
                 font-size: 13px;
             }
 
-            h1 {
+            #wrap {
+                margin: 0;
+                border-width: 6px;
+                border-radius: 18px;
+            }
+
+            #contents {
+                border-width: 6px;
+            }
+
+            .title {
+                border-top-width: 2px;
+            }
+
+            .title h1 {
+                text-align: center;
+            }
+
+            .title h1 a {
+                font-size: 40px;
+            }
+
+            .menu {
                 text-align: center;
             }
 
             .menu li a {
-                font-size: 12px;
+                font-size: 13px;
                 padding: 5px 20px;
             }
 
-            .list li {
-                line-height: 1.2;
-            }
-
-            .list a {
-                font-size: 12px;
+            .list li a {
+                font-size: 13px;
             }
 
             .sample h2 {
-                font-size: 14px;
-                font-weight: normal;
-                padding: 7px 5px 5px;
+                font-size: 13px;
+                padding: 12px 10px 10px;
             }
 
             .sample h2 .dot {
@@ -315,17 +245,17 @@
             }
 
             .sample pre {
-                font-size: 14px;
+                line-height: 1.2 !important;
+            }
+
+            .sample code {
+                font-size: 13px;
             }
 
             .view {
-                border-right: 1px solid #E6E6E6;
-                border-left: 1px solid #E6E6E6;
+                border-right: 1px solid #e6e6e6;
+                border-left: 1px solid #e6e6e6;
                 overflow: auto;
-            }
-
-            .view th {
-                font-weight: normal;
             }
 
             .view table {
@@ -341,78 +271,82 @@
 
             .view table td.result {
                 color: #bdbdbd;
-                background-color: #f1f1f1;
+                background: #f1f1f1;
             }
         }
     </style>
 </head>
 
 <body>
-    <h1><a href="index.html">Javascript 레퍼런스</a></h1>
+    <div id="wrap">
+        <main id="contents">
+            <div class="title">
+                <h1><a href="index.html">데이터 불러오기</a></h1>
+            </div>
+            <!-- <ul class="page">
+                <li><a href="../refer-html/index.html">HTML</a></li>
+                <li><a href="../refer-css/index.html">CSS</a></li>
+                <li><a href="../javascript/index.html">JAVASCRIPT</a></li>
+            </ul> -->
 
-    <ul class="page">
-        <li><a href="../refer-html/index.html">HTML</a></li>
-        <li><a href="../refer-css/index.html">CSS</a></li>
-        <li><a href="../javascript/index.html">JAVASCRIPT</a></li>
-    </ul>
+            <nav class="menu">
+                <ul>
+                    <li><a href="javascriptRefer01.html">데이터 저장하기</a></li>
+                    <li class="active"><a href="javascriptRefer02.html">데이터 불러오기</a></li>
+                    <li><a href="javascriptRefer03.html">데이터 실행하기</a></li>
+                    <li><a href="javascriptRefer04.html">데이터 제어하기</a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascriptRefer05.html">문자열 객체</a></li>
+                    <li><a href="javascriptRefer06.html">배열 객체</a></li>
+                    <li><a href="javascriptRefer07.html">날짜 객체</a></li>
+                    <li><a href="javascriptRefer08.html">수학 객체</a></li>
+                    <li><a href="javascriptRefer09.html">브라우저 객체</a></li>
+                    <li><a href="javascriptRefer10.html">요소 객체</a></li>
+                    <li><a href="javascriptRefer11.html">이벤트 객체</a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascriptRefer12.html">샘플</a></li>
+                    <li><a href="javascriptRefer13.html">알고리즘</a></li>
+                </ul>
+            </nav>
 
-    <nav class="menu">
-        <ul>
-            <li><a href="javascriptRefer01.html">데이터 저장하기</a></li>
-            <li><a href="javascriptRefer02.html">데이터 불러오기</a></li>
-            <li><a href="javascriptRefer03.html">데이터 실행하기</a></li>
-            <li><a href="javascriptRefer04.html">데이터 제어하기</a></li>
-        </ul>
-        <ul>
-            <li><a href="javascriptRefer05.html">문자열 객체</a></li>
-            <li><a href="javascriptRefer06.html">배열 객체</a></li>
-            <li><a href="javascriptRefer07.html">날짜 객체</a></li>
-            <li><a href="javascriptRefer08.html">수학 객체</a></li>
-            <li><a href="javascriptRefer09.html">브라우저 객체</a></li>
-            <li><a href="javascriptRefer10.html">요소 객체</a></li>
-            <li><a href="javascriptRefer11.html">이벤트 객체</a></li>
-        </ul>
-        <ul>
-            <li><a href="javascriptRefer12.html">샘플</a></li>
-            <li><a href="javascriptRefer13.html">알고리즘</a></li>
-        </ul>
-    </nav>
+            <hr>
 
-    <hr>
-    
-    <h2 class="mt20">데이터 불러오기</h2>
-    <ol>
-        <li><a href=#sample01>변수 : 데이터 불러오기</a></li>
-        <li><a href=#sample02>상수 : 데이터 불러오기</a></li>
-        <li><a href=#sample03>배열 : 데이터 불러오기</a></li>
-        <li><a href=#sample04>배열 : 데이터 불러오기 : 2차 배열</a></li>
-        <li><a href=#sample05>배열 : 데이터 불러오기 : 갯수 구하기</a></li>
-        <li><a href=#sample06>배열 : 데이터 불러오기 : for문</a></li>
-        <li><a href=#sample07>배열 : 데이터 불러오기 : forEach()</a></li>
-        <li><a href=#sample08>배열 : 데이터 불러오기 : for of문</a></li>
-        <li><a href=#sample09>배열 : 데이터 불러오기 : for in문</a></li>
-        <li><a href=#sample10>배열 : 데이터 불러오기 : map()</a></li>
-        <li><a href=#sample11>배열 : 데이터 불러오기 : 펼침 연산자</a></li>
-        <li><a href=#sample12>객체 : 데이터 불러오기 : 기본</a></li>
-        <li><a href=#sample13>객체 : 데이터 불러오기 : Object</a></li>
-        <li><a href=#sample14>객체 : 데이터 불러오기 : 변수</a></li>
-        <li><a href=#sample15>객체 : 데이터 불러오기 : for in문</a></li>
-        <li><a href=#sample16>객체 : 데이터 불러오기 : map()</a></li>
-        <li><a href=#sample17>객체 : 데이터 불러오기 : hasOwnProperty()</a></li>
-        <li><a href=#sample18>객체 : 데이터 불러오기 : 펼침 연산자 - 복사</a></li>
-        <li><a href=#sample19>객체 : 데이터 불러오기 : 펼침 연산자 - 추가</a></li>
-        <li><a href=#sample20>객체 : 데이터 불러오기 : 펼침 연산자 - 결합</a></li>
-        <li><a href=#sample21>객체 : 데이터 불러오기 : 비구조화 할당</a></li>
-        <li><a href=#sample22>객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장</a></li>
-    </ol>
+            <div class="list">
+                <ol>
+                    <li><a href=#sample01>변수 : 데이터 불러오기</a></li>
+                    <li><a href=#sample02>상수 : 데이터 불러오기</a></li>
+                    <li><a href=#sample03>배열 : 데이터 불러오기</a></li>
+                    <li><a href=#sample04>배열 : 데이터 불러오기 : 2차 배열</a></li>
+                    <li><a href=#sample05>배열 : 데이터 불러오기 : 갯수 구하기</a></li>
+                    <li><a href=#sample06>배열 : 데이터 불러오기 : for문</a></li>
+                    <li><a href=#sample07>배열 : 데이터 불러오기 : forEach()</a></li>
+                    <li><a href=#sample08>배열 : 데이터 불러오기 : for of문</a></li>
+                    <li><a href=#sample09>배열 : 데이터 불러오기 : for in문</a></li>
+                    <li><a href=#sample10>배열 : 데이터 불러오기 : map()</a></li>
+                    <li><a href=#sample11>배열 : 데이터 불러오기 : 펼침 연산자</a></li>
+                    <li><a href=#sample12>객체 : 데이터 불러오기 : 기본</a></li>
+                    <li><a href=#sample13>객체 : 데이터 불러오기 : Object</a></li>
+                    <li><a href=#sample14>객체 : 데이터 불러오기 : 변수</a></li>
+                    <li><a href=#sample15>객체 : 데이터 불러오기 : for in문</a></li>
+                    <li><a href=#sample16>객체 : 데이터 불러오기 : map()</a></li>
+                    <li><a href=#sample17>객체 : 데이터 불러오기 : hasOwnProperty()</a></li>
+                    <li><a href=#sample18>객체 : 데이터 불러오기 : 펼침 연산자 - 복사</a></li>
+                    <li><a href=#sample19>객체 : 데이터 불러오기 : 펼침 연산자 - 추가</a></li>
+                    <li><a href=#sample20>객체 : 데이터 불러오기 : 펼침 연산자 - 결합</a></li>
+                    <li><a href=#sample21>객체 : 데이터 불러오기 : 비구조화 할당</a></li>
+                    <li><a href=#sample22>객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장</a></li>
+                </ol>
+            </div>
 
-    <hr>
+            <hr>
 
-    <!-- sample01 -->
-    <div id="sample01" class="sample">
-        <h2>01. 변수 : 데이터 불러오기<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample01 -->
+            <div id="sample01" class="sample">
+                <h2>01. 변수 : 데이터 불러오기<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     let x = 100, y = 200, z = "javascript";
 
     document.write("*** 01. 변수 : 데이터 불러오기 ***");
@@ -422,16 +356,16 @@
     document.write(z);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample01 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample01 -->
 
-    <!-- sample02 -->
-    <div id="sample02" class="sample">
-        <h2>02. 상수 : 데이터 불러오기<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample02 -->
+            <div id="sample02" class="sample">
+                <h2>02. 상수 : 데이터 불러오기<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     const x = 100, y = 200, z = "javascript";
 
     document.write("*** 02. 상수 : 데이터 불러오기 ***");
@@ -441,16 +375,16 @@
     document.write(z);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample02 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample02 -->
 
-    <!-- sample03 -->
-    <div id="sample03" class="sample">
-        <h2>03. 배열 : 데이터 불러오기<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample03 -->
+            <div id="sample03" class="sample">
+                <h2>03. 배열 : 데이터 불러오기<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, "javascript"];
 
     document.write("*** 02. 배열 : 데이터 불러오기 ***");
@@ -460,16 +394,16 @@
     document.write(arr[2]);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample03 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample03 -->
 
-    <!-- sample04 -->
-    <div id="sample04" class="sample">
-        <h2>04. 배열 : 데이터 불러오기 : 2차 배열<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample04 -->
+            <div id="sample04" class="sample">
+                <h2>04. 배열 : 데이터 불러오기 : 2차 배열<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, ["javascript", "jquery"]];
 
     document.write("*** 03. 배열 : 데이터 불러오기 : 2차 배열 ***");
@@ -481,16 +415,16 @@
     document.write(arr[2]);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample04 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample04 -->
 
-    <!-- sample05 -->
-    <div id="sample05" class="sample">
-        <h2>05. 배열 : 데이터 불러오기 : 갯수 구하기<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample05 -->
+            <div id="sample05" class="sample">
+                <h2>05. 배열 : 데이터 불러오기 : 갯수 구하기<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, "javascript"];
 
     document.write("*** 04. 배열 : 데이터 불러오기 : 갯수 구하기 ***");
@@ -498,16 +432,16 @@
     document.write(arr.length, "개");
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample05 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample05 -->
 
-    <!-- sample06 -->
-    <div id="sample06" class="sample">
-        <h2>06. 배열 : 데이터 불러오기 : for문<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample06 -->
+            <div id="sample06" class="sample">
+                <h2>06. 배열 : 데이터 불러오기 : for문<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, 300, 400, 500];
 
     document.write("*** 05. 배열 : 데이터 불러오기 : for문 ***");
@@ -517,16 +451,16 @@
     }
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample06 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample06 -->
 
-    <!-- sample07 -->
-    <div id="sample07" class="sample">
-        <h2>07. 배열 : 데이터 불러오기 : forEach()<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample07 -->
+            <div id="sample07" class="sample">
+                <h2>07. 배열 : 데이터 불러오기 : forEach()<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 07. 배열 : 데이터 불러오기 : forEach() ***");
 
     const num = [100, 200, 300, 400, 500];
@@ -558,16 +492,16 @@
     });
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample07 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample07 -->
 
-    <!-- sample08 -->
-    <div id="sample08" class="sample">
-        <h2>08. 배열 : 데이터 불러오기 : for of문<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample08 -->
+            <div id="sample08" class="sample">
+                <h2>08. 배열 : 데이터 불러오기 : for of문<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 08. 배열 : 데이터 불러오기 : for of문 ***");
 
     const num = [100, 200, 300, 400, 500];
@@ -577,16 +511,16 @@
     }
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample08 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample08 -->
 
-    <!-- sample09 -->
-    <div id="sample09" class="sample">
-        <h2>09. 배열 : 데이터 불러오기 : for in문<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample09 -->
+            <div id="sample09" class="sample">
+                <h2>09. 배열 : 데이터 불러오기 : for in문<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 09. 배열 : 데이터 불러오기 : for in문 ***");
 
     const num = [100, 200, 300, 400, 500];
@@ -600,16 +534,16 @@
     }
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample09 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample09 -->
 
-    <!-- sample10 -->
-    <div id="sample10" class="sample">
-        <h2>10. 배열 : 데이터 불러오기 : map()<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample10 -->
+            <div id="sample10" class="sample">
+                <h2>10. 배열 : 데이터 불러오기 : map()<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 10. 배열 : 데이터 불러오기 : map() ***");
 
     const num = [100, 200, 300, 400, 500];
@@ -627,16 +561,16 @@
     });
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample10 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample10 -->
 
-    <!-- sample11 -->
-    <div id="sample11" class="sample">
-        <h2>11. 배열 : 데이터 불러오기 : 펼침 연산자<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample11 -->
+            <div id="sample11" class="sample">
+                <h2>11. 배열 : 데이터 불러오기 : 펼침 연산자<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 11. 배열 : 데이터 불러오기 : 펼침 연산자 ***");
 
     const arr = [100, 200, 300, 400, 500];
@@ -654,16 +588,16 @@
     document.write(...arr);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample11 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample11 -->
 
-    <!-- sample12 -->
-    <div id="sample12" class="sample">
-        <h2>12. 객체 : 데이터 불러오기 : 기본<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample12 -->
+            <div id="sample12" class="sample">
+                <h2>12. 객체 : 데이터 불러오기 : 기본<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 12. 객체 : 데이터 불러오기 : 기본 ***");
 
     const obj = {
@@ -680,16 +614,16 @@
     document.write(obj['c']);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample12 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample12 -->
 
-    <!-- sample13 -->
-    <div id="sample13" class="sample">
-        <h2>13. 객체 : 데이터 불러오기 : Object<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample13 -->
+            <div id="sample13" class="sample">
+                <h2>13. 객체 : 데이터 불러오기 : Object<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 13. 객체 : 데이터 불러오기 : Ob");
 
     const obj = {
@@ -703,16 +637,16 @@
     document.write(Object.entries(obj));
 }    
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample13 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample13 -->
 
-    <!-- sample14 -->
-    <div id="sample14" class="sample">
-        <h2>14. 객체 : 데이터 불러오기 : 변수<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample14 -->
+            <div id="sample14" class="sample">
+                <h2>14. 객체 : 데이터 불러오기 : 변수<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 14. 객체 : 데이터 불러오기 : 변수 ***");
 
     const obj = {
@@ -729,16 +663,16 @@
     document.write(name3);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample14 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample14 -->
 
-    <!-- sample15 -->
-    <div id="sample15" class="sample">
-        <h2>15. 객체 : 데이터 불러오기 : for in문<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample15 -->
+            <div id="sample15" class="sample">
+                <h2>15. 객체 : 데이터 불러오기 : for in문<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 15. 객체 : 데이터 불러오기 : for in문***");
 
     const obj = {
@@ -752,16 +686,16 @@
     }
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample15 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample15 -->
 
-    <!-- sample16 -->
-    <div id="sample16" class="sample">
-        <h2>16. 객체 : 데이터 불러오기 : map()<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample16 -->
+            <div id="sample16" class="sample">
+                <h2>16. 객체 : 데이터 불러오기 : map()<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 16. 객체 : 데이터 불러오기 : map()***");
 
     const obj = [{
@@ -802,16 +736,16 @@
     });
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample16 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample16 -->
 
-    <!-- sample17 -->
-    <div id="sample17" class="sample">
-        <h2>17. 객체 : 데이터 불러오기 : hasOwnProperty()<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample17 -->
+            <div id="sample17" class="sample">
+                <h2>17. 객체 : 데이터 불러오기 : hasOwnProperty()<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 17. 객체 : 데이터 불러오기 : hasOwnProperty()***");
 
     const obj = {
@@ -830,16 +764,16 @@
     document.write('100' in obj);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample17 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample17 -->
 
-    <!-- sample18 -->
-    <div id="sample18" class="sample">
-        <h2>18. 객체 : 데이터 불러오기 : 펼침 연산자 - 복사<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample18 -->
+            <div id="sample18" class="sample">
+                <h2>18. 객체 : 데이터 불러오기 : 펼침 연산자 - 복사<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 18. 객체 : 데이터 불러오기 : 펼침 연산자 - 복사 ***");
 
     const obj = {
@@ -857,16 +791,16 @@
     document.write(spread.c);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample18 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample18 -->
 
-    <!-- sample19 -->
-    <div id="sample19" class="sample">
-        <h2>19. 객체 : 데이터 불러오기 : 펼침 연산자 - 추가<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample19 -->
+            <div id="sample19" class="sample">
+                <h2>19. 객체 : 데이터 불러오기 : 펼침 연산자 - 추가<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 19. 객체 : 데이터 불러오기 : 펼침 연산자 - 추가 ***");
 
     const obj = {
@@ -886,16 +820,16 @@
     document.write(spread.d);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample19 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample19 -->
 
-    <!-- sample20 -->
-    <div id="sample20" class="sample">
-        <h2>20. 객체 : 데이터 불러오기 : 펼침 연산자 - 결합<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample20 -->
+            <div id="sample20" class="sample">
+                <h2>20. 객체 : 데이터 불러오기 : 펼침 연산자 - 결합<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 20. 객체 : 데이터 불러오기 : 펼침 연산자 - 결합 ***");
 
     const objA = {
@@ -919,16 +853,16 @@
     document.write(spread.d);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample20 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample20 -->
 
-    <!-- sample21 -->
-    <div id="sample21" class="sample">
-        <h2>21. 객체 : 데이터 불러오기 : 비구조화 할당<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample21 -->
+            <div id="sample21" class="sample">
+                <h2>21. 객체 : 데이터 불러오기 : 비구조화 할당<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 21. 객체 : 데이터 불러오기 : 비구조화 할당 ***");
 
     const obj = {
@@ -948,16 +882,16 @@
     document.write(c);
 }
 </code></pre>
-        </div>
-    </div>
-    <hr>
-    <!-- //sample21 -->
+                </div>
+            </div>
+            <hr>
+            <!-- //sample21 -->
 
-    <!-- sample22 -->
-    <div id="sample22" class="sample">
-        <h2>22. 객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장<span class="dot"></span></h2>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">{
+            <!-- sample22 -->
+            <div id="sample22" class="sample">
+                <h2>22. 객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장<span class="dot"></span></h2>
+                <div class="code">
+                    <pre class="line-numbers"><code class="language-js">{
     document.write("*** 22. 객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장 ***");
 
     const obj = {
@@ -977,10 +911,13 @@
     document.write(name3);
 }
 </code></pre>
-        </div>
+                </div>
+            </div>
+            <hr>
+            <!-- //sample22 -->
+
+        </main>
     </div>
-    <hr>
-    <!-- //sample22 -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
