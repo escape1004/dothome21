@@ -96,5 +96,6 @@
 }
 
 .dark .member a {
+    border-color: #fff;
     color: #fff;
 }
