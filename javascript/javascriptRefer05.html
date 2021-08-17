@@ -42,6 +42,7 @@
         body {
             padding: 2%;
             font-family: 'NEXON Lv1 Gothic OTF';
+            line-height: 1.6;
         }
 
         ul {
@@ -401,27 +402,27 @@
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str1 = "자바스크립트 ";
-const str2 = "제이쿼리";
+    const str1 = "자바스크립트 ";
+    const str2 = "제이쿼리";
 
-document.querySelector(".sample01_R1").innerHTML = str1 + str2;
+    document.querySelector(".sample01_R1").innerHTML = str1 + str2;
 
-const num1 = 100;
-const num2 = 200;
+    const num1 = 100;
+    const num2 = 200;
 
-document.querySelector(".sample01_R2").innerHTML = num1 + num2;
+    document.querySelector(".sample01_R2").innerHTML = num1 + num2;
 
-const txt1 = "모던 ";
-const txt2 = "자바스크립트 ";
-const txt3 = "핵심";
+    const txt1 = "모던 ";
+    const txt2 = "자바스크립트 ";
+    const txt3 = "핵심";
 
-document.querySelector(".sample01_R3").innerHTML = "나는 " + txt1 + "(modern) " + txt2 + "(javascript) " + txt3 + "을 배우고 싶다";
+    document.querySelector(".sample01_R3").innerHTML = "나는 " + txt1 + "(modern) " + txt2 + "(javascript) " + txt3 + "을 배우고 싶다";
 
-const tem1 = "모던 ";
-const tem2 = "자바스크립트 ";
-const tem3 = "핵심";
+    const tem1 = "모던 ";
+    const tem2 = "자바스크립트 ";
+    const tem3 = "핵심";
 
-document.querySelector(".sample01_R4").innerHTML = `나는 ${txt1}(modern) ${txt2}(javascript) ${txt3}을 배우고 싶다`;
+    document.querySelector(".sample01_R4").innerHTML = `나는 ${txt1}(modern) ${txt2}(javascript) ${txt3}을 배우고 싶다`;
 }
 </code></pre>
                 </div>
@@ -466,17 +467,17 @@ document.querySelector(".sample01_R4").innerHTML = `나는 ${txt1}(modern) ${txt
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str1 = "자바스크립트";
-const currentStr1 = str1.length;
+    const str1 = "자바스크립트";
+    const currentStr1 = str1.length;
 
-document.querySelector(".sample02_Q1").innerHTML = str1;
-document.querySelector(".sample02_R1").innerHTML = currentStr1;
+    document.querySelector(".sample02_Q1").innerHTML = str1;
+    document.querySelector(".sample02_R1").innerHTML = currentStr1;
 
-const str2 = "javascript";
-const currentStr2 = str2.length;
+    const str2 = "javascript";
+    const currentStr2 = str2.length;
 
-document.querySelector(".sample02_Q2").innerHTML = str2;
-document.querySelector(".sample02_R2").innerHTML = currentStr2;
+    document.querySelector(".sample02_Q2").innerHTML = str2;
+    document.querySelector(".sample02_R2").innerHTML = currentStr2;
 }
 </code></pre>
                 </div>
@@ -521,17 +522,17 @@ document.querySelector(".sample02_R2").innerHTML = currentStr2;
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str1 = "javascript";
-const currentStr1 = str1.toUpperCase();
+    const str1 = "javascript";
+    const currentStr1 = str1.toUpperCase();
 
-document.querySelector(".sample03_Q1").innerHTML = str1;
-document.querySelector(".sample03_R1").innerHTML = currentStr1;
+    document.querySelector(".sample03_Q1").innerHTML = str1;
+    document.querySelector(".sample03_R1").innerHTML = currentStr1;
 
-const str2 = "JAVASCRIPT"
-const currentStr2 = str2.toLowerCase();
+    const str2 = "JAVASCRIPT"
+    const currentStr2 = str2.toLowerCase();
 
-document.querySelector(".sample03_Q2").innerHTML = str2;
-document.querySelector(".sample03_R2").innerHTML = currentStr2;
+    document.querySelector(".sample03_Q2").innerHTML = str2;
+    document.querySelector(".sample03_R2").innerHTML = currentStr2;
 }
 </code></pre>
                 </div>
@@ -570,10 +571,10 @@ document.querySelector(".sample03_R2").innerHTML = currentStr2;
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str1 = "      ' javacript '       ";
-const currentStr1 = str1.trim();
+    const str1 = "      ' javacript '       ";
+    const currentStr1 = str1.trim();
 
-document.querySelector(".sample04_R1").innerHTML = currentStr1;
+    document.querySelector(".sample04_R1").innerHTML = currentStr1;
 }
 </code></pre>
                 </div>
@@ -672,40 +673,40 @@ document.querySelector(".sample04_R1").innerHTML = currentStr1;
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str = "자바스크립트(javascript) 공부"
+    const str = "자바스크립트(javascript) 공부"
 
-const text1 = str.indexOf("javascript");
-document.querySelector(".sample05_R1").innerHTML = text1;
+    const text1 = str.indexOf("javascript");
+    document.querySelector(".sample05_R1").innerHTML = text1;
 
-const text2 = str.indexOf("자바스크립트");
-document.querySelector(".sample05_R2").innerHTML = text2;
+    const text2 = str.indexOf("자바스크립트");
+    document.querySelector(".sample05_R2").innerHTML = text2;
 
-const text3 = str.indexOf("제이쿼리");
-document.querySelector(".sample05_R3").innerHTML = text3;
+    const text3 = str.indexOf("제이쿼리");
+    document.querySelector(".sample05_R3").innerHTML = text3;
 
-const text4 = str.indexOf("a");
-document.querySelector(".sample05_R4").innerHTML = text4;
+    const text4 = str.indexOf("a");
+    document.querySelector(".sample05_R4").innerHTML = text4;
 
-const text5 = str.lastIndexOf("a");
-document.querySelector(".sample05_R5").innerHTML = text5;
+    const text5 = str.lastIndexOf("a");
+    document.querySelector(".sample05_R5").innerHTML = text5;
 
-const text6 = str.search(/javascript/);
-document.querySelector(".sample05_R6").innerHTML = text6;
+    const text6 = str.search(/javascript/);
+    document.querySelector(".sample05_R6").innerHTML = text6;
 
-const text7 = str.search(/jquery/);
-document.querySelector(".sample05_R7").innerHTML = text7;
+    const text7 = str.search(/jquery/);
+    document.querySelector(".sample05_R7").innerHTML = text7;
 
-const text8 = str.includes("javascript");
-document.querySelector(".sample05_R8").innerHTML = text8;
+    const text8 = str.includes("javascript");
+    document.querySelector(".sample05_R8").innerHTML = text8;
 
-const text9 = str.includes("jquery");
-document.querySelector(".sample05_R9").innerHTML = text9;
+    const text9 = str.includes("jquery");
+    document.querySelector(".sample05_R9").innerHTML = text9;
 
-const text10 = str.startsWith("자바스크립트");
-document.querySelector(".sample05_R10").innerHTML = text10;
+    const text10 = str.startsWith("자바스크립트");
+    document.querySelector(".sample05_R10").innerHTML = text10;
 
-const text11 = str.endsWith("javascript");
-document.querySelector(".sample05_R11").innerHTML = text11;
+    const text11 = str.endsWith("javascript");
+    document.querySelector(".sample05_R11").innerHTML = text11;
 }
 </code></pre>
                 </div>
@@ -750,13 +751,13 @@ document.querySelector(".sample05_R11").innerHTML = text11;
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str = "자바스크립트(javascript) 공부";
+    const str = "자바스크립트(javascript) 공부";
 
-const text = str.charAt(4);
-document.querySelector(".sample06_R1").innerHTML = text;
+    const text = str.charAt(4);
+    document.querySelector(".sample06_R1").innerHTML = text;
 
-const text2 = str.charAt();
-document.querySelector(".sample06_R2").innerHTML = text2;
+    const text2 = str.charAt();
+    document.querySelector(".sample06_R2").innerHTML = text2;
 }
 </code></pre>
                 </div>
@@ -831,28 +832,28 @@ document.querySelector(".sample06_R2").innerHTML = text2;
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str = "자바스크립트(javascript) 공부";
+    const str = "자바스크립트(javascript) 공부";
 
-const text = str.slice(1, 4);
-document.querySelector(".sample07_R1").innerHTML = text;
+    const text = str.slice(1, 4);
+    document.querySelector(".sample07_R1").innerHTML = text;
 
-const text2 = str.slice(1);
-document.querySelector(".sample07_R2").innerHTML = text2;
+    const text2 = str.slice(1);
+    document.querySelector(".sample07_R2").innerHTML = text2;
 
-const text3 = str.slice(3, -1);
-document.querySelector(".sample07_R3").innerHTML = text3;
+    const text3 = str.slice(3, -1);
+    document.querySelector(".sample07_R3").innerHTML = text3;
 
-const text4 = str.slice(-14, -4);
-document.querySelector(".sample07_R4").innerHTML = text4;
+    const text4 = str.slice(-14, -4);
+    document.querySelector(".sample07_R4").innerHTML = text4;
 
-const text5 = str.slice(5, 1);
-document.querySelector(".sample07_R5").innerHTML = text5;
+    const text5 = str.slice(5, 1);
+    document.querySelector(".sample07_R5").innerHTML = text5;
 
-const text6 = str.substring(5, 1);
-document.querySelector(".sample07_R6").innerHTML = text6;
+    const text6 = str.substring(5, 1);
+    document.querySelector(".sample07_R6").innerHTML = text6;
 
-const text7 = str.substr(4, 2);
-document.querySelector(".sample07_R7").innerHTML = text7;
+    const text7 = str.substr(4, 2);
+    document.querySelector(".sample07_R7").innerHTML = text7;
 }
 </code></pre>
                 </div>
@@ -909,25 +910,25 @@ document.querySelector(".sample07_R7").innerHTML = text7;
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str = "자바스크립트(javascript) 공부";
-const text = str.replace("공부", "스터디");
+    const str = "자바스크립트(javascript) 공부";
+    const text = str.replace("공부", "스터디");
 
-document.querySelector(".sample08_R1").innerHTML = text;
+    document.querySelector(".sample08_R1").innerHTML = text;
 
-const str2 = "img01.jpg";
-const text2 = str2.replace("img01.jpg", "img02.jpg");
+    const str2 = "img01.jpg";
+    const text2 = str2.replace("img01.jpg", "img02.jpg");
 
-document.querySelector(".sample08_R2").innerHTML = text2;
+    document.querySelector(".sample08_R2").innerHTML = text2;
 
-const str3 = "010-3848-0398";
-const text3 = str3.replace('-', '');
+    const str3 = "010-3848-0398";
+    const text3 = str3.replace('-', '');
 
-document.querySelector(".sample08_R3").innerHTML = text3;
+    document.querySelector(".sample08_R3").innerHTML = text3;
 
-const str4 = "010-3848-0398";
-const text4 = str4.replace(/-/g, ' ');
+    const str4 = "010-3848-0398";
+    const text4 = str4.replace(/-/g, ' ');
 
-document.querySelector(".sample08_R4").innerHTML = text4;
+    document.querySelector(".sample08_R4").innerHTML = text4;
 }
 </code></pre>
                 </div>
@@ -990,25 +991,25 @@ document.querySelector(".sample08_R4").innerHTML = text4;
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const str = "자바스크립트(javascript) 공부";
+    const str = "자바스크립트(javascript) 공부";
 
-const text = str.split('');
-document.querySelector(".sample09_R1").innerHTML = text;
+    const text = str.split('');
+    document.querySelector(".sample09_R1").innerHTML = text;
 
-const text2 = str.split(' ');
-document.querySelector(".sample09_R2").innerHTML = text2;
+    const text2 = str.split(' ');
+    document.querySelector(".sample09_R2").innerHTML = text2;
 
-const text3 = str.split('').join('/');
-document.querySelector(".sample09_R3").innerHTML = text3;
+    const text3 = str.split('').join('/');
+    document.querySelector(".sample09_R3").innerHTML = text3;
 
-const str2 = "https://webstoryboy.co.kr/main.html?id=1234&name=webs"
+    const str2 = "https://webstoryboy.co.kr/main.html?id=1234&name=webs"
 
-const text4 = str2.split('&')
-document.querySelector(".sample09_R4").innerHTML = text4;
+    const text4 = str2.split('&')
+    document.querySelector(".sample09_R4").innerHTML = text4;
 
-const text5 = str2.split(/&|\?/);
-document.querySelector(".sample09_R5").innerHTML = text5;
-console.log(text5);
+    const text5 = str2.split(/&|\?/);
+    document.querySelector(".sample09_R5").innerHTML = text5;
+    console.log(text5);
 }
 </code></pre>
                 </div>
@@ -1089,45 +1090,45 @@ console.log(text5);
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const num = "7";
-const text = num.padStart(2, '0');
+    const num = "7";
+    const text = num.padStart(2, '0');
 
-document.querySelector(".sample10_R1").innerHTML = text;
+    document.querySelector(".sample10_R1").innerHTML = text;
 
-const num2 = "456";
-const text2 = num2.padStart(6, '123');
+    const num2 = "456";
+    const text2 = num2.padStart(6, '123');
 
-document.querySelector(".sample10_R2").innerHTML = text2;
+    document.querySelector(".sample10_R2").innerHTML = text2;
 
-const num3 = "abc";
-const text3 = num3.padStart(3, '0');
+    const num3 = "abc";
+    const text3 = num3.padStart(3, '0');
 
-document.querySelector(".sample10_R3").innerHTML = text3;
+    document.querySelector(".sample10_R3").innerHTML = text3;
 
-const num4 = "abc";
-const text4 = num4.padStart(6);
+    const num4 = "abc";
+    const text4 = num4.padStart(6);
 
-document.querySelector(".sample10_R4").innerHTML = text4;
+    document.querySelector(".sample10_R4").innerHTML = text4;
 
-const num5 = "7";
-const text5 = num5.padEnd(2, '0');
+    const num5 = "7";
+    const text5 = num5.padEnd(2, '0');
 
-document.querySelector(".sample10_R5").innerHTML = text5;
+    document.querySelector(".sample10_R5").innerHTML = text5;
 
-const num6 = "456";
-const text6 = num6.padEnd(6, '123');
+    const num6 = "456";
+    const text6 = num6.padEnd(6, '123');
 
-document.querySelector(".sample10_R6").innerHTML = text6;
+    document.querySelector(".sample10_R6").innerHTML = text6;
 
-const num7 = "abc";
-const text7 = num7.padEnd(3, '0');
+    const num7 = "abc";
+    const text7 = num7.padEnd(3, '0');
 
-document.querySelector(".sample10_R7").innerHTML = text7;
+    document.querySelector(".sample10_R7").innerHTML = text7;
 
-const num8 = "abc";
-const text8 = num8.padEnd(6);
+    const num8 = "abc";
+    const text8 = num8.padEnd(6);
 
-document.querySelector(".sample10_R8").innerHTML = text8";
+    document.querySelector(".sample10_R8").innerHTML = text8";
 }
 </code></pre>
                 </div>
@@ -1184,25 +1185,25 @@ document.querySelector(".sample10_R8").innerHTML = text8";
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const text = "https://escape1004.github.io/dothome21/인덱스.html";
-const url = encodeURI(text)
+    const text = "https://escape1004.github.io/dothome21/인덱스.html";
+    const url = encodeURI(text)
 
-document.querySelector(".sample11_R1").innerHTML = url;
+    document.querySelector(".sample11_R1").innerHTML = url;
 
-const text2 = "https://escape1004.github.io/dothome21/인덱스.html";
-const url2 = encodeURIComponent(text2)
+    const text2 = "https://escape1004.github.io/dothome21/인덱스.html";
+    const url2 = encodeURIComponent(text2)
 
-document.querySelector(".sample11_R2").innerHTML = url2;
+    document.querySelector(".sample11_R2").innerHTML = url2;
 
-const text3 = "https://escape1004.github.io/dothome21/%EC%9D%B8%EB%8D%B1%EC%8A%A4.html";
-const url3 = decodeURIComponent(text3)
+    const text3 = "https://escape1004.github.io/dothome21/%EC%9D%B8%EB%8D%B1%EC%8A%A4.html";
+    const url3 = decodeURIComponent(text3)
 
-document.querySelector(".sample11_R3").innerHTML = url3;
+    document.querySelector(".sample11_R3").innerHTML = url3;
 
-const text4 = "https%3A%2F%2Fescape1004.github.io%2Fdothome21%2F%EC%9D%B8%EB%8D%B1%EC%8A%A4.html";
-const url4 = decodeURIComponent(text4)
+    const text4 = "https%3A%2F%2Fescape1004.github.io%2Fdothome21%2F%EC%9D%B8%EB%8D%B1%EC%8A%A4.html";
+    const url4 = decodeURIComponent(text4)
 
-document.querySelector(".sample11_R4").innerHTML = url4;
+    document.querySelector(".sample11_R4").innerHTML = url4;
 }
 </code></pre>
                 </div>

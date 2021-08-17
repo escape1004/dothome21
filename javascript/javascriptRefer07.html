@@ -35,6 +35,7 @@
         body {
             padding: 2%;
             font-family: 'NEXON Lv1 Gothic OTF';
+            line-height: 1.6;
         }
 
         ul {
@@ -406,32 +407,32 @@
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const date = new Date();
+    const date = new Date();
 
-const year = date.getFullYear();
-document.querySelector(".sample01_R1").innerHTML = "지금은 " + year + "년 입니다.";
+    const year = date.getFullYear();
+    document.querySelector(".sample01_R1").innerHTML = "지금은 " + year + "년 입니다.";
 
-const month = date.getMonth() + 1;
-document.querySelector(".sample01_R2").innerHTML = "지금은 " + month + "월 입니다.";
+    const month = date.getMonth() + 1;
+    document.querySelector(".sample01_R2").innerHTML = "지금은 " + month + "월 입니다.";
 
-const days = date.getDate();
-document.querySelector(".sample01_R3").innerHTML = "지금은 " + days + "일 입니다.";
+    const days = date.getDate();
+    document.querySelector(".sample01_R3").innerHTML = "지금은 " + days + "일 입니다.";
 
-const hour = date.getHours();
-document.querySelector(".sample01_R4").innerHTML = "지금은 " + hour + "시 입니다.";
+    const hour = date.getHours();
+    document.querySelector(".sample01_R4").innerHTML = "지금은 " + hour + "시 입니다.";
 
-const minutes = date.getMinutes();
-document.querySelector(".sample01_R5").innerHTML = "지금은 " + minutes + "분 입니다.";
+    const minutes = date.getMinutes();
+    document.querySelector(".sample01_R5").innerHTML = "지금은 " + minutes + "분 입니다.";
 
-const seconds = date.getSeconds();
-document.querySelector(".sample01_R6").innerHTML = "지금은 " + seconds + "초 입니다.";
+    const seconds = date.getSeconds();
+    document.querySelector(".sample01_R6").innerHTML = "지금은 " + seconds + "초 입니다.";
 
-const milliseconds = date.getMilliseconds();
-document.querySelector(".sample01_R7").innerHTML = "지금은 " + milliseconds + "초 입니다.";
+    const milliseconds = date.getMilliseconds();
+    document.querySelector(".sample01_R7").innerHTML = "지금은 " + milliseconds + "초 입니다.";
 
-const day = date.getDay();
-const dayList = ['일', '월', '화', '수', '목', '금', '토'];
-document.querySelector(".sample01_R8").innerHTML = "지금은 " + dayList[day] + "요일 입니다.";
+    const day = date.getDay();
+    const dayList = ['일', '월', '화', '수', '목', '금', '토'];
+    document.querySelector(".sample01_R8").innerHTML = "지금은 " + dayList[day] + "요일 입니다.";
 }
 </code></pre>
                 </div>
@@ -482,16 +483,16 @@ document.querySelector(".sample01_R8").innerHTML = "지금은 " + dayList[day] +
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const date = new Date();
-const locale = date.toLocaleString();
-const localeDate = date.toLocaleDateString();
-const localeTime = date.toLocaleTimeString();
+    const date = new Date();
+    const locale = date.toLocaleString();
+    const localeDate = date.toLocaleDateString();
+    const localeTime = date.toLocaleTimeString();
 
-document.querySelector(".sample02_R1").innerHTML = locale;
+    document.querySelector(".sample02_R1").innerHTML = locale;
 
-document.querySelector(".sample02_R2").innerHTML = localeDate;
+    document.querySelector(".sample02_R2").innerHTML = localeDate;
 
-document.querySelector(".sample02_R3").innerHTML = localeTime;
+    document.querySelector(".sample02_R3").innerHTML = localeTime;
 }
 </code></pre>
                 </div>
@@ -542,14 +543,14 @@ document.querySelector(".sample02_R3").innerHTML = localeTime;
                 </div>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-const date = Date.parse("2021/8/11");
-document.querySelector(".sample03_R1").innerHTML = date;
+    const date = Date.parse("2021/8/11");
+    document.querySelector(".sample03_R1").innerHTML = date;
 
-const date2 = Date.parse("8 11 2021");
-document.querySelector(".sample03_R2").innerHTML = date2;
+    const date2 = Date.parse("8 11 2021");
+    document.querySelector(".sample03_R2").innerHTML = date2;
 
-const date3 = Date.now();
-document.querySelector(".sample03_R3").innerHTML = date3;
+    const date3 = Date.now();
+    document.querySelector(".sample03_R3").innerHTML = date3;
 }
 </code></pre>
                 </div>
