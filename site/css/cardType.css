@@ -1,11 +1,18 @@
-/* 카드 타입 유형 CSS */
+/* cardType */
+body {
+    background-color: #f3f3f3;
+}
+
+.cardType {
+    margin: 150px 0;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
 
 /* cardType01 */
-#cardType01 {}
-
 .cardType01 {
     font-family: 'GmarketSans';
-    padding: 60px 0;
+    padding: 100px 0;
 }
 
 .cardType01 h2 {
@@ -43,12 +50,8 @@
 }
 
 .cardType01 .card-wrap>div {
-    width: 387px;
+    width: 325px;
 }
-
-.cardType01 .card {}
-
-.cardType01 .card .card-img {}
 
 .cardType01 .card .card-title {
     display: block;
@@ -81,65 +84,66 @@
 /* cardType02 */
 .cardType02 {
     font-family: 'S-CoreDream';
-    text-align: center;
+    padding: 150px 0;
 }
 
 .cardType02 h2 {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
     font-size: 50px;
     font-weight: 400;
-    margin-bottom: 20px;
 }
 
 .cardType02 p {
-    font-size: 26px;
     font-weight: 300;
-    margin-bottom: 40px;
+    font-size: 26px;
+    line-height: 1.28;
+    text-align: center;
 }
 
 .cardType02 .card-wrap {
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
-    text-align: left;
 }
 
 .cardType02 .card-wrap>div {
     width: 255px;
 }
 
-.cardType02 .card {
-    border: 1px solid #e8e8e8;
+.cardType02 .card-wrap .card {
+    margin: 40px 20px 0 0;
+    padding: 15px 15px 16px 14px;
     border-radius: 5px;
-    padding: 15px;
+    border: solid 1px #E6E6E6;
 }
 
-.cardType02 .card .card-title {
+.cardType02 .card-wrap .card .card-title {
+    display: block;
+    margin: 14px 0 10px 0;
     font-size: 24px;
     font-weight: 500;
-    display: block;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    margin: 14px 0 10px 0;
 }
 
-.cardType02 .card-desc {
+.cardType02 .card-wrap .card .card-desc {
+    margin: 10px 0 13px 0;
     font-size: 14px;
     font-weight: 300;
-    display: -webkit-box;
     overflow: hidden;
+    display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-
 }
 
-.cardType02 .card-button {
-    font-size: 10px;
-    font-weight: 400;
-    display: inline-block;
-    border: 1px solid #000;
+.cardType02 .card-wrap .card .card-keyword {
+    margin: 13px 0 0 2px;
+    padding: 4px 16px;
     border-radius: 20px;
+    border: solid 1px #000;
     background-color: #000;
     color: #fff;
-    padding: 4px 16px 3px;
-    margin-top: 13px;
+    display: inline-block;
 }
