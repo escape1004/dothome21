@@ -10,127 +10,101 @@
 
 <body>
     <script>
-        //선언적 함수
-        function func1() {
-            document.write("선언적 함수<br>");
+        function f1() {
+            document.write("함수1<br>");
         }
-        func1();
+        f1();
+        f1();
+        f1();
+        f1();
 
-        //익명 함수
-        const func2 = function () {
-            document.write("익명 함수<br>");
+        let f2 = function () {
+            document.write("익명함수<br>");
         }
-        func2();
+        f2();
 
-        //매개변수 함수
-        function func3(str) {
-            document.write(str);
+        let f3 = function (txt) {
+            document.write(txt);
         }
-        func3("매개변수 함수<br>");
+        f3("매개변수<br>");
 
-        //리턴값 함수
-        function func4() {
-            const text = "리턴값 함수<br>"
-            return text;
+        let f4 = function () {
+            let str = "리턴값 함수<br>"
+            return str;
         }
-        document.write(func4());
+        document.write(f4());
 
-        //화살표 함수 : 선언적 함수
-        func5 = () => {
+        f5 = () => {
             document.write("화살표 함수 : 선언적 함수<br>");
         }
-        func5();
+        f5();
 
-        //화살표 함수 : 익명 함수
-        const func6 = () => {
-            document.write("화살표 함수 : 익명 함수<br>");
+        f6 = (str) => {
+            document.write(str);
         }
-        func6();
+        f6("화살표 함수 : 매개변수 함수<br>");
 
-        //화살표 함수 : 리턴값 함수
-        func7 = () => {
-            let str = "화살표 함수 : 리턴값 함수<br>"
+        f7 = () => {
+            let str = "화살표 함수 : 리턴값 함수<br>";
             return str;
         }
-        document.write(func7());
+        document.write(f7());
 
-        //화살표 함수 : 익명 함수 + 매개변수 + 리턴값
-        const func8 = (str) => {
-            return str;
+        f8 = str => str;
+        document.write(f8("화살표 함수 : 리턴값 함수<br>"));
+
+        function f9(str1, str2) {
+            document.write(str1 + str2);
         }
-        document.write(func8("화살표 함수 : 익명 함수 + 매개변수 + 리턴값<br>"));
+        f9("함수가 ", "실행되었습니다.<br>");
+        f9("함수가 ", "실행되었습니다.2<br>");
 
-        //화살표 함수 : 익명 함수 + 매개변수 + 리턴값 + 괄호 생략
-        const func9 = str => {
-            return str;
+        function f10(str1, str2) {
+            document.write(str1 + str2);
         }
-        document.write(func9("화살표 함수 : 익명 함수 + 매개변수 + 리턴값<br>"));
+        let a1 = "함수가 ";
+        let a2 = "실행되었습니다. : 변수<br>";
 
-        //
-        const func10 = str => str;
-        document.write(func10("화살표 함수 : 익명 함수 + 매개변수 + 리턴값<br>"));
+        f10(a1, a2);
 
-        //
-        func11 = str => str;
-        document.write(func11("화살표 함수 : 익명 함수 + 매개변수 + 리턴값<br>"));
-
-        //
-        function func12(str1, str2) {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
+        function f11(str1, str2) {
+            document.write(str1 + str2);
         }
-        func12("함수", "실행");
+        let a = ["함수가 ", "실행되었습니다. : 배열<br>"];
 
-        //
-        func13 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        func13("함수", "실행");
+        f11(a[0], a[1]);
 
-        //
-        func14 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
+        function f12(str1, str2) {
+            document.write(str1 + str2);
         }
-        const a = "함수";
-        const b = "실행";
-        func14(a, b);
-
-        //
-        func15 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        const c = ["함수", "실행"];
-        func15(c[0], c[1]);
-
-        //
-        func16 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        const d = [{
-            a: "함수"
-        }, {
-            b: "실행"
-        }];
-        func16(d[0].a, d[1].b);
-
-        //
-        func17 = (str1, str2) => {
-            document.write(`${str1}가 ${str2}되었습니다.<br>`);
-        }
-        const e = {
-            a: "함수",
-            b: "실행"
+        let ab = {
+            a: "함수가 ",
+            b: "실행되었습니다. : 객체<br>"
         };
-        func17(e.a, e.b);
 
-        //
-        const f = {
-            a: "함수",
-            b: "실행",
-            result: () => {
-                document.write(`${f.a}가 ${f.b}되었습니다.<br>`);
+        f12(ab.a, ab.b);
+
+        function f13(str1, str2) {
+            document.write(str1 + str2);
+        }
+        let abc = [{
+            a: "함수가 ",
+        }, {
+            b: "실행되었습니다. : 배열 + 객체<br>"
+        }];
+
+        f13(abc[0].a, abc[1].b);
+
+        //객체 생성자 함수
+        function func10(str1, str2) {
+            this.str1 = str1;
+            this.str2 = str2;
+            this.result = function () {
+                document.write(str1 + str2);
             }
         }
-        f.result();
+        const info1 = new func10("함수", "실행");   //인스턴스 생성
+        info1.result();
     </script>
 </body>
 
