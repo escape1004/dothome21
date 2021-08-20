@@ -1,0 +1,674 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 속성 검색하기</title>
+    <style>
+        @font-face {
+            font-family: 'GyeonggiBatang';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        body {
+            background-image: url(img/search_bg.jpg);
+            background-size: cover;
+            background-position: center bottom;
+            background-attachment: fixed;
+        }
+
+        .girl {
+            width: 250px;
+            position: fixed;
+            bottom: -60px;
+            right: 5%;
+        }
+
+        .dog {
+            width: 150px;
+            position: fixed;
+            bottom: -40px;
+            left: 5%;
+        }
+
+        .board {
+            margin: 5vw 10vw 10vw 10vw;
+            width: 80vw;
+            background-color: #F1F3F6;
+            border: 2px solid #000;
+            padding: 3%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .board h1 {
+            font-family: 'TmonMonsori';
+            color: #223547;
+            font-size: 60px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .board span {
+            font-family: 'GyeonggiBatang';
+            color: #223547;
+            font-size: 20px;
+        }
+
+        .board .search label {
+            font-family: 'GyeonggiBatang';
+            background-color: #BFE6FE;
+            font-size: 26px;
+            padding: 10px 30px;
+            border: 1px solid #000;
+            border-radius: 40px;
+            display: none;
+        }
+
+        .board .search input {
+            font-family: 'GyeonggiBatang';
+            font-size: 24px;
+            border: 1px solid #000;
+            padding: 10px 10px 10px 30px;
+            border-radius: 40px;
+            outline: none;
+
+        }
+
+        .board .list {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .board .list ul li {
+            font-family: 'GyeonggiBatang';
+            line-height: 1.6;
+            list-style: none;
+            background-color: #BDD6E6;
+            margin: 5px;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        .board .list ul li.hide {
+            display: none;
+        }
+
+
+        @media (max-width: 800px) {
+            .board {
+                width: 92vw;
+                padding: 6% 3% 3% 3%;
+                margin: 4vw;
+            }
+
+            .board h1 {
+                font-size: 30px;
+                margin-top: 5px;
+            }
+
+            .board span {
+                font-size: 12px;
+            }
+
+            .board .search input {
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 16px;
+                padding: 10px 10px 10px 20px;
+            }
+
+            .board .list {
+                margin-top: 20px;
+            }
+
+            .girl {
+                width: 200px;
+            }
+
+            .dog {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="board">
+            <span>속성 중에 첫 글자만 넣어주세요!!</span>
+            <h1>HTML 속성 검색하기</h1>
+            <div class="search">
+                <label for="search-box">검색하기</label>
+                <input id="search-box" class="search-input" type="text">
+            </div>
+
+            <div class="search-result">
+            </div>
+        </div>
+    </div>
+    <div class="girl">
+        <img src="img/search_girl.png" alt="">
+    </div>
+    <div class="dog">
+        <img src="img/search_dog.png" alt="">
+    </div>
+    </div>
+
+    <script>
+        const cssProp = [{
+                name: "a",
+                desc: "태그는 다른 페이지 이동을 설정합니다."
+            },
+            {
+                name: "acronym",
+                desc: "태그는 줄임말이나 머리글자를 표현하는데 사용합니다."
+            },
+            {
+                name: "address",
+                desc: "태그는 웹 페이지의 연락처 정보를 설정합니다."
+            },
+            {
+                name: "applet",
+                desc: "태그는 애플랫 요소를 설정합니다."
+            },
+            {
+                name: "area",
+                desc: "태그는 줄임말이나 머리글자를 표현하는데 사용합니다."
+            },
+            {
+                name: "article",
+                desc: "태그는 사이트의 독립적인 컨텐츠 섹션을 설정합니다."
+            },
+            {
+                name: "aside",
+                desc: "태그는 주요 콘텐츠의 보조적 컨텐츠 섹션을 설정합니다."
+            },
+            {
+                name: "audio",
+                desc: "태그는 오디오 파일을 설정합니다."
+            },
+            {
+                name: "b",
+                desc: "태그는 다른 텍스트와 구별 할 때 설정합니다."
+            },
+            {
+                name: "base",
+                desc: "태그는 모든 문서의 기본이 되는 URL을 설정합니다."
+            },
+            {
+                name: "basefont",
+                desc: "태그는 문서의 기본 폰트, 사이즈, 종류를 설정합니다."
+            },
+            {
+                name: "bdi",
+                desc: "태그는 텍스트의 출력 방향 영역을 설정합니다."
+            },
+            {
+                name: "bdo",
+                desc: "태그는 텍스트의 방향을 설정합니다."
+            },
+            {
+                name: "blockquote",
+                desc: "태그는 긴 문장의 인용문을 설정합니다."
+            },
+            {
+                name: "blink",
+                desc: "태그는 텍스트를 깜박이게 설정합니다."
+            },
+            {
+                name: "br",
+                desc: "태그는 텍스트 줄바꿈이 필요할 때 설정합니다."
+            },
+            {
+                name: "button",
+                desc: "button 태그는 클릭 할 수 있는 버튼을 설정합니다."
+            },
+            {
+                name: "canvas",
+                desc: "태그는 비트맵 방식의 그림을 설정합니다."
+            },
+            {
+                name: "caption",
+                desc: "태그는 표의 제목을 설정합니다."
+            },
+            {
+                name: "center",
+                desc: "태그는 텍스트를 가운데 정렬합니다."
+            },
+            {
+                name: "cite",
+                desc: "태그는 저작물의 출처 표기를 설정합니다."
+            },
+            {
+                name: "code",
+                desc: "태그는 코드를 나타내는 텍스트를 설정합니다."
+            },
+            {
+                name: "col",
+                desc: "태그는 colgroup 요소에 속하는 각 열의 속성을 설정합니다."
+            },
+            {
+                name: "colgroup",
+                desc: "태그는 표의 열을 묶는 그룹을 설정합니다."
+            },
+            {
+                name: "data",
+                desc: "태그는 주어진 요소의 데이터 값을 설정합니다."
+            },
+            {
+                name: "datalist",
+                desc: "태그는 선택 목록과 자동 완성 기능을 설정합니다."
+            },
+            {
+                name: "dd",
+                desc: "태그는 설명 목록의 항목을 설정합니다."
+            },
+            {
+                name: "del",
+                desc: "태그는 문서의 삭제된 텍스트를 설정합니다."
+            },
+            {
+                name: "details",
+                desc: "태그는 접기/펼치기 목록을 설정합니다."
+            },
+            {
+                name: "dfn",
+                desc: "태그는 용어를 정의할 때 설정합니다."
+            },
+            {
+                name: "dialog",
+                desc: "태그는 팝업 정보을 설정합니다."
+            },
+            {
+                name: "dir",
+                desc: "태그는 파일 및 폴더의 디렉토리를 설정합니다."
+            },
+            {
+                name: "div",
+                desc: " 태그는 문서의 영역을 나누거나 그룹화 할 때 설정합니다."
+            },
+            {
+                name: "dl",
+                desc: "태그는 설명 목록을 설정합니다."
+            },
+            {
+                name: "dt",
+                desc: "태그는 설명 목록 항목의 제목을 설정합니다."
+            },
+            {
+                name: "em",
+                desc: "태그는 텍스트를 강조할 때 설정합니다."
+            },
+            {
+                name: "embed",
+                desc: "태그는 외부 콘텐츠를 사용할 수 있도록 설정합니다."
+            },
+            {
+                name: "fieldset",
+                desc: "태그는 폼 컨트롤 요소의 내부 영역을 설정합니다."
+            },
+            {
+                name: "figcaption",
+                desc: "태그는 figure 요소의 설명 또는 제목을 설정합니다."
+            },
+            {
+                name: "figure",
+                desc: "태그는 인용, 도표, 사진, 코드 등의 독립적인 콘텐츠를 설정합니다."
+            },
+            {
+                name: "font",
+                desc: "태그는 폰트의 크기, 색, 종류를 설정합니다."
+            },
+            {
+                name: "footer",
+                desc: "태그는 사이트 관련 정보 및 관련 링크 콘텐츠 섹션을 설정합니다."
+            },
+            {
+                name: "form",
+                desc: "태그는 웹 서버에 정보를 제공하는 폼 컨트롤 유형을 설정합니다."
+            },
+            {
+                name: "framet",
+                desc: "태그는 레이아웃 구성을 위한 프레임을 설정합니다."
+            },
+            {
+                name: "h1 ~ h6",
+                desc: "태그는 섹션의 제목을 설정합니다."
+            },
+            {
+                name: "head",
+                desc: "태그는 제목과 스크립트, 스타일 시트, 메타 정보 등을 제공합니다."
+            },
+            {
+                name: "header",
+                desc: "태그는 사이트의 소개 및 메뉴 그룹을 나타내는 섹션을 설정합니다."
+            },
+            {
+                name: "hgroup",
+                desc: "태그는 제목 요소 그룹화를 설정합니다."
+            },
+            {
+                name: "hr",
+                desc: "태그는 단란 요소간의 주제별 구분을 설정합니다."
+            },
+            {
+                name: "html",
+                desc: "태그는 웹 문서의 최상위 요소 문서의 루트를 나타냅니다."
+            },
+            {
+                name: "i",
+                desc: "태그는 특별한 이유로 평범한 글자와 구분하기 위해 설정합니다."
+            },
+            {
+                name: "img",
+                desc: "태그는 웹 문서에 이미지를 정의합니다."
+            },
+            {
+                name: "input",
+                desc: "태그는 데이터를 입력할 수 있는 폼 컨트롤을 정의합니다."
+            },
+            {
+                name: "ins",
+                desc: "태그는 문서에 삽입된 텍스트를 설정합니다."
+            },
+            {
+                name: "kbd",
+                desc: "태그는 키보드 입력요소를 나타내는 텍스트를 정의합니다."
+            },
+            {
+                name: "keygen",
+                desc: " 태그는 보안키를 생성하고 컨트롤합니다."
+            },
+            {
+                name: "label",
+                desc: "태그는 해당 input 요소의 제목을 설정합니다."
+            },
+            {
+                name: "legend",
+                desc: "태그는 sfieldset 요소 영역의 설명을 설정합니다."
+            },
+            {
+                name: "li",
+                desc: "태그는 목록의 항목을 나타내는 태그입니다."
+            },
+            {
+                name: "link",
+                desc: "태그는 외부 파일 연결 할 때 설정합니다."
+            },
+            {
+                name: "main",
+                desc: "태그는 문서의 주요 콘텐츠를 정의합니다."
+            },
+            {
+                name: "map",
+                desc: "태그는 이미지 맵을 정의합니다."
+            },
+            {
+                name: "mark",
+                desc: "태그는 참조용 표시를 정의합니다."
+            },
+            {
+                name: "marqueet",
+                desc: "태그는 텍스트의 스크롤과 움직임을 정의합니다."
+            },
+            {
+                name: "menu",
+                desc: "태그는 메뉴 리스트를 정의합니다."
+            },
+            {
+                name: "menuitem",
+                desc: "태그는 메뉴 리스트 항목을 정의합니다."
+            },
+            {
+                name: "meta",
+                desc: "태그는 웹 문서에 대한 정보를 제공합니다."
+            },
+            {
+                name: "meter",
+                desc: "태그는 범위를 측정하는 게이지 정보를 정의합니다."
+            },
+            {
+                name: "nav",
+                desc: "태그는 내부 페이지 및 외부 페이지에 대한 탐색 링크를 제공하는 페이지 섹션을 설정합니다"
+            },
+            {
+                name: "noframes",
+                desc: "태그는 프레임이 지원되지 않을 경우 대체 메세지를 표시합니다."
+            },
+            {
+                name: "noscript",
+                desc: "태그는 스크립트를 지원하지 않는 브라우저를 위한 대체 태그입니다."
+            },
+            {
+                name: "object",
+                desc: "태그는 웹 문서에 포함된 멀티미디어 요소를 정의합니다."
+            },
+            {
+                name: "ol",
+                desc: "태그는 순서가 있는 목록형 태그입니다."
+            },
+            {
+                name: "optgroup",
+                desc: "태그는 select 메뉴 option 리스트의 그룹화를 설정합니다."
+            },
+            {
+                name: "option",
+                desc: "태그는 select 요소의 항목을 정의합니다."
+            },
+            {
+                name: "output",
+                desc: "태그는 사용자에 컨트롤에 따라 결과값을 계산으로 보여주는 요소입니다. "
+            },
+            {
+                name: "p",
+                desc: "태그는 단락을 나타냅니다. "
+            },
+            {
+                name: "param",
+                desc: "태그는 object 태그의 매개변수를 정의합니다. "
+            },
+            {
+                name: "picture",
+                desc: "태그는 화면 크기에 따라 이미지를 정의합니다. "
+            },
+            {
+                name: "pre",
+                desc: " 태그는 마크업 소스를 화면 그대로 표현합니다. "
+            },
+            {
+                name: "progress",
+                desc: " 태그는 작업의 진행 상태를 표시하는 바를 나타냅니다. "
+            },
+            {
+                name: "q",
+                desc: "태그는 짧은 글을 인용할 때 사용합니다. "
+            },
+            {
+                name: "rp",
+                desc: " 태그는 루비 주석을 괄호로 표현하기 위해서 사용합니다."
+            },
+            {
+                name: "rt",
+                desc: "태그는 태그는 루비 문자의 상단 주석을 정의합니다. "
+            },
+            {
+                name: "rtc",
+                desc: "태그는 루비 문자의 텍스트 영역을 정의합니다. "
+            },
+            {
+                name: "ruby",
+                desc: "  태그는 루비 문자를 정의합니다. "
+            },
+            {
+                name: "s",
+                desc: "요소는 텍스트가 정확하지 않고, 관련성이 없는 내용을 표시하는데 사용합니다."
+            },
+            {
+                name: "samp",
+                desc: "태그는 프로그램으로 출력된 결과물을 나타내는 텍스트 정의합니다. "
+            },
+            {
+                name: "script",
+                desc: "태그는 스크립트 코드를 포함하거나 외부 스크립트를 연결할 수 있습니다. "
+            },
+            {
+                name: "section",
+                desc: "태그는 주제별 그룹의 콘텐츠 섹션을 정의합니다. "
+            },
+            {
+                name: "small",
+                desc: "태그는 저작권, 면책조항, 주의사항, 법적 제한 사항, 주석표시에 사용합니다. "
+            },
+            {
+                name: "source",
+                desc: "태그는 미디어 요소에 대한 소스를 지정하는데 사용합니다. "
+            },
+            {
+                name: "span",
+                desc: "태그는 인라인 요소 그룹화를 정의합니다. "
+            },
+            {
+                name: "strike",
+                desc: "태그는 취소선(수평선)을 표현합니다. "
+            },
+            {
+                name: "strong",
+                desc: " 태그는 텍스트의 중요성을 강조할 때 설정합니다."
+            },
+            {
+                name: "style",
+                desc: "태그는 웹 문서에 대한 스타일 정보를 정의합니다. "
+            },
+            {
+                name: "sub",
+                desc: "sub "
+            },
+            {
+                name: "summary",
+                desc: "태그는 details 요소에 대한 요약 또는 제목을 정의합니다. "
+            },
+            {
+                name: "sup",
+                desc: "태그는 텍스트 위첨자를 정의합니다. "
+            },
+            {
+                name: "svg",
+                desc: "태그는 벡터 방식의 그림을 정의합니다. "
+            },
+            {
+                name: "table",
+                desc: "태그는 표를 설정합니다. "
+            },
+            {
+                name: "tbody",
+                desc: "태그는 표의 본문 영역을 그룹화합니다 "
+            },
+            {
+                name: "td",
+                desc: "태그는 표의 열(셀)을 설정합니다. "
+            },
+            {
+                name: "template",
+                desc: " 웹 문서에 사용하기 위한 템플렛을 정의합니다. "
+            },
+            {
+                name: "textarea",
+                desc: "  태그는 여러줄의 텍스트를 편집할 수 있는 컨트롤을 정의합니다."
+            },
+            {
+                name: "tfoot",
+                desc: "태그는 표의 푸터를 그룹화합니다. "
+            },
+            {
+                name: "th",
+                desc: " 태그는 행이나 열에 타이틀을 설정합니다."
+            },
+            {
+                name: "time",
+                desc: "태그는 날짜와 시간을 정의합니다. "
+            },
+            {
+                name: "title",
+                desc: "태그는 브라우저의 제목 또는 문서의 제목을 정의합니다. "
+            },
+            {
+                name: "tr",
+                desc: " 태그는 표의 행을 설정합니다."
+            },
+            {
+                name: "track",
+                desc: " 태그는 미디어 요소의 자막을 정의합니다."
+            },
+            {
+                name: "tt",
+                desc: "태그는 타자모양의 텍스트를 정의합니다. "
+            },
+            {
+                name: "u",
+                desc: " 태그는 맞춤법이 틀린 단어를 표시할 때 정의합니다."
+            },
+            {
+                name: "ul",
+                desc: " 태그는 순서가 없는 목록형 태그를 정의합니다."
+            },
+            {
+                name: "var",
+                desc: "태그는 수학적인 변수나 프로그램의 변수를 정의합니다. "
+            },
+            {
+                name: "video",
+                desc: " 태그는 미디어 영상을 정의합니다."
+            },
+            {
+                name: "wbr",
+                desc: "태그는 줄바꿈 할 위치를 정의할 때 사용합니다. "
+            },
+
+        ];
+        const searchInput = document.querySelector(".search-input");
+        const searchResult = document.querySelector(".search-result");
+
+
+        searchInput.addEventListener("keyup", () => {
+            const searchWord = searchInput.value; //사용자가 입력한 값
+            //console.log(searchWord);
+            findDesc(searchWord);
+        });
+
+        function findDesc(searchWord) {
+            const findData = cssProp.find((el) => {
+                return el.name === searchWord; //사용자가 입력한 값, 데이터 값이 일치여부
+            });
+
+            //데이터가 없을때
+            if (findData == null) {
+                searchResult.textContent = "해당 속성이 존재하지 않습니다."
+            } else {
+                searchResult.textContent = findData.desc; //데이터가 있으면 출력
+
+            }
+        }
+    </script>
+</body>
+
+</html>
