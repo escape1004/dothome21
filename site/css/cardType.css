@@ -100,7 +100,7 @@ body {
     font-size: 50px;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 22px;
+    margin-bottom: 10px;
 }
 
 .cardType02 p {
@@ -133,7 +133,7 @@ body {
 .cardType02 .card-wrap .card .card-title {
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: block;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -144,7 +144,7 @@ body {
 .cardType02 .card-wrap .card .card-desc {
     font-size: 14px;
     font-weight: 300;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     display: block;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -235,7 +235,7 @@ body {
     display: block;
     font-weight: bold;
     font-size: 26px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .cardType03 .card-wrap .card .card-desc {
@@ -255,5 +255,5 @@ body {
     font-weight: bold;
     line-height: 1.4;
     text-decoration: underline;
-    margin-top: 10px;
+    margin-top: 20px;
 }
