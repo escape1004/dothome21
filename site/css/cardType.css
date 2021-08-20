@@ -212,7 +212,6 @@ body {
     display: block;
     overflow: hidden;
     margin-bottom: 30px;
-    position: relative;
 }
 
 .cardType03 .card-wrap .card:last-child {
@@ -227,9 +226,14 @@ body {
 }
 
 .cardType03 .card-wrap .card-contents {
-    width: 895px;
+    width: 100%;
     height: 185px;
     float: left;
+}
+.cardType03 .card-wrap .card-contents .card-article {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .cardType03 .card-wrap .card .card-tag {
