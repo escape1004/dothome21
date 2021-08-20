@@ -230,6 +230,7 @@ body {
     height: 185px;
     float: left;
 }
+
 .cardType03 .card-wrap .card-contents .card-article {
     height: 100%;
     position: relative;
@@ -275,6 +276,10 @@ body {
     color: #555;
     display: block;
     margin: 7px 0 7px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .cardType03 .card-wrap .card .card-date {
