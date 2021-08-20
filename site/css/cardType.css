@@ -10,6 +10,12 @@ body {
 }
 
 /* cardType01 */
+.cardType {
+    margin: 100px 0;
+    background-color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
 .cardType01 {
     font-family: 'GmarketSans';
     padding: 100px 0;
@@ -22,48 +28,44 @@ body {
 }
 
 .cardType01 p {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 26px;
     line-height: 1.28;
     margin-bottom: 40px;
 }
 
-/* float을 이용한 레이아웃 */
+/* float을 이용한 layout 옛날버전 */
 /* .card-wrap {
     overflow: hidden;
 }
-
 .card-wrap > div {
     float: left;
     width: 387px;
     margin-right: 19px;
 }
-
 .card-wrap > div:last-child {
     margin-right: 0;
 } */
 
-/* flex를 이용한 레이아웃 */
+/* flex를 이용한 layout 요즘버전 */
 .cardType01 .card-wrap {
     display: flex;
     justify-content: space-between;
 }
 
 .cardType01 .card-wrap>div {
-    width: 100%;
-}
-
-.cardType01 .card .card-img {
-    width: 100%;
+    width: 387px;
 }
 
 .cardType01 .card .card-title {
     display: block;
     font-size: 32px;
     white-space: nowrap;
-    /* 한줄 효과 */
+    /* 한줄효과 */
     overflow: hidden;
+    /* 한줄효과 */
     text-overflow: ellipsis;
+    /* 한줄효과 */
 }
 
 .cardType01 .card .card-desc {
@@ -71,10 +73,13 @@ body {
     font-size: 20px;
     font-weight: 300;
     overflow: hidden;
-    /* 두줄 효과 */
+    /* 벤더 프리픽스   두줄효과*/
     display: -webkit-box;
+    /* 벤더 프리픽스   두줄효과*/
     -webkit-line-clamp: 2;
+    /* 벤더 프리픽스   두줄효과*/
     -webkit-box-orient: vertical;
+    /* 벤더 프리픽스   두줄효과*/
 }
 
 .cardType01 .card .card-keyword {
