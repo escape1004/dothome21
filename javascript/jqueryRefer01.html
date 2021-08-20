@@ -141,6 +141,7 @@
 
         .table table .center {
             text-align: center;
+            text-decoration: none;
         }
 
         .sample {
@@ -576,7 +577,7 @@
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
     $(".reset1").click(function () {
-        $(".view1 li").removeClass("red");
+        $(".view1 *").removeClass("red");
     });
     $(".btn1-1").click(function () {
         $(".view1 .class").addClass("red");
@@ -600,22 +601,22 @@
             <hr>
             <script>
                 $(".reset1").click(function () {
-                    $(".view1 li").removeClass("blue");
+                    $(".view li").removeClass("blue");
                 });
                 $(".btn1-1").click(function () {
-                    $(".view1 .class").addClass("blue");
+                    $(".view .class").addClass("blue");
                 });
                 $(".btn1-2").click(function () {
-                    $(".view1 #id").addClass("blue");
+                    $(".view #id").addClass("blue");
                 });
                 $(".btn1-3").click(function () {
-                    $(".view1 li").addClass("blue");
+                    $(".view li").addClass("blue");
                 });
                 $(".btn1-4").click(function () {
-                    $(".view1 .class, .view1 #id").addClass("blue");
+                    $(".view .class, .view #id").addClass("blue");
                 });
                 $(".btn1-5").click(function () {
-                    $(".view1 *").addClass("blue");
+                    $(".view li").addClass("blue");
                 });
             </script>
             <!-- //sample01 -->
