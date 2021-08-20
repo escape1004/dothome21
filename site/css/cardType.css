@@ -147,7 +147,7 @@ body {
     overflow: hidden;
 }
 
-.cardType02 .card-wrap .card .card-btn span {
+.cardType02 .card-wrap .card .card-tag span {
     font-size: 10px;
     font-weight: 400;
     text-transform: uppercase;
@@ -157,4 +157,128 @@ body {
     border: solid 1px #000;
     background-color: #000;
     color: #fff;
+}
+
+
+
+/* cardType03 */
+.cardType03 {
+    padding: 100px 0;
+    font-family: 'NanumSquare';
+}
+
+.cardType03 .header {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 47px;
+}
+
+.cardType03 h2 {
+    font-size: 50px;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 22px;
+}
+
+.cardType03 p {
+    font-size: 18px;
+    font-weight: 600;
+    float: left;
+}
+
+.cardType03 .btn {
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+    margin-right: 15px;
+}
+
+.cardType03 .btn>a {
+    margin-right: 0;
+}
+
+.cardType03 .btn.active {
+    color: #ff2626;
+}
+
+.cardType03 .card-wrap {
+    display: block;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardType03 .card-wrap .card {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.cardType03 .card-wrap .card:last-child {
+    margin-bottom: 0;
+}
+
+.cardType03 .card-wrap .card .card-img {
+    width: 285px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 19px;
+}
+
+.cardType03 .card-wrap .card-contents {
+    width: 895px;
+    height: 185px;
+    float: left;
+}
+
+.cardType03 .card-wrap .card .card-tag {
+    font-size: 14px;
+    font-weight: 800;
+    display: inline-block;
+    padding: 4px 14px 3px 15px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+}
+
+.cardType03 .card-wrap .card .card-tag.ht {
+    background-color: #ff5151;
+}
+
+.cardType03 .card-wrap .card .card-tag.cs {
+    background-color: #5465ff;
+}
+
+.cardType03 .card-wrap .card .card-tag.js {
+    background-color: #ff4646;
+}
+
+.cardType03 .card-wrap .card .card-tag.jq {
+    background-color: #11c865;
+}
+
+.cardType03 .card-wrap .card .card-title {
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.cardType03 .card-wrap .card .card-desc {
+    font-size: 16px;
+    color: #555;
+    display: block;
+}
+
+.cardType03 .card-wrap .card .card-date {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 0;
 }
