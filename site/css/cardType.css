@@ -50,7 +50,11 @@ body {
 }
 
 .cardType01 .card-wrap>div {
-    width: 325px;
+    width: 100%;
+}
+
+.cardType01 .card .card-img {
+    width: 100%;
 }
 
 .cardType01 .card .card-title {
@@ -84,66 +88,73 @@ body {
 /* cardType02 */
 .cardType02 {
     font-family: 'S-CoreDream';
-    padding: 150px 0;
+    padding: 100px 0;
 }
 
 .cardType02 h2 {
+    font-size: 50px;
     font-weight: 500;
-    font-size: 50px;
-    margin-bottom: 20px;
     text-align: center;
-    font-size: 50px;
-    font-weight: 400;
+    margin-bottom: 22px;
 }
 
 .cardType02 p {
-    font-weight: 300;
     font-size: 26px;
-    line-height: 1.28;
+    font-weight: 300;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .cardType02 .card-wrap {
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
 }
 
-.cardType02 .card-wrap>div {
-    width: 255px;
+.cardType02 .card-wrap .card {
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    margin-right: 20px;
 }
 
-.cardType02 .card-wrap .card {
-    margin: 40px 20px 0 0;
-    padding: 15px 15px 16px 14px;
-    border-radius: 5px;
-    border: solid 1px #E6E6E6;
+.cardType02 .card-wrap .card:last-child {
+    margin-right: 0px;
+}
+
+.cardType02 .card-wrap .card .card-img {
+    width: 100%;
 }
 
 .cardType02 .card-wrap .card .card-title {
-    display: block;
-    margin: 14px 0 10px 0;
     font-size: 24px;
     font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
 .cardType02 .card-wrap .card .card-desc {
-    margin: 10px 0 13px 0;
     font-size: 14px;
     font-weight: 300;
-    overflow: hidden;
+    margin-bottom: 6px;
+    display: block;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.cardType02 .card-wrap .card .card-keyword {
-    margin: 13px 0 0 2px;
-    padding: 4px 16px;
+.cardType02 .card-wrap .card .card-btn span {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 4px 16px 3px;
     border-radius: 20px;
     border: solid 1px #000;
     background-color: #000;
     color: #fff;
-    display: inline-block;
 }
