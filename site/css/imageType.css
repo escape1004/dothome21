@@ -38,7 +38,7 @@ body {
 .imageType01 .card .inner-wrap {
     color: #fff;
     position: absolute;
-    width: 530px;
+    width: 400px;
     bottom: 45px;
     left: 30px;
 }
@@ -60,6 +60,10 @@ body {
     display: block;
     margin-top: 6px;
     margin-bottom: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .imageType01 .inner-wrap .card-btn {
