@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        {
+            const obj = {
+                a: 1000,
+                b: 2000,
+                c: 3000
+            }
+
+            result = 0;
+
+            //1000, 2000, 3000
+            for (let i in obj) {
+                document.write(obj[i]);
+            }
+
+            document.write("<br>");
+
+            //6000
+            for (let i in obj) {
+                result = result + obj[i];
+            }
+            document.write(result);
+
+            document.write("<br>");
+
+            //5000
+            document.write(obj.b + obj.c);
+
+            document.write("<br>");
+
+            //4000
+            document.write(obj.b + obj.c - obj.a);
+
+            document.write("<br>");
+
+            //1, 2, 3
+            document.write(obj.a / obj.a);
+            document.write(obj.b / obj.a);
+            document.write(obj.c / obj.a);
+
+            document.write("<br>");
+
+            //a, b, c
+            for (let i in obj) {
+                document.write(i);
+            }
+
+            document.write("<br>");
+
+
+
+            const obj2 = [{
+                    a: 1000
+                },
+                {
+                    b: 2000
+                },
+                {
+                    c: 3000
+                }
+            ];
+
+            const obj3 = [1000, 2000, 3000, "a", "b", "c"];
+
+            result = 0;
+
+            //1000, 2000, 3000
+
+
+            document.write("<br>");
+
+            //6000
+
+            document.write("<br>");
+
+            //5000
+
+            document.write("<br>");
+
+            //4000
+
+            document.write("<br>");
+
+            //1, 2, 3
+
+
+            document.write("<br>");
+
+            //a, b, c
+
+        }
+    </script>
+</body>
+
+</html>
