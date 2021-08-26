@@ -94,38 +94,30 @@
 }
 </code></pre>
                 </div>
-
-                <!-- 결과 버튼 -->
+                <!-- result -->
                 <style>
-                    .sample h2.result-btn1 {
-                        margin-top: 10px;
-                        padding: 10px 15px;
-                        display: inline-block;
-                        border-radius: 5px;
-                    }
-
-                    .sample .code .line-numbers1 {
+                    .result1 {
                         display: none;
                     }
 
-                    .sample .code .line-numbers1.show {
+                    .result1.show {
                         display: block;
                     }
                 </style>
-
-                <h2 class="result-btn1"><a href="#c">결과보기</a></h2>
-                <div class="code">
-                    <pre class="line-numbers2"><code class="language-css">100
+                <a href="#c" class="result_btn" id="result_btn1">결과보기</a>
+                <div class="result1">
+                    <pre class="line-numbers"><code class="language-none">100
 200
 javascript
 </code></pre>
+                    <script>
+                        document.querySelector("#result_btn1").addEventListener("click", () => {
+                            document.querySelector(".result1").classList.toggle("show");
+                        });
+                    </script>
                 </div>
+                <!-- //result -->
             </div>
-            <script>
-                document.querySelector(".result-btn1").addEventListener("click", () => {
-                    document.querySelector(".line-numbers2").classList.toggle("show");
-                });
-            </script>
             <hr>
             <!-- //sample01 -->
 
@@ -148,6 +140,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result2 {
+                        display: none;
+                    }
+
+                    .result2.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn2">결과보기</a>
+                <div class="result2">
+                    <pre class="line-numbers"><code class="language-none">300
+400
+jquery
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn2").addEventListener("click", () => {
+                            document.querySelector(".result2").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample02 -->
@@ -171,8 +186,30 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result3 {
+                        display: none;
+                    }
+
+                    .result3.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn3">결과보기</a>
+                <div class="result3">
+                    <pre class="line-numbers"><code class="language-none">400
+600
+javascriptjquery
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn3").addEventListener("click", () => {
+                            document.querySelector(".result3").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
-            <br>
             <hr>
             <!-- //sample03 -->
 
@@ -211,6 +248,36 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result4 {
+                        display: none;
+                    }
+
+                    .result4.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn4">결과보기</a>
+                <div class="result4">
+                    <pre class="line-numbers"><code class="language-none">함수 안
+100
+500
+javascript
+400
+함수 밖
+100
+200
+javascript
+400
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn4").addEventListener("click", () => {
+                            document.querySelector(".result4").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample04 -->
@@ -241,6 +308,34 @@ javascript
 }
     </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result5 {
+                        display: none;
+                    }
+
+                    .result5.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn5">결과보기</a>
+                <div class="result5">
+                    <pre class="line-numbers"><code class="language-none">x: 100 : number
+y: 100 : string
+
+x: 100 : string
+y: 100 : number
+
+x: 100 : number
+y: 100 : string
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn5").addEventListener("click", () => {
+                            document.querySelector(".result5").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample05 -->
@@ -273,6 +368,35 @@ javascript
 }
     </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result6 {
+                        display: none;
+                    }
+
+                    .result6.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn6">결과보기</a>
+                <div class="result6">
+                    <pre class="line-numbers"><code class="language-none">number
+string
+function
+object
+object
+boolean
+undefined
+undefined
+symbol
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn6").addEventListener("click", () => {
+                            document.querySelector(".result6").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample06 -->
@@ -297,6 +421,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result7 {
+                        display: none;
+                    }
+
+                    .result7.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn7">결과보기</a>
+                <div class="result7">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn7").addEventListener("click", () => {
+                            document.querySelector(".result7").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample07 -->
@@ -318,6 +465,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result8 {
+                        display: none;
+                    }
+
+                    .result8.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn8">결과보기</a>
+                <div class="result8">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn8").addEventListener("click", () => {
+                            document.querySelector(".result8").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample08 -->
@@ -336,6 +506,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result9 {
+                        display: none;
+                    }
+
+                    .result9.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn9">결과보기</a>
+                <div class="result9">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn9").addEventListener("click", () => {
+                            document.querySelector(".result9").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample09 -->
@@ -357,6 +550,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result10 {
+                        display: none;
+                    }
+
+                    .result10.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn10">결과보기</a>
+                <div class="result10">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn10").addEventListener("click", () => {
+                            document.querySelector(".result10").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample10 -->
@@ -375,6 +591,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result11 {
+                        display: none;
+                    }
+
+                    .result11.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn11">결과보기</a>
+                <div class="result11">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn11").addEventListener("click", () => {
+                            document.querySelector(".result11").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample11 -->
@@ -396,6 +635,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result12 {
+                        display: none;
+                    }
+
+                    .result12.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn12">결과보기</a>
+                <div class="result12">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn12").addEventListener("click", () => {
+                            document.querySelector(".result12").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample12 -->
@@ -417,6 +679,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result13 {
+                        display: none;
+                    }
+
+                    .result13.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn13">결과보기</a>
+                <div class="result13">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn13").addEventListener("click", () => {
+                            document.querySelector(".result13").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample13 -->
@@ -438,6 +723,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result14 {
+                        display: none;
+                    }
+
+                    .result14.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn14">결과보기</a>
+                <div class="result14">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn14").addEventListener("click", () => {
+                            document.querySelector(".result14").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample14 -->
@@ -460,6 +768,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result15 {
+                        display: none;
+                    }
+
+                    .result15.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn15">결과보기</a>
+                <div class="result15">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn15").addEventListener("click", () => {
+                            document.querySelector(".result15").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample15 -->
@@ -483,6 +814,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result16 {
+                        display: none;
+                    }
+
+                    .result16.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn16">결과보기</a>
+                <div class="result16">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn16").addEventListener("click", () => {
+                            document.querySelector(".result16").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample16 -->
@@ -507,6 +861,31 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result17 {
+                        display: none;
+                    }
+
+                    .result17.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn17">결과보기</a>
+                <div class="result17">
+                    <pre class="line-numbers"><code class="language-none">100
+200,300
+200
+300
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn17").addEventListener("click", () => {
+                            document.querySelector(".result17").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample17 -->
@@ -532,6 +911,29 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result18 {
+                        display: none;
+                    }
+
+                    .result18.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn18">결과보기</a>
+                <div class="result18">
+                    <pre class="line-numbers"><code class="language-none">100
+200
+javascript
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn18").addEventListener("click", () => {
+                            document.querySelector(".result18").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample18 -->
@@ -568,6 +970,34 @@ javascript
 }
 </code></pre>
                 </div>
+                <!-- result -->
+                <style>
+                    .result19 {
+                        display: none;
+                    }
+
+                    .result19.show {
+                        display: block;
+                    }
+                </style>
+                <a href="#c" class="result_btn" id="result_btn19">결과보기</a>
+                <div class="result19">
+                    <pre class="line-numbers"><code class="language-none">100
+200,300
+200
+300
+javascript
+javascript가 실행되었습니다.
+javascript가 실행되었습니다.
+javascript가 실행되었습니다.
+</code></pre>
+                    <script>
+                        document.querySelector("#result_btn19").addEventListener("click", () => {
+                            document.querySelector(".result19").classList.toggle("show");
+                        });
+                    </script>
+                </div>
+                <!-- //result -->
             </div>
             <hr>
             <!-- //sample19 -->
@@ -577,7 +1007,7 @@ javascript
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
-    <script>
+    <!-- <script>
         //sample01
         //01. 변수 : 데이터 저장소
         {
@@ -911,7 +1341,7 @@ javascript
             obj.f();
 
             document.write("<br>");
-        }
+        } -->
     </script>
 </body>
 
