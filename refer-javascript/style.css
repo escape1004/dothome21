@@ -148,6 +148,11 @@ hr {
     top: 0;
 }
 
+.sample h2 a {
+    text-decoration: none;
+    color: black;
+}
+
 .sample pre {
     margin: 0 !important;
     border-radius: 0 0 5px 5px;
