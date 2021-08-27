@@ -88,21 +88,21 @@
 
 /* NEXON Lv1 Gothic */
 @font-face {
-    font-family: 'NEXON Lv1 Gothic OTF';
+    font-family: 'NEXONLv1Gothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'NEXON Lv1 Gothic OTF';
+    font-family: 'NEXONLv1Gothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'NEXON Lv1 Gothic OTF';
+    font-family: 'NEXONLv1Gothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
@@ -110,22 +110,24 @@
 
 /* NEXON Lv2 Gothic */
 @font-face {
-    font-family: 'NEXON Lv2 Gothic';
+    font-family: 'NEXONLv2Gothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'NEXON Lv2 Gothic';
+    font-family: 'NEXONLv2Gothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'NEXON Lv2 Gothic';
+    font-family: 'NEXONLv2Gothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);

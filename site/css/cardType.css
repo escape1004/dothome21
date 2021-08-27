@@ -254,3 +254,49 @@ body {
     text-decoration: underline;
     margin-top: 20px;
 }
+
+
+
+/* cardType04 */
+.cardType04 {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 100px;
+}
+
+.cardType04 h2 {
+    font-size: 52px;
+    font-weight: Bold;
+    text-align: center;
+    padding-top: 100px;
+    line-height: 71px;
+}
+
+.cardType04 .card-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 74px;
+}
+
+.cardType04 .card-wrap .card {
+    position: relative;
+    border-radius: 15px;
+}
+
+.cardType04 .card-wrap .card .card-desc {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.cardType04 .card-wrap .card .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    line-height: 40px;
+}
