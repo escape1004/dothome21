@@ -15,8 +15,8 @@ body {
 }
 
 .sliderType01 .slider {
-    color: #fff;
     position: relative;
+    color: #fff;
 }
 
 .sliderType01 .slider .slider-inner {

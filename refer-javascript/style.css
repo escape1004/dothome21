@@ -192,16 +192,33 @@ hr {
     background-color: #f5f5f5;
 }
 
-.result_btn {
+.result h3 a {
+    font-size: 13px;
+    padding: 10px 15px;
+    background-color: #f1f1f1;
     display: inline-block;
-    padding: 15px;
-    margin-top: 10px;
-    text-decoration: none;
-    color: black;
-    background-color: #f2f2f2;
-    border-radius: 5px;
+    border-radius: 4px;
+    color: #000;
+    font-weight: normal;
+    margin-top: 5px;
 }
 
+.result div {
+    background: #272822;
+    color: #fff;
+    padding: 15px 20px;
+    border: 4px;
+    border-radius: 0 4px 4px 4px;
+    display: none;
+}
+
+.result.show div {
+    display: block;
+}
+
+.result div span {
+    display: block;
+}
 
 @media (max-width: 800px) {
     body {

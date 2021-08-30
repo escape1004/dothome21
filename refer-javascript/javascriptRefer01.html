@@ -95,26 +95,13 @@
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result1 {
-                        display: none;
-                    }
-
-                    .result1.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn1">결과보기</a>
-                <div class="result1">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn1").addEventListener("click", () => {
-                            document.querySelector(".result1").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result1-1"></span>
+                        <span class="result1-2"></span>
+                        <span class="result1-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -141,26 +128,13 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result2 {
-                        display: none;
-                    }
-
-                    .result2.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn2">결과보기</a>
-                <div class="result2">
-                    <pre class="line-numbers"><code class="language-none">300
-400
-jquery
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn2").addEventListener("click", () => {
-                            document.querySelector(".result2").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result2-1"></span>
+                        <span class="result2-2"></span>
+                        <span class="result2-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -187,26 +161,13 @@ jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result3 {
-                        display: none;
-                    }
-
-                    .result3.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn3">결과보기</a>
-                <div class="result3">
-                    <pre class="line-numbers"><code class="language-none">400
-600
-javascriptjquery
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn3").addEventListener("click", () => {
-                            document.querySelector(".result3").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result3-1"></span>
+                        <span class="result3-2"></span>
+                        <span class="result3-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -232,7 +193,6 @@ javascriptjquery
         a = 400;        //전역 변수 : 변수 값이 300 -> 400 변경
         y = 500;        //지역 변수 : 변수 값이 200 -> 500 변경
 
-        document.write("함수 안");
         document.write(x);
         document.write(y);
         document.write(z);
@@ -240,7 +200,6 @@ javascriptjquery
     }
     func();
 
-    document.write("함수 밖");
     document.write(x);
     document.write(y);
     document.write(z);
@@ -249,33 +208,18 @@ javascriptjquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result4 {
-                        display: none;
-                    }
-
-                    .result4.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn4">결과보기</a>
-                <div class="result4">
-                    <pre class="line-numbers"><code class="language-none">함수 안
-100
-500
-javascript
-400
-함수 밖
-100
-200
-javascript
-400
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn4").addEventListener("click", () => {
-                            document.querySelector(".result4").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result4-1"></span>
+                        <span class="result4-2"></span>
+                        <span class="result4-3"></span>
+                        <span class="result4-4"></span>
+                        <span class="result4-5"></span>
+                        <span class="result4-6"></span>
+                        <span class="result4-7"></span>
+                        <span class="result4-8"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -1007,7 +951,15 @@ javascript가 실행되었습니다.
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
-    <!-- <script>
+    <script>
+        //정답보기
+        document.querySelectorAll(".result h3").forEach(el => {
+            el.addEventListener("click", function (e) {
+                e.preventDefault();
+                this.parentNode.classList.toggle("show");
+            });
+        });
+
         //sample01
         //01. 변수 : 데이터 저장소
         {
@@ -1015,10 +967,9 @@ javascript가 실행되었습니다.
             var y = 200; //변수 y에 숫자 200을 저장
             var z = "javascript"; //변수 z에 문자 javascript 저장
 
-            document.write("*** 01, 변수 ***<br>");
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
+            document.querySelector(".result1-1").innerHTML = x;
+            document.querySelector(".result1-2").innerHTML = y;
+            document.querySelector(".result1-3").innerHTML = z;
         }
 
         //sample02
@@ -1031,10 +982,9 @@ javascript가 실행되었습니다.
             y = 400; //변수 y의 값이 200에서 400으로 변경
             z = "jquery"; //변수 z의 문자를 jquery로 변경
 
-            document.write("*** 02, 변수 ***<br>");
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
+            document.querySelector(".result2-1").innerHTML = x;
+            document.querySelector(".result2-2").innerHTML = y;
+            document.querySelector(".result2-3").innerHTML = z;
         }
 
         //sample03
@@ -1047,10 +997,9 @@ javascript가 실행되었습니다.
             y += 400; // y = y + 400;
             z += "jquery"; // z = z + "jquery";
 
-            document.write("*** 03, 변수 ***<br>");
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
+            document.querySelector(".result3-1").innerHTML = x;
+            document.querySelector(".result3-2").innerHTML = y;
+            document.querySelector(".result3-3").innerHTML = z;
         }
 
         //sample04
@@ -1070,21 +1019,17 @@ javascript가 실행되었습니다.
                 a = 400; //전역 변수 : 변수 값이 300 -> 400 변경
                 y = 500; //지역 변수 : 변수 값이 200 -> 500 변경
 
-                document.write("함수 안", "<br>");
-                document.write(x, "<br>");
-                document.write(y, "<br>");
-                document.write(z, "<br>");
-                document.write(a, "<br>");
+                document.querySelector(".result4-1").innerHTML = x;
+                document.querySelector(".result4-2").innerHTML = y;
+                document.querySelector(".result4-3").innerHTML = z;
+                document.querySelector(".result4-4").innerHTML = a;
             }
             func();
 
-            document.write("함수 밖", "<br>");
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br>");
-            document.write(a, "<br>");
-
-            document.write("<br>");
+            document.querySelector(".result4-5").innerHTML = x;
+            document.querySelector(".result4-6").innerHTML = y;
+            document.querySelector(".result4-7").innerHTML = z;
+            document.querySelector(".result4-8").innerHTML = a;
         }
 
         //sample05
@@ -1341,7 +1286,7 @@ javascript가 실행되었습니다.
             obj.f();
 
             document.write("<br>");
-        } -->
+        }
     </script>
 </body>
 

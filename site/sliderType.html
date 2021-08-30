@@ -17,46 +17,457 @@
 
     <!-- Slider Type CSS -->
     <link rel="stylesheet" href="css/sliderType.css">
+
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <style>
+        .swiper {
+            width: 100%;
+            position: relative;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .swiper2 {
+            width: 100%;
+            position: relative;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .swiper3 {
+            width: 100%;
+            position: relative;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .swiper4 {
+            width: 100%;
+            position: relative;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .swiper-slide .slider-inner {
+            width: 1400px;
+            margin: 0 auto;
+        }
+
+        .swiper-slide .slider-inner em {
+            font-family: 'NEXONLv1Gothic';
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-top: 100px;
+            display: block;
+        }
+
+        .swiper-slide .slider-inner h3 {
+            font-family: 'GmarketSans';
+            font-size: 100px;
+            font-weight: 300;
+            line-height: 1.2;
+            text-indent: -8px;
+        }
+
+        .swiper-slide .slider-inner p {
+            font-family: 'NEXONLv1Gothic';
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .swiper-slide .slider-inner .btn {
+            display: block;
+            padding-bottom: 100px;
+            margin-top: 260px;
+        }
+
+        .swiper-slide .slider-inner .btn a {
+            font-family: 'NEXONLv1Gothic';
+            font-size: 16px;
+            width: 200px;
+            height: 50px;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 7px;
+        }
+
+        .swiper-slide .slider-inner .btn a.white {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .swiper-slide .slider-inner .btn a.black {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .swiper-wrapper .swiper-slide:nth-child(1) {
+            background-image: url(img/SLIDER-TYPE01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+        }
+
+        .swiper-wrapper .swiper-slide:nth-child(2) {
+            background-image: url(img/SLIDER-TYPE02.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+        }
+
+        .swiper-wrapper .swiper-slide:nth-child(3) {
+            background-image: url(img/SLIDER-TYPE03.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+        }
+
+        .swiper-wrapper .swiper-slide:nth-child(4) {
+            background-image: url(img/SLIDER-TYPE01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+        }
+
+        .swiper-wrapper .swiper-slide:nth-child(5) {
+            background-image: url(img/SLIDER-TYPE02.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+        }
+
+        .swiper-wrapper .swiper-slide:nth-child(6) {
+            background-image: url(img/SLIDER-TYPE03.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            left: 50% !important;
+            bottom: 35px;
+            transform: translateX(-50%);
+        }
+
+        .swiper-pagination .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 3px solid #fff;
+            box-sizing: border-box;
+            margin: 0 6px;
+            opacity: 1;
+            background-color: transparent;
+        }
+
+        .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: #fff;
+        }
+
+        .swiper-button-prev {
+            width: 20px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+        }
+
+        .swiper-button-next {
+            width: 20px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff;
+        }
+
+        /* swiper2 */
+        .swiper-pagination-fraction {
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- sliderType01 -->
     <section class="sliderType">
         <div class="sliderType01">
-            <div class="slider">
-                <div class="slider-inner">
-                    <em>genesis</em>
-                    <h3>G80 SPORT</h3>
-                    <p>2021.08.10 출시</p>
-                    <span class="btn">
-                        <a href="#" class="white">자세히 보기</a>
-                        <a href="#" class="black">견적 내기</a>
-                    </span>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>G80 SPORT</h3>
+                            <p>2021.08.10 출시</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>GV70</h3>
+                            <p>당신이 만들어갈 새로운 이야기의 시작</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>G80</h3>
+                            <p>전기차 그 이상의 시작</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider-arrow">
-                    <a href="#" class="left">
-                        <img src="img/arrow-left.svg" alt="이전 이미지">
-                    </a>
-                    <a href="#" class="right">
-                        <img src="img/arrow-right.svg" alt="다음 이미지">
-                    </a>
-                </div>
-                <div class="slider-dot">
-                    <a href="#" class="dot active"></a>
-                    <a href="#" class="dot"></a>
-                    <a href="#" class="dot"></a>
-                    <a href="#" class="play">
-                        <img src="img/arrow-play.svg" alt="시작">
-                    </a>
-                    <a href="#" class="stop">
-                        <img src="img/arrow-stop.svg" alt="정지">
-                    </a>
-                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <div class="slider"></div>
-            <div class="slider"></div>
         </div>
     </section>
-    </body2>
+    <!-- //sliderType01 -->
+
+    <!-- sliderType02 -->
+    <section class="sliderType">
+        <div class="sliderType02">
+            <div class="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>G80 SPORT</h3>
+                            <p>2021.08.10 출시</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>GV70</h3>
+                            <p>당신이 만들어갈 새로운 이야기의 시작</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>G80</h3>
+                            <p>전기차 그 이상의 시작</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- //sliderType02 -->
+
+    <!-- sliderType03 -->
+    <section class="sliderType">
+        <div class="sliderType03">
+            <div class="swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>G80 SPORT</h3>
+                            <p>2021.08.10 출시</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>GV70</h3>
+                            <p>당신이 만들어갈 새로운 이야기의 시작</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>G80</h3>
+                            <p>전기차 그 이상의 시작</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- //sliderType03 -->
+
+    <!-- sliderType04 -->
+    <section class="sliderType">
+        <div class="sliderType04">
+            <div class="swiper4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>G80 SPORT</h3>
+                            <p>2021.08.10 출시</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>GV70</h3>
+                            <p>당신이 만들어갈 새로운 이야기의 시작</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-inner">
+                            <em>genesis</em>
+                            <h3>G80</h3>
+                            <p>전기차 그 이상의 시작</p>
+                            <span class="btn">
+                                <a href="#" class="white">자세히 보기</a>
+                                <a href="#" class="black">견적 내기</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- //sliderType04 -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const swiper2 = new Swiper('.swiper2', {
+            direction: 'horizontal',
+
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const swiper3 = new Swiper('.swiper3', {
+            direction: 'horizontal',
+            loop: true,
+
+            autoplay: {
+                delay: 5000,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const swiper4 = new Swiper('.swiper4', {
+            direction: 'horizontal',
+            loop: true,
+
+            autoplay: {
+                delay: 5000,
+            },
+
+            effect: 'fade',
+
+            fadeEffect: {
+                crossFade: true
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
 
 </html>

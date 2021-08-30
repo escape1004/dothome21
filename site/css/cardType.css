@@ -300,3 +300,96 @@ body {
     left: 40px;
     line-height: 40px;
 }
+
+
+
+/* cardType05 */
+.cardType05 {
+    font-family: 'NanumSquare';
+    padding-top: 100px;
+    color: #000;
+}
+
+.cardType05 h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.cardType05 p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.cardType05 .card-wrap {
+    margin-top: 84px;
+    padding-bottom: 100px;
+}
+
+.cardType05 .card-wrap .card-col {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    overflow: hidden;
+}
+
+.cardType05 .card-wrap .card-col:last-child {
+    margin-bottom: 0;
+}
+
+.cardType05 .card-wrap .card-col .card {
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.cardType05 .card .card-info {
+    padding: 20px 40px 40px 40px;
+}
+
+/* .cardType05 .card .card-info .card-img {} */
+
+.cardType05 .card .card-info .card-title {
+    font-size: 24px;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.cardType05 .card .card-info .card-new {
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #FA615B;
+    border-radius: 9px;
+    padding: 2px 8px 0px 9px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.cardType05 .card .card-info .card-desc {
+    font-size: 17px;
+    line-height: 30px;
+    color: #4A4A4A;
+    margin: 5px 0 15px 0;
+}
+
+.cardType05 .card .card-info .card-btn {
+    padding: 5px 17px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.cardType05 .card .card-info .card-btn.buy {
+    background-color: #05D686;
+    color: #fff;
+    border-color: #05D686;
+}
+
+.cardType05 .card .card-info .card-btn.info {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.6);
+    border-color: #E3E3E3;
+}
