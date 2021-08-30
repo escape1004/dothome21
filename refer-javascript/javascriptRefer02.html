@@ -87,8 +87,6 @@
                     <pre class="line-numbers"><code class="language-js">{
     let x = 100, y = 200, z = "javascript";
 
-    document.write("*** 01. 변수 : 데이터 불러오기 ***");
-
     document.write(x);
     document.write(y);
     document.write(z);
@@ -96,26 +94,13 @@
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result1 {
-                        display: none;
-                    }
-
-                    .result1.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn1">결과보기</a>
-                <div class="result1">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn1").addEventListener("click", () => {
-                            document.querySelector(".result1").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result1-1"></span>
+                        <span class="result1-2"></span>
+                        <span class="result1-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -129,8 +114,6 @@ javascript
                     <pre class="line-numbers"><code class="language-js">{
     const x = 100, y = 200, z = "javascript";
 
-    document.write("*** 02. 상수 : 데이터 불러오기 ***");
-
     document.write(x);
     document.write(y);
     document.write(z);
@@ -138,26 +121,13 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result2 {
-                        display: none;
-                    }
-
-                    .result2.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn2">결과보기</a>
-                <div class="result2">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn2").addEventListener("click", () => {
-                            document.querySelector(".result2").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result2-1"></span>
+                        <span class="result2-2"></span>
+                        <span class="result2-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -171,8 +141,6 @@ javascript
                     <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, "javascript"];
 
-    document.write("*** 02. 배열 : 데이터 불러오기 ***");
-
     document.write(arr[0]);
     document.write(arr[1]);
     document.write(arr[2]);
@@ -180,26 +148,13 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result3 {
-                        display: none;
-                    }
-
-                    .result3.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn3">결과보기</a>
-                <div class="result3">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn3").addEventListener("click", () => {
-                            document.querySelector(".result3").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result3-1"></span>
+                        <span class="result3-2"></span>
+                        <span class="result3-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -213,8 +168,6 @@ javascript
                     <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, ["javascript", "jquery"]];
 
-    document.write("*** 03. 배열 : 데이터 불러오기 : 2차 배열 ***");
-
     document.write(arr[0]);
     document.write(arr[1]);
     document.write(arr[2][0]);
@@ -224,28 +177,15 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result4 {
-                        display: none;
-                    }
-
-                    .result4.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn4">결과보기</a>
-                <div class="result4">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-jquery
-javascript,jquery
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn4").addEventListener("click", () => {
-                            document.querySelector(".result4").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result4-1"></span>
+                        <span class="result4-2"></span>
+                        <span class="result4-3"></span>
+                        <span class="result4-4"></span>
+                        <span class="result4-5"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -259,31 +199,16 @@ javascript,jquery
                     <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, "javascript"];
 
-    document.write("*** 04. 배열 : 데이터 불러오기 : 갯수 구하기 ***");
-
     document.write(arr.length, "개");
 }
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result5 {
-                        display: none;
-                    }
-
-                    .result5.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn5">결과보기</a>
-                <div class="result5">
-                    <pre class="line-numbers"><code class="language-none">3개
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn5").addEventListener("click", () => {
-                            document.querySelector(".result5").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result5-1"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -297,8 +222,6 @@ javascript,jquery
                     <pre class="line-numbers"><code class="language-js">{
     const arr = [100, 200, 300, 400, 500];
 
-    document.write("*** 05. 배열 : 데이터 불러오기 : for문 ***");
-
     for(let i=0; i&lt;arr.length; i++){
         document.write(arr[i]);
     }
@@ -306,28 +229,15 @@ javascript,jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result6 {
-                        display: none;
-                    }
-
-                    .result6.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn6">결과보기</a>
-                <div class="result6">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-300
-400
-500
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn6").addEventListener("click", () => {
-                            document.querySelector(".result6").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result6-1"></span>
+                        <span class="result6-2"></span>
+                        <span class="result6-3"></span>
+                        <span class="result6-4"></span>
+                        <span class="result6-5"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -339,8 +249,6 @@ javascript,jquery
                 <h2>07. 배열 : 데이터 불러오기 : forEach()<span class="dot"></span></h2>
                 <div class="code">
                     <pre class="line-numbers"><code class="language-js">{
-    document.write("*** 07. 배열 : 데이터 불러오기 : forEach() ***");
-
     const num = [100, 200, 300, 400, 500];
 
     document.write(num[0]);
@@ -372,44 +280,30 @@ javascript,jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result7 {
-                        display: none;
-                    }
-
-                    .result7.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn7">결과보기</a>
-                <div class="result7">
-                    <pre class="line-numbers"><code class="language-none">100200300400500
-
-100200300400500
-
-100200300400500
-
-100
-0
-100,200,300,400,500
-200
-1
-100,200,300,400,500
-300
-2
-100,200,300,400,500
-400
-3
-100,200,300,400,500
-500
-4
-100,200,300,400,500
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn7").addEventListener("click", () => {
-                            document.querySelector(".result7").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result7-1"></span>
+                        <span class="result7-2"></span>
+                        <span class="result7-3"></span>
+                        <span class="result7-4"></span>
+                        <span class="result7-5"></span>
+                        <span class="result7-6"></span>
+                        <span class="result7-7"></span>
+                        <span class="result7-8"></span>
+                        <span class="result7-9"></span>
+                        <span class="result7-10"></span>
+                        <span class="result7-11"></span>
+                        <span class="result7-12"></span>
+                        <span class="result7-13"></span>
+                        <span class="result7-14"></span>
+                        <span class="result7-15"></span>
+                        <span class="result7-16"></span>
+                        <span class="result7-17"></span>
+                        <span class="result7-18"></span>
+                        <span class="result7-19"></span>
+                        <span class="result7-20"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -432,28 +326,15 @@ javascript,jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result8 {
-                        display: none;
-                    }
-
-                    .result8.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn8">결과보기</a>
-                <div class="result8">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-300
-400
-500
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn8").addEventListener("click", () => {
-                            document.querySelector(".result8").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result8-1"></span>
+                        <span class="result8-2"></span>
+                        <span class="result8-3"></span>
+                        <span class="result8-4"></span>
+                        <span class="result8-5"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -480,33 +361,20 @@ javascript,jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result9 {
-                        display: none;
-                    }
-
-                    .result9.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn9">결과보기</a>
-                <div class="result9">
-                    <pre class="line-numbers"><code class="language-none">0
-1
-2
-3
-4
-100
-200
-300
-400
-500
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn9").addEventListener("click", () => {
-                            document.querySelector(".result9").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result9-1"></span>
+                        <span class="result9-2"></span>
+                        <span class="result9-3"></span>
+                        <span class="result9-4"></span>
+                        <span class="result9-5"></span>
+                        <span class="result9-6"></span>
+                        <span class="result9-7"></span>
+                        <span class="result9-8"></span>
+                        <span class="result9-9"></span>
+                        <span class="result9-10"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -525,7 +393,6 @@ javascript,jquery
     // num.map(function(){});
     num.map((el) => {
         document.write(el)
-        console.log(el);
     });
 
     num.map((element, index, array) => {
@@ -537,44 +404,30 @@ javascript,jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result10 {
-                        display: none;
-                    }
-
-                    .result10.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn10">결과보기</a>
-                <div class="result10">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-300
-400
-500
-
-100
-0
-100,200,300,400,500
-200
-1
-100,200,300,400,500
-300
-2
-100,200,300,400,500
-400
-3
-100,200,300,400,500
-500
-4
-100,200,300,400,500
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn10").addEventListener("click", () => {
-                            document.querySelector(".result10").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result10-1"></span>
+                        <span class="result10-2"></span>
+                        <span class="result10-3"></span>
+                        <span class="result10-4"></span>
+                        <span class="result10-5"></span>
+                        <span class="result10-6"></span>
+                        <span class="result10-7"></span>
+                        <span class="result10-8"></span>
+                        <span class="result10-9"></span>
+                        <span class="result10-10"></span>
+                        <span class="result10-11"></span>
+                        <span class="result10-12"></span>
+                        <span class="result10-13"></span>
+                        <span class="result10-14"></span>
+                        <span class="result10-15"></span>
+                        <span class="result10-16"></span>
+                        <span class="result10-17"></span>
+                        <span class="result10-18"></span>
+                        <span class="result10-19"></span>
+                        <span class="result10-20"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -605,26 +458,13 @@ javascript,jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result11 {
-                        display: none;
-                    }
-
-                    .result11.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn11">결과보기</a>
-                <div class="result11">
-                    <pre class="line-numbers"><code class="language-none">100,200,300,400,500
-100200300400500
-100200300400500
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn11").addEventListener("click", () => {
-                            document.querySelector(".result11").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result11-1"></span>
+                        <span class="result11-2"></span>
+                        <span class="result11-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -654,29 +494,16 @@ javascript,jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result12 {
-                        display: none;
-                    }
-
-                    .result12.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn12">결과보기</a>
-                <div class="result12">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn12").addEventListener("click", () => {
-                            document.querySelector(".result12").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result12-1"></span>
+                        <span class="result12-2"></span>
+                        <span class="result12-3"></span>
+                        <span class="result12-4"></span>
+                        <span class="result12-5"></span>
+                        <span class="result12-6"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -703,26 +530,13 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result13 {
-                        display: none;
-                    }
-
-                    .result13.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn13">결과보기</a>
-                <div class="result13">
-                    <pre class="line-numbers"><code class="language-none">a,b,c
-100,200,javascript
-a,100,b,200,c,javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn13").addEventListener("click", () => {
-                            document.querySelector(".result13").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result13-1"></span>
+                        <span class="result13-2"></span>
+                        <span class="result13-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -752,26 +566,13 @@ a,100,b,200,c,javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result14 {
-                        display: none;
-                    }
-
-                    .result14.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn14">결과보기</a>
-                <div class="result14">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn14").addEventListener("click", () => {
-                            document.querySelector(".result14").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result14-1"></span>
+                        <span class="result14-2"></span>
+                        <span class="result14-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -798,26 +599,13 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result15 {
-                        display: none;
-                    }
-
-                    .result15.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn15">결과보기</a>
-                <div class="result15">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn15").addEventListener("click", () => {
-                            document.querySelector(".result15").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result15-1"></span>
+                        <span class="result15-2"></span>
+                        <span class="result15-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -871,42 +659,28 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result16 {
-                        display: none;
-                    }
-
-                    .result16.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn16">결과보기</a>
-                <div class="result16">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript1
-300
-400
-javascript2
-500
-600
-javascript3
-
-100
-200
-javascript1
-300
-400
-javascript2
-500
-600
-javascript3
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn16").addEventListener("click", () => {
-                            document.querySelector(".result16").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result16-1"></span>
+                        <span class="result16-2"></span>
+                        <span class="result16-3"></span>
+                        <span class="result16-4"></span>
+                        <span class="result16-5"></span>
+                        <span class="result16-6"></span>
+                        <span class="result16-7"></span>
+                        <span class="result16-8"></span>
+                        <span class="result16-9"></span>
+                        <span class="result16-10"></span>
+                        <span class="result16-11"></span>
+                        <span class="result16-12"></span>
+                        <span class="result16-13"></span>
+                        <span class="result16-14"></span>
+                        <span class="result16-15"></span>
+                        <span class="result16-16"></span>
+                        <span class="result16-17"></span>
+                        <span class="result16-18"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -938,31 +712,18 @@ javascript3
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result17 {
-                        display: none;
-                    }
-
-                    .result17.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn17">결과보기</a>
-                <div class="result17">
-                    <pre class="line-numbers"><code class="language-none">true
-true
-true
-false
-true
-true
-true
-false
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn17").addEventListener("click", () => {
-                            document.querySelector(".result17").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result17-1"></span>
+                        <span class="result17-2"></span>
+                        <span class="result17-3"></span>
+                        <span class="result17-4"></span>
+                        <span class="result17-5"></span>
+                        <span class="result17-6"></span>
+                        <span class="result17-7"></span>
+                        <span class="result17-8"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -993,26 +754,13 @@ false
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result18 {
-                        display: none;
-                    }
-
-                    .result18.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn18">결과보기</a>
-                <div class="result18">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn18").addEventListener("click", () => {
-                            document.querySelector(".result18").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result18-1"></span>
+                        <span class="result18-2"></span>
+                        <span class="result18-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -1045,27 +793,14 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result19 {
-                        display: none;
-                    }
-
-                    .result19.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn19">결과보기</a>
-                <div class="result19">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-jquery
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn19").addEventListener("click", () => {
-                            document.querySelector(".result19").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result19-1"></span>
+                        <span class="result19-2"></span>
+                        <span class="result19-3"></span>
+                        <span class="result19-4"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -1102,27 +837,14 @@ jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result20 {
-                        display: none;
-                    }
-
-                    .result20.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn20">결과보기</a>
-                <div class="result20">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-jquery
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn20").addEventListener("click", () => {
-                            document.querySelector(".result20").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result20-1"></span>
+                        <span class="result20-2"></span>
+                        <span class="result20-3"></span>
+                        <span class="result20-4"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -1155,26 +877,13 @@ jquery
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result21 {
-                        display: none;
-                    }
-
-                    .result21.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn21">결과보기</a>
-                <div class="result21">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn21").addEventListener("click", () => {
-                            document.querySelector(".result21").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result21-1"></span>
+                        <span class="result21-2"></span>
+                        <span class="result21-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -1207,26 +916,13 @@ javascript
 </code></pre>
                 </div>
                 <!-- result -->
-                <style>
-                    .result22 {
-                        display: none;
-                    }
-
-                    .result22.show {
-                        display: block;
-                    }
-                </style>
-                <a href="#c" class="result_btn" id="result_btn22">결과보기</a>
-                <div class="result22">
-                    <pre class="line-numbers"><code class="language-none">100
-200
-javascript
-</code></pre>
-                    <script>
-                        document.querySelector("#result_btn22").addEventListener("click", () => {
-                            document.querySelector(".result22").classList.toggle("show");
-                        });
-                    </script>
+                <div class="result">
+                    <h3><a href="#">결과보기</a></h3>
+                    <div>
+                        <span class="result22-1"></span>
+                        <span class="result22-2"></span>
+                        <span class="result22-3"></span>
+                    </div>
                 </div>
                 <!-- //result -->
             </div>
@@ -1238,7 +934,15 @@ javascript
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
-    <!-- <script>
+    <script>
+        //정답보기
+        document.querySelectorAll(".result h3").forEach(el => {
+            el.addEventListener("click", function (e) {
+                e.preventDefault();
+                this.parentNode.classList.toggle("show");
+            });
+        });
+
         //sample1
         //변수 : 데이터 불러오기
         {
@@ -1246,11 +950,9 @@ javascript
                 y = 200,
                 z = "javascript";
 
-            document.write("*** 01. 변수 : 데이터 불러오기 ***<br>");
-
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
+            document.querySelector(".result1-1").innerHTML = x;
+            document.querySelector(".result1-2").innerHTML = y;
+            document.querySelector(".result1-3").innerHTML = z;
         }
 
         //sample2
@@ -1260,11 +962,9 @@ javascript
                 y = 200,
                 z = "javascript";
 
-            document.write("*** 02. 상수 : 데이터 불러오기 ***<br>");
-
-            document.write(x, "<br>");
-            document.write(y, "<br>");
-            document.write(z, "<br><br>");
+            document.querySelector(".result2-1").innerHTML = x;
+            document.querySelector(".result2-2").innerHTML = y;
+            document.querySelector(".result2-3").innerHTML = z;
         }
 
         //sample3
@@ -1272,25 +972,21 @@ javascript
         {
             const arr = [100, 200, "javascript"];
 
-            document.write("*** 03. 배열 : 데이터 불러오기 ***<br>");
-
-            document.write(arr[0], "<br>");
-            document.write(arr[1], "<br>");
-            document.write(arr[2], "<br><br>");
+            document.querySelector(".result3-1").innerHTML = arr[0];
+            document.querySelector(".result3-2").innerHTML = arr[1];
+            document.querySelector(".result3-3").innerHTML = arr[2];
         }
 
         //sample4
-        //배열 : 데이터 불러오기 : 2차 배열
+        //배열 : 데이터 불러오기 : 2차 배열 
         {
             const arr = [100, 200, ["javascript", "jquery"]];
 
-            document.write("*** 04. 배열 : 데이터 불러오기 : 2차 배열 ***<br>");
-
-            document.write(arr[0], "<br>");
-            document.write(arr[1], "<br>");
-            document.write(arr[2][0], "<br>");
-            document.write(arr[2][1], "<br>");
-            document.write(arr[2], "<br><br>");
+            document.querySelector(".result4-1").innerHTML = arr[0];
+            document.querySelector(".result4-2").innerHTML = arr[1];
+            document.querySelector(".result4-3").innerHTML = arr[2][0];
+            document.querySelector(".result4-4").innerHTML = arr[2][1];
+            document.querySelector(".result4-5").innerHTML = arr[2];
         }
 
         //sample5
@@ -1298,9 +994,7 @@ javascript
         {
             const arr = [100, 200, "javascript"];
 
-            document.write("*** 05. 배열 : 데이터 불러오기 : 갯수 구하기 ***<br>");
-
-            document.write(arr.length, "개<br><br>");
+            document.querySelector(".result5-1").innerHTML = arr.length + "개";
         }
 
         //sample6
@@ -1308,118 +1002,145 @@ javascript
         {
             const arr = [100, 200, 300, 400, 500];
 
-            document.write("*** 06. 배열 : 데이터 불러오기 : for문 ***<br>");
+            // for (let i = 0; i < arr.length; i++) {
+            //     document.write(arr[i], "<br>");
+            // }
 
-            for (let i = 0; i < arr.length; i++) {
-                document.write(arr[i], "<br>");
-            }
-            document.write("<br>");
+            document.querySelector(".result6-1").innerHTML = arr[0];
+            document.querySelector(".result6-2").innerHTML = arr[1];
+            document.querySelector(".result6-3").innerHTML = arr[2];
+            document.querySelector(".result6-4").innerHTML = arr[3];
+            document.querySelector(".result6-5").innerHTML = arr[4];
         }
 
         //sample7
         //배열 : 데이터 불러오기 : forEach()
         {
-            document.write("*** 07. 배열 : 데이터 불러오기 : forEach() ***<br>");
-
             const num = [100, 200, 300, 400, 500];
 
-            document.write(num[0]);
-            document.write(num[1]);
-            document.write(num[2]);
-            document.write(num[3]);
-            document.write(num[4]);
-
-            document.write("<br><br>");
-
-            //for문
-            for (let i = 0; i < num.length; i++) {
-                document.write(num[i]);
-            }
-
-            document.write("<br><br>");
-
             //forEach()
-            num.forEach(function (el) {
-                document.write(el);
-            });
+            // num.forEach(function (el) {
+            //     document.write(el);
+            // });
 
-            document.write("<br><br>");
+            document.querySelector(".result7-1").innerHTML = num[0];
+            document.querySelector(".result7-2").innerHTML = num[1];
+            document.querySelector(".result7-3").innerHTML = num[2];
+            document.querySelector(".result7-4").innerHTML = num[3];
+            document.querySelector(".result7-5").innerHTML = num[4];
 
             //forEach(element, index, array)
             // num.forEach(function () {});    //es5
             // num.forEach(() => {});          //es6
 
-            num.forEach((element, index, array) => {
-                document.write(element, "<br>");
-                document.write(index, "<br>");
-                document.write(array, "<br>");
-            });
+            // num.forEach((element, index, array) => {
+            //     document.write(element, "<br>");
+            //     document.write(index, "<br>");
+            //     document.write(array, "<br>");
+            // });
 
-            document.write("<br>");
+            document.querySelector(".result7-6").innerHTML = 0;
+            document.querySelector(".result7-7").innerHTML = num[0];
+            document.querySelector(".result7-8").innerHTML = num;
+            document.querySelector(".result7-9").innerHTML = 1;
+            document.querySelector(".result7-10").innerHTML = num[1];
+            document.querySelector(".result7-11").innerHTML = num;
+            document.querySelector(".result7-12").innerHTML = 2;
+            document.querySelector(".result7-13").innerHTML = num[2];
+            document.querySelector(".result7-14").innerHTML = num;
+            document.querySelector(".result7-15").innerHTML = 3;
+            document.querySelector(".result7-16").innerHTML = num[3];
+            document.querySelector(".result7-17").innerHTML = num;
+            document.querySelector(".result7-18").innerHTML = 4;
+            document.querySelector(".result7-19").innerHTML = num[4];
+            document.querySelector(".result7-20").innerHTML = num;
         }
 
         //sample8
         //배열 : 데이터 불러오기 : for of문
         {
-            document.write("*** 08. 배열 : 데이터 불러오기 : for of문 ***<br>");
-
             const num = [100, 200, 300, 400, 500];
 
-            for (let i of num) {
-                document.write(i, "<br>");
-            }
+            // for (let i of num) {
+            //     document.write(i, "<br>");
+            // }
 
-            document.write("<br>");
+            document.querySelector(".result8-1").innerHTML = num[0];
+            document.querySelector(".result8-2").innerHTML = num[1];
+            document.querySelector(".result8-3").innerHTML = num[2];
+            document.querySelector(".result8-4").innerHTML = num[3];
+            document.querySelector(".result8-5").innerHTML = num[4];
         }
 
         //sample9
         //배열 : 데이터 불러오기 : for in문 : 객체에서 사용(배열에서도 가능)
         {
-            document.write("*** 09. 배열 : 데이터 불러오기 : for in문 ***<br>");
-
             const num = [100, 200, 300, 400, 500];
 
-            for (let i in num) {
-                document.write(i, "<br>");
-            }
+            // for (let i in num) {
+            //     document.write(i, "<br>");
+            // }
 
-            for (let i in num) {
-                document.write(num[i], "<br>");
-            }
+            // for (let i in num) {
+            //     document.write(num[i], "<br>");
+            // }
 
-            document.write("<br>");
+            document.querySelector(".result9-1").innerHTML = num[0];
+            document.querySelector(".result9-2").innerHTML = num[1];
+            document.querySelector(".result9-3").innerHTML = num[2];
+            document.querySelector(".result9-4").innerHTML = num[3];
+            document.querySelector(".result9-5").innerHTML = num[4];
+            document.querySelector(".result9-6").innerHTML = num[0];
+            document.querySelector(".result9-7").innerHTML = num[1];
+            document.querySelector(".result9-8").innerHTML = num[2];
+            document.querySelector(".result9-9").innerHTML = num[3];
+            document.querySelector(".result9-10").innerHTML = num[4];
         }
 
         //sample10
         //배열 : 데이터 불러오기 : map() : forEach()/map() : 배열로 저장
         //단순 반복 for문, 배열 데이터 반복 forEach(), 배열 데이터 반복 새로 저장 map()
         {
-            document.write("*** 10. 배열 : 데이터 불러오기 : map() ***<br>");
-
             const num = [100, 200, 300, 400, 500];
 
             // num.map(function(){});
-            num.map((el) => {
-                document.write(el, "<br>")
-                console.log(el);
-            });
+            // num.map((el) => {
+            //     document.write(el, "<br>")
+            //     console.log(el);
+            // });
 
-            document.write("<br>")
+            // num.map((element, index, array) => {
+            //     document.write(element, "<br>");
+            //     document.write(index, "<br>");
+            //     document.write(array, "<br>");
+            // });
 
-            num.map((element, index, array) => {
-                document.write(element, "<br>");
-                document.write(index, "<br>");
-                document.write(array, "<br>");
-            });
+            document.querySelector(".result10-1").innerHTML = num[0];
+            document.querySelector(".result10-2").innerHTML = num[1];
+            document.querySelector(".result10-3").innerHTML = num[2];
+            document.querySelector(".result10-4").innerHTML = num[3];
+            document.querySelector(".result10-5").innerHTML = num[4];
 
-            document.write("<br>")
+            document.querySelector(".result10-6").innerHTML = num[0];
+            document.querySelector(".result10-7").innerHTML = 0
+            document.querySelector(".result10-8").innerHTML = num;
+            document.querySelector(".result10-9").innerHTML = num[1];
+            document.querySelector(".result10-10").innerHTML = 1;
+            document.querySelector(".result10-11").innerHTML = num;
+            document.querySelector(".result10-12").innerHTML = num[2];
+            document.querySelector(".result10-13").innerHTML = 2;
+            document.querySelector(".result10-14").innerHTML = num;
+            document.querySelector(".result10-15").innerHTML = num[3];
+            document.querySelector(".result10-16").innerHTML = 3;
+            document.querySelector(".result10-17").innerHTML = num;
+            document.querySelector(".result10-18").innerHTML = num[4];
+            document.querySelector(".result10-19").innerHTML = 4;
+            document.querySelector(".result10-20").innerHTML = num;
         }
 
         //sample11
         //배열 : 데이터 불러오기 : 펼침 연산자
         {
-            document.write("*** 11. 배열 : 데이터 불러오기 : 펼침 연산자 ***<br>");
-
             const arr = [100, 200, 300, 400, 500];
 
             // document.write(arr[0]);
@@ -1428,63 +1149,56 @@ javascript
             // document.write(arr[3]);
             // document.write(arr[4]);
 
-            document.write(arr);
-
-            document.write("<br>");
-
-            document.write(arr[0], arr[1], arr[2], arr[3], arr[4]);
-
-            document.write("<br>");
-
-            document.write(...arr);
-
-            document.write("<br><br>");
+            document.querySelector(".result11-1").innerHTML = arr;
+            document.querySelector(".result11-2").innerHTML = "100200300400500";
+            document.querySelector(".result11-3").innerHTML = "100200300400500";
         }
 
         //sample12
         //객체 : 데이터 불러오기 : 기본
         {
-            document.write("*** 12. 객체 : 데이터 불러오기 : 기본 ***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
                 c: "javascript",
             }
 
-            document.write(obj.a, "<br>");
-            document.write(obj.b, "<br>");
-            document.write(obj.c, "<br>");
-            document.write(obj['a'], "<br>");
-            document.write(obj['b'], "<br>");
-            document.write(obj['c'], "<br>");
+            // document.write(obj.a, "<br>");
+            // document.write(obj.b, "<br>");
+            // document.write(obj.c, "<br>");
+            // document.write(obj['a'], "<br>");
+            // document.write(obj['b'], "<br>");
+            // document.write(obj['c'], "<br>");
 
-            document.write("<br>");
+            document.querySelector(".result12-1").innerHTML = obj.a;
+            document.querySelector(".result12-2").innerHTML = obj.b;
+            document.querySelector(".result12-3").innerHTML = obj.c;
+            document.querySelector(".result12-4").innerHTML = obj['a'];
+            document.querySelector(".result12-5").innerHTML = obj['b'];
+            document.querySelector(".result12-6").innerHTML = obj['c'];
         }
 
         //sample13
         //객체 : 데이터 불러오기 : Object
         {
-            document.write("*** 13. 객체 : 데이터 불러오기 : Object ***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
                 c: "javascript",
             }
 
-            document.write(Object.keys(obj), "<br>");
-            document.write(Object.values(obj), "<br>");
-            document.write(Object.entries(obj), "<br>");
+            // document.write(Object.keys(obj), "<br>");
+            // document.write(Object.values(obj), "<br>");
+            // document.write(Object.entries(obj), "<br>");
 
-            document.write("<br>");
+            document.querySelector(".result13-1").innerHTML = Object.keys(obj);
+            document.querySelector(".result13-2").innerHTML = Object.values(obj);
+            document.querySelector(".result13-3").innerHTML = Object.entries(obj);
         }
 
         //sample14
         //객체 : 데이터 불러오기 : 변수
         {
-            document.write("*** 14. 객체 : 데이터 불러오기 : 변수 ***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
@@ -1494,34 +1208,36 @@ javascript
             const name2 = obj.b;
             const name3 = obj.c;
 
-            document.write(name1, "<br>");
-            document.write(name2, "<br>");
-            document.write(name3, "<br><br>");
+            // document.write(name1, "<br>");
+            // document.write(name2, "<br>");
+            // document.write(name3, "<br><br>");
+
+            document.querySelector(".result14-1").innerHTML = name1;
+            document.querySelector(".result14-2").innerHTML = name2;
+            document.querySelector(".result14-3").innerHTML = name3;
         }
 
         //sample15
         //객체 : 데이터 불러오기 : for in문
         {
-            document.write("*** 15. 객체 : 데이터 불러오기 : for in문***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
                 c: "javascript",
             }
 
-            for (let key in obj) {
-                document.write(obj[key], "<br>");
-            }
+            // for (let key in obj) {
+            //     document.write(obj[key], "<br>");
+            // }
 
-            document.write("<br>");
+            document.querySelector(".result15-1").innerHTML = obj.a;
+            document.querySelector(".result15-2").innerHTML = obj.b;
+            document.querySelector(".result15-3").innerHTML = obj.c;
         }
 
         //sample16
         //객체 : 데이터 불러오기 : map() : 배열 속에 객체가 있는 경우
         {
-            document.write("*** 16. 객체 : 데이터 불러오기 : map()***<br>");
-
             const obj = [{
                     a: 100,
                     b: 200,
@@ -1539,57 +1255,60 @@ javascript
                 },
             ];
 
-            document.write(obj[0].a, "<br>");
-            document.write(obj[0].b, "<br>");
-            document.write(obj[0].c, "<br>");
-            document.write(obj[1].a, "<br>");
-            document.write(obj[1].b, "<br>");
-            document.write(obj[1].c, "<br>");
-            document.write(obj[2].a, "<br>");
-            document.write(obj[2].b, "<br>");
-            document.write(obj[2].c, "<br><br>");
+            document.querySelector(".result16-1").innerHTML = obj[0].a;
+            document.querySelector(".result16-2").innerHTML = obj[0].b;
+            document.querySelector(".result16-3").innerHTML = obj[0].c;
+            document.querySelector(".result16-4").innerHTML = obj[1].a;
+            document.querySelector(".result16-5").innerHTML = obj[1].b;
+            document.querySelector(".result16-6").innerHTML = obj[1].c;
+            document.querySelector(".result16-7").innerHTML = obj[2].a;
+            document.querySelector(".result16-8").innerHTML = obj[2].b;
+            document.querySelector(".result16-9").innerHTML = obj[2].c;
 
             // obj.map(function(){});
             // obj.map((el) => {});
             // obj.map(el => {});
 
-            obj.map((el) => {
-                document.write(el.a, "<br>");
-                document.write(el.b, "<br>");
-                document.write(el.c, "<br>");
-            });
+            // obj.map((el) => {
+            //     document.write(el.a, "<br>");
+            //     document.write(el.b, "<br>");
+            //     document.write(el.c, "<br>");
+            // });
 
-            document.write("<br>");
+            document.querySelector(".result16-10").innerHTML = obj[0].a;
+            document.querySelector(".result16-11").innerHTML = obj[0].b;
+            document.querySelector(".result16-12").innerHTML = obj[0].c;
+            document.querySelector(".result16-13").innerHTML = obj[1].a;
+            document.querySelector(".result16-14").innerHTML = obj[1].b;
+            document.querySelector(".result16-15").innerHTML = obj[1].c;
+            document.querySelector(".result16-16").innerHTML = obj[2].a;
+            document.querySelector(".result16-17").innerHTML = obj[2].b;
+            document.querySelector(".result16-18").innerHTML = obj[2].c;
         }
 
         //sample17
         //객체 : 데이터 불러오기 : hasOwnProperty()
         {
-            document.write("*** 17. 객체 : 데이터 불러오기 : hasOwnProperty()***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
                 c: "javascript",
             }
 
-            document.write(obj.hasOwnProperty('a'), "<br>");
-            document.write(obj.hasOwnProperty('b'), "<br>");
-            document.write(obj.hasOwnProperty('c'), "<br>");
-            document.write(obj.hasOwnProperty('100'), "<br>");
-            document.write('a' in obj, "<br>");
-            document.write('b' in obj, "<br>");
-            document.write('c' in obj, "<br>");
-            document.write('100' in obj, "<br>");
+            document.querySelector(".result17-1").innerHTML = obj.hasOwnProperty('a');
+            document.querySelector(".result17-2").innerHTML = obj.hasOwnProperty('b');
+            document.querySelector(".result17-3").innerHTML = obj.hasOwnProperty('c');
+            document.querySelector(".result17-4").innerHTML = obj.hasOwnProperty('100');
 
-            document.write("<br>");
+            document.querySelector(".result17-5").innerHTML = 'a' in obj;
+            document.querySelector(".result17-6").innerHTML = 'b' in obj;
+            document.querySelector(".result17-7").innerHTML = 'c' in obj;
+            document.querySelector(".result17-8").innerHTML = '100' in obj;
         }
 
         //sample18
         //객체 : 데이터 불러오기 : 펼침 연산자 - 복사
         {
-            document.write("*** 18. 객체 : 데이터 불러오기 : 펼침 연산자 - 복사 ***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
@@ -1600,18 +1319,14 @@ javascript
                 ...obj
             }
 
-            document.write(spread.a, "<br>");
-            document.write(spread.b, "<br>");
-            document.write(spread.c, "<br>");
-
-            document.write("<br>");
+            document.querySelector(".result18-1").innerHTML = spread.a;
+            document.querySelector(".result18-2").innerHTML = spread.b;
+            document.querySelector(".result18-3").innerHTML = spread.c;
         }
 
         //sample19
         //객체 : 데이터 불러오기 : 펼침 연산자 - 추가
         {
-            document.write("*** 19. 객체 : 데이터 불러오기 : 펼침 연산자 - 추가 ***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
@@ -1623,19 +1338,15 @@ javascript
                 d: "jquery"
             }
 
-            document.write(spread.a, "<br>");
-            document.write(spread.b, "<br>");
-            document.write(spread.c, "<br>");
-            document.write(spread.d, "<br>");
-
-            document.write("<br>");
+            document.querySelector(".result19-1").innerHTML = spread.a;
+            document.querySelector(".result19-2").innerHTML = spread.b;
+            document.querySelector(".result19-3").innerHTML = spread.c;
+            document.querySelector(".result19-4").innerHTML = spread.d;
         }
 
         //sample20
         //객체 : 데이터 불러오기 : 펼침 연산자 - 결합
         {
-            document.write("*** 20. 객체 : 데이터 불러오기 : 펼침 연산자 - 결합 ***<br>");
-
             const objA = {
                 a: 100,
                 b: 200,
@@ -1651,17 +1362,15 @@ javascript
                 ...objB,
             }
 
-            document.write(spread.a, "<br>");
-            document.write(spread.b, "<br>");
-            document.write(spread.c, "<br>");
-            document.write(spread.d, "<br><br>");
+            document.querySelector(".result20-1").innerHTML = spread.a;
+            document.querySelector(".result20-2").innerHTML = spread.b;
+            document.querySelector(".result20-3").innerHTML = spread.c;
+            document.querySelector(".result20-4").innerHTML = spread.d;
         }
 
         //sample21
         //객체 : 데이터 불러오기 : 비구조화 할당
         {
-            document.write("*** 21. 객체 : 데이터 불러오기 : 비구조화 할당 ***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
@@ -1674,18 +1383,14 @@ javascript
                 c
             } = obj;
 
-            document.write(a, "<br>");
-            document.write(b, "<br>");
-            document.write(c, "<br>");
-
-            document.write("<br>");
+            document.querySelector(".result21-1").innerHTML = a;
+            document.querySelector(".result21-2").innerHTML = b;
+            document.querySelector(".result21-3").innerHTML = c;
         }
 
         //sample22
         //객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장
         {
-            document.write("*** 22. 객체 : 데이터 불러오기 : 비구조화 할당 : 별도 이름 저장 ***<br>");
-
             const obj = {
                 a: 100,
                 b: 200,
@@ -1698,27 +1403,11 @@ javascript
                 c: name3
             } = obj;
 
-            document.write(name1, "<br>");
-            document.write(name2, "<br>");
-            document.write(name3, "<br>");
-
-            document.write("<br>");
+            document.querySelector(".result22-1").innerHTML = name1;
+            document.querySelector(".result22-2").innerHTML = name2;
+            document.querySelector(".result22-3").innerHTML = name3;
         }
-
-        //7월 26일 숙제
-        //배열 데이터의 합 출력
-        {
-            document.write("*** 배열 데이터의 합 출력 ***<br>");
-
-            const arr = [100, 200, 300, 400, 500];
-            let sum = 0;
-
-            for (i = 0; i <= arr.length - 1; i++) {
-                sum += arr[i]
-            }
-            document.write(sum);
-        }
-    </script> -->
+    </script>
 </body>
 
 </html>
