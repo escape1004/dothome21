@@ -174,7 +174,7 @@ body {
     transform: rotateX(0deg);
 }
 
-.imageType02 .image .image-img {}
+/* .imageType02 .image .image-img {} */
 
 .imageType02 .image .image-cont {
     position: absolute;

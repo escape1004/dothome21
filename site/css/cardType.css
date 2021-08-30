@@ -308,28 +308,29 @@ body {
     font-family: 'NanumSquare';
     padding-top: 100px;
     color: #000;
+    text-align: center;
 }
 
-.cardType05 h2 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
+.cardType05 .main-title {
+    width: 204px;
+    height: 50px;
 }
 
 .cardType05 p {
     font-size: 16px;
-    text-align: center;
 }
 
 .cardType05 .card-wrap {
     margin-top: 84px;
     padding-bottom: 100px;
+    text-align: left;
 }
 
 .cardType05 .card-wrap .card-col {
     display: flex;
     justify-content: space-between;
     margin-bottom: 38px;
+    gap: 30px;
     overflow: hidden;
 }
 
@@ -338,20 +339,33 @@ body {
 }
 
 .cardType05 .card-wrap .card-col .card {
-    border: 1px solid #eee;
     border-radius: 5px;
+}
+
+.cardType05 .card .card-img {
+    display: block;
 }
 
 .cardType05 .card .card-info {
     padding: 20px 40px 40px 40px;
+    border: 1px solid #eee;
+    display: block;
 }
 
-/* .cardType05 .card .card-info .card-img {} */
-
 .cardType05 .card .card-info .card-title {
-    font-size: 24px;
-    font-weight: 800;
+    height: 17px;
+    width: auto;
     display: inline-block;
+}
+
+.cardType05 .card .card-info .card-title.lamp {
+    height: 22px;
+    width: auto;
+}
+
+.cardType05 .card .card-info .card-title.doraemon {
+    height: 19px;
+    width: auto;
 }
 
 .cardType05 .card .card-info .card-new {
@@ -364,7 +378,7 @@ body {
     text-transform: uppercase;
     display: inline-block;
     margin-left: 5px;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .cardType05 .card .card-info .card-desc {
