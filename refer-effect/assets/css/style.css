@@ -80,6 +80,7 @@ figcaption {
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 0;
+  overflow: hidden;
 }
 
 .bg::before {
