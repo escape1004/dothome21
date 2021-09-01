@@ -54,13 +54,23 @@
     <script>
         {
             // #1
-            $(".info.bottom button").click(function () {
-                $("#modal").removeClass().addClass("show");
+            document.querySelector(".info.bottom button").addEventListener("click", function () {
+                document.querySelector("#modal").classList.remove("hide");
+                document.querySelector("#modal").classList.add("show");
             });
 
-            $(".modal-cont button").click(function () {
-                $("#modal").addClass("hide");
+            document.querySelector(".modal-cont button").addEventListener("click", function () {
+                document.querySelector("#modal").classList.add("hide");
             });
+
+
+            // $(".info.bottom button").click(function () {
+            //     $("#modal").removeClass().addClass("show");
+            // });
+
+            // $(".modal-cont button").click(function () {
+            //     $("#modal").addClass("hide");
+            // });
         }
     </script>
 </body>

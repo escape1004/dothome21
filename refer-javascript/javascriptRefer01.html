@@ -736,16 +736,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
         //정답보기
-        document.querySelectorAll(".result h3").forEach(el => {
-            el.addEventListener("click", function (e) {
-                e.preventDefault();
-                this.parentNode.classList.toggle("show");
-            });
-        });
-
-        // $(".result h3").click(function () {
-        //     $(this.parentNode).toggleClass("show");
+        // document.querySelectorAll(".result h3").forEach(el => {
+        //     el.addEventListener("click", function (e) {
+        //         e.preventDefault();
+        //         this.parentNode.classList.toggle("show");
+        //     });
         // });
+
+        $(".result h3").click(function (e) {
+            e.preventDefault();
+            $(this.parentNode).toggleClass("show");
+        });
 
         //sample01
         //01. 변수 : 데이터 저장소

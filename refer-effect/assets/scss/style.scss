@@ -185,9 +185,10 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
 
 #nav {
     @include positionCenter;
-    bottom: 50px;
+    bottom: 20px;
     top: auto;
     text-align: center;
+    width: 70%;
 
     li {
         list-style: none;

@@ -231,9 +231,10 @@ figcaption {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  bottom: 50px;
+  bottom: 20px;
   top: auto;
   text-align: center;
+  width: 70%;
 }
 
 #nav li {
