@@ -180,6 +180,7 @@ figcaption {
   background: #11e8bb;
   background: -webkit-gradient(linear, left top, left bottom, from(#11e8bb), to(#8200c9));
   background: linear-gradient(to bottom, #11e8bb 0%, #8200c9 100%);
+  background-repeat: no-repeat;
 }
 
 #main.menu {
@@ -516,5 +517,41 @@ figcaption {
   100% {
     -webkit-transform: scale(0);
             transform: scale(0);
+  }
+}
+
+@media (max-width: 900px) {
+  #contents h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 14vw;
+  }
+  #nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    bottom: 0;
+    top: auto;
+  }
+  #nav li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #nav li a {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 14px;
+    text-align: center;
+    margin: 4px;
   }
 }

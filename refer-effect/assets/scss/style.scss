@@ -90,6 +90,7 @@ $gradient3: linear-gradient(to top, #6a11cb 0%, #2575fc 100%);
 $gradient4: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
 $gradient5: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
 $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+
 // mixin
 @mixin positionCenter {
     position: absolute;
@@ -142,6 +143,7 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
     overflow: hidden;
     background: #11e8bb;
     background: $gradient1;
+    background-repeat: no-repeat;
 
     &.menu {
         background: $gradient2;
@@ -399,5 +401,35 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
 
     100% {
         transform: scale(0)
+    }
+}
+
+
+@media (max-width: 900px) {
+    #contents {
+        h1 {
+            @include positionCenter;
+            font-size: 14vw;
+        }
+    }
+
+    #nav {
+        @include positionCenter;
+        bottom: 0;
+        top: auto;
+        li {
+            display: flex;
+            a {
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                border: 1px solid #fff;
+                display: inline-block;
+                border-radius: 50px;
+                font-size: 14px;
+                text-align: center;
+                margin: 4px;
+            }
+        }
     }
 }
