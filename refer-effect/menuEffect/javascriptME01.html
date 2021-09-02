@@ -2,77 +2,206 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Effect</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menu Effect</title>
 
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="../assets/css/highlight.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<style>
+		#tab-menu {
+			max-width: 600px;
+			background: rgb(175, 175, 175);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 5px;
+			font-family: "NEXONLv2Gothic";
+			color: #fff;
+			overflow: hidden;
+		}
+
+		.tab-btn {}
+
+		.tab-btn ul {
+			display: flex;
+		}
+
+		.tab-btn li {
+			width: 20%;
+			list-style: none;
+			text-align: center;
+		}
+
+		.tab-btn li a {
+			color: #fff;
+			text-decoration: none;
+			padding: 18px 15px 15px 15px;
+			display: block;
+		}
+
+		.tab-btn li.active a {
+			border-bottom: 3px solid rgb(252, 100, 100);
+			color: rgb(0, 0, 0);
+		}
+
+		.tab-cont {
+			background: #fff;
+			padding: 20px;
+			color: #222;
+		}
+
+		.tab-cont>div {
+			display: none;
+		}
+
+		.tab-cont>div:first-child {
+			display: block;
+		}
+
+		.tab-cont > div h2 {
+			margin-bottom: 10px;
+		}
+
+		.tab-cont > div p {
+			line-height: 1.6;
+		}
+	</style>
 </head>
 
-<body>
-    <div class="bg bg1">
-        <!-- info -->
-        <div class="info">
-            <h1>javascript Menu Effect01</h1>
-            <p>메뉴 이펙트 - 탭 메뉴</p>
-        </div>
+<body class="bg bg1">
+	<!-- contents -->
+	<main>
+		<div id="tab-menu">
+			<div class="tab-btn">
+				<ul>
+					<li class="active"><a href="#">비법1</a></li>
+					<li><a href="#">비법2</a></li>
+					<li><a href="#">비법3</a></li>
+					<li><a href="#">비법4</a></li>
+					<li><a href="#">비법5</a></li>
+					<!-- <li><a href="#">비법6</a></li>
+					<li><a href="#">비법7</a></li> -->
+				</ul>
+			</div>
+			<div class="tab-cont">
+				<div>
+					<h2>품위 없는 모든 버릇을 버려라.</h2>
+					<p>욕을 하고 투덜거리는 것, 경박한 자세로 앉아 있는 것, 남을 비웃는 것, 지저분한 차림, 약속에 늦거나 변경하는 일 등의 이런 모든 행동은 품위 없는 짓이다.</p>
+				</div>
+				<div>
+					<h2>도움을 구하는 데 망설이지 마라.</h2>
+					<p>묻고 요청하고 찾아가고 부탁하라. 반드시 물음에 답을 주고 도움을 주고 반기는 사람이 있다.</p>
+				</div>
+				<div>
+					<h2>희생을 할 각오를 해라.</h2>
+					<p>작은 목표에는 작은 희생이 따르고 큰 목표에는 큰 희생이 따른다. 공부를 위해서는 잠을 포기해야 하고 돈을 모으기 위해선 더 많은 시간을 일해야 한다.</p>
+				</div>
+				<div>
+					<h2>기록하고 정리하라.</h2>
+					<p>투자내역, 정보, 갑자기 생각난 아이디어, 명함, 사이트 암호들, 구매 기록 등을 모두 정리하거나 기억하라. 이것은 재산이며 동시에 당신을 보호한다.</p>
+				</div>
+				<div>
+					<h2>장기 목표를 가져라.</h2>
+					<p>산을 오르려면 봉우리가 보여야 한다. 즉각 적인 자극에 유혹당하지 말고 평생 지킬 만한 가치를 찾아라.</p>
+				</div>
+				<!-- <div>
+					<h2>제발 모두에게 사랑받을 생각을 버려라.</h2>
+					<p>눈치 보지 말고 비난에 의연하고 무리와 어울리는 것에 목숨을 걸지 마라. 진정한 친구는 두 명도 많고 가족의 지지가 모든 것의 기초다. 부정적인 사람과 결별하고 당신보다 나은
+						사람들과 어울려라.</p>
+				</div>
+				<div>
+					<h2>시간이 많다고 생각하지 마라.</h2>
+					<p>투자는 지금도 늦었고 저절로 수고 없이 느는 것은 나이밖에 없다. 한 살이라도 젊어서 투자하면 한살이라도 어릴 때 부자가 된다.</p>
+				</div> -->
+			</div>
+		</div>
+	</main>
+	<!-- //contents -->
 
-        <div class="info right">
-            <ul>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-            </ul>
-        </div>
+	<!-- info -->
+	<div class="info">
+		<h1>javascript Menu Effect01</h1>
+		<p>메뉴 이펙트 - 탭 메뉴</p>
+	</div>
 
-        <!-- #1 -->
-        <div id="modal">
-            <div class="modal-bg">
-                <div class="modal-cont">
-                    <h2>레이어 팝업</h2>
-                    <p>Sass is a stylesheet language that’s compiled to CSS. It allows you to use variables, nested
-                        rules, mixins, functions, and more, all with a fully CSS-compatible syntax. Sass helps keep
-                        large stylesheets well-organized and makes it easy to share design within and across projects.
-                    </p>
-                    <button>닫기</button>
-                </div>
-            </div>
-        </div>
-        <!-- //#1 -->
+	<div class="info right">
+        <ul>
+            <li class="active"><a href="javascriptME01.html">1</a></li>
+            <li><a href="javascriptME02.html">2</a></li>
+            <li><a href="javascriptME03.html">3</a></li>
+            <li><a href="javascriptME04.html">4</a></li>
+            <li><a href="javascriptME05.html">5</a></li>
+        </ul>
+        <ul>
+            <li><a href="jqueryME01.html">1</a></li>
+            <li><a href="jqueryME02.html">2</a></li>
+            <li><a href="jqueryME03.html">3</a></li>
+            <li><a href="jqueryME04.html">4</a></li>
+            <li><a href="jqueryME05.html">5</a></li>
+        </ul>
+	</div>
 
-        <div class="info bottom">
-            <button>소스보기</button>
-        </div>
-        <!-- //info -->
-    </div>
+	<div class="info bottom">
+		<button>소스보기</button>
+	</div>
+	<!-- //info -->
 
-    <script>
-        {
-            // #1
-            document.querySelector(".info.bottom button").addEventListener("click", function () {
-                document.querySelector("#modal").classList.remove("hide");
-                document.querySelector("#modal").classList.add("show");
-            });
+	<!-- modal -->
+	<div id="modal">
+		<div class="modal-bg">
+			<div class="modal-cont">
+				<div class="code-view">
+					<div class="view-header">
+						<div class="dot" aria-hidden="true">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+					<div class="view-title">
+						<ul>
+							<li class="active"><a href="#">Html</a></li>
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">Javascript</a></li>
+						</ul>
+					</div>
+					<div class="view-cont">
+						<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;UTF-8&quot; /&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+	&lt;link href=&quot;/path/to/tailwind.css&quot; rel=&quot;stylesheet&quot;&gt;
+	&lt;!-- ... --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- ... --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					</div>
+				</div>
 
-            document.querySelector(".modal-cont button").addEventListener("click", function () {
-                document.querySelector("#modal").classList.add("hide");
-            });
+				<button>닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
 
-
-            // $(".info.bottom button").click(function () {
-            //     $("#modal").removeClass().addClass("show");
-            // });
-
-            // $(".modal-cont button").click(function () {
-            //     $("#modal").addClass("hide");
-            // });
-        }
-    </script>
+	<!-- script -->
+	<script src="../assets/js/custom.js"></script>
+	<script src="../assets/js/highlight.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			document.querySelectorAll('pre code').forEach((el) => {
+				hljs.highlightElement(el);
+			});
+		});
+	</script>
 </body>
 
 </html>

@@ -209,6 +209,7 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
             font-family: $font-Nexon1;
             box-shadow: inset 0 0 0 #fff;
             transition: all 0.4s;
+            cursor: pointer;
 
             &:hover {
                 box-shadow: inset 0 -100px 0 #fff;
@@ -224,15 +225,18 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
     color: #fff;
     font-family: $font-Nexon1;
     padding: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     &.right {
-        position: absolute;
+        left: auto;
         right: 0px;
-        top: 0px;
     }
 
     &.bottom {
-        position: absolute;
+        top: auto;
+        left: auto;
         bottom: 0;
         right: 0;
     }
@@ -293,7 +297,7 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
     }
 }
 
-// #1
+// modal
 #modal {
     position: fixed;
     left: 0;
@@ -311,11 +315,6 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
         justify-content: center;
 
         .modal-cont {
-            background: #fff;
-            padding: 3vw;
-            max-width: 60vw;
-            border-radius: 5px;
-
             h2 {
                 font-weight: 400;
                 font-size: 30px;
@@ -336,6 +335,7 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
                 padding: 5px 10px;
                 cursor: pointer;
                 font-family: 'NEXONLv2Gothic';
+                margin-top: 10px;
             }
         }
     }
@@ -407,7 +407,73 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
     }
 }
 
+// code-view
+.code-view {
+    background: #fff;
+    width: 60vw;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
 
+    .view-header {
+        border-bottom: 1px solid #f2f2f2;
+
+        .dot {
+            padding: 13px 10px 10px 15px;
+
+            span {
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                border-radius: 50%;
+                margin: 0 2px;
+            }
+
+            span:nth-child(1) {
+                background-color: #f56565;
+            }
+
+            span:nth-child(2) {
+                background-color: #f6e05e;
+            }
+
+            span:nth-child(3) {
+                background-color: #48bb78;
+            }
+        }
+    }
+
+    .view-title {
+        border: 1px solid #f2f2f2;
+        padding: 0 11px;
+        font-family: "NEXONLv1Gothic";
+
+        li {
+            display: inline;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: #cccccc;
+                padding: 10px 10px 12px;
+                margin: 0 5px;
+                display: inline-block;
+            }
+
+            &.active a {
+                border-top: 2px solid #667eea;
+                color: #4a5568;
+            }
+        }
+    }
+
+    .view-cont {}
+}
+
+
+
+
+// 반응형
 @media (max-width: 900px) {
     #contents {
         h1 {

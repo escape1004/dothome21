@@ -259,6 +259,7 @@ figcaption {
           box-shadow: inset 0 0 0 #fff;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  cursor: pointer;
 }
 
 #nav li a:hover {
@@ -271,16 +272,19 @@ figcaption {
   color: #fff;
   font-family: "NEXONLv1Gothic";
   padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .info.right {
-  position: absolute;
+  left: auto;
   right: 0px;
-  top: 0px;
 }
 
 .info.bottom {
-  position: absolute;
+  top: auto;
+  left: auto;
   bottom: 0;
   right: 0;
 }
@@ -366,13 +370,6 @@ figcaption {
           justify-content: center;
 }
 
-#modal .modal-bg .modal-cont {
-  background: #fff;
-  padding: 3vw;
-  max-width: 60vw;
-  border-radius: 5px;
-}
-
 #modal .modal-bg .modal-cont h2 {
   font-weight: 400;
   font-size: 30px;
@@ -393,6 +390,7 @@ figcaption {
   padding: 5px 10px;
   cursor: pointer;
   font-family: 'NEXONLv2Gothic';
+  margin-top: 10px;
 }
 
 #modal.show {
@@ -521,6 +519,66 @@ figcaption {
     -webkit-transform: scale(0);
             transform: scale(0);
   }
+}
+
+.code-view {
+  background: #fff;
+  width: 60vw;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.code-view .view-header {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.code-view .view-header .dot {
+  padding: 13px 10px 10px 15px;
+}
+
+.code-view .view-header .dot span {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.code-view .view-header .dot span:nth-child(1) {
+  background-color: #f56565;
+}
+
+.code-view .view-header .dot span:nth-child(2) {
+  background-color: #f6e05e;
+}
+
+.code-view .view-header .dot span:nth-child(3) {
+  background-color: #48bb78;
+}
+
+.code-view .view-title {
+  border: 1px solid #f2f2f2;
+  padding: 0 11px;
+  font-family: "NEXONLv1Gothic";
+}
+
+.code-view .view-title li {
+  display: inline;
+  list-style: none;
+}
+
+.code-view .view-title li a {
+  text-decoration: none;
+  color: #cccccc;
+  padding: 10px 10px 12px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.code-view .view-title li.active a {
+  border-top: 2px solid #667eea;
+  color: #4a5568;
 }
 
 @media (max-width: 900px) {
