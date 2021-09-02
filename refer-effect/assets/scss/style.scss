@@ -252,7 +252,7 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
 
     p {
         font-weight: 300;
-        font-size: 16px;
+        font-size: 13px;
     }
 
     li {
@@ -483,64 +483,8 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
     }
 }
 
-// tab
-#tab-menu {
-    max-width: 600px;
-    background: rgb(175, 175, 175);
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    font-family: "NEXONLv2Gothic";
-    color: #fff;
-    overflow: hidden;
-}
-
-.tab-btn {}
-
-.tab-btn ul {
-    display: flex;
-}
-
-.tab-btn li {
-    width: 20%;
-    list-style: none;
-    text-align: center;
-}
-
-.tab-btn li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 18px 15px 15px 15px;
-    display: block;
-}
-
-.tab-btn li.active a {
-    border-bottom: 3px solid rgb(252, 100, 100);
-    color: rgb(0, 0, 0);
-}
-
-.tab-cont {
-    background: #fff;
-    padding: 20px;
-    color: #222;
-}
-
-.tab-cont>div {
-    display: none;
-}
-
-.tab-cont>div:first-child {
-    display: block;
-}
-
-.tab-cont>div h2 {
-    margin-bottom: 10px;
-}
-
-.tab-cont>div p {
-    line-height: 1.6;
+.view-cont {
+    background: #f8f8f8;
 }
 
 .view-cont>div {
@@ -550,7 +494,6 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
 .view-cont>div:first-child {
     display: block;
 }
-
 
 // 반응형
 @media (max-width: 900px) {
@@ -577,10 +520,43 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
         }
     }
 
-    #tab-menu {
-        .tab-btn {
-            li {
-                font-size: 14px;
+    .info {
+        h1 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        li {
+            a {
+                font-size: 10px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        &.bottom {
+            bottom: 10px;
+        }
+    }
+
+    .code-view {
+        width: 90vw;
+
+        .view-cont {
+            font-size: 12px;
+        }
+    }
+
+
+    #modal {
+        .modal-bg {
+            .modal-cont {
+                button {
+                    padding: 5px 20px;
+                }
             }
         }
     }

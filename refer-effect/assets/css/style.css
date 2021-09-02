@@ -300,7 +300,7 @@ figcaption {
 
 .info p {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .info li {
@@ -594,64 +594,8 @@ figcaption {
   display: block;
 }
 
-#tab-menu {
-  max-width: 600px;
-  background: #afafaf;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border-radius: 5px;
-  font-family: "NEXONLv2Gothic";
-  color: #fff;
-  overflow: hidden;
-}
-
-.tab-btn ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.tab-btn li {
-  width: 20%;
-  list-style: none;
-  text-align: center;
-}
-
-.tab-btn li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 18px 15px 15px 15px;
-  display: block;
-}
-
-.tab-btn li.active a {
-  border-bottom: 3px solid #fc6464;
-  color: black;
-}
-
-.tab-cont {
-  background: #fff;
-  padding: 20px;
-  color: #222;
-}
-
-.tab-cont > div {
-  display: none;
-}
-
-.tab-cont > div:first-child {
-  display: block;
-}
-
-.tab-cont > div h2 {
-  margin-bottom: 10px;
-}
-
-.tab-cont > div p {
-  line-height: 1.6;
+.view-cont {
+  background: #f8f8f8;
 }
 
 .view-cont > div {
@@ -693,7 +637,27 @@ figcaption {
     height: 35px;
     line-height: 35px;
   }
-  #tab-menu .tab-btn li {
+  .info h1 {
     font-size: 14px;
+  }
+  .info p {
+    font-size: 12px;
+  }
+  .info li a {
+    font-size: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  .info.bottom {
+    bottom: 10px;
+  }
+  .code-view {
+    width: 90vw;
+  }
+  .code-view .view-cont {
+    font-size: 12px;
+  }
+  #modal .modal-bg .modal-cont button {
+    padding: 5px 20px;
   }
 }

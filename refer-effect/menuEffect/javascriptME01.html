@@ -10,6 +10,90 @@
 	<link rel="stylesheet" href="../assets/css/style.css">
 	<link rel="stylesheet" href="../assets/css/highlight.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<style>
+		#tab-menu {
+			max-width: 600px;
+			background: rgb(175, 175, 175);
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 5px;
+			font-family: "NEXONLv2Gothic";
+			color: #fff;
+			overflow: hidden;
+		}
+
+		.tab-btn {}
+
+		.tab-btn ul {
+			display: flex;
+		}
+
+		.tab-btn li {
+			width: 20%;
+			list-style: none;
+			text-align: center;
+		}
+
+		.tab-btn li a {
+			font-size: 14px;
+			color: #fff;
+			text-decoration: none;
+			padding: 18px 15px 15px 15px;
+			display: block;
+		}
+
+		.tab-btn li.active a {
+			border-bottom: 3px solid rgb(252, 100, 100);
+			color: rgb(0, 0, 0);
+		}
+
+		.tab-cont {
+			background-color: #f8f8f8;
+			padding: 20px;
+			color: #222;
+		}
+
+		.tab-cont div {
+			background: #f8f8f8;
+		}
+
+		.tab-cont>div {
+			display: none;
+		}
+
+		.tab-cont>div:first-child {
+			display: block;
+		}
+
+		.tab-cont>div h2 {
+			margin-bottom: 10px;
+		}
+
+		.tab-cont>div p {
+			line-height: 1.6;
+		}
+
+		@media(max-width: 900px) {
+			#tab-menu {
+				width: 80%;
+			}
+
+			.tab-cont {
+				padding: 30px 20px 30px 20px;
+			}
+
+			.tab-cont>div h2 {
+				font-size: 22px;
+			}
+
+			.tab-cont>div p {
+				font-size: 14px;
+				line-height: 1.8;
+			}
+		}
+	</style>
 </head>
 
 <body class="bg bg2">
@@ -64,6 +148,10 @@
 			<li><a href="javascriptME03.html">3</a></li>
 			<li><a href="javascriptME04.html">4</a></li>
 			<li><a href="javascriptME05.html">5</a></li>
+			<li><a href="javascriptME06.html">6</a></li>
+			<li><a href="javascriptME07.html">7</a></li>
+			<li><a href="javascriptME08.html">8</a></li>
+			<li><a href="javascriptME09.html">9</a></li>
 		</ul>
 		<ul>
 			<li><a href="jqueryME01.html">1</a></li>
@@ -71,6 +159,10 @@
 			<li><a href="jqueryME03.html">3</a></li>
 			<li><a href="jqueryME04.html">4</a></li>
 			<li><a href="jqueryME05.html">5</a></li>
+			<li><a href="jqueryME06.html">6</a></li>
+			<li><a href="jqueryME07.html">7</a></li>
+			<li><a href="jqueryME08.html">8</a></li>
+			<li><a href="jqueryME09.html">9</a></li>
 		</ul>
 	</div>
 
@@ -215,9 +307,8 @@ tabBtn.forEach((element, index) => {
 </code></pre>
 						</div>
 					</div>
-
-					<button>닫기</button>
 				</div>
+				<button>닫기</button>
 			</div>
 		</div>
 		<!-- //modal -->
