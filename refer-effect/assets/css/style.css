@@ -633,12 +633,13 @@ figcaption {
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
   }
   #nav li a {
-    width: 80px;
-    height: 35px;
+    font-size: 12px;
+    width: 70px;
+    height: 32px;
     line-height: 35px;
   }
   .info h1 {
