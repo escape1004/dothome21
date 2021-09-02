@@ -657,6 +657,9 @@ figcaption {
   .code-view .view-cont {
     font-size: 12px;
   }
+  .code-view .view-title {
+    font-size: 14px;
+  }
   #modal .modal-bg .modal-cont button {
     padding: 5px 20px;
   }
