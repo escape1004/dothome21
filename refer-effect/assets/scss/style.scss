@@ -467,10 +467,89 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
         }
     }
 
-    .view-cont {}
+    .view-title {}
+
+    .view-cont {
+        height: 500px;
+        overflow-y: scroll;
+
+        >div {
+            display: none;
+        }
+
+        >div:nth-child(1) {
+            display: block;
+        }
+    }
 }
 
+// tab
+#tab-menu {
+    max-width: 600px;
+    background: rgb(175, 175, 175);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-family: "NEXONLv2Gothic";
+    color: #fff;
+    overflow: hidden;
+}
 
+.tab-btn {}
+
+.tab-btn ul {
+    display: flex;
+}
+
+.tab-btn li {
+    width: 20%;
+    list-style: none;
+    text-align: center;
+}
+
+.tab-btn li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 15px 15px 15px;
+    display: block;
+}
+
+.tab-btn li.active a {
+    border-bottom: 3px solid rgb(252, 100, 100);
+    color: rgb(0, 0, 0);
+}
+
+.tab-cont {
+    background: #fff;
+    padding: 20px;
+    color: #222;
+}
+
+.tab-cont>div {
+    display: none;
+}
+
+.tab-cont>div:first-child {
+    display: block;
+}
+
+.tab-cont>div h2 {
+    margin-bottom: 10px;
+}
+
+.tab-cont>div p {
+    line-height: 1.6;
+}
+
+.view-cont>div {
+    display: none;
+}
+
+.view-cont>div:first-child {
+    display: block;
+}
 
 
 // 반응형
@@ -494,6 +573,14 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
                 width: 80px;
                 height: 35px;
                 line-height: 35px;
+            }
+        }
+    }
+
+    #tab-menu {
+        .tab-btn {
+            li {
+                font-size: 14px;
             }
         }
     }

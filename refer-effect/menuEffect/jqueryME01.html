@@ -10,66 +10,6 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/highlight.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <style>
-        #tab-menu {
-            max-width: 600px;
-            background: rgb(175, 175, 175);
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 5px;
-            font-family: "NEXONLv2Gothic";
-            color: #fff;
-            overflow: hidden;
-        }
-
-        .tab-btn {}
-
-        .tab-btn ul {
-            display: flex;
-        }
-
-        .tab-btn li {
-            width: 20%;
-            list-style: none;
-            text-align: center;
-        }
-
-        .tab-btn li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 18px 15px 15px 15px;
-            display: block;
-        }
-
-        .tab-btn li.active a {
-            border-bottom: 3px solid rgb(252, 100, 100);
-            color: rgb(0, 0, 0);
-        }
-
-        .tab-cont {
-            background: #fff;
-            padding: 20px;
-            color: #222;
-        }
-
-        .tab-cont>div {
-            display: none;
-        }
-
-        .tab-cont>div:first-child {
-            display: block;
-        }
-
-        .tab-cont>div h2 {
-            margin-bottom: 10px;
-        }
-
-        .tab-cont>div p {
-            line-height: 1.6;
-        }
-    </style>
 </head>
 
 <body class="bg bg1">
@@ -170,53 +110,162 @@
                         </ul>
                     </div>
                     <div class="view-cont">
-                        <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-	&lt;meta charset=&quot;UTF-8&quot; /&gt;
-	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-	&lt;link href=&quot;/path/to/tailwind.css&quot; rel=&quot;stylesheet&quot;&gt;
-	&lt;!-- ... --&gt;
-&lt;/head&gt;
-&lt;body&gt;
-	&lt;!-- ... --&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+                        <div class="html">
+                            <pre><code class="language-html">&lt;div id="tab-menu"&gt;
+    &lt;div class="tab-btn"&gt;
+        &lt;ul&gt;
+            &lt;li class="active"&gt;&lt;a href="#"&gt;비법1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;비법2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;비법3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;비법4&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;비법5&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="tab-cont"&gt;
+        &lt;div&gt;
+            &lt;h2&gt;품위 없는 모든 버릇을 버려라.&lt;/h2&gt;
+            &lt;p&gt;욕을 하고 투덜거리는 것, 경박한 자세로 앉아 있는 것, 남을 비웃는 것, 지저분한 차림, 약속에 늦거나 변경하는 일 등의 이런 모든 행동은 품위 없는 짓이다.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;h2&gt;도움을 구하는 데 망설이지 마라.&lt;/h2&gt;
+            &lt;p&gt;묻고 요청하고 찾아가고 부탁하라. 반드시 물음에 답을 주고 도움을 주고 반기는 사람이 있다.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;h2&gt;희생을 할 각오를 해라.&lt;/h2&gt;
+            &lt;p&gt;작은 목표에는 작은 희생이 따르고 큰 목표에는 큰 희생이 따른다. 공부를 위해서는 잠을 포기해야 하고 돈을 모으기 위해선 더 많은 시간을 일해야 한다.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;h2&gt;기록하고 정리하라.&lt;/h2&gt;
+            &lt;p&gt;투자내역, 정보, 갑자기 생각난 아이디어, 명함, 사이트 암호들, 구매 기록 등을 모두 정리하거나 기억하라. 이것은 재산이며 동시에 당신을 보호한다.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;h2&gt;장기 목표를 가져라.&lt;/h2&gt;
+            &lt;p&gt;산을 오르려면 봉우리가 보여야 한다. 즉각 적인 자극에 유혹당하지 말고 평생 지킬 만한 가치를 찾아라.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
-                    </div>
-                </div>
+                        </div>
+                        <div class="css">
+                            <pre><code class="language-css">#tab-menu {
+	max-width: 600px;
+	background: rgb(175, 175, 175);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	font-family: "NEXONLv2Gothic";
+	color: #fff;
+	overflow: hidden;
+}
 
-                <button>닫기</button>
+.tab-btn ul {
+	display: flex;
+}
+
+.tab-btn li {
+	width: 20%;
+	list-style: none;
+	text-align: center;
+}
+
+.tab-btn li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 18px 15px 15px 15px;
+	display: block;
+}
+
+.tab-btn li.active a {
+	border-bottom: 3px solid rgb(252, 100, 100);
+	color: rgb(0, 0, 0);
+}
+
+.tab-cont {
+	background: #fff;
+	padding: 20px;
+	color: #222;
+}
+
+.tab-cont>div {
+	display: none;
+}
+
+.tab-cont>div:first-child {
+	display: block;
+}
+
+.tab-cont>div h2 {
+	margin-bottom: 10px;
+}
+
+.tab-cont>div p {
+	line-height: 1.6;
+}
+</code></pre>
+                        </div>
+                        <div class="jQuery">
+                            <pre><code class="language-javascript">const viewBtn = $(".view-title li");
+const viewCont = $(".view-cont > div");
+
+viewBtn.click(function () {
+    let target = $(this);
+    viewBtn.removeClass("active");
+    target.addClass("active");
+
+    let index = target.index();
+    viewCont.css("display", "none");
+    viewCont.eq(index).css("display", "block");
+});
+</code></pre>
+                        </div>
+                    </div>
+
+                    <button>닫기</button>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- //modal -->
+        <!-- //modal -->
 
-    <!-- script -->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/custom.js"></script>
-    <script src="../assets/js/highlight.min.js"></script>
-    <script>
-        const tabBtn = $(".tab-btn ul li"); // 5개의 버튼을 변수에 할당
-        const tabCont = $(".tab-cont > div"); // 5개의 컨텐츠를 변수에 할당
+        <!-- script -->
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/custom.js"></script>
+        <script src="../assets/js/highlight.min.js"></script>
+        <script>
+            const tabBtn = $(".tab-btn ul li"); // 5개의 버튼을 변수에 할당
+            const tabCont = $(".tab-cont > div"); // 5개의 컨텐츠를 변수에 할당
 
-        // 1. 버튼 클릭 시 클릭한 버튼을 active
-        // 2. 버튼을 클릭 하지 않은 다른 버튼은 active 제거
-        // 3. 버튼 인덱스 설정
-        // 4. 첫 번째 버튼은 첫 번째 컨텐츠 연결 ...
-        // 5. 모든 컨텐츠를 안보이게 설정
-        // 6. 클릭한 버튼의 해당 컨텐츠만 보이게 설정
+            // 1. 버튼 클릭 시 클릭한 버튼을 active
+            // 2. 버튼을 클릭 하지 않은 다른 버튼은 active 제거
+            // 3. 버튼 인덱스 설정
+            // 4. 첫 번째 버튼은 첫 번째 컨텐츠 연결 ...
+            // 5. 모든 컨텐츠를 안보이게 설정
+            // 6. 클릭한 버튼의 해당 컨텐츠만 보이게 설정
 
-        tabBtn.click(function () {
-            let target = $(this);
-            tabBtn.removeClass("active");
-            target.addClass("active");
+            tabBtn.click(function () {
+                let target = $(this);
+                tabBtn.removeClass("active");
+                target.addClass("active");
 
-            let index = target.index();
-            tabCont.css("display", "none");
-            tabCont.eq(index).css("display", "block");
-        });
-    </script>
+                let index = target.index();
+                tabCont.css("display", "none");
+                tabCont.eq(index).css("display", "block");
+            });
+
+            const viewBtn = $(".view-title li");
+            const viewCont = $(".view-cont > div");
+
+            viewBtn.click(function () {
+                let target = $(this);
+                viewBtn.removeClass("active");
+                target.addClass("active");
+
+                let index = target.index();
+                viewCont.css("display", "none");
+                viewCont.eq(index).css("display", "block");
+            });
+        </script>
 </body>
 
 </html>

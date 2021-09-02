@@ -581,6 +581,87 @@ figcaption {
   color: #4a5568;
 }
 
+.code-view .view-cont {
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.code-view .view-cont > div {
+  display: none;
+}
+
+.code-view .view-cont > div:nth-child(1) {
+  display: block;
+}
+
+#tab-menu {
+  max-width: 600px;
+  background: #afafaf;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  font-family: "NEXONLv2Gothic";
+  color: #fff;
+  overflow: hidden;
+}
+
+.tab-btn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-btn li {
+  width: 20%;
+  list-style: none;
+  text-align: center;
+}
+
+.tab-btn li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 18px 15px 15px 15px;
+  display: block;
+}
+
+.tab-btn li.active a {
+  border-bottom: 3px solid #fc6464;
+  color: black;
+}
+
+.tab-cont {
+  background: #fff;
+  padding: 20px;
+  color: #222;
+}
+
+.tab-cont > div {
+  display: none;
+}
+
+.tab-cont > div:first-child {
+  display: block;
+}
+
+.tab-cont > div h2 {
+  margin-bottom: 10px;
+}
+
+.tab-cont > div p {
+  line-height: 1.6;
+}
+
+.view-cont > div {
+  display: none;
+}
+
+.view-cont > div:first-child {
+  display: block;
+}
+
 @media (max-width: 900px) {
   #contents h1 {
     position: absolute;
@@ -611,5 +692,8 @@ figcaption {
     width: 80px;
     height: 35px;
     line-height: 35px;
+  }
+  #tab-menu .tab-btn li {
+    font-size: 14px;
   }
 }
