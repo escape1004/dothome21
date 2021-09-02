@@ -606,10 +606,6 @@ figcaption {
   display: block;
 }
 
-.view-cont > div > pre {
-  white-space: pre-wrap;
-}
-
 @media (max-width: 900px) {
   #contents h1 {
     position: absolute;
