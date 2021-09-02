@@ -653,6 +653,7 @@ figcaption {
   }
   .code-view {
     width: 90vw;
+    overflow: hidden;
   }
   .code-view .view-cont {
     font-size: 12px;

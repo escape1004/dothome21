@@ -544,6 +544,7 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
 
     .code-view {
         width: 90vw;
+        overflow: hidden;
 
         .view-cont {
             font-size: 12px;
