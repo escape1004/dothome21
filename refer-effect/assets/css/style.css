@@ -73,6 +73,14 @@ figcaption {
   padding: 0;
 }
 
+.iphone main {
+  padding: 10px;
+}
+
+.android main {
+  padding: 10px;
+}
+
 .bg {
   position: relative;
   height: 100vh;

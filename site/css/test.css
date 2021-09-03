@@ -1,0 +1,111 @@
+body {
+    font-family: 'nanumsquare';
+    background: url(../img/naver-bg.png) repeat-x 50% 0/3380px 1652px;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.349);
+    position: fixed;
+    overflow: hidden;
+    padding: 5px 30px;
+    z-index: 1000;
+}
+
+.nav-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.logo .logo-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+}
+
+.logo .logo-text {
+    height: 30px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    margin: 0 11px;
+    white-space: nowrap;
+}
+
+.login {
+    position: absolute;
+    top: 31px;
+    right: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 36px;
+    height: 38px;
+}
+
+.login a {
+    color: #fff;
+}
+
+section {
+    overflow: hidden;
+}
+
+section .main-text {
+    margin-top: 270px;
+    display: block;
+}
+
+section .cont {
+    color: #fff;
+    display: block;
+}
+
+.cont h2 {
+    display: block;
+    padding: 78px 0 32px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -.88px;
+}
+
+.cont p {
+    font-size: 23px;
+    line-height: 44px;
+    letter-spacing: -.4px;
+}
+
+.swiper-wrapper .swiper-slide {
+    overflow: hidden;
+    height: auto;
+    border-radius: 20px;
+}
+
+.swiper-inner {
+    padding: 20px;
+}
+
+.swiper-inner .arrow {
+    width: 16px;
+    height: 13px;
+}

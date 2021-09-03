@@ -309,6 +309,12 @@ viewBtn.click(function () {
         <script src="../assets/js/custom.js"></script>
         <script src="../assets/js/highlight.min.js"></script>
         <script>
+            window.onload = function () {
+                // init();
+                // animate();
+                agentCheck();
+            }
+
             const tabBtn = $(".tab-btn ul li"); // 5개의 버튼을 변수에 할당
             const tabCont = $(".tab-cont > div"); // 5개의 컨텐츠를 변수에 할당
 

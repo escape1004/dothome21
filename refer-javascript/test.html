@@ -10,8 +10,35 @@
 
 <body>
     <script>
-        {
+        // 시험 문제
+        for (let i = 1; i <= arrScreen.length; i++) {
+            document.querySelector(".btn5-" + i).addEventListener("click", () => {
+                document.querySelector(".text5-" + i).innerHTML = arrScreen[i];
+            });
 
+            // btn51.addEventListener("click", () => {
+            //     document.querySelector(".text5-1").innerHTML = screenWidth;
+            // });
+
+            // btn52.addEventListener("click", () => {
+            //     document.querySelector(".text5-2").innerHTML = screenHeight;
+            // });
+
+            // btn53.addEventListener("click", () => {
+            //     document.querySelector(".text5-3").innerHTML = screenAvailWidth;
+            // });
+
+            // btn54.addEventListener("click", () => {
+            //     document.querySelector(".text5-4").innerHTML = screenAvailHeight;
+            // });
+
+            // btn55.addEventListener("click", () => {
+            //     document.querySelector(".text5-5").innerHTML = colorDepth;
+            // });
+
+            // btn56.addEventListener("click", () => {
+            //     document.querySelector(".text5-6").innerHTML = pixelDepth;
+            // });
         }
     </script>
 </body>
