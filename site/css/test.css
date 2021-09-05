@@ -25,6 +25,9 @@ header {
     justify-content: center;
     align-items: center;
     height: 100px;
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .logo {
@@ -267,10 +270,10 @@ section .cont {
 .swiper-button-prev {
     display: block;
     position: absolute;
-    top: 184% !important;
+    top: 182% !important;
     left: -7.5% !important;
     color: #fff !important;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(15, 15, 15);
     border-radius: 50%;
     padding: 52px 60px;
     transform: scale(0.4);
@@ -279,13 +282,21 @@ section .cont {
 .swiper-button-next {
     display: block;
     position: absolute;
-    top: 184% !important;
+    top: 182% !important;
     right: -7.5% !important;
     color: #fff !important;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(15, 15, 15);
     border-radius: 50%;
     padding: 52px 60px;
     transform: scale(0.4);
+}
+
+.swiper-button-prev:hover {
+    background: rgb(206, 206, 206);
+}
+
+.swiper-button-next:hover {
+    background: rgb(206, 206, 206);
 }
 
 /* card-type */
