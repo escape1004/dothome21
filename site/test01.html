@@ -24,187 +24,7 @@
     <!-- 나눔스퀘어 웹 폰트 -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 
-    <style>
-        .swiper {
-            width: 100%;
-            position: relative;
-            color: #fff;
-            overflow: hidden;
-        }
-
-        .swiper2 {
-            width: 100%;
-            position: relative;
-            color: #fff;
-            overflow: hidden;
-        }
-
-        .swiper3 {
-            width: 100%;
-            position: relative;
-            color: #fff;
-            overflow: hidden;
-        }
-
-        .swiper4 {
-            width: 100%;
-            position: relative;
-            color: #fff;
-            overflow: hidden;
-        }
-
-        .swiper-slide .slider-inner {
-            width: 1400px;
-            margin: 0 auto;
-        }
-
-        .swiper-slide .slider-inner em {
-            font-family: 'NEXONLv1Gothic';
-            font-size: 24px;
-            font-weight: 700;
-            text-transform: uppercase;
-            padding-top: 100px;
-            display: block;
-        }
-
-        .swiper-slide .slider-inner h3 {
-            font-family: 'GmarketSans';
-            font-size: 100px;
-            font-weight: 300;
-            line-height: 1.2;
-            text-indent: -8px;
-        }
-
-        .swiper-slide .slider-inner p {
-            font-family: 'NEXONLv1Gothic';
-            font-size: 20px;
-            font-weight: 300;
-        }
-
-        .swiper-slide .slider-inner .btn {
-            display: block;
-            padding-bottom: 100px;
-            margin-top: 260px;
-        }
-
-        .swiper-slide .slider-inner .btn a {
-            font-family: 'NEXONLv1Gothic';
-            font-size: 16px;
-            width: 200px;
-            height: 50px;
-            display: inline-block;
-            text-align: center;
-            line-height: 50px;
-            margin-right: 7px;
-        }
-
-        .swiper-slide .slider-inner .btn a.white {
-            background-color: #fff;
-            color: #000;
-        }
-
-        .swiper-slide .slider-inner .btn a.black {
-            background-color: #000;
-            color: #fff;
-        }
-
-        .swiper-wrapper .swiper-slide:nth-child(1) {
-            background-image: url(img/naver-slider01.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
-        }
-
-        .swiper-wrapper .swiper-slide:nth-child(2) {
-            background-image: url(img/naver-slider02.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
-        }
-
-        .swiper-wrapper .swiper-slide:nth-child(3) {
-            background-image: url(img/naver-slider03.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
-        }
-
-        .swiper-wrapper .swiper-slide:nth-child(4) {
-            background-image: url(img/naver-slider04.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
-        }
-
-        .swiper-wrapper .swiper-slide:nth-child(5) {
-            background-image: url(img/naver-slider05.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
-        }
-
-        .swiper-wrapper .swiper-slide:nth-child(6) {
-            background-image: url(img/naver-slider06.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
-        }
-
-        .swiper-pagination {
-            position: absolute;
-            left: 50% !important;
-            bottom: 35px;
-            transform: translateX(-50%);
-        }
-
-        .swiper-pagination .swiper-pagination-bullet {
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-            display: inline-block;
-            border: 3px solid #fff;
-            box-sizing: border-box;
-            margin: 0 6px;
-            opacity: 1;
-            background-color: transparent;
-        }
-
-        .swiper-pagination .swiper-pagination-bullet-active {
-            background-color: #fff;
-        }
-
-        .swiper-button-prev {
-            width: 20px;
-            height: 40px;
-            display: block;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #fff;
-        }
-
-        .swiper-button-next {
-            width: 20px;
-            height: 40px;
-            display: block;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #fff;
-        }
-
-        /* swiper2 */
-        .swiper-pagination-fraction {
-            color: #fff;
-            font-size: 18px;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -244,15 +64,117 @@
                 <p>네이버 인플루언서 센터는 여러분들에게 다양한 지원 프로그램을 운영하고 있습니다.<br>
                     더 큰 수익과 성장을 위한 다양한 혜택과 지원 프로그램을 지금 경험해보세요.</p>
             </div>
-            <!-- swiper -->
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper-inner">
-                            <em>로고전문가 최은빈과 함께하는</em>
-                            <h2>세상에서 제일 쉬운 로고 만들기 심화편</h2>
-                            <p>지금 만나보세요 </p>
-                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#fff"
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- swiper -->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-inner">
+                        <em>로고전문가 최은빈과 함께하는</em>
+                        <h2>세상에서 제일 쉬운<br>로고 만들기 심화편</h2>
+                        <p>지금 만나보세요 </p>
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#fff"
+                            aria-hidden="true">
+                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-inner">
+                        <em>로고전문가 최은빈과 함께하는</em>
+                        <h2>세상에서 제일 쉬운<br>나만의 로고 만들기</h2>
+                        <p>지금 만나보세요 </p>
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#fff"
+                            aria-hidden="true">
+                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-inner">
+                        <em>광고 표시, 어떻게 하지?</em>
+                        <h2>정당하게 광고하자!<br>추천보증광고 표시법</h2>
+                        <p>지금 만나보세요 </p>
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#fff"
+                            aria-hidden="true">
+                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-inner">
+                        <em>@여행작가 박은하의</em>
+                        <h2>클릭을 부르는<br>포스팅 방법</h2>
+                        <p>지금 만나보세요 </p>
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#fff"
+                            aria-hidden="true">
+                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-inner">
+                        <em>세남자와 해결해요!</em>
+                        <h2>세금신고의 꽃<br>절세 노하우!</h2>
+                        <p>지금 만나보세요 </p>
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#fff"
+                            aria-hidden="true">
+                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="swiper-inner">
+                        <em>세남자와 해결해요!</em>
+                        <h2>세금 신고<br>FAQ</h2>
+                        <p>지금 만나보세요 </p>
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#fff"
+                            aria-hidden="true">
+                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="container2">
+
+            <div class="card-type1">
+                <div class="card-left">
+                    <h3>인플루언서에게<br>제공되는<br>광고 수익과 혜택</h3>
+                    <div class="card1">
+                        <div class="card-desc">
+                            <em>인플루언서 홈</em>
+                            <h3>취향을 자유롭게 표현하는<br>나만의 홈페이지</h3>
+                            <p>자세히 알아보기</p>
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#6d8bff"
                                 aria-hidden="true">
                                 <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
                                     stroke-linejoin="round">
@@ -260,20 +182,151 @@
                                 </g>
                             </svg>
                         </div>
+                        <img src="img/naver-content01.png" alt="카드01">
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="card-right">
+                    <div class="card2">
+                        <div class="card-desc">
+                            <em>인플루언서 홈</em>
+                            <h3>취향을 자유롭게 표현하는<br>나만의 홈페이지</h3>
+                            <p>자세히 알아보기</p>
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#6d8bff"
+                                aria-hidden="true">
+                                <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <img src="img/naver-content02.png" alt="카드02">
+                    </div>
+                    <div class="card3">
+                        <div class="card-desc">
+                            <em>인플루언서 홈</em>
+                            <h3>취향을 자유롭게 표현하는<br>나만의 홈페이지</h3>
+                            <p>자세히 알아보기</p>
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#6d8bff"
+                                aria-hidden="true">
+                                <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <img src="img/naver-content03.png" alt="카드03">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <article>
+        <div class="container2">
+            <div class="card-type2">
+                <h2>오직 네이버 인플루언서만을 위한<br>성장 지원 프로그램</h2>
+                <div class="flex-wrap">
+                    <div class="card1">
+                        <div class="card-desc">
+                            <em>슈퍼애드</em>
+                            <h2>네이버 배너를 통한<br>홍보 지원</h2>
+                            <p>자세히 알아보기</p>
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#d1ffe6"
+                                aria-hidden="true">
+                                <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <img src="img/naver-content04.png" alt="카드04">
+                    </div>
+                    <div class="card2">
+                        <div class="card-desc">
+                            <em>엑스퍼트 프로그램</em>
+                            <h2>세금, 법률 등<br>컨설팅 비용 지원</h2>
+                            <p>자세히 알아보기</p>
+                            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#d1ffe6"
+                                aria-hidden="true">
+                                <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <img src="img/naver-content05.png" alt="카드05">
+                    </div>
+                </div>
+                <div class="card3">
+                    <div class="card-desc">
+                        <em>크리에이터 워크숍</em>
+                        <h2>어디에서도 볼 수 없었던<br>무료 강연과 교육</h2>
+                        <p>자세히 알아보기</p>
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#d1ffe6"
+                            aria-hidden="true">
+                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <img src="img/naver-content06.png" alt="카드06">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <div class="article2">
+        <h2>인플루언서 검색에 대한 정보가 더 필요한가요?</h2>
+        <a href="#" class="btn white">인플루언서 검색 <strong>지원 안내</strong></a>
+        <a href="#" class=" btn blue">인플루언서 검색 <strong>소개페이지</strong></a>
+    </div>
+
+    <footer>
+        <a href="#" class="top">
+            <p>TOP</p>
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 13" stroke="#666" aria-hidden="true">
+                <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9.95 11.4l4.95-4.95L9.95 1.5M2 6.5h12"></path>
+                </g>
+            </svg>
+        </a>
+        <a class="footer-login" href="#">로그인</a>
+        <p class="copyright">NAVER Copyright © NAVER Corp. All Rights Reserved.</p>
+        <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 16" aria-hidden="true" width="74"
+            height="16" fill="hsla(0,0%,100%,.2)">
+            <path
+                d="M21.897 1l-5.464 14h4.644l.66-1.853h5.237l.66 1.853h4.643L26.814 1h-4.917zm2.459 4.411l1.557 4.373h-3.115l1.558-4.373zM47.165 1v14H58.16v-3.431h-6.556V9.682h6.35V6.319h-6.35V4.43h6.419V1zm-6.078 0l-3.278 9.205L34.53 1h-4.643l5.463 14h4.917L45.73 1zM10.492 1v7.493L5.302 1H1v14h4.507V7.507L10.697 15h4.302V1zm56.545 6.52h-2.39V4.568h2.39c.81 0 1.468.661 1.468 1.476s-.657 1.476-1.468 1.476zm3.034 2.677l.422-.178c1.62-.68 2.443-2.154 2.443-4.024 0-1.769-.642-3.077-1.908-3.889C69.851 1.351 68.325 1 66.226 1h-5.882v14h4.371v-3.912h1.57L68.95 15h4.644l-3.522-4.803z">
+            </path>
+        </svg>
+    </footer>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
 
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        $(document).ready(function () {
+            $('.menu li').hover(
+                function (event) {
+                    $(this).addClass('active');
+                },
+                function () {
+                    $(this).removeClass('active');
+                }
+            );
+        });
     </script>
 </body>
 

@@ -1,25 +1,30 @@
 body {
     font-family: 'nanumsquare';
     background: url(../img/naver-bg.png) repeat-x 50% 0/3380px 1652px;
+    background-color: #232323;
+}
+
+.container2 {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 header {
     width: 100%;
-    height: 90px;
+    height: 100px;
     background-color: rgba(0, 0, 0, 0.349);
     position: fixed;
     overflow: hidden;
-    padding: 5px 30px;
     z-index: 1000;
 }
 
 .nav-wrap {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
     align-items: center;
+    height: 100px;
 }
 
 .logo {
@@ -40,23 +45,30 @@ header {
 
 .menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
 
 .menu li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     padding: 15px;
     margin: 0 11px;
     white-space: nowrap;
 }
 
+.menu li.active a {
+    color: #19cf60;
+}
+
 .login {
     position: absolute;
     top: 31px;
-    right: 100px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    right: 40px;
+    border: 1px solid hsla(0, 0%, 100%, .5);
     border-radius: 20px;
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
     font-size: 14px;
     line-height: 36px;
     height: 38px;
@@ -95,17 +107,567 @@ section .cont {
     letter-spacing: -.4px;
 }
 
-.swiper-wrapper .swiper-slide {
-    overflow: hidden;
-    height: auto;
-    border-radius: 20px;
-}
+/* swiper */
 
-.swiper-inner {
-    padding: 20px;
+.swiper {
+    width: 1000px;
+    position: relative;
+    color: #fff;
+    margin-top: 160px;
+    height: 410px;
 }
 
 .swiper-inner .arrow {
     width: 16px;
     height: 13px;
+}
+
+.swiper-slide .swiper-inner {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 60px;
+}
+
+.swiper-slide .swiper-inner em {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    display: block;
+    font-weight: 800;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.swiper-slide .swiper-inner h2 {
+    font-size: 35px;
+    line-height: 50px;
+    display: block;
+    letter-spacing: -.6px;
+}
+
+.swiper-slide .swiper-inner p {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -.2px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.swiper-slide .swiper-inner .arrow {
+    display: inline-block;
+    margin-top: 26px;
+}
+
+.swiper-slide .swiper-inner .btn a {
+    font-family: 'NEXONLv1Gothic';
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 7px;
+}
+
+.swiper-slide .swiper-inner .btn a.white {
+    background-color: #fff;
+    color: #000;
+}
+
+.swiper-slide .swiper-inner .btn a.black {
+    background-color: #000;
+    color: #fff;
+}
+
+.swiper-wrapper .swiper-slide {
+    height: auto;
+    border-radius: 20px;
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url(../img/naver-slider04.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+.swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url(../img/naver-slider01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+.swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url(../img/naver-slider03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+.swiper-wrapper .swiper-slide:nth-child(4) {
+    background-image: url(../img/naver-slider02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+.swiper-wrapper .swiper-slide:nth-child(5) {
+    background-image: url(../img/naver-slider06.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+.swiper-wrapper .swiper-slide:nth-child(6) {
+    background-image: url(../img/naver-slider05.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 55px !important;
+    left: -400px !important;
+    z-index: 10;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0 6px;
+    opacity: 1;
+    background-color: hsla(0, 0%, 100%, .18);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+.swiper-button-prev {
+    display: block;
+    position: absolute;
+    top: 184% !important;
+    left: -7.5% !important;
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+    padding: 52px 60px;
+    transform: scale(0.4);
+}
+
+.swiper-button-next {
+    display: block;
+    position: absolute;
+    top: 184% !important;
+    right: -7% !important;
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+    padding: 52px 60px;
+    transform: scale(0.4);
+}
+
+/* card-type */
+.card-type1 {
+    margin: 150px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-type1 .card-left {
+    width: 48.5%;
+    display: inline-block;
+}
+
+.card-type1 .card-right {
+    width: 48.5%;
+    display: inline-block;
+}
+
+.card-type1 h3 {
+    display: block;
+    margin-bottom: 72px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 68px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: #6d8bff;
+}
+
+.card-type1 .card1 {
+    background: #313236;
+    width: 100%;
+    height: 833px;
+    border-radius: 15px;
+    box-shadow: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-type1 .card2 {
+    background: #313236;
+    width: 100%;
+    height: 537px;
+    border-radius: 15px;
+    box-shadow: #000;
+    cursor: pointer;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.card-type1 .card3 {
+    background: #313236;
+    width: 100%;
+    height: 539px;
+    border-radius: 15px;
+    box-shadow: #000;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-type1 .card1 img {
+    transition: all 0.3s ease-out;
+}
+
+.card-type1 .card1:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-out;
+}
+
+.card-type1 .card2 img {
+    transition: all 0.3s ease-out;
+}
+
+.card-type1 .card2:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-out;
+}
+
+.card-type1 .card3 img {
+    transition: all 0.3s ease-out;
+}
+
+.card-type1 .card3:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-out;
+}
+
+.card-type1 .card-desc {
+    padding: 52px 50px 0;
+}
+
+.card-type1 em {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19px;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.card-type1 .card-desc h3 {
+    display: block;
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1.06px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.card-type1 p {
+    display: inline-block;
+    padding-top: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -.2px;
+    color: #6d8bff;
+    margin-bottom: 25px;
+}
+
+.card-type1 .arrow {
+    width: 16px;
+    height: 13px;
+}
+
+/* card-type2 */
+article {
+    background: #1C1C1C;
+}
+
+.card-type2 {
+    padding: 150px 0;
+    overflow: hidden;
+}
+
+.card-type2 h2 {
+    display: block;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 68px;
+    letter-spacing: -1.4px;
+    color: #5cf0c6;
+    margin-bottom: 72px;
+    text-align: center;
+}
+
+.card-type2 .flex-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-type2 .card1 {
+    width: 48.5%;
+    height: 466px;
+    background: #59D1AB;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-type2 .card2 {
+    width: 48.5%;
+    height: 466px;
+    background: #5470F8;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-type2 .card3 {
+    width: 100%;
+    height: 328px;
+    background: #5645B8;
+    border-radius: 15px;
+    display: inline-block;
+    margin-top: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-type2 em {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.card-type2 .flex-wrap h2 {
+    display: block;
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1.06px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.card-type2 p {
+    display: inline-block;
+    position: relative;
+    padding-top: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -.2px;
+    z-index: 1;
+    color: #d1ffe6;
+}
+
+.card-type2 .card1 img {
+    margin-top: 33px;
+}
+
+.card-type2 .card2 img {
+    position: absolute;
+    bottom: 0;
+}
+
+.card-type2 .card3 img {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    transform: scale(0.6);
+}
+
+.card-type2 .card3 h2 {
+    display: block;
+    padding-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1.06px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.card-type2 .arrow {
+    width: 16px;
+    height: 13px;
+}
+
+.card-type2 .card-desc {
+    padding: 50px 50px 0;
+}
+
+.card-type2 .card1 img {
+    transition: all 0.3s ease-out;
+}
+
+.card-type2 .card1:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-out;
+}
+
+.card-type2 .card2 img {
+    transition: all 0.3s ease-out;
+}
+
+.card-type2 .card2:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-out;
+}
+
+.card-type2 .card3 img {
+    transition: all 0.3s ease-out;
+}
+
+.card-type2 .card3:hover img {
+    transform: scale(0.63);
+    transition: all 0.2s ease-out;
+}
+
+/* article2 */
+.article2 {
+    padding: 135px 0;
+    box-sizing: border-box;
+    background-image: url(../img/naver-bg2.png);
+    background-position: 50% 50%;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    text-align: center;
+}
+
+.article2 h2 {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -.68px;
+    color: #fff;
+}
+
+.article2 .btn {
+    display: inline-block;
+    width: 340px;
+    border-radius: 41px;
+    box-shadow: 0 10px 6px -10px rgb(0 0 0 / 6%);
+    font-size: 22px;
+    line-height: 80px;
+    letter-spacing: -.4px;
+}
+
+.article2 .btn.white {
+    background-color: #fff;
+    color: #000;
+}
+
+.article2 .btn.blue {
+    margin-left: 20px;
+    background-color: #4b65f7;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    background: #000;
+    text-align: center;
+}
+
+footer .top {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    font-weight: 500;
+    letter-spacing: .47px;
+    color: #666;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+    display: block;
+}
+
+footer p {
+    font-size: 14px;
+    display: inline-block;
+}
+
+footer .arrow {
+    width: 10px;
+    height: 8px;
+    transform: rotate(-90deg);
+    display: inline-block;
+}
+
+footer .footer-login {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 80px;
+    height: 29px;
+    border-radius: 4px;
+    background: #323232;
+    font-size: 13px;
+    letter-spacing: -.5px;
+    color: #999;
+}
+
+footer .copyright {
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -.3px;
+    color: hsla(0, 0%, 100%, .3);
+    margin-top: 30px;
+    display: block;
+}
+
+footer .footer-logo {
+    display: inline-block;
+    padding-bottom: 50px;
+    background: #000;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
 }
