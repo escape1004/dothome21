@@ -280,7 +280,7 @@ section .cont {
     display: block;
     position: absolute;
     top: 184% !important;
-    right: -7% !important;
+    right: -7.5% !important;
     color: #fff !important;
     background: rgba(0, 0, 0, 0.9);
     border-radius: 50%;

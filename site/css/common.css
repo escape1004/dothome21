@@ -11,13 +11,6 @@
     margin: 0 auto;
 }
 
-.container2 {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-}
-
 /* btn-style */
 .btn-style {
     border: 1px solid #000;
