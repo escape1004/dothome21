@@ -673,6 +673,17 @@
         $(".s2 .select ~ span").addClass("blue");
     });
 }
+
+$(window).mousemove(function (e) {
+    　　$(".clientX").text(e.clientX + "px");
+    　　$(".clientY").text(e.clientY + "px");
+    　　$(".offsetX").text(e.offsetX + "px");
+    　　$(".offsetY").text(e.offsetY + "px");
+    　　$(".pageX").text(e.pageX + "px");
+    　　$(".pageY").text(e.pageY + "px");
+    　　$(".screenX").text(e.screenX + "px");
+    　　$(".screenY").text(e.screenY + "px");
+});
 </code></pre>
                 </div>
             </div>

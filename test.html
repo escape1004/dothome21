@@ -1,112 +1,47 @@
-<!DOCTYPE html>
-<html lang="ko">
+&lt;main&gt;
+    &lt;div class="cursor"&gt;&lt;/div&gt;
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃 시험</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            background-color: #f8bbd0;
-        }
+    &lt;article class="mouseCont"&gt;
+        &lt;p&gt;&lt;span class="style1"&gt;Better&lt;/span&gt; the &lt;span class="style2"&gt;last smile&lt;/span&gt; than the &lt;span
+                class="style3"&gt;first laughter&lt;/span&gt;.&lt;/p&gt;
+        &lt;h2&gt;&lt;span class="style4"&gt;처음의 큰 웃음&lt;/span&gt;보다 &lt;span class="style5"&gt;마지막 미소&lt;/span&gt;가 &lt;span class="style6"&gt;더
+                좋다.&lt;/span&gt;&lt;/h2&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+&lt;!-- //contents --&gt;
 
-        #wrap {
-            width: 80%;
-            margin: 0 auto;
-            color: #fff;
-            font-size: 30px;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-        }
+&lt;!-- info --&gt;
+&lt;div class="info"&gt;
+    &lt;h1&gt;&lt;a href="index.html"&gt;Javascript Mouse Effect01&lt;/a&gt;&lt;/h1&gt;
+    &lt;p&gt;마우스 이펙트 - 마우스 따라다니기&lt;/p&gt;
+&lt;/div&gt;
 
-        header {
-            background-color: #d81b60;
-            width: 100%;
-            height: 100px;
-            line-height: 100px;
-        }
+&lt;div class="info right"&gt;
+    &lt;ul&gt;
+        &lt;li class="active"&gt;&lt;a href="javascriptME01.html"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascriptME02.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascriptME03.html"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascriptME04.html"&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="javascriptME05.html"&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="jqueryME01.html"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="jqueryME02.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="jqueryME03.html"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="jqueryME04.html"&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="jqueryME05.html"&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 
-        nav {
-            background-color: #e91e63;
-            width: 100%;
-            height: 100px;
-            line-height: 100px;
-        }
-
-        main {
-            overflow: auto;
-        }
-
-        aside {
-            background-color: #ec407a;
-            width: 30%;
-            height: 600px;
-            float: left;
-            line-height: 600px;
-        }
-
-        section {
-            background-color: #f06292;
-            width: 70%;
-            height: 300px;
-            float: left;
-            line-height: 300px;
-        }
-
-        article {
-            background-color: #f48fb1;
-            width: 70%;
-            height: 300px;
-            overflow: hidden;
-            padding: 30px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-between;
-            line-height: 300px;
-        }
-
-        article .cont {
-            width: 50%;
-            height: 100%;
-            background-color: #f06292;
-            float: left;
-            margin-right: 30px;
-            text-transform: lowercase;
-            line-height: 240px;
-            font-weight: normal;
-        }
-
-        article .cont:last-child {
-            margin-right: 0px;
-        }
-
-        footer {
-            background-color: #e91e63;
-            width: 100%;
-            height: 100px;
-            line-height: 100px;
-        }
-    </style>
-</head>
-
-<body>
-    <div id="wrap">
-        <header>header</header>
-        <nav>nav</nav>
-        <main>
-            <aside>side</aside>
-            <section>content1</section>
-            <article>
-                <div class="cont">cont1</div>
-                <div class="cont">cont2</div>
-            </article>
-        </main>
-        <footer>footer</footer>
-    </div>
-</body>
-
-</html>
+&lt;div class="info left list"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;clientX : &lt;span class="clientX"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;clientY : &lt;span class="clientY"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;offsetX : &lt;span class="offsetX"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;offsetY : &lt;span class="offsetY"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;pageX : &lt;span class="pageX"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;pageY : &lt;span class="pageY"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;screenX : &lt;span class="screenX"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;screenY : &lt;span class="screenY"&gt;0&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
