@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="webstoryboy">
+    <meta name="description" content="웹 사이트 제작을 위한 사이트입니다.">
+    <meta name="keywords" content="박세진, 웹 퍼블리셔, 웹 표준, 웹 접근성, 화려한 디자인, PARKSEJIN, publisher, css3, html, markup, design">
+    <title>네이버 인플루언서 센터</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- Slider Type CSS -->
+    <link rel="stylesheet" href="css/test02.css">
+
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- 나눔스퀘어 웹 폰트 -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <a href="#" class="logo">
+                <img class="logo-img" src="img/naver-logo.gif" alt="로고">
+                <svg class="logo-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194 30" fill="#000"
+                    aria-hidden="true" width="194">
+                    <path
+                        d="M8.134 0v6.417L3.139 0H0v12.14h3.33V5.48l5.185 6.66h2.949V0zm9.924 0L12.89 12.226h3.537l.868-2.167h4.682l.885 2.167h3.607L21.301 0h-3.243zm1.596 3.989l1.352 3.45h-2.722l1.37-3.45zM34.219.086l-2.757 7.683L28.705.086h-3.764l4.925 12.227h3.122L37.913.086zm4.87 0v12.14h9.851V9.365h-6.521V7.44h5.827V4.787h-5.827V2.948h6.434V.086zm17.15 5.828c1.144 0 1.804-.555 1.804-1.44V4.44c0-.954-.694-1.44-1.822-1.44H54.02v2.914h2.22zM50.655.087h5.74c1.855 0 3.14.485 3.954 1.318.711.693 1.075 1.63 1.075 2.826v.035c0 1.856-.988 3.087-2.497 3.729l2.896 4.231h-3.884L55.493 8.55h-1.475v3.676h-3.363V.086zM0 29.757h3.382v-12.14H0zm5.6-12.139h3.139l4.995 6.416v-6.416h3.33v12.139h-2.948L8.93 23.098v6.659H5.6zm13.612 0h9.711v2.948h-6.347v2.063h5.74v2.793h-5.74v4.335h-3.364zm11.235 0h3.365v9.191h5.878v2.948h-9.243zm10.178 6.815v-6.815h3.417v6.746c0 1.751.884 2.584 2.236 2.584 1.354 0 2.238-.798 2.238-2.497v-6.833h3.417v6.729c0 3.919-2.238 5.636-5.69 5.636-3.45 0-5.618-1.752-5.618-5.55m13.299-6.815h9.764v2.861h-6.435v1.838h5.828v2.654h-5.828v1.925h6.522v2.861h-9.851zm11.565 0h3.139l4.994 6.416v-6.416h3.33v12.139h-2.948l-5.185-6.659v6.659h-3.33zm13.195 6.104v-.035c0-3.537 2.723-6.312 6.4-6.312 2.48 0 4.075 1.04 5.15 2.532l-2.532 1.96c-.694-.868-1.491-1.423-2.654-1.423-1.7 0-2.896 1.44-2.896 3.209v.034c0 1.821 1.197 3.244 2.896 3.244 1.266 0 2.012-.59 2.74-1.474l2.533 1.803C89.176 28.838 87.633 30 84.944 30c-3.468 0-6.26-2.653-6.26-6.278m13.073-6.104h9.764v2.861h-6.434v1.838h5.827v2.654h-5.827v1.925h6.521v2.861h-9.851zm17.15 5.827c1.144 0 1.803-.555 1.803-1.44v-.034c0-.954-.694-1.44-1.82-1.44h-2.203v2.914h2.22zm-5.585-5.827h5.74c1.856 0 3.14.485 3.955 1.317.71.694 1.075 1.63 1.075 2.827v.035c0 1.856-.989 3.087-2.497 3.729l2.896 4.231h-3.884l-2.446-3.676h-1.475v3.676h-3.364v-12.14zm16.854 6.104v-.035c0-3.537 2.722-6.312 6.399-6.312 2.48 0 4.075 1.04 5.15 2.532l-2.532 1.96c-.694-.868-1.491-1.423-2.653-1.423-1.7 0-2.896 1.44-2.896 3.209v.034c0 1.821 1.196 3.244 2.896 3.244 1.266 0 2.012-.59 2.74-1.474l2.532 1.803c-1.145 1.578-2.688 2.74-5.376 2.74-3.468 0-6.26-2.653-6.26-6.278m13.073-6.104h9.764v2.861h-6.434v1.838h5.827v2.654h-5.827v1.925h6.521v2.861h-9.851zm11.565 0h3.139l4.995 6.416v-6.416h3.33v12.139h-2.949l-5.185-6.659v6.659h-3.33zm16.576 2.948h-3.642v-2.949h10.649v2.949h-3.642v9.191h-3.365zm8.479-2.948h9.763v2.861h-6.433v1.838h5.826v2.654h-5.826v1.925h6.52v2.861h-9.85zm17.149 5.827c1.144 0 1.803-.555 1.803-1.44v-.034c0-.954-.693-1.44-1.82-1.44h-2.203v2.914h2.22zm-5.585-5.827h5.741c1.855 0 3.139.485 3.954 1.317.71.694 1.075 1.63 1.075 2.827v.035c0 1.856-.988 3.087-2.497 3.729l2.896 4.231h-3.884l-2.446-3.676h-1.474v3.676h-3.365v-12.14z">
+                    </path>
+                </svg>
+            </a>
+            <div class="menu">
+                <ul>
+                    <li id="me1"><a href="#">인플루언서 안내</a></li>
+                    <li id="me2"><a href="#">광고 수익 혜택</a></li>
+                    <li id="me3"><a href="#">성장 지원 프로그램</a></li>
+                    <li id="me4"><a href="#">브랜드커넥트</a></li>
+                    <li id="me5"><a href="#">공지</a></li>
+                </ul>
+            </div>
+            <div class="side">
+                <a href="#" class="btn">지원 안내</a>
+                <img class="profile" src="img/naver-userprofile.png" alt="프로필">
+            </div>
+        </header>
+
+        <div class="banner">
+            <div class="banner-wrap">
+                <h2>멤버십 혜택</h2>
+                <em>인플루언서 활동에 꼭 필요한<br>네이버의 다양한 멤버십 혜택을 제공합니다.</em>
+                <p>전국 파트너스퀘어의 스튜디오, 편집실 이용부터 네이버플러스 멤버십 이용권 1년 무료 혜택까지.<br>네이버 인플루언서라면 네이버의 다양한 멤버십 혜택들을 누릴 수 있습니다.</p>
+            </div>
+        </div>
+
+        <section class="section1">
+            <div class="container2">
+                <div class="half">
+                    <div class="cont1">
+                        <h2>어디에서든 나를 빛내줄<br>온라인 네임 카드</h2>
+                        <p>네이버 인플루언서라면 누구나 나만의 네임카드 다운받고<br>홈을 알릴 수 있습니다. 나를 더 예쁘고 멋지게 소개할 수<br>있도록 온라인 네임카드를 만들어보세요.
+                        </p>
+                        <a href="#" class="btn">온라인 네임카드 만들기</a>
+                    </div>
+                    <div class="cont2">
+                        <img src="img/naver-content07.png" alt="콘텐츠 사진">
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div>
+                        <span>
+                            <h3>신청 자격</h3>
+                            <p>홈을 개설한 네이버 인플루언서라면 누구나</p>
+                        </span>
+                        <span>
+                            <h3>혜택 상세</h3>
+                            <p>운영중인 다른 채널에 내 인플루언서 홈을 홍보할 수 있는 네임카드 이미지 소스를 제공합니다.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="container2">
+                <div class="half">
+                    <div class="cont1">
+                        <img src="img/naver-content08.png" alt="콘텐츠 사진">
+                    </div>
+                    <div class="cont2">
+                        <h2>전국 파트너스퀘어<br>스튜디오, 편집실 제공</h2>
+                        <p>파트너스퀘어는 사진/동영상 컨텐츠를 보다 잘 만들 수<br>있는 지원을 받는 곳입니다. 크리에이터를 위한 다양한<br>스튜디오를 경험해보세요.</p>
+                        <a href="#" class="btn">파트너스퀘어 이용하기</a>
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div>
+                        <span>
+                            <h3>신청 자격</h3>
+                            <p>홈을 개설한 네이버 인플루언서라면 누구나</p>
+                        </span>
+                        <span>
+                            <h3>혜택 상세</h3>
+                            <p>서울(역삼, 종로, 홍대, 상수), 부산, 광주에 위치한 파트너스퀘어 내 다양한 스튜디오 및 편집실을 이용할 수 있습니다.<br>(단, <strong>홍대점은
+                                    전월 기준 팬수 1,000 이상</strong>인 경우에만 이용 가능합니다.)</p>
+                        </span>
+                        <span>
+                            <h3>이용 방법</h3>
+                            <p>네이버 파트너스퀘어에서 창작자 인증을 해야합니다.<br>(단, <strong>홍대점 경우 당월 인플루언서 승인 시 익월 15일</strong>에 이용 권한이
+                                부여됩니다.)</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="container2">
+                <div class="half">
+                    <div class="cont1">
+                        <h2>네이버플러스 멤버십<br>1년 무료 제공</h2>
+                        <p>키워드 챌린지에 참여한 인플루언서들에게 네이버플러스<br>멤버십을 선물로 드려요. 오디오클립, 웹툰, 클라우드,<br>바이브 등 다양한 서비스를 이용해보세요.</p>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn">내 멤버십 확인하기</a>
+                            <a href="#" class="btn second">지급조건 상세보기</a>
+                        </div>
+                    </div>
+                    <div class="cont2">
+                        <img src="img/naver-content09.png" alt="콘텐츠 사진">
+                    </div>
+                </div>
+                <div class="cont3">
+                    <div>
+                        <span>
+                            <h3>신청 자격</h3>
+                            <p>키워드 챌린지에 참여한 네이버 인플루언서</p>
+                        </span>
+                        <span>
+                            <h3>혜택 상세</h3>
+                            <p>쇼핑할 때마다 네이버페이 포인트 최대 5% 적립 가능한 네이버플러스 멤버십 12개월 무료 이용권을 드립니다.<br>(1인당 최초 1회 지급)</p>
+                        </span>
+                        <span>
+                            <h3>제공 방법</h3>
+                            <p>매월 1일자에 개별 이메일을 통해 이용권 지급이 안내됩니다.<br>(이번 달에 자격 요건을 달성한 분들은 다음 달 1일자에 이용권이 지급됩니다.)</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="top">
+                <a href="#">TOP
+                    <svg xmlns="http://www.w3.org/2000/svg" stroke="#666" viewBox="0 0 10 11" aria-hidden="true"
+                        width="10" height="11">
+                        <path fill="none" stroke-width="1.5" d="M1 5l4-4 4 4m-4 6V2"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="bottom">
+                <a href="#" class="logout">로그아웃</a>
+                <em>NAVER Copyright © NAVER Corp. All Rights Reserved.</em>
+                <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 16" aria-hidden="true"
+                    width="74" height="16">
+                    <path
+                        d="M21.897 1l-5.464 14h4.644l.66-1.853h5.237l.66 1.853h4.643L26.814 1h-4.917zm2.459 4.411l1.557 4.373h-3.115l1.558-4.373zM47.165 1v14H58.16v-3.431h-6.556V9.682h6.35V6.319h-6.35V4.43h6.419V1zm-6.078 0l-3.278 9.205L34.53 1h-4.643l5.463 14h4.917L45.73 1zM10.492 1v7.493L5.302 1H1v14h4.507V7.507L10.697 15h4.302V1zm56.545 6.52h-2.39V4.568h2.39c.81 0 1.468.661 1.468 1.476s-.657 1.476-1.468 1.476zm3.034 2.677l.422-.178c1.62-.68 2.443-2.154 2.443-4.024 0-1.769-.642-3.077-1.908-3.889C69.851 1.351 68.325 1 66.226 1h-5.882v14h4.371v-3.912h1.57L68.95 15h4.644l-3.522-4.803z">
+                    </path>
+                </svg>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

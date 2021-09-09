@@ -102,6 +102,10 @@ figcaption {
   z-index: -1;
 }
 
+.bg.blue::before {
+  background-color: rgba(92, 55, 110, 0.74);
+}
+
 .bg1 {
   background-image: url(../img/bg1@2x.jpg);
 }
@@ -290,6 +294,12 @@ figcaption {
   right: 0px;
 }
 
+.info.left {
+  top: auto;
+  left: 0;
+  bottom: 0;
+}
+
 .info.bottom {
   top: auto;
   left: auto;
@@ -305,6 +315,11 @@ figcaption {
   border-bottom: 1px dashed #fff;
   display: inline-block;
   margin-bottom: 10px;
+}
+
+.info h1 a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .info p {
@@ -334,6 +349,20 @@ figcaption {
 .info li.active a {
   background: #fff;
   color: #000;
+}
+
+.info.list {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 20px;
+  font-size: 12px;
+  line-height: 1.8;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.info.list li {
+  display: block;
 }
 
 .info button {
@@ -604,7 +633,8 @@ figcaption {
 }
 
 .view-cont {
-  background: #f8f8f8;
+  background-color: #96d0ff;
+  border-color: #96d0ff;
 }
 
 .view-cont > div {

@@ -138,6 +138,12 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
         background-color: rgba(0, 0, 0, 0.5);
         z-index: -1;
     }
+
+    &.blue {
+        &::before {
+            background-color: rgba(92, 55, 110, 0.74);
+        }
+    }
 }
 
 @for $i from 1 through 20 {
@@ -243,6 +249,12 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
         right: 0px;
     }
 
+    &.left {
+        top: auto;
+        left: 0;
+        bottom: 0;
+    }
+
     &.bottom {
         top: auto;
         left: auto;
@@ -258,6 +270,11 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
         border-bottom: 1px dashed #fff;
         display: inline-block;
         margin-bottom: 10px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 
     p {
@@ -288,6 +305,20 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
                 background: #fff;
                 color: #000;
             }
+        }
+    }
+
+    &.list {
+        background: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        padding: 20px;
+        font-size: 12px;
+        line-height: 1.8;
+        border-radius: 10px;
+        margin: 20px;
+
+        li {
+            display: block;
         }
     }
 
@@ -470,9 +501,11 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
                 display: inline-block;
             }
 
-            &.active a {
-                border-top: 2px solid #667eea;
-                color: #4a5568;
+            &.active {
+                a {
+                    border-top: 2px solid #667eea;
+                    color: #4a5568;
+                }
             }
         }
     }
@@ -494,7 +527,8 @@ $gradient6: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aa
 }
 
 .view-cont {
-    background: #f8f8f8;
+    background-color: #96d0ff;
+    border-color: #96d0ff;
 }
 
 .view-cont>div {
