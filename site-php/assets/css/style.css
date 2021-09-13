@@ -99,7 +99,6 @@
     width: 600px;
     margin: 0 auto;
     border: 1px solid #dfdfdf;
-    height: 1000px;
     background: #fff;
     padding: 60px 40px;
 }
@@ -109,10 +108,45 @@
     margin-bottom: 30px;
 }
 
+.member-form h4 {
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 14px;
+}
+
+.member-form button {
+    font-size: 18px;
+}
+
+.member-form .info {
+    padding-top: 20px;
+    color: #666;
+}
+
+.member-form .info a {
+    text-decoration: underline;
+    color: #666;
+}
+
 .member-form .join-info {
     margin-bottom: 20px;
 }
 
-.member-form .join-info li {}
+.member-form .join-privacy {
+    background: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 50px;
+}
 
-.member-form .join-privacy {}
+/* member-box */
+
+.member-box {}
+
+.member-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.member-box input {
+    margin-bottom: 30px;
+}

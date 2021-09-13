@@ -16,33 +16,47 @@
 
 <body>
     <div id="skip">
-        <a href="#contents">컨텐츠 바로가기</a>
+        <a href="#contents">회원가입 바로가기</a>
         <a href="#footer">푸터 바로가기</a>
     </div>
     <!-- //skip -->
 
     <header id="header">
-        <h1><a href="#">php <em>class</em></a></h1>
-        <nav>
-            <h2 class="ir_so">메인 메뉴</h2>
-            <ul>
-                <li><a href="#">댓글</a></li>
-                <li><a href="#">회원가입</a></li>
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">게시판</a></li>
-                <li><a href="#">블로그</a></li>
-            </ul>
-        </nav>
-        <div class="member">
-            <strong class="ir_so">회원 정보 영역</strong>
-            <a href="../login/login.php">로그인</a>
-            <a href="../login/join.php">회원가입</a>
-        </div>
+        <?php
+            include "../include/header.php";
+        ?>
     </header>
     <!-- //header -->
 
     <main id="contents">
-        contents
+        <section id="mainCont" class="gray">
+            <h2 class="ir_so">회원가입 컨텐츠</h2>
+            <article class="content-article">
+                <div class="member-form">
+                    <h3>로그인</h3>
+
+                    <form name="login" action="loginSave.php" method="POST">
+                        <fieldset>
+                            <legend class="ir_so">로그인 입력폼</legend>
+                            <div class="member-box">
+                                <div>
+                                    <label for="youEmail">이메일</label>
+                                    <input type="email" name="youEmail" id="youEmail" class="input_write"
+                                        placeholder="Sample@naver.com" autocolplete="off" autofocus>
+                                </div>
+                                <div>
+                                    <label for="youPass">비밀번호</label>
+                                    <input type="password" name="youPass" id="youPass" class="input_write"
+                                        maxlength="20" placeholder="비밀번호를 입력해주세요." autocolplete="off">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <button id="loginBtn" class="btn_submit" type="submit">로그인</button>
+                    </form>
+                    <p class="info">* 새로 오신 분들은 회원가입을 해주세요. <a href="join.php">회원가입</a></p>
+                </div>
+            </article>
+        </section>
     </main>
     <!-- //contents -->
 
