@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    ​
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/highlight.css">
+    ​
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .paraNav {
+            top: -200px;
+            transition: top 0.4s ease;
+        }
+
+        .paraNav.show {
+            top: 20px;
+        }
+
+        .paraNav li a {
+            width: auto;
+            padding: 5px 20px;
+        }
+
+        .paraNav li.active a {
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body class="parallax">
+    ​
+    <!-- header -->
+    <header class="paraInfo">
+        <h1><a href="index.html">Parallax Effect03 - jQuery</a></h1>
+        <p>패럴랙스 스크롤링 효과 - 숨김메뉴</p>
+    </header>
+    <!-- //header -->
+    ​
+    <!-- main -->
+    <main>
+        <div class="paraScroll">scrollTop() : <span>0</span>px</div>
+
+        <nav class="paraNav">
+            <ul>
+                <li class="active"><a href="#section1">메뉴1</a></li>
+                <li><a href="#section2">메뉴2</a></li>
+                <li><a href="#section3">메뉴3</a></li>
+                <li><a href="#section4">메뉴4</a></li>
+                <li><a href="#section5">메뉴5</a></li>
+                <li><a href="#section6">메뉴6</a></li>
+                <li><a href="#section7">메뉴7</a></li>
+                <li><a href="#section8">메뉴8</a></li>
+                <li><a href="#section9">메뉴9</a></li>
+            </ul>
+        </nav>
+        <!-- //paraNav -->
+
+        <div class="paraCont">
+            <section id="section1" class="content-item">
+                <span class="num">01</span>
+                <h2 class="title">Section1</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">사람은 반복문을 쓰고, 신은 재귀함수를 쓴다.</p>
+            </section>
+            <!-- //section1 -->
+            ​
+            <section id="section2" class="content-item">
+                <span class="num">02</span>
+                <h2 class="title">Section2</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">훌륭한 코드는 훌륭한 문서보다 낫다.</p>
+            </section>
+            <!-- //section2 -->
+            ​
+            <section id="section3" class="content-item">
+                <span class="num">03</span>
+                <h2 class="title">Section3</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">먼저 문제를 풀고 그 다음에 개발을 하라.</p>
+            </section>
+            <!-- //section3 -->
+            ​
+            <section id="section4" class="content-item">
+                <span class="num">04</span>
+                <h2 class="title">Section4</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">작동하지 않는다고 걱정하지 마라. 모든 게 잘 된다면, 내가 할 일이 없어진다.</p>
+            </section>
+            <!-- //section4 -->
+            ​
+            <section id="section5" class="content-item">
+                <span class="num">05</span>
+                <h2 class="title">Section5</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">좋은 소프트웨어란 복잡한 것을 간단하게 만드는 것이다.</p>
+            </section>
+            <!-- //section5 -->
+            ​
+            <section id="section6" class="content-item">
+                <span class="num">06</span>
+                <h2 class="title">Section6</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">복잡성을 통제하는 것이 컴퓨터 프로그래밍의 기초다.</p>
+            </section>
+            <!-- //section6 -->
+            ​
+            <section id="section7" class="content-item">
+                <span class="num">07</span>
+                <h2 class="title">Section7</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">창 밖으로 집어던질 수 없는 컴퓨터는 절대 믿지 마라.</p>
+            </section>
+            <!-- //section7 -->
+            ​
+            <section id="section8" class="content-item">
+                <span class="num">08</span>
+                <h2 class="title">Section8</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">사람들은 컴퓨터를 갖게 되자, 대량 살상무기를 만들었다.</p>
+            </section>
+            <!-- //section8 -->
+            ​
+            <section id="section9" class="content-item">
+                <span class="num">09</span>
+                <h2 class="title">Section9</h2>
+                <figure class="img-wrap">
+                    <div class="img"></div>
+                </figure>
+                <p class="desc">컴퓨터는 쓸모가 없다. 그것은 그냥 대답만 할 수 있다.</p>
+            </section>
+            <!-- //section9 -->
+        </div>
+        <!-- //contents -->
+    </main>
+    <!-- //main -->
+    ​
+    <!-- footer -->
+    <footer class="paraFooter">
+        <h1>Parallax <em>Scrolling</em></h1>
+        <div class="footerInfo">
+            <h2>제이쿼리</h2>
+            <ul>
+                <li><a href="jqueryPE01.html">1</a></li>
+                <li><a href="jqueryPE02.html">2</a></li>
+                <li class="active"><a href="jqueryPE03.html">3</a></li>
+                <li><a href="jqueryPE04.html">4</a></li>
+                <li><a href="jqueryPE05.html">5</a></li>
+            </ul>
+        </div>
+        <div class="footerInfo">
+            <h2>자바스크립트</h2>
+            <ul>
+                <li><a href="javascriptPE01.html">1</a></li>
+                <li><a href="javascriptPE02.html">2</a></li>
+                <li><a href="javascriptPE03.html">3</a></li>
+                <li><a href="javascriptPE04.html">4</a></li>
+                <li><a href="javascriptPE05.html">5</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+    ​
+    <!-- source -->
+    <div class="info bottom">
+        <button>소스 보기</button>
+    </div>
+    <!-- //source -->
+    ​
+    <!-- modal -->
+    <div id="modal">
+        <div class="modal-bg">
+            <div class="modal-cont">
+                <div class="code-view">
+                    <div class="view-header">
+                        <div class="dot" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="view-title">
+                        <ul>
+                            <li class="active"><a href="#">Html</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">jQuery</a></li>
+                        </ul>
+                    </div>
+                    <div class="view-cont">
+                        <div class="html">
+                            <pre><code class="language-html">&lt;div class="paraScroll"&gt;scrollTop() : &lt;span&gt;0&lt;/span&gt;&lt;/div&gt;
+
+&lt;div class="paraInfo2"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;section1 offset() : &lt;span class="offset1"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;section2 offset() : &lt;span class="offset2"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;section3 offset() : &lt;span class="offset3"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;section4 offset() : &lt;span class="offset4"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;section5 offset() : &lt;span class="offset5"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;section6 offset() : &lt;span class="offset6"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;section7 offset() : &lt;span class="offset7"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;section8 offset() : &lt;span class="offset8"&gt;0&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;section9 offset() : &lt;span class="offset9"&gt;0&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;nav class="paraNav"&gt;
+    &lt;ul&gt;
+        &lt;li class="active"&gt;&lt;a href="#section1"&gt;s1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#section2"&gt;s2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#section3"&gt;s3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#section4"&gt;s4&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#section5"&gt;s5&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#section6"&gt;s6&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#section7"&gt;s7&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#section8"&gt;s8&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#section9"&gt;s9&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;!-- //paraNav --&gt;
+
+&lt;div class="paraCont"&gt;
+    &lt;section id="section1" class="content-item"&gt;
+        &lt;span class="num"&gt;01&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section1&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;사람은 반복문을 쓰고, 신은 재귀함수를 쓴다.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section1 --&gt;
+    ​
+    &lt;section id="section2" class="content-item"&gt;
+        &lt;span class="num"&gt;02&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section2&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;훌륭한 코드는 훌륭한 문서보다 낫다.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section2 --&gt;
+    ​
+    &lt;section id="section3" class="content-item"&gt;
+        &lt;span class="num"&gt;03&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section3&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;먼저 문제를 풀고 그 다음에 개발을 하라.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section3 --&gt;
+    ​
+    &lt;section id="section4" class="content-item"&gt;
+        &lt;span class="num"&gt;04&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section4&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;작동하지 않는다고 걱정하지 마라. 모든 게 잘 된다면, 내가 할 일이 없어진다.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section4 --&gt;
+    ​
+    &lt;section id="section5" class="content-item"&gt;
+        &lt;span class="num"&gt;05&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section5&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;좋은 소프트웨어란 복잡한 것을 간단하게 만드는 것이다.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section5 --&gt;
+    ​
+    &lt;section id="section6" class="content-item"&gt;
+        &lt;span class="num"&gt;06&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section6&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;복잡성을 통제하는 것이 컴퓨터 프로그래밍의 기초다.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section6 --&gt;
+    ​
+    &lt;section id="section7" class="content-item"&gt;
+        &lt;span class="num"&gt;07&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section7&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;창 밖으로 집어던질 수 없는 컴퓨터는 절대 믿지 마라.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section7 --&gt;
+    ​
+    &lt;section id="section8" class="content-item"&gt;
+        &lt;span class="num"&gt;08&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section8&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;사람들은 컴퓨터를 갖게 되자, 대량 살상무기를 만들었다.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section8 --&gt;
+    ​
+    &lt;section id="section9" class="content-item"&gt;
+        &lt;span class="num"&gt;09&lt;/span&gt;
+        &lt;h2 class="title"&gt;Section9&lt;/h2&gt;
+        &lt;figure class="img-wrap"&gt;
+            &lt;div class="img"&gt;&lt;/div&gt;
+        &lt;/figure&gt;
+        &lt;p class="desc"&gt;컴퓨터는 쓸모가 없다. 그것은 그냥 대답만 할 수 있다.&lt;/p&gt;
+    &lt;/section&gt;
+    &lt;!-- //section9 --&gt;
+&lt;/div&gt;
+</code></pre>
+                        </div>
+                        <div class="css">
+                            <pre><code class="language-css">.parallax {
+    background: #222;
+    color: #fff;
+    font-family: 'NEXONLv1Gothic';
+}
+
+.paraScroll {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 20px;
+}
+
+.paraInfo2 {
+    position: fixed;
+    left: 20px;
+    bottom: 70px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.8;
+    border-radius: 10px;
+}
+
+.paraInfo2 li {
+    list-style: none;
+}
+
+.paraNav {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+
+.paraNav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.paraNav li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.paraNav li.active a {
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+
+.paraInfo {
+    padding: 20px;
+}
+
+.paraInfo h1 {
+    display: inline-block;
+    font-size: 20px;
+    border-bottom: 1px dashed #fff;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.paraInfo h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.paraInfo p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.paraCont {
+    width: 100%;
+    overflow: hidden;
+}
+
+.paraCont .content-item {
+    width: 1000px;
+    max-width: 70vw;
+    margin: 30vw 0;
+    padding-top: 10vw;
+    text-align: right;
+    position: relative;
+}
+
+.paraCont .content-item .num {
+    font-family: 'Lato';
+    font-weight: 100;
+    font-size: 25vw;
+    opacity: 0.07;
+    position: absolute;
+    right: -5vw;
+    top: -10vw;
+}
+
+.paraCont .content-item .title {
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.paraCont .content-item .img-wrap {
+    width: 100%;
+    padding-bottom: 56%;
+    background: #000;
+    position: relative;
+}
+
+.paraCont .content-item .img-wrap .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: saturate(0%);
+            filter: saturate(0%);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.paraCont .content-item .img-wrap .img:hover {
+    -webkit-filter: saturate(100%);
+            filter: saturate(100%);
+}
+
+.paraCont .content-item .desc {
+    font-size: 6vw;
+    line-height: 1.4;
+    margin-top: -6vw;
+    margin-right: -3vw;
+    position: relative;
+    z-index: 100;
+    word-break: keep-all;
+}
+
+.paraCont .content-item:nth-child(even) {
+    margin-left: auto;
+    text-align: left;
+}
+
+.paraCont .content-item:nth-child(even) .num {
+    right: auto;
+    left: -5vw;
+}
+
+.paraCont .content-item:nth-child(even) .desc {
+    margin-right: auto;
+    margin-left: -3vw;
+}
+
+.paraCont .content-item:nth-child(1) .img {
+    background-image: url(../img/bg1.jpg);
+}
+
+.paraCont .content-item:nth-child(2) .img {
+    background-image: url(../img/bg2.jpg);
+}
+
+.paraCont .content-item:nth-child(3) .img {
+    background-image: url(../img/bg3.jpg);
+}
+
+.paraCont .content-item:nth-child(4) .img {
+    background-image: url(../img/bg4.jpg);
+}
+
+.paraCont .content-item:nth-child(5) .img {
+    background-image: url(../img/bg5.jpg);
+}
+
+.paraCont .content-item:nth-child(6) .img {
+    background-image: url(../img/bg6.jpg);
+}
+
+.paraCont .content-item:nth-child(7) .img {
+    background-image: url(../img/bg7.jpg);
+}
+
+.paraCont .content-item:nth-child(8) .img {
+    background-image: url(../img/bg8.jpg);
+}
+
+.paraCont .content-item:nth-child(9) .img {
+    background-image: url(../img/bg9.jpg);
+}
+</code></pre>
+                        </div>
+                        <div class="javascript">
+                            <pre><code class="language-javascript">$(".paraNav ul li").click(function (e) {
+    e.preventDefault();
+    let target = $(this);
+    let index = target.index();
+    let section = $(".paraCont > section").eq(index);
+    let offset = section.offset().top;
+    $("html, body").animate({
+        scrollTop: offset
+    }, 600);
+});
+
+$(window).scroll(function () {
+    let scrollTop = $(window).scrollTop();
+
+    // // for문
+    // for (let i = 0; i >= $(".paraCont > section").eq().length; i++) {
+    //     if (scrollTop >= $("content-item").eq(i).offset().top - 2) {
+    //         $(".paraNav ul li").eq(i).addClass("active").siblings().removeClass("active");
+    //     }
+    // }
+
+    // each()
+    $(".content-item").each(function (index) {
+        if (scrollTop >= $(this).offset().top - 2) {
+            $(".paraNav ul li").eq(index).addClass("active").siblings().removeClass("active");
+        }
+    });
+
+    // info
+    $(".paraScroll span").text(parseInt(scrollTop));
+
+    // for문
+    for (let i = 1; i &lt;= 9; i++) {
+        $(".offset" + i).text(parseInt($("#section" + i).offset().top) + "px");
+    }
+});
+</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <button>닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- //modal -->
+    ​
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script>
+        modal();
+
+        $(".paraNav ul li").click(function (e) {
+            e.preventDefault();
+            let target = $(this);
+            let index = target.index();
+            let section = $(".content-item").eq(index);
+            let offset = section.offset().top;
+            $("html, body").animate({
+                scrollTop: offset
+            }, 600);
+        });
+
+        $(window).scroll(function () {
+            let scrollTop = $(this).scrollTop();
+
+            // 숨김 메뉴
+            // if (scrollTop > 10) {
+            //     $(".paraNav").addClass("show");
+            // } else {
+            //     $(".paraNav").removeClass("show");
+            // }
+
+            (scrollTop > 10) ? $(".paraNav").addClass("show"): $(".paraNav").removeClass("show");
+
+
+            // 버튼용
+            $(".content-item").each(function (index) {
+                if (scrollTop >= $(this).offset().top - 2) {
+                    $(".paraNav ul li").eq(index).addClass("active").siblings().removeClass("active");
+                }
+            });
+
+            // 출력용
+            $(".paraScroll span").text(parseInt(scrollTop));
+        });
+
+        const viewBtn = document.querySelectorAll(".view-title li");
+        const viewCont = document.querySelectorAll(".view-cont > div");
+
+        viewBtn.forEach((element, index) => {
+            element.addEventListener("click", () => {
+                viewBtn.forEach(el => {
+                    el.classList.remove("active");
+                });
+                element.classList.add("active");
+
+                viewCont.forEach(el => {
+                    el.style.display = "none";
+                });
+
+                viewCont[index].style.display = "block";
+            });
+        });
+    </script>
+</body>
+
+</html>
