@@ -39,6 +39,12 @@
     /* background: rgba(0, 0, 0, 0.3); */
 }
 
+.flow-article {
+    width: 100%;
+    background-color: #f7f6ff;
+    padding: 100px 0;
+}
+
 /* header */
 #header {
     position: fixed;
@@ -149,4 +155,140 @@
 
 .member-box input {
     margin-bottom: 30px;
+}
+
+/* section-comment */
+.section-comment {
+    text-align: center;
+}
+
+.section-comment h4 {
+    font-size: 40px;
+}
+
+.section-comment p {
+    font-size: 18px;
+}
+
+.comment-form {
+    margin-top: 50px;
+}
+
+.comment-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.comment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.comment-list>div {
+    flex: 0 0 22%;
+    margin-bottom: 40px;
+}
+
+.comment-list>div p {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.comment-list>div p::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: -8px;
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.comment-list>div img {
+    width: 30px;
+    border-radius: 50%;
+    padding-left: 4px;
+}
+
+.comment-list>div span {
+    vertical-align: 8px;
+    padding-left: 4px;
+}
+
+.comment-list>div span:last-child {
+    float: right;
+    font-size: 14px;
+    margin-top: 8px;
+    opacity: 0.6;
+}
+
+
+/* cardType01 */
+
+.cardType01 {
+    font-family: 'GmarketSans';
+}
+
+.cardType01 h2 {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 7px;
+}
+
+.cardType01 p {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 1.28;
+    margin-bottom: 40px;
+}
+
+.cardType01 .card-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardType01 .card-wrap>div {
+    width: 32%;
+}
+
+.cardType01 .card .card-title {
+    display: block;
+    font-size: 32px;
+    white-space: nowrap;
+    /* 한줄효과 */
+    overflow: hidden;
+    /* 한줄효과 */
+    text-overflow: ellipsis;
+    /* 한줄효과 */
+}
+
+.cardType01 .card .card-desc {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    overflow: hidden;
+    /* 벤더 프리픽스   두줄효과*/
+    display: -webkit-box;
+    /* 벤더 프리픽스   두줄효과*/
+    -webkit-line-clamp: 2;
+    /* 벤더 프리픽스   두줄효과*/
+    -webkit-box-orient: vertical;
+    /* 벤더 프리픽스   두줄효과*/
+}
+
+.cardType01 .card .card-keyword {
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+/* footer */
+footer {
+    height: 500px;
 }

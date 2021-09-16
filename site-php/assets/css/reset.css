@@ -125,6 +125,33 @@ dl.list li::before {
     box-sizing: border-box;
 }
 
+.input_write2 {
+    border: 2px solid #a69cf7;
+    padding: 15px 30px;
+    margin: 5px;
+    border-radius: 50px;
+    outline: none;
+    background-color: #dfdaff;
+    color: #9082f5;
+}
+
+.input_write2.w100 {
+    min-width: 300px;
+}
+
+.input_write2::-webkit-input-placeholder {
+    color: #9082f5;
+}
+
+.input_write2:-ms-input-placeholder {
+    color: #9082f5;
+}
+
+.input_write2::placeholder {
+    color: #9082f5;
+}
+
+
 /* 버튼 스타일 유형 */
 .btn_submit {
     width: 100%;
@@ -136,6 +163,22 @@ dl.list li::before {
 .btn_submit:hover {
     box-shadow: inset 0 0 0 2px #000;
     background-color: #fff;
+}
+
+.btn_submit2 {
+    background-color: #a69cf7;
+    color: #fff;
+    border-radius: 50px;
+    width: 58px;
+    height: 58px;
+    margin-top: 4px;
+    margin-left: 4px;
+    transition: box-shadow .4s;
+}
+
+
+.btn_submit2:hover {
+    box-shadow: inset 0 0 0 8px #9688ff;
 }
 
 /* 이미지 표현 방법 */
