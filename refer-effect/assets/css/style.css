@@ -106,6 +106,10 @@ figcaption {
   background-color: rgba(92, 55, 110, 0.74);
 }
 
+.bg.brown::before {
+  background-color: rgba(50, 37, 11, 0.6);
+}
+
 .bg1 {
   background-image: url(../img/bg1@2x.jpg);
 }
