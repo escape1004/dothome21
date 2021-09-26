@@ -1,0 +1,213 @@
+body {
+    font-family: 'NanumSquare';
+    box-sizing: border-box;
+    height: 2000px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: #000;
+    z-index: 9999;
+}
+
+.header-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    width: 140px;
+    height: auto;
+    display: block;
+    text-align: center;
+
+}
+
+.header-menu {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 7%;
+}
+
+.header-menu .menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #2d1d1d;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-menu .menu li {
+    width: 13%;
+    height: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.header-menu .menu li a {
+    box-sizing: border-box;
+}
+
+.header-menu .menu li a:hover {
+    color: #15c5aa;
+}
+
+.header-btn .download {
+    width: 100px;
+    height: 40px;
+    color: #15c5aa;
+    border: 1px solid #15c5aa;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+}
+
+.header-btn .download:hover {
+    color: #fff;
+    background-color: #15c5aa;
+}
+
+/* banner */
+.banner {
+    padding-top: 90px;
+}
+
+.banner-tab {
+    height: 70px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.banner-tab .tab-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-tab .tab-inner ul {
+    display: flex;
+}
+
+.banner-tab .tab-inner ul li {
+    width: 330px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.banner-tab .tab-inner ul li a {
+    font-size: 18px;
+    color: #838383;
+}
+
+.banner-tab .tab-inner ul li.checked a {
+    color: #05d6b4;
+}
+
+.banner-tab .tab-inner ul li:nth-child(2) {
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+}
+
+.banner-tab .tab-inner ul li img {
+    width: 23px;
+    margin-right: 10px;
+}
+
+.banner-cont {
+    width: 100%;
+    background: url(../img/whale_banner.jpg) no-repeat 50%;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.banner-cont .banner-desc {
+    padding: 12% 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.banner-cont .banner-desc h2 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    line-height: 1.2em;
+}
+
+.banner-cont .banner-desc p {
+    font-size: 22px;
+    color: #fff;
+    padding: 30px 0 50px;
+}
+
+.banner-cont .banner-desc a {
+    width: 200px;
+    font-size: 24px;
+    border-radius: 32px;
+    height: 64px;
+    text-align: center;
+    color: #fff;
+    background: #05d6b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.banner-cont .banner-desc a img {
+    width: 30px;
+}
+
+/* content1 */
+.content1 {
+    width: 100%;
+    height: 670px;
+    background-color: #ecedf1;
+}
+
+.content1 .cont-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont1-left {
+    background-color: #ccc;
+    width: 45%;
+    height: 100%;
+    display: inline-block;
+}
+
+.cont1-left h2 img {
+    width: 15px;
+}
+
+.cont1-right {
+    background-color: #000;
+    width: 55%;
+    height: 100%;
+    display: inline-block;
+}
+
+.cont1-right img {
+    width: 300px;
+}
