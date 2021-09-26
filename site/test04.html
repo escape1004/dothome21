@@ -27,11 +27,12 @@
 <body>
     <header>
         <div class="header-inner">
-            <div class="header-logo">
-                <a href="#"><img src="img/logo_whale.svg" alt="Naver Whale"></a>
-            </div>
-            <div class="header-menu">
-                <ul class="menu">
+            <a href="#" class="logo"></a>
+            <a class="header-right" href="#">
+                다운로드
+            </a>
+            <div class="container">
+                <ul class="list">
                     <li><a href="#">Why We Whale</a></li>
                     <li><a href="#">가이드</a></li>
                     <li><a href="#">스토어</a></li>
@@ -40,61 +41,151 @@
                     <li><a href="#">웨일북</a></li>
                 </ul>
             </div>
-            <div class="header-btn">
-                <button class="download">
-                    다운로드
-                </button>
-            </div>
         </div>
     </header>
+    <!-- //header -->
 
-    <section class="banner">
-        <div class="banner-tab">
-            <div class="tab-inner">
-                <ul>
-                    <li class="#"><a href="#"><img src="img/tab_check.png" />옴니태스킹</a></li>
-                    <li><a href="#"><img src="img/tab_check.png" />강력한 보안</a></li>
-                    <li><a href="#"><img src="img/tab_check.png" />커스터마이징</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="banner-cont">
-            <div class="banner-desc">
-                <h2>하고 싶은 일들, 해야 할 일들<br>
-                    네이버 웨일로 한 번에!</h2>
-                <p>네이버 웨일의 다양한 기능을 만나보세요!</p>
-                <a href="#">다운로드<img src="./img/down_arrow.png"></a>
-            </div>
-        </div>
+    <section id="tab">
+        <ul class="banner-tab">
+            <li>
+                <div>옴니태스킹</div>
+            </li>
+            <li>
+                <div>강력한 보안</div>
+            </li>
+            <li>
+                <div>커스터마이징</div>
+            </li>
+        </ul>
     </section>
+    <!-- //tab -->
 
-    <section class="content1">
+    <section id="banner">
         <div class="container">
-            <div class="cont-wrap">
-                <article class="cont1-left">
-                    <h2><img src="img/camera-ico.png">웨일온(Whale ON)</h2>
-                    <p>시간제한 없는 무료 화상회의!</p>
-                    <a href="#">웨일온, 어떻게 사용하나요?</a>
-                    <span></span>
-                    <span></span>
-                </article>
-                <article class="cont1-right">
-                    <img src="img/whale-cont1.gif" alt="content1">
-                </article>
+            <div class="banner">
+                <h3>하고 싶은 일들, 해야 할 일들<br>
+                    네이버 웨일로 한 번에!</h3>
+                <p>네이버 웨일의 다양한 기능을 만나보세요!</p>
+                <span><a href="#">다운로드</a></span>
             </div>
         </div>
     </section>
+    <!-- //banner -->
 
-    <section class="">
+    <section id="main">
+        <article>
+            <div class="container">
+                <div class="article-inner">
+                    <h3 class="title">웨일온(Whale ON)</h3>
+                    <div class="contents">시간제한 없는 무료 화상회의!</div>
+                    <div class="how">웨일온, 어떻게사용하나요?</div>
+                    <div>
+                        <span class="pc"></span>
+                        <span class="mobile"></span>
+                    </div>
+                </div>
+                <div class="article-inner2">
+                    <img src="img/whale-cont1.gif" alt="이미지">
+                </div>
+            </div>
+        </article>
 
+        <article>
+            <div class="container">
+                <div class="article-inner2">
+                    <img src="img/whale-cont2.gif" alt="이미지">
+                </div>
+                <div class="article-inner">
+                    <h3 class="title">사이드바</h3>
+                    <div class="contents">휴대폰 열지 말고 웨일에서 보세요!</div>
+                    <div class="how">사이드바, 어떻게 사용하나요?</div>
+                    <div class="how">어떤 확장앱이 있는지 궁금하다면?</div>
+                    <div>
+                        <span class="pc"></span>
+                        <span class="mobile"></span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="container">
+                <div class="article-inner">
+                    <h3 class="title">퀵서치 & 번역</h3>
+                    <div class="contents">궁금한 부분? 드래그해서 바로 확인!</div>
+                    <div class="how">퀵서치, 어떤 기능까지 지원하나요?</div>
+                    <div class="how">번역의 자세한 기능이 궁금하다면?</div>
+                    <div>
+                        <span class="pc"></span>
+                        <span class="mobile"></span>
+                    </div>
+                </div>
+                <div class="article-inner2">
+                    <img src="img/whale-cont3.gif" alt="이미지">
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="container">
+                <div class="article-inner2">
+                    <img src="img/whale-cont4.gif" alt="이미지">
+                </div>
+                <div class="article-inner">
+                    <h3 class="title">듀얼 탭 & 한글뷰어</h3>
+                    <div class="contents">뒤로 가기는 이제 그만!</div>
+                    <div class="how">듀얼 탭의 자세한 기능이 궁금하다면?</div>
+                    <div class="how">한글 문서, 웨일에서 어떻게 볼 수 있나요?</div>
+                    <div class="tx">
+                        <span class="pc">듀얼 탭</span>
+                        <span class="pc">한글뷰어</span>
+                        <span class="mobile"></span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="container">
+                <div class="article-inner">
+                    <h3 class="title">편리한 캡처</h3>
+                    <div class="contents">클릭 한 번으로 원하는 영역을 깔끔하게!</div>
+                    <div class="how">캡처의 자세한 기능이 궁금하다면?</div>
+                    <div>
+                        <span class="pc"></span>
+                        <span class="mobile"></span>
+                    </div>
+                </div>
+                <div class="article-inner2">
+                    <img src="img/whale-cont5.gif" alt="이미지">
+                </div>
+            </div>
+        </article>
+
+        <article class="www">
+            <div class="banner">
+                <img src="img/whale-WWW.gif" alt="whywewhale">
+                <span> <a href="#">다운로드</a> </span>
+            </div>
+        </article>
     </section>
-
-    <section class="">
-
-    </section>
+    <!-- main -->
 
     <footer>
-
+        <div class="container">
+            <span>
+                <img src="img/logo_whale_gray.svg" alt="Naver whale">
+            </span>
+            <ul>
+                <li>이용약관</li>
+                <li>개인정보 처리방침</li>
+                <li>Naver Whale 개인정보 보호를 위한 백서</li>
+                <li>제휴 제안</li>
+                <li>고객센터</li>
+                <li>© NAVER Corp.</li>
+            </ul>
+            <p class="beta"><a href="#">베타 다운로드</a></p>
+        </div>
     </footer>
 </body>
 
