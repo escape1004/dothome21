@@ -836,20 +836,23 @@ figcaption {
   padding-bottom: 56%;
   background: #000;
   position: relative;
+  overflow: hidden;
 }
 
 .paraCont .content-item .img-wrap .img {
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  left: -15%;
+  top: -10%;
+  width: 130%;
+  height: 130%;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-filter: saturate(0%);
           filter: saturate(0%);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
 }
 
 .paraCont .content-item .img-wrap .img:hover {
