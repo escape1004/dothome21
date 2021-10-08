@@ -314,8 +314,8 @@
             let standardY = $(window).height() / 2 - pageY;
 
             // 이미지 움직임
-            const move = document.querySelector(".moveImage");
-            move.style.transform = "transform: translate(" + standardX / 20 + "px," + standardY / 20 + "px)";
+            const move = document.querySelector(".mImg img");
+            move.style.transform = "translate(" + standardX / 20 + "px, " + standardY / 20 + "px)";
 
             // 출력
             document.querySelector(".pageX").textContent = pageX;

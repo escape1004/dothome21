@@ -300,25 +300,25 @@
         modal();
 
         $(".moveImage").mousemove(function (e) {
+            let pageX = e.pageX,
+                pageY = e.pageY;
+                
             gsap.to(".cursor", {
                 duration: .2,
                 left: e.pageX - 10,
                 top: e.pageY - 10
-            });
+            })
 
-            let pageX = e.pageX
-            let pageY = e.pageY
-
-            // 좌표값을 가운데 정렬
+            //1. 좌표값 가운데 정렬
             let standardX = $(window).width() / 2 - pageX;
             let standardY = $(window).height() / 2 - pageY;
 
-            // 이미지 움직임
+            //2. img x -> 마우스 값 / 20 y -> 마우스 값
             $(".mImg img").attr({
-                "style": "transform: translate(" + standardX / 20 + "px," + standardY / 20 + "px)"
+                "style": "transform : translate(" + standardX / 20 + "px, " + standardY / 20 + "px)"
             });
 
-            // 출력
+            // 출력 
             $(".pageX").text(pageX);
             $(".pageY").text(pageY);
             $(".standardX").text(standardX);
