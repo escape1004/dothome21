@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 사이트 코딩 시험1</title>
+    <style>
+        @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+        .notosanskr * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        em {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        main {
+            margin: 40px 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 960px;
+        }
+
+        /* header */
+        .header {
+            height: 100px;
+            width: 100%;
+        }
+
+        .header .logo {
+            width: 30%;
+            float: left;
+        }
+
+        .header .logo img {
+            height: 62px;
+        }
+
+        .nav {
+            width: 70%;
+            float: right;
+        }
+
+        .nav>ul {
+            overflow: hidden;
+        }
+
+        .nav>ul>li {
+            float: left;
+            width: 20%;
+            height: 100%;
+            line-height: 50px;
+            text-align: center;
+            /* background: #ccc; */
+        }
+
+        .nav>ul>li>a {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 12px 0px;
+            width: 100%;
+            color: black;
+        }
+
+        .sub-nav {
+            display: none;
+            position: absolute;
+            z-index: 99;
+            text-align: center;
+            background: #f1f1f1;
+        }
+
+        .sub-nav>li>a {
+            display: inline-block;
+            padding: 14px 0px;
+            color: black;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .sub-nav.view {
+            display: block;
+        }
+
+        /* banner */
+        .banner {
+            width: 100%;
+            height: 360px;
+            background-image: url(./img/website_cording/banner.jpg);
+            background-size: cover;
+            display: block;
+        }
+
+        /* cont1 */
+        .cont1 {
+            width: 100%;
+            height: 210px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .cont1 .left {
+            width: 470px;
+            height: 100%;
+            float: left;
+            border: 1px solid #dcdcdc;
+        }
+
+        .cont1 .left h3 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+
+        .cont1 .left h3 span {
+            float: right;
+            margin-right: 30px;
+        }
+
+        .cont1 .left h3 span a {
+            font-size: 16px;
+            font-weight: 200;
+        }
+
+        /* .cont1 .left h3 span a::after {
+            width: 150px;
+            content: '+';
+            border-radius: 50%;
+            background-color: rgb(72, 47, 212);
+            color: #fff;
+        } */
+
+        .cont1 .left .board {
+            margin-left: 30px;
+            float: left;
+            width: 50%;
+        }
+
+        .cont1 .left .board a {
+            display: block;
+            margin-top: 4px;
+        }
+
+        .cont1 .left .date a {
+            float: right;
+            margin-right: 30px;
+            width: 30%;
+            margin-top: 4px;
+            text-align: right;
+        }
+
+        .cont1 .right {
+            width: 470px;
+            height: 100%;
+            float: right;
+        }
+
+        .cont1 .right img {
+            width: 470px;
+        }
+
+        /* cont2 */
+        .cont2 {
+            margin: 20px 0;
+            display: block;
+        }
+
+        .cont2 h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .cont2 .image-wrap {
+            width: 100%;
+            height: 270px;
+        }
+
+        .cont2 .image-wrap .item {
+            float: left;
+            margin-right: 20px;
+        }
+
+        .cont2 .image-wrap .item:last-child {
+            margin-right: 0;
+        }
+
+        .cont2 .image-wrap img {
+            width: 225px;
+        }
+
+        .cont2 .image-wrap p {
+            font-size: 16px;
+        }
+
+        /* footer */
+        .footer {
+            margin-top: 30px;
+            border-top: 1px solid #dcdcdc;
+            color: #535353;
+        }
+
+        .footer p {
+            word-spacing: 2px;
+            font-size: 14px;
+        }
+
+        .footer em {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header class="header">
+                <div class="logo">
+                    <a href=""><img src="img/website_cording/logo.jpg" alt="롯데월드"></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">즐길거리</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">test1</a></li>
+                                <li><a href="#">test2</a></li>
+                                <li><a href="#">test3</a></li>
+                                <li><a href="#">test4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">요금/우대혜택</a></li>
+                        <li><a href="#">참여프로그램</a></li>
+                        <li><a href="#">이용가이드</a></li>
+                        <li><a href="#">소통서비스</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <section class="banner">
+                <span class="banner_image"></span>
+            </section>
+
+            <section class="cont1">
+                <article class="left">
+                    <h3>
+                        <a href="#">롯데월드 소식 |</a>
+                        <a href="#">뉴스 / 공지</a>
+                        <span><a href="#">더보기</a></span>
+                    </h3>
+                    <div class="board">
+                        <a href="#">그럴싸진관 미라클</a>
+                        <a href="#">드림스테이지 '힘내 소중한 너'</a>
+                        <a href="#">'힘내 소중한 너' 음원 발매</a>
+                        <a href="#">이용 요금 조정 안내</a>
+                    </div>
+                    <div class="date">
+                        <a href="#">2018.11.19</a>
+                        <a href="#">2018.11.20</a>
+                        <a href="#">2018.11.13</a>
+                        <a href="#">2018.11.12</a>
+                    </div>
+                </article>
+                <article class="right">
+                    <a href="#"><img src="img/website_cording/cont1.jpg" alt="온종일 혜택 ON"></a>
+                </article>
+            </section>
+
+            <section class="cont2">
+                <h2>특별한 경험</h2>
+                <div class="image-wrap">
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/website_cording/cont2.jpg" alt="">
+                            <p>연간회원안내</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/website_cording/cont3.jpg" alt="">
+                            <p>프리미엄투어</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/website_cording/cont4.jpg" alt="">
+                            <p>공연참여 프로그램</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="img/website_cording/cont5.jpg" alt="">
+                            <p>단체프로그램</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드 | 대표자:박동기<br>사업자등록번호:219-85-00014 | 통신판매업신고번호:송파 제5513호 | 전화:1661-2000
+                </p>
+                <em>COPYRIGHT 2018 LOTTEWORLD.ALL RIGHTS RESERVED.</em>
+            </footer>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(".nav li").hover(function () {
+            $(this).children("ul").toggleClass("view");
+        })
+    </script>
+</body>
+
+</html>
