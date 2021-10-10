@@ -12,6 +12,8 @@
     list-style: none;
     padding: 0;
     z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-container-no-flexbox .swiper-slide {
@@ -137,7 +139,6 @@
     opacity: 0.35;
     cursor: auto;
     pointer-events: none;
-    /* �ъ씤�� �대깽�몃뒗 紐⑤컮�쇱슜�대씪 �ㅻ쪟媛� �� �� �덉쓬 */
 }
 
 .swiper-button-prev,
