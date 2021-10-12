@@ -659,15 +659,15 @@ $(window).scroll(function () {
             // }
 
             // forEach()
-            // document.querySelectorAll('.content-item').forEach(section => {
-            //     if (scrollTop >= section.offsetTop) {
-            //         section.querySelectorAll('.split span').forEach((span, index) => {
-            //             setTimeout(() => {
-            //                 span.classList.add('show');
-            //             }, 50 * index);
-            //         });
-            //     }
-            // });
+            document.querySelectorAll('.content-item').forEach(section => {
+                if (scrollTop >= section.offsetTop) {
+                    section.querySelectorAll('.split span').forEach((span, index) => {
+                        setTimeout(() => {
+                            span.classList.add('show');
+                        }, 50 * index);
+                    });
+                }
+            });
 
             // gsap
             document.querySelectorAll(".content-item").forEach(function (el, index) {

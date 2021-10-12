@@ -693,17 +693,17 @@ $(window).scroll(function () {
             // }
 
             // each
-            // $('.content-item .desc').each(function (index) {
-            //     if ($(window).scrollTop() >= $(this).offset().top - $(window).height() / 1.5) {
-            //         $(this).find('span').each(i => {
-            //             setTimeout(() => {
-            //                 $(this).find('span').eq(i).addClass("show");
-            //             }, 50 * i);
-            //         });
-            //     }
-            // });
+            $('.content-item .desc').each(function (index) {
+                if ($(window).scrollTop() >= $(this).offset().top - $(window).height() / 1.5) {
+                    $(this).find('span').each(i => {
+                        setTimeout(() => {
+                            $(this).find('span').eq(i).addClass("show");
+                        }, 50 * i);
+                    });
+                }
+            });
 
-            // gsap
+            // // gsap 
             $(".content-item").each(function (index) {
                 if ($(window).scrollTop() >= $(this).offset().top) {
                     gsap.to($(this).find(".desc span"), {
