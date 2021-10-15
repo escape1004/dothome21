@@ -83,6 +83,12 @@ button {
     cursor: pointer;
 }
 
+/* 테이블 초기화 */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /* 제목 초기화 */
 h1,
 h2,
@@ -179,6 +185,31 @@ dl.list li::before {
 
 .btn_submit2:hover {
     box-shadow: inset 0 0 0 8px #9688ff;
+}
+
+/* 간격 */
+.mt0 {
+    margin-top: 0;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mt50 {
+    margin-top: 50px;
 }
 
 /* 이미지 표현 방법 */

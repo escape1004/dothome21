@@ -5,7 +5,7 @@
         <li><a href="../comment/comment.php">댓글</a></li>
         <li><a href="#">회원가입</a></li>
         <li><a href="#">로그인</a></li>
-        <li><a href="#">게시판</a></li>
+        <li><a href="../board/board.php">게시판</a></li>
         <li><a href="#">블로그</a></li>
     </ul>
 </nav>
@@ -16,6 +16,6 @@
             <a href="../login/logout.php">로그아웃</a>
         <?php } else { ?>
             <a href="../login/login.php">로그인</a>
-            <a href="../login/join.php">로그아웃</a>
+            <a href="../login/join.php">회원가입</a>
     <?php } ?>
 </div>

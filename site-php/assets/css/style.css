@@ -288,6 +288,182 @@
     opacity: 0.5;
 }
 
+/* boardType */
+.boardType {}
+
+.boardType h3 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.boardType p {
+    font-size: 26px;
+}
+
+.board {}
+
+.board-search {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+}
+
+.board-search .form-search {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    padding: 7px 20px;
+}
+
+.board-search .form-select {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    padding: 8px 20px;
+    background-color: transparent;
+}
+
+.board-search .form-btn {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+.board-search .form-btn.black {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.board-table {}
+
+.board-table table {
+    width: 100%;
+    border-top: 3px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.board-table table th {
+    background-color: #eee;
+    font-weight: normal;
+}
+
+.board-table table td,
+.board-table table th {
+    border-bottom: 1px solid #000;
+    padding: 19px 0;
+    text-align: center;
+}
+
+.board-table table .height {
+    height: 400px;
+    vertical-align: top;
+}
+
+.board-table table .left {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.board-table .btn {
+    float: right;
+}
+
+.board-table .btn a {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.board-page {
+    margin-top: 50px;
+}
+
+.board-page ul {
+    display: flex;
+    justify-content: center;
+}
+
+.board-page li {}
+
+.board-page li a {
+    display: block;
+    border: 1px solid #eee;
+    padding: 13px 10px;
+    margin-right: -1px;
+}
+
+.board-page li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+.board-write {
+    padding: 50px 0 100px;
+}
+
+.board-write label {
+    width: 100%;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.board-write .title-text {
+    width: 100%;
+    display: block;
+    border: 1px solid #eee;
+    padding: 13px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.board-write .board-btn {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+
+/* boardModify */
+.boardModify {
+    margin: 50px 0 100px;
+}
+
+.boardModify label {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.boardModify input {
+    width: 100%;
+    display: block;
+    border: 1px solid #c6c6c6;
+    padding: 13px;
+    margin-bottom: 30px;
+}
+
+.boardModify textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #c6c6c6;
+    padding: 13px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+.boardModify .btn {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    float: right;
+}
+
+
 /* footer */
 footer {
     height: 500px;
