@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOKIT</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a,
+        em {
+            text-decoration: none;
+            font-style: normal;
+            color: #000;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* header */
+        header {
+            width: 100%;
+            height: 100px;
+            margin-top: 30px;
+        }
+
+        header .logo {
+            float: left;
+            line-height: 125px;
+            width: 100px;
+            height: 30px;
+        }
+
+        header .logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header .nav {
+            width: auto;
+            float: right;
+        }
+
+        header .nav ul {
+            display: flex;
+        }
+
+        header .nav ul li {
+            float: left;
+            width: auto;
+            height: 100%;
+            line-height: 50px;
+            text-align: center;
+            overflow: hidden;
+            margin: 0 30px;
+        }
+
+        header .nav ul li a {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 12px 0px;
+            width: 100%;
+            color: black;
+            transition: all .2s;
+        }
+
+        header .nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        header .nav ul li:hover a {
+            color: rgb(71, 184, 86);
+        }
+
+        /* banner */
+        #banner .slider-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 400px;
+        }
+
+        #banner .slider-img {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+        #banner .slider-img img {
+            width: 100%;
+        }
+
+        #banner .slider {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #banner .slider:nth-child(1) {
+            z-index: 5;
+        }
+
+        #banner .slider:nth-child(2) {
+            z-index: 4;
+        }
+
+        /* cont1 */
+        #cont1 {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        #cont1 .cont1-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #cont1 article {
+            background-color: #f2f2f2;
+            width: 43%;
+            padding: 5px 30px;
+        }
+
+        #cont1 h2 {
+            word-spacing: -2px;
+            margin-bottom: -5px;
+            font-weight: bold;
+        }
+
+        #cont1 p {
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        #cont1 a {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #cont1 span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #cont1 span em {
+            font-size: 15px;
+            font-weight: normal;
+            margin-left: 10px;
+        }
+
+        #cont1 a::before {
+            content: "";
+            background-image: url(../assets/img/cookit/gps_ico.gif);
+            background-repeat: no-repeat;
+            background-size: 14px;
+            margin-right: 8px;
+            width: 15px;
+            height: 17px;
+            display: inline-block;
+        }
+
+        #cont1 span::before {
+            content: "";
+            background-image: url(../assets/img/cookit/clock_ico.gif);
+            background-repeat: no-repeat;
+            background-size: 18px;
+            margin-right: 8px;
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+        }
+
+        #cont1 .content-side {
+            width: 80%;
+            height: 100%;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        #cont1 .img-side {
+            width: 15%;
+            height: 100%;
+            float: right;
+            position: relative;
+        }
+
+        #cont1 .img-side img {
+            width: 70px;
+            height: 56px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* cont2 */
+        #cont2 {
+            width: 100%;
+            margin: 20px 0 30px;
+        }
+
+        #cont2 h2 {
+            font-weight: bold;
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+        }
+
+        #cont2 h2 span {
+            color: #9f9f9f;
+        }
+
+        #cont2 h3 {
+            font-size: 14px;
+        }
+
+        #cont2 p {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        #cont2 p::after {
+            content: " / 3인분";
+            color: #555555;
+            font-weight: normal;
+        }
+
+        #cont2 .cont2-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #cont2 .item-img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 310px;
+            height: 310px;
+        }
+
+        #cont2 .item1 .item-img {
+            background-image: url(../assets/img/cookit/cont2_item1.gif);
+
+        }
+
+        #cont2 .item2 .item-img {
+            background-image: url(../assets/img/cookit/cont2_item2.gif);
+
+        }
+
+        #cont2 .item3 .item-img {
+            background-image: url(../assets/img/cookit/cont2_item3.gif);
+        }
+
+        #cont2 .item-desc {
+            position: relative;
+        }
+
+        #cont2 .desc-left {
+            float: left;
+        }
+
+        #cont2 .desc-right {
+            float: right;
+            position: absolute;
+            right: 0;
+            transform: translateY(40%);
+        }
+
+        #cont2 .desc-right img {
+            width: 35px;
+        }
+
+        /* footer */
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: #202020;
+            padding: 50px 0;
+        }
+
+        footer .logo {
+            float: left;
+        }
+
+        footer .logo img {
+            width: 160px;
+            height: 50px;
+        }
+
+        footer .text {
+            float: right;
+            width: 50%;
+        }
+
+        footer .text ul {
+            display: flex;
+            width: 100%;
+            margin: 0 0 30px -40px;
+        }
+
+        footer .text ul li::after {
+            content: "|";
+            color: #393939;
+            margin: 0 15px;
+        }
+
+        footer .text ul li:last-child:after {
+            content: "";
+        }
+
+        footer .text ul li a {
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+            word-break: keep-all;
+        }
+
+        footer .text .info p {
+            color: #7d7d7d;
+            font-size: 12px;
+            word-break: keep-all;
+        }
+
+        footer .text .info span::after {
+            content: "|";
+            color: #393939;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <div class="logo">
+                    <img src="../assets/img/cookit/header_logo.gif" alt="COOKIT">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">COOKIT소개</a></li>
+                        <li><a href="#">COOKIT메뉴</a></li>
+                        <li><a href="#">리뷰</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">MY쿡킷</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner">
+            <div class="container">
+                <div class="slider-wrap">
+                    <div class="slider-img">
+                        <div class="slider"><img src="../assets/img/cookit/banner1.gif" alt="이미지1"></div>
+                        <div class="slider"><img src="../assets/img/cookit/banner2.jpg" alt="이미지2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cont1">
+            <div class="container">
+                <div class="cont1-wrap">
+                    <article class="left">
+                        <div class="content-side">
+                            <h2>우리집도 COOKIT 배송이 되나요?</h2>
+                            <p>배송이 가능한지 알려드려요.</p>
+                            <a href="#">배송지 검색</a>
+                        </div>
+                        <div class="img-side">
+                            <img src="../assets/img/cookit/cont1_item1.jpg" alt="이미지">
+                        </div>
+                    </article>
+
+                    <article class="right">
+                        <div class="content-side">
+                            <h2>7월 30일(화)에 받을 수 있어요</h2>
+                            <p>오전 7시까지 주문하시면 다음날 배송됩니다.</p>
+                            <span>63:28:31<em>남은시간</em></span>
+                        </div>
+                        <div class="img-side">
+                            <img src="../assets/img/cookit/cont1_item2.gif" alt="이미지">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="cont2">
+            <div class="container">
+                <h2>실시간 베스트 | <span>생생한 리뷰</span></h2>
+                <div class="cont2-wrap">
+                    <div class="item1">
+                        <div class="item-img"></div>
+                        <div class="item-desc">
+                            <div class="desc-left">
+                                <h3>평양식 어복쟁반</h3>
+                                <p>33,800원</p>
+                            </div>
+                            <div class="desc-right">
+                                <img src="../assets/img/cookit/cart_ico.gif" alt="구매">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item2">
+                        <div class="item-img"></div>
+                        <div class="item-desc">
+                            <div class="desc-left">
+                                <h3>새우주꾸미삼겹살</h3>
+                                <p>29,800원</p>
+                            </div>
+                            <div class="desc-right">
+                                <img src="../assets/img/cookit/cart_ico.gif" alt="구매">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item3">
+                        <div class="item-img"></div>
+                        <div class="item-desc">
+                            <div class="desc-left">
+                                <h3>방풍나물 아귀찜</h3>
+                                <p>32,800원</p>
+                            </div>
+                            <div class="desc-right">
+                                <img src="../assets/img/cookit/cart_ico.gif" alt="구매">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="logo">
+                    <img src="../assets/img/cookit/footer_logo.jpg" alt="COOKIT">
+                </div>
+                <div class="text">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">개인정보처리 방침</a></li>
+                            <li><a href="#">법적고지</a></li>
+                            <li><a href="#">사업자정보 확인</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <p>씨제이제일제당(주)<span></span>대표자 : 신현재</p>
+                        <p>주소 : 서울 중구 동호로 330 CJ제일제당 센터 (우) 04560<span></span>사업자등록번호 : 104-86-09535</p>
+                        <p>통신판매업신고 중구 제 07767호<span></span>개인정보보호책임자</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        const sliderWrap = $(".slider-wrap");
+        const sliderImg = $(".slider-img");
+        const slider = $(".slider");
+
+        let currentIndex = 0; // 현재 보이는 이미지(첫 번째 이미지)
+        let sliderCount = slider.length; // 이미지 개수
+
+        setInterval(function () {
+            let nextIndex = (currentIndex + 1) % sliderCount;
+
+            slider.eq(currentIndex).fadeOut(); // 현재 이미지를 사라지게
+            slider.eq(nextIndex).fadeIn(); // 다음 이미지를 나타나게
+
+            currentIndex = nextIndex;
+        }, 2000);
+    </script>
+</body>
+
+</html>
