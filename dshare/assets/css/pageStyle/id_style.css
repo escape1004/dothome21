@@ -1,0 +1,165 @@
+#contents {
+    min-height: 100vh;
+    height: auto;
+}
+
+.content-article {
+    max-width: 1300px;
+    width: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+    border-radius: 10px
+}
+
+.content-box {
+    /* max-width: 540px;
+    width: 100%;
+    margin: 0 auto; */
+}
+    
+.member-form {
+    max-width: 840px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 56px 42px 56px;
+    border: 1px solid #B4B4B4;
+    border-radius: 15px;
+    margin-top: 20vh;
+    color: #474747;
+}
+
+h3 {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    font-size: 35px;
+    text-align: center;
+}
+
+.member-wrap {
+    margin-top: 50px;
+}
+#phoneSubmit {
+}
+.Submit {
+    display: inline-block;
+    justify-content: space-between;
+    box-sizing:border-box;
+}
+.Submit.left {
+    width:20%;
+    display: inline-block;
+    margin-right: 1vw;
+}
+.Submit.left .name{
+    display: inline-block;
+    margin-bottom: 55px;
+    
+}
+.Submit.left .phone{
+    display: block;
+    margin-bottom: 55px;
+}
+.Submit.left .email{
+    display: block;
+    margin-bottom: 55px;
+}
+.Submit.left span{
+    display: block;
+    content: '';
+    margin-bottom: 70px;
+    opacity: 0;
+    
+
+}
+.Submit.middle {
+    width:60%;
+}
+.Submit.right {
+    width:10%;
+}
+.Submit.right .btn_submit{
+    position: absolute;
+    padding: 19px 30px;
+    top: 474px;
+}
+.Submit.right .btn_submit2{
+    position: absolute;
+    padding: 19px 30px;
+    top: 560px;
+}
+
+
+form {}
+
+.checkbox {}
+
+label {}
+
+.submitForm1 {
+    display: none;
+}
+.submitForm1.show{
+    display: block;
+}
+.submitForm2 {
+    display: none;
+}
+.submitForm2.show{
+    display: block;
+}
+.member-box label {
+    font-size: 20px;
+}
+
+.member-box input {
+    width: 500px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.login_youName {
+    display: flex;
+    margin: 20px 0;
+}
+
+.login_confirm select {
+    height: 40px;
+}
+
+.login_confirm input {}
+
+.login_youPhone {
+    display: flex;
+    margin: 20px 0;
+}
+
+.login_youPhone input {
+    width: 400px;
+}
+
+.member-wrap button {
+    background: #D6E1E7;
+    padding: 0 10px;
+}
+
+.member-wrap .btn_next {
+    display: block;
+    background: #D6E1E7;
+    margin: 30px auto 0;
+    padding: 15px 40px;
+    font-size: 18px;
+}
+
+
+.Email {
+    margin-top: 20px;
+}
+
+.login_youEmail {
+    display: flex;
+    margin: 20px 0;
+}
+
+.spaceLine {
+    margin: 30px 0;
+    opacity: .3;
+}

@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    background: #6597B4;
+    bottom: 0;
+    z-index: 1000;
+}
+
+footer .container {
+    height: 70px;
+}
+
+footer .inner {
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    color: rgb(233, 233, 233);
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+}
+
+footer .inner .info {
+    position: absolute;
+    left: 0;
+}
+
+footer .inner .group {
+    position: absolute;
+    right: 0;
+}
+
+footer .inner .group>span {
+    padding: 0 17px;
+    border-right: 1px solid rgb(233, 233, 233);
+}
+footer .inner .group>span:last-child {
+    border-right: none;
+}
+
+footer .inner .group>span a {
+    color: rgb(233, 233, 233);
+}
+
+footer .inner .group>span:last-child {
+    padding-right: 0;
+}

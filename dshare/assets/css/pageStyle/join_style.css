@@ -1,0 +1,240 @@
+/* join */
+#contents {
+    min-height: 100vh;
+    height: auto;
+}
+
+.content-article {
+    max-width: 1300px;
+    width: 100%;
+    padding: 13px 0;
+    /* border: 1px solid #B4B4B4; */
+    border-radius: 10px;
+}
+
+.content-article .form {
+    max-width: 660px;
+    width: 100%;
+    padding: 42px 116px 60px 116px;
+    border: 1px solid #B4B4B4;
+    border-radius: 15px;
+    margin: 20vh auto 10vh;
+}
+
+
+.privacy {}
+
+.privacyCheck {
+    font-size: 12px;
+}
+
+.member-form h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.member-form h4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.member-form .join-privacy {
+    background-color: #E4EFF4;
+    padding: 18px 16px;
+}
+
+.member-form .join-privacy ul {}
+
+.member-form .join-privacy ul li {
+    font-size: 10px;
+
+}
+
+.member-form form .member-box {}
+
+.member-form form .member-box label {
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 16px 0 8px 0;
+}
+
+.member-form form .input_write {
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.member-form form .input_write::placeholder {
+    color: #B4B4B4;
+}
+
+.member-form .btn_submit {
+    width: 100%;
+    height: 55px;
+    background-color: #D6E1E7;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/* joinCheck */
+
+#contentsJoinCheck {
+    /* width: 100%; */
+    background: url(../../../assets/img/main1.jpg)no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 30vh;
+    position: relative;
+    overflow-y: hidden;
+    height: 70vh;
+}
+
+#contentsJoinCheck:before {
+    content: "";
+    opacity: 0.2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+}
+
+.joinCheck-article {
+    background-color: rgba(255, 255, 255, 0.747);
+    text-align: center;
+    max-width: 800px;
+    font-family: 'S-CoreDream';
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.joinCheck {
+    margin: 0 auto;
+}
+
+.joinCheckInner {
+    padding: 10vh 8vh;
+}
+
+.joinCheckInner h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #474747;
+    padding: 20px 0;
+}
+
+.joinCheckInner h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #474747;
+    padding: 20px 0 50px;
+}
+
+.joinCheckInner a {}
+
+.joinCheckInner a button {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+    font-weight: 500;
+    padding: 10px 30px;
+    background-color: #6597B4;
+    border-radius: 5px;
+}
+
+/* joinSave */
+#body {
+    margin: 0;
+    padding: 0;
+}
+
+.joinAlert {}
+
+.joinAlert {
+    min-height: 300px;
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px 56px 42px 56px;
+    border: 1px solid #B4B4B4;
+    text-align: center;
+    font-family: 'S-CoreDream';
+    border-radius: 15px;
+    margin-top: 25vh;
+    display: table;
+}
+
+.joinAlert_cont {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.joinAlert h4 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #474747;
+}
+
+@media(max-width: 800px) {
+    .joinCheck-article {
+        max-width: 600px;
+    }
+
+    .joinCheckInner h2 {
+        font-size: 35px;
+        padding: 20px 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .content-article .form {
+        width: 500px;
+        padding: 42px 50px 60px 50px;
+        margin: 15vh auto 5vh;
+        border: none;
+    }
+
+    .joinCheck-article {
+        max-width: 450px;
+    }
+
+    .joinCheckInner {
+        padding: 8vh;
+    }
+
+    .joinCheckInner h2 {
+        font-size: 28px;
+        padding: 20px 0;
+    }
+
+    .joinCheckInner h2 span {
+        display: block;
+    }
+
+    .joinCheckInner h3 {
+        font-size: 18px;
+    }
+
+    .joinCheckInner a button {
+        font-size: 18px;
+        padding: 10px 24px;
+    }
+
+    .joinAlert {
+        min-height: 200px;
+        height: 100%;
+        font-family: 'S-CoreDream';
+        padding: 32px 56px 32px 56px;
+        
+    }
+    .joinAlert h4 {
+        font-size: 30px;        
+    }
+}

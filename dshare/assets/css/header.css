@@ -1,0 +1,172 @@
+/* header */
+header {
+    width: 100%;
+    background: #6597B4;
+    position: fixed;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 1000;
+}
+
+header .inner {
+    height: 90px;
+}
+
+header .group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+header .group h2 {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    font-size: 30px;
+    background: linear-gradient(to right, #fff 40%, rgba(255, 255, 255, 0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .group .ham {
+    position: absolute;
+    right: 50px;
+    top: 16px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+header .group img {
+    width: 90%;
+    height: 90%;
+}
+
+header .group .ham span {
+    width: 36px;
+    height: 4.4px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    left: -10px;
+    top: 28px;
+}
+
+header .group .ham span::before {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 4.4px;
+    left: 0;
+    top: 11px;
+    background: #fff;
+}
+
+header .group .ham span::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 4.4px;
+    left: 0;
+    bottom: 12px;
+    background: #fff;
+}
+
+header .group .X {
+    position: absolute;
+    right: 38px;
+    top: 25px;
+    cursor: pointer;
+    width: 36px;
+    height: 30px;
+    display: none;
+}
+
+header .group .X span {
+    width: 5px;
+    height: 36px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+    display: block;
+}
+
+header .group .X span:after {
+    content: '';
+    width: 5px;
+    height: 36px;
+    background-color: #fff;
+    transform: rotate(90deg);
+    display: block;
+
+}
+
+/* nav */
+nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    background-color: #474747;
+    justify-content: space-between;
+    box-sizing: border-box;
+    white-space: nowrap;
+    transition: all .3s ease;
+}
+
+nav .nav {
+    height: 80px;
+    width: 100%;
+}
+
+nav .inner {
+    font-size: 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 5%;
+}
+
+nav .inner .left {
+    margin-right: auto;
+}
+
+nav .inner .right {
+    margin-left: auto;
+}
+
+nav.show {
+    display: block;
+}
+
+/* nav ul {
+    padding: 0 10%;
+} */
+
+nav ul li {
+    font-family: 'S-CoreDream';
+    font-weight: 300;
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 80px;
+}
+
+nav ul li.active {
+    font-weight: 700;
+    position: relative;
+}
+
+nav ul li.active:after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    display: block;
+    position: absolute;
+    background: #99B6C6;
+    top: 75px;
+    left: 1px;
+
+}
+
+nav ul li a {
+    color: #fff;
+}

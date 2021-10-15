@@ -1,0 +1,413 @@
+#contents {
+    padding: 200px 0;
+    margin: 0 auto;
+}
+
+.content-article {}
+
+.boardType {}
+
+.board {}
+
+.board-search {
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.board-search .form-select {
+    width: 10%;
+    height: 50px;
+    border: 1px solid #ABABAB;
+    border-radius: 10px 0 0 10px;
+    padding: 0 20px;
+
+}
+
+.board-search .form-search {
+    width: 50%;
+    height: 50px;
+    border: 1px solid #ABABAB;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.board-search .form-btn {
+    width: 10%;
+    height: 50px;
+    background-color: #D6E1E7;
+    border: 1px solid #ABABAB;
+    border-radius: 0 10px 10px 0;
+    font-size: 15px;
+}
+
+.board-table {}
+
+.board-page {
+    width: 100%;
+    height: 300px;
+}
+
+.route {
+    margin-top: 50px;
+}
+
+.route_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.route .routeBox {
+    width: 32%;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    height: 200px;
+    display: inline-block;
+    margin-bottom: 2%;
+    padding: 1%;
+    position: relative;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, .05);
+}
+
+.routeBox_top {
+    height: 24%;
+    border-bottom: 1px solid #C4C4C4;
+    display: flex;
+    position: relative;
+}
+
+.routeBox_top h3 {
+    font-weight: 800;
+}
+
+.routeBox_top h3::after {
+    content: '';
+    display: inline-block;
+    background: url("../../../assets/img/bookmark.svg") no-repeat;
+    background-size: cover;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    top: -13px;
+    right: -10px;
+    fill: red !important;
+}
+
+.routeBox_top img {
+    width: 12%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.routeBox_middle {
+    height: 52%;
+    margin-top: 2%;
+}
+
+.routeBox_middle p {}
+
+.routeBox_bottom {
+    width: 100%;
+    height: 24%;
+}
+
+.routeBox_bottom .tag {
+    width: 100%;
+    position: relative;
+}
+
+.routeBox_bottom .tag span {
+    border: 1px solid #C9C9C9;
+    border-radius: 16px;
+    padding: 2% 3%;
+    font-size: 13px;
+    color: #C9C9C9;
+}
+
+.routeBox_bottom img {
+    width: 8%;
+    float: right;
+}
+
+.routeBox_bottom .img:after {
+    content: '999';
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    font-size: 12px;
+    position: absolute;
+    top: 135px;
+    right: 0;
+    color: #99B6C6;
+}
+
+
+/* routeView */
+.routeView {
+    margin: 50px 0;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    padding: 80px 100px 100px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 12px rgb(0 0 0 / 5%);
+}
+
+.routeViewDesc {
+    width: 100%;
+}
+
+.routeViewDesc h1 {
+    display: block;
+    border-bottom: 1px solid #979797;
+    font-size: 35px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.routeViewDesc h5 {
+    margin: 10px 0;
+    color: #979797;
+}
+
+.routeViewDesc h5:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: url(/assets/img/human.svg) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.routeViewDesc h3 {
+    font-weight: 200;
+}
+
+.routeViewDesc p {
+    padding: 10px 0 0 0;
+    border-top: 1px solid #979797;
+    display: inline-block;
+    margin-top: 10px;
+    color: #979797;
+
+}
+
+.map {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.routeInfo {
+    width: 40%;
+    height: 400px;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 18px;
+    text-align: left;
+    padding: 40px 30px 40px 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.routeInfo .start {
+    display: block;
+    padding: 25px 0;
+    position: relative;
+}
+
+.routeInfo .start:before {
+    content: '출발';
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #55B9F0;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    left: -70px;
+    line-height: 3.2;
+    top: 23px;
+}
+
+.routeInfo .dropby {
+    display: inline-block;
+    padding: 28px 0;
+    border-bottom: 1px solid #C9C9C9;
+    border-top: 1px solid #C9C9C9;
+    position: relative;
+
+}
+
+.routeInfo .dropby:before {
+    content: '경유';
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #598299;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    left: -70px;
+    line-height: 3.2;
+    top: 23px;
+}
+
+.routeInfo .destination {
+    display: block;
+    padding: 30px 0;
+    position: relative;
+
+}
+
+.routeInfo .destination:before {
+    content: '도착';
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #55B9F0;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    left: -70px;
+    line-height: 3.2;
+    top: 23px;
+}
+
+.routeInfo .center {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 125px;
+}
+
+.routeInfo .center a {
+    text-align: center;
+    display: inline-block;
+}
+
+.routeInfo .center a p {
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 50px;
+    background-color: #D6E1E7;
+    border-radius: 5px;
+}
+
+.interation {}
+
+.interation .heart {
+    margin: 30px 0;
+    position: relative;
+}
+
+.interation .heart .like {
+    background: url(/assets/img/like.png) no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.interation .heart .like.active {
+
+    background: url(/assets/img/likeFull.svg) no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.interation .heart p {
+    color: #99B6C6;
+    font-weight: 700;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 35px;
+}
+
+.interation .tags {
+    margin-bottom: 30px;
+}
+
+.interation .tags a span {
+    display: inline-block;
+    color: #979797;
+    padding: 7px 20px;
+    border: 1px solid #979797;
+    border-radius: 20px;
+}
+
+.interation .comments {}
+
+.interation .comments h4 {}
+
+.interation .comments h5 {
+    margin: 20px 20px 20px 0;
+    color: #979797;
+    position: absolute;
+
+}
+
+.interation .comments h5:before {
+    position: relative;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(/assets/img/human.svg) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 5px;
+    top: 8px;
+}
+
+
+#map_div {
+    width: 55%;
+    height: 400px;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* 거리표시 팝업*/
+.mPop {
+    border: 1px;
+    background-color: #FFF;
+    font-size: 12px;
+    border-color: #FF0000;
+    border-style: solid;
+    text-align: center;
+}
+
+/*공통사용 클래스*/
+.mPopStyle {
+    border: 1px;
+    background-color: #FFF;
+    font-size: 12px;
+    border-color: #FF0000;
+    border-style: solid;
+    text-align: left;
+}
