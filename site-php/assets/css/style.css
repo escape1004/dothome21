@@ -228,6 +228,48 @@
     opacity: 0.6;
 }
 
+/* section-service */
+.section-service {
+    display: flex;
+    justify-content: space-between;
+    /* background: #ccc; */
+}
+
+.section-service .link {
+    flex: 0 0 80%;
+    display: flex;
+}
+
+.section-service .link>div {
+    margin-right: 10%;
+}
+
+.section-service .link>div strong {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.section-service .link>div li {
+    margin-bottom: 5px;
+}
+
+.section-service .info li:nth-child(even) {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-info {
+    margin-top: 50px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.section-info address {
+    font-style: normal;
+}
+
 
 /* cardType01 */
 
