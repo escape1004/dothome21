@@ -38,6 +38,11 @@
         }
 
         div {
+            position: relative;
+
+            &:nth-child(2) {
+                z-index: 10;
+            }
 
             &:first-child::before {
                 content: '“';
@@ -53,10 +58,13 @@
 
             // span {
             //     content: '';
-            //     width: 20vw;
-            //     height: 5vw;
+            //     top: 0;
+            //     left: 0;
+            //     transform: translate(-20px, 50px);
+            //     width: 40%;
+            //     height: 60%;
             //     background-color: #AF5D06;
-            //     z-index: 0;
+            //     z-index: -1;
             //     display: inline-block;
             //     position: absolute;
             // }

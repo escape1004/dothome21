@@ -1092,6 +1092,14 @@ table {
   text-align: right;
 }
 
+#mainCont .main__cont div {
+  position: relative;
+}
+
+#mainCont .main__cont div:nth-child(2) {
+  z-index: 10;
+}
+
 #mainCont .main__cont div:first-child::before {
   content: '“';
   color: rgba(255, 255, 255, 0.5);
