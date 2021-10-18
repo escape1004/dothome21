@@ -1,0 +1,19 @@
+// #mainCont
+// #aboutCont
+// #referCont
+// #scriptCont
+// #portCont
+
+// #mainCont
+#mainCont {
+    background-color: #000;
+    height: 100vh;
+    color: #fff;
+    font-family: $font-main;
+    font-size: 9vw;
+    line-height: .9;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
