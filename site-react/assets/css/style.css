@@ -1117,6 +1117,9 @@ table {
     font-size: 15vw;
     gap: 0;
   }
+  #mainCont div {
+    float: left;
+  }
   #mainCont br {
     display: block;
   }
