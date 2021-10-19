@@ -12,17 +12,11 @@
 
     <script>
         {
-            let num = 0;
-
-            while (true) {
-                num++;
-                if (num == 3) {
-                    continue;
+            for (let i = 0; i < 5; i++) {
+                for (let j = 0; j <= i; j++) {
+                    document.write('*');
                 }
-                if (num > 6) {
-                    break;
-                }
-                document.write(num);
+                document.write('<br>');
             }
         }
     </script>
