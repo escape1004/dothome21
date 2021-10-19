@@ -81,6 +81,7 @@
 .reference h3 {margin-top: 50px; font-weight: 500; }
 .reference h4 {border-bottom: 1px solid #eee; padding-bottom: 15px;}
 
+
 /* ==================================================
    padding, marring setting
 ================================================== */
@@ -290,8 +291,8 @@
 	display: block;
 	border-bottom: 3px solid #8432c4;
 	margin-right: 20px;
-	
 }
+
 .gridly .photoshop a {
 	color: #8ccc3d;
 	display: block;
@@ -322,6 +323,7 @@
 	border-bottom: 3px solid #8ccc3d;
 	margin-right: 20px;
 }
+
 .photoshop .image-wrap .img-text h5 {
 	color: #8ccc3d;
 

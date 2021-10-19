@@ -112,3 +112,156 @@
         }
     }
 }
+
+
+
+// about-page
+#aboutMain {
+    .container {
+        width: 75vw;
+        margin: 0 auto;
+
+        .aboutTitle {
+            font-family: $font-main;
+            font-size: 6vw;
+            text-transform: uppercase;
+            line-height: 1;
+            color: #030406;
+            padding: 260px 0;
+        }
+
+        .aboutCont {
+            font-family: $font-kor1;
+            margin-bottom: 300px;
+
+            img {
+                width: 100%;
+            }
+
+            h3 {
+                padding-bottom: 30px;
+                font-size: 1.1vw;
+            }
+
+            p {
+                font-size: 1.1vw;
+            }
+
+            .aboutText {
+                text-align: justify;
+            }
+
+            &.cont1 {
+                overflow: hidden;
+
+                img {
+                    margin-bottom: 60px;
+                }
+
+                .aboutText {
+                    width: 70%;
+                }
+            }
+
+            &.cont2 {
+                overflow: hidden;
+
+                img {
+                    float: left;
+                    width: 70%;
+                }
+
+                .aboutText {
+                    float: left;
+                    width: 25%;
+                    margin-left: 5%;
+                }
+            }
+
+            &.cont3 {
+                overflow: hidden;
+
+                img {
+                    float: right;
+                    width: 55%;
+                    margin-left: 5%;
+                }
+
+                .aboutText {
+                    float: left;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #aboutMain {
+        .container {
+            width: 95%;
+
+            .aboutTitle {
+                font-size: 11vw;
+                padding: 270px 0 27 0px;
+            }
+
+            .aboutCont {
+                font-family: $font-kor1;
+                margin-bottom: 370px;
+
+                h3 {
+                    padding-bottom: 35px;
+                    font-size: 2.8vw;
+                }
+
+                p {
+                    font-size: 2.8vw;
+                }
+
+                &.cont1 {
+                    img {
+                        margin-bottom: 40px;
+                    }
+
+                    .aboutText {
+                        float: none;
+                        width: 100%;
+                    }
+                }
+
+                &.cont2 {
+                    overflow: hidden;
+
+                    img {
+                        font: none;
+                        width: 100%;
+                        margin-bottom: 40px;
+                    }
+
+                    .aboutText {
+                        margin-left: 0;
+                        float: none;
+                        width: 100%;
+                    }
+                }
+
+                &.cont3 {
+                    overflow: hidden;
+
+                    img {
+                        float: none;
+                        width: 100%;
+                        margin-left: 0;
+                        margin-bottom: 40px;
+                    }
+
+                    .aboutText {
+                        float: none;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

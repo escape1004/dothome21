@@ -1148,3 +1148,135 @@ table {
             filter: blur(2px);
   }
 }
+
+#aboutMain .container {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+#aboutMain .container .aboutTitle {
+  font-family: "saol";
+  font-size: 6vw;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #030406;
+  padding: 260px 0;
+}
+
+#aboutMain .container .aboutCont {
+  font-family: "Chosunilbo_myungjo";
+  margin-bottom: 300px;
+}
+
+#aboutMain .container .aboutCont img {
+  width: 100%;
+}
+
+#aboutMain .container .aboutCont h3 {
+  padding-bottom: 30px;
+  font-size: 1.1vw;
+}
+
+#aboutMain .container .aboutCont p {
+  font-size: 1.1vw;
+}
+
+#aboutMain .container .aboutCont .aboutText {
+  text-align: justify;
+}
+
+#aboutMain .container .aboutCont.cont1 {
+  overflow: hidden;
+}
+
+#aboutMain .container .aboutCont.cont1 img {
+  margin-bottom: 60px;
+}
+
+#aboutMain .container .aboutCont.cont1 .aboutText {
+  width: 70%;
+}
+
+#aboutMain .container .aboutCont.cont2 {
+  overflow: hidden;
+}
+
+#aboutMain .container .aboutCont.cont2 img {
+  float: left;
+  width: 70%;
+}
+
+#aboutMain .container .aboutCont.cont2 .aboutText {
+  float: left;
+  width: 25%;
+  margin-left: 5%;
+}
+
+#aboutMain .container .aboutCont.cont3 {
+  overflow: hidden;
+}
+
+#aboutMain .container .aboutCont.cont3 img {
+  float: right;
+  width: 55%;
+  margin-left: 5%;
+}
+
+#aboutMain .container .aboutCont.cont3 .aboutText {
+  float: left;
+  width: 40%;
+}
+
+@media (max-width: 800px) {
+  #aboutMain .container {
+    width: 95%;
+  }
+  #aboutMain .container .aboutTitle {
+    font-size: 11vw;
+    padding: 270px 0 27 0px;
+  }
+  #aboutMain .container .aboutCont {
+    font-family: "Chosunilbo_myungjo";
+    margin-bottom: 370px;
+  }
+  #aboutMain .container .aboutCont h3 {
+    padding-bottom: 35px;
+    font-size: 2.8vw;
+  }
+  #aboutMain .container .aboutCont p {
+    font-size: 2.8vw;
+  }
+  #aboutMain .container .aboutCont.cont1 img {
+    margin-bottom: 40px;
+  }
+  #aboutMain .container .aboutCont.cont1 .aboutText {
+    float: none;
+    width: 100%;
+  }
+  #aboutMain .container .aboutCont.cont2 {
+    overflow: hidden;
+  }
+  #aboutMain .container .aboutCont.cont2 img {
+    font: none;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  #aboutMain .container .aboutCont.cont2 .aboutText {
+    margin-left: 0;
+    float: none;
+    width: 100%;
+  }
+  #aboutMain .container .aboutCont.cont3 {
+    overflow: hidden;
+  }
+  #aboutMain .container .aboutCont.cont3 img {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  #aboutMain .container .aboutCont.cont3 .aboutText {
+    float: none;
+    width: 100%;
+  }
+}
