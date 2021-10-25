@@ -338,6 +338,10 @@
 	height: 100%;
 }
 
+.image-wrap.bgc {
+	background-color: rgb(242, 248, 255);
+}
+
 .image-wrap img {
 	width: 55%;
     padding-top: 70px;
