@@ -369,33 +369,40 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script>
-        const contentWrap = $(".contentWrap");
-        const contentItem = $(".content__item");
-
-        let scrollTotalWidth = contentWrap.width();
-
-        $("body").height(scrollTotalWidth);
+        //전체이미지를 감싸고있는 wrap의 width값을 바디의 높이값에게 줘야한다
+        const contentWrap = $(".contentWrap").width();
+        $("body").css("height", contentWrap);
+        const scrollHeight = $(window).height();
+        let lastScrollTop = 0;
 
         $(window).scroll(function () {
-            let scrollTop = $(window).scrollTop();
+            let scrollTop = $(window).scrollTop()
 
-            let nWidth = scrollTotalWidth - $(window).width();
-            let nHeight = $("body").height() - $(window).width();
+            $(".contentWrap").css({
+                "transform": "translateX(" + -scrollTop + "px )"
+            });
 
-            let ratio = nWidth / nHeight;
-            let goLeft = scrollTop * ratio;
+            //스크롤이움직일때는 setTimeOst 실행안하기(계속 움직이게하기)
+            clearTimeout($.data(this, "scrollCheck"));
 
-            contentWrap.css("left", -goLeft);
+            //안움직일때는 walkingclass 없애라 (안움직이게하기)
+            $.data(this, "scrollCheck", setTimeout(function () {
+                $(".character").removeClass("walking");
+            }, 100));
+
+            if (scrollTop > lastScrollTop) {
+                $(".character").removeClass("left");
+                $(".character").addClass("walking");
+            } else {
+                $(".character").addClass("left");
+                $(".character").addClass("walking");
+            }
+            lastScrollTop = scrollTop;
 
             //출력
-            $(".paraScroll span").text(scrollTop);
-            $(".scrollTotalWidth").text(scrollTotalWidth);
-            $(".bHeight").text($("body").height());
-            $(".ratio").text(ratio.toFixed(5));
-            $(".goLeft").text(parseInt(goLeft));
+            $(".scrollTop span").text(parseInt(scrollTop));
+            $(".contentWrapWidth span").text(parseInt(contentWrap));
         });
-        //출력
-        $(".scrollTotalWidth").text(scrollTotalWidth);
     </script>
 </body>
 
