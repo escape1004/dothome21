@@ -200,10 +200,10 @@
 <body>
     <h1>Javascript 알고리즘 공부</h1>
     <ol>
-        <li class="active"><a href="javascriptSample_01.html">01</a></li>
+        <li><a href="javascriptSample_01.html">01</a></li>
         <li><a href="javascriptSample_02.html">02</a></li>
         <li><a href="javascriptSample_03.html">03</a></li>
-        <li><a href="javascriptSample_04.html">04</a></li>
+        <li class="active"><a href="javascriptSample_04.html">04</a></li>
         <li><a href="javascriptSample_05.html">05</a></li>
         <li><a href="javascriptSample_06.html">06</a></li>
         <li><a href="javascriptSample_07.html">07</a></li>
@@ -213,122 +213,58 @@
     </ol>
 
     <div id="sample1" class="sample">
-        <h2>세 수 중 최소값 <span class="dot"></span></h2>
-        <p class="problem">Q : 100이하의 자연수 A, B, C를 입력받아 세 수 중 가장 작은 값을 출력하는 프로그램을 작성하세요.</p>
+        <h2>홀수 <span class="dot"></span></h2>
+        <p class="problem">Q : 7개의 수가 주어지면 숫자 중에 가장 작은 수를 출력하는 프로그램을 작성하세요.<br>예를 들어 7개의 자연수 12, 77, 38, 41, 53, 92, 85가
+            주어지면 이 중 홀수는 77, 41, 53, 85이므로 그 합은 256이 되고, 최소값은 41이 됩니다.</p>
         <div class="desc">
             <dl>
                 <dt><i class="fa fa-bullhorn" aria-hidden="true"></i> 입력 설명</dt>
-                <dd>첫 번째 줄에 100이하의 세 자연수가 입력된다.</dd>
+                <dd>자연수 7개가 주어지고, 주어지는 자연수는 100보다 작고 홀수는 한 개 이상 반드시 존재합니다.</dd>
                 <dt><i class="fa fa-bullhorn" aria-hidden="true"></i> 출력 설명</dt>
-                <dd>첫 번째 줄에 가장 작은 수를 출력한다.</dd>
+                <dd>홀수의 합을 출력하고, 홀수 중에 최소값을 출력합니다.</dd>
             </dl>
         </div>
         <div class="sam">
             <dl>
                 <dt><i class="fa fa-keyboard-o" aria-hidden="true"></i> 입력 예제</dt>
-                <dd>10 50 85</dd>
+                <dd>12 77 38 41 53 92 85</dd>
                 <dt><i class="fa fa-external-link" aria-hidden="true"></i> 출력 예제</dt>
-                <dd>10</dd>
+                <dd>256 41</dd>
             </dl>
         </div>
         <div class="code">
-            <pre class="line-numbers"><code class="language-js">function solution(a, b, c) {
-    let answer;
-
-    if (a &lt; b) {
-        answer = a;
-    }
-
-    if (c &lt; answer) {
-        answer = c;
-    }
-
-    console.log(answer);
-}
-
-solution(10, 50, 85);
+            <pre class="line-numbers"><code class="language-js">
 </code></pre>
         </div>
     </div>
 
     <hr>
-
-    <div id="sample2" class="sample">
-        <h2>최소값 구하기 <span class="dot"></span></h2>
-        <p class="problem">Q : 7개의 수가 주어지면 그 숫자 중 가장 작은 수를 출력하는 프로그램을 작성하세요.</p>
-        <div class="desc">
-            <dl>
-                <dt><i class="fa fa-bullhorn" aria-hidden="true"></i> 입력 설명</dt>
-                <dd>7개의 수가 주어진다.</dd>
-                <dt><i class="fa fa-bullhorn" aria-hidden="true"></i> 출력 설명</dt>
-                <dd>가장 작은 수를 출력한다.</dd>
-            </dl>
-        </div>
-        <div class="sam">
-            <dl>
-                <dt><i class="fa fa-keyboard-o" aria-hidden="true"></i> 입력 예제</dt>
-                <dd>5 3 7 11 2 15 17</dd>
-                <dt><i class="fa fa-external-link" aria-hidden="true"></i> 출력 예제</dt>
-                <dd>2</dd>
-            </dl>
-        </div>
-        <div class="code">
-            <pre class="line-numbers"><code class="language-js">let temp = [5, 3, 7, 11, 2, 15, 17];
-
-function solution(array) {
-    let answer = array[0];
-
-    for (let i = 1; i &lt; array.length; i++) {
-        if (array[i] &lt; answer) {
-            answer = array[i];
-        }
-    }
-    
-    return answer;
-}
-
-console.log(solution(temp));
-</code></pre>
-        </div>
-    </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/prism.min.js"></script>
     <script>
-        let temp = [5, 3, 7, 11, 2, 15, 17];
+        let arr = [12, 77, 38, 41, 53, 92, 85];
 
-        /* #01 */
-        // function solution(array) {
-        //     let answer = array[0];
+        function solution(num) {
+            let answer = [];
+            let sum = 0;
+            let min = Number.MAX_SAFE_INTEGER;
 
-        //     for (let i = 1; i < array.length; i++) {
-        //         if (array[i] < answer) {
-        //             answer = array[i];
-        //         }
-        //     }
+            for (let x of arr) {
+                if (x % 2 === 1) {
+                    sum += x;
 
-        //     return answer;
-        // }
+                    if (x < min) {
+                        min = x;
+                    }
+                }
+            }
+            answer.push(sum);
+            answer.push(min);
 
-        // console.log(solution(temp));
+            return answer;
+        }
 
-        /* #02 */
-        // function solution2(){
-        //     let answer = Math.min(5, 3, 7, 11, 2, 15, 17);
-
-        //     return answer;
-        // }
-
-        // console.log(solution2());
-
-        /* #03 */
-        // function solution3(arr) {
-        //     let answer = Math.min(...arr);
-
-        //     return answer;
-        // }
-
-        // console.log(solution3(temp));
+        console.log(solution(arr));
     </script>
 </body>
 
