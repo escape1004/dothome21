@@ -131,13 +131,13 @@
 
         #section4 {
             /* background-color: blue; */
-            height: 13000px;
+            height: 12000px;
             z-index: 4000;
         }
 
         #section5 {
             /* background-color: blue; */
-            height: 16000px;
+            height: 12000px;
             z-index: 5000;
         }
 
@@ -185,6 +185,7 @@
 
         .s1Text4 span {
             font-size: 4vw;
+            font-weight: 700;
             color: #fff;
             position: absolute;
             left: 50%;
@@ -275,7 +276,7 @@
         /* section3 */
         .s3Text1 {
             font-size: 7vw;
-            font-weight: 100;
+            font-weight: 400;
             font-family: 'GowunDodum-Regular';
             color: #000;
             text-transform: uppercase;
@@ -426,6 +427,81 @@
         .s4Text3 .i3:hover {
             filter: grayscale(0%);
         }
+
+        /* section5 */
+        .s5Text1 {}
+
+        .s5Text1 .bar-wrap {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .s5Text1 .bar {
+            position: absolute;
+            background-color: #000;
+            height: 400vh;
+            width: 100%;
+        }
+
+        .s5Text2 {
+            width: 40%;
+            font-family: 'GowunDodum-Regular';
+            color: #000;
+            font-size: 4vw;
+            font-weight: bold;
+            border: 8px solid #000;
+            padding: 0 1vw 1vh;
+            text-align: center;
+        }
+
+        .s5Text2 span {
+            display: none;
+        }
+
+        .s5Text2 .flash {
+            animation-name: flash;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes flash {
+            0% {
+                opacity: 100%;
+            }
+
+            50% {
+                opacity: 0%;
+            }
+
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        .s5Text3 {
+            width: 40%;
+            top: 60%;
+        }
+
+        .s5Text3 span {
+            display: block;
+            font-size: 1.8vw;
+            font-weight: 300;
+            margin: 4vh 0;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @keyframes cursor {
+            50% {
+                border-color: transparent;
+            }
+        }
     </style>
 </head>
 
@@ -435,7 +511,7 @@
     <section id="section1">
         <div class="s1Text1 fixed" data-0="transform: translate(-50%, -0%); opacity: 0;"
             data-500="transform: translate(-50%, -50%); opacity: 1;"
-            data-1000="transform: translate(-50%, -100%); opacity: 0;">
+            data-1000="transform: translate(-50%, -100%); opacity: 0; display: block;" data-1001="display: none;">
             안녕하세요!
         </div>
 
@@ -665,31 +741,39 @@
     <!-- //section4 -->
 
     <style>
-        .s5Text1 {
-            width: 100vw;
-            height: 100vw;
-        }
-
-        .s5Text1 .bar-wrap {
-            
-        }
-
-        .s5Text1 .bar {
-            background-color: #000;
-            height: 90vh;
-            width: 20vw;
-        }
+        
     </style>
 
     <section id="section5">
-        <div class="s5Text1 fixed">
+        <div class="s5Text1" data-54499="display: none;" data-54500="display: block;" data-55999="display: block;"
+            data-56000="display: none;">
             <div class="bar-wrap">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+                <div class="bar" data-55000="opacity: 1;" data-56000="opacity: 0;"></div>
             </div>
+        </div>
+
+        <div class="s5Text2 fixed" data-56100="display: none; opacity: 0;" data-56200="display: block;"
+            data-57000="opacity: 1;" data-59700="top: 50%;" data-61000="top: 32%;">
+            <span data-56999="display: none;" data-57000="display: inline-block;">C</span>
+            <span data-57000="display: none;" data-57300="display: inline-block;">o</span>
+            <span data-57300="display: none;" data-57600="display: inline-block;">n</span>
+            <span data-57600="display: none;" data-57900="display: inline-block;">t</span>
+            <span data-58200="display: none;" data-58500="display: inline-block;">a</span>
+            <span data-58500="display: none;" data-58800="display: inline-block;">c</span>
+            <span data-58800="display: none;" data-59100="display: inline-block;">t</span>
+            <span class="flash" data-56199="display: none" data-56200="display: inline-block;"> |</span>
+        </div>
+
+        <div class="s5Text3 fixed" data-61499="display: none;" data-61500="display: block;">
+            <span
+                data-61500="opacity: 0; transform: translateX(-25%);"
+                data-62000="opacity: 1; transform: translateX(0);">Email : parksejin159@gmail.com</span>
+            <span
+                data-62000="opacity: 0; transform: translateX(-25%);"
+                data-62500="opacity: 1; transform: translateX(0);">Phone : 010-8230-8066</span>
+            <span
+                data-62500="opacity: 0; transform: translateX(-25%);"
+                data-63000="opacity: 1; transform: translateX(0);">GitHub : https://github.com/escape1004</span>
         </div>
     </section>
     <!-- //section5 -->
