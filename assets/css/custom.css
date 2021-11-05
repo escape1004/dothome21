@@ -58,7 +58,7 @@ body {
 /* Header  */
 
 #header {
-	background: #a5d5fa center 57px;
+	background: #ecb97a center 57px;
 	padding: 10px 0 10px 0px;
 }
 
@@ -86,7 +86,7 @@ body {
 	width: 190px;
 	display: block;
 	margin: 0 auto;
-	padding-right: 50px;
+	/* padding-right: 50px; */
 }
 
 #header h1 {
@@ -188,7 +188,7 @@ pre.pre-show {
 
 .header_icon li a {
 	position: relative;
-	background-color: #77b5e6;
+	background-color: #d19a57;
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
@@ -206,7 +206,7 @@ pre.pre-show {
 	transform: translateX(-50%);
 	font-size: 12px;
 	line-height: 1.6;
-	background: #77b5e6;
+	background: #d19a57;
 	padding: 3px 9px;
 	border-radius: 6px 0;
 	opacity: 0;
@@ -219,7 +219,7 @@ pre.pre-show {
 	left: 50%;
 	bottom: -5px;
 	transform: translateX(-50%);
-	border-top: 5px solid #77b5e6;
+	border-top: 5px solid #d19a57;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 }
@@ -231,13 +231,17 @@ pre.pre-show {
 
 .header_icon li a:hover {
 	box-shadow:
-		0 0 0 3px rgba(97, 148, 189, 0.9) inset,
+		0 0 0 3px #bb8646 inset,
 		0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
 
 
 /* Content */
+#customizing {
+	background-color:#fff8f2;
+}
+
 .table th,
 .table td {
 	padding: 8px 12px;
@@ -262,11 +266,9 @@ pre.pre-show {
 }
 
 /* Footer */
-
 #footer {
-	margin-top: 80px;
-	padding: 20px;
-	background: #f3f3f3;
+	padding: 80px 20px 20px 20px;
+	background: #fff8f2;
 	text-align: center
 }
 
