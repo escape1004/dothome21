@@ -1,0 +1,483 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+    vertical-align: middle;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: -0.2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* header */
+#header {
+    padding: 50px 0 10px 0;
+    background-color: #fff;
+}
+
+#header .container {
+    display: flex;
+}
+
+#header .container img {
+    height: 40px;
+    width: auto;
+}
+
+#header #nav {
+    margin-left: auto;
+}
+
+#header #nav .subMenu.hidden {
+    display: none;
+}
+
+#header #nav ul {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+}
+
+#header #nav ul li {
+    position: relative;
+    width: 100px;
+    height: 100% !important;
+    text-align: center;
+}
+
+#header #nav ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    height: 100%;
+}
+
+#header #nav .subMenu {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    top: 45px;
+}
+
+#header #nav ul li .subMenu a {
+    padding: 10px 10px;
+}
+
+/* banner */
+#banner {
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/KITA/Coding_img4_06.jpg);
+    background-size: cover;
+}
+
+/* schedule */
+#schedule {
+    background-color: #F3F7F8;
+    padding: 50px 0;
+}
+
+#schedule .scheTitle h2 {
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+#schedule .scheTitle span {
+    font-weight: 800;
+    font-size: 20px;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    padding: 4px 8px;
+    border: 2px solid #000;
+    transition: all .3s;
+}
+
+#schedule .scheTitle span:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#schedule .scheCont {
+    display: flex;
+    gap: 10px;
+}
+
+#schedule .scheCont .contBox {
+    background-color: #fff;
+    padding: 30px 25px;
+    width: 25%;
+    border: 1px solid #DBDBDD;
+}
+
+#schedule .scheCont div .dday {
+    font-size: 12px;
+    color: #4D637B;
+    font-weight: 700;
+    border: 2px solid #859DB7;
+    border-radius: 5px;
+    padding: 4px 9px;
+}
+
+#schedule .scheCont .xday,
+#schedule .scheCont .yday {
+    color: #696969;
+    font-size: 12px;
+}
+
+#schedule .scheCont .xday {
+    margin-bottom: 20px;
+}
+
+#schedule .scheCont .xday::before {
+    content: "사업기간";
+    color: #fff;
+    background-color: #6891D3;
+    border-radius: 4px;
+    padding: 4px 6px 5px 6px;
+    margin-right: 10px;
+}
+
+#schedule .scheCont .yday::before {
+    content: "모집기간";
+    color: #fff;
+    background-color: #6891D3;
+    border-radius: 4px;
+    padding: 4px 6px 5px 6px;
+    margin-right: 10px;
+}
+
+#schedule .scheCont h3 {
+    font-size: 14px;
+    margin: 20px 0;
+    line-height: 20px;
+}
+
+/* contents */
+#contents {
+    padding: 50px 0;
+    height: auto;
+    background-color: #fff;
+}
+
+#contents article {
+    display: flex;
+    gap: 20px;
+}
+
+#contents article:first-child {
+    margin-bottom: 20px;
+}
+
+#contents .leftBox {
+    width: 330px;
+    border: 1px solid #D7D7D7;
+    padding: 20px 25px;
+    position: relative;
+    height: 210px;
+    box-sizing: border-box;
+}
+
+#contents .leftBox.noneP {
+    width: 330px;
+    padding: 0;
+    background-image: url(../img/KITA/Coding_img4_09.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 210px;
+}
+
+#contents .leftBox h2 {
+    font-size: 20px;
+    color: #878787;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#contents .leftBox h2.active {
+    color: #000;
+}
+
+#contents .leftBox h2:first-child::after {
+    content: " | ";
+    color: #000;
+}
+
+#contents .rightBox {
+    width: calc(100% - 330px);
+    border: 1px solid #D7D7D7;
+    padding: 20px 25px;
+    position: relative;
+    height: 210px;
+    box-sizing: border-box;
+}
+
+#contents article a span {
+    font-weight: 800;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    padding: 4px 8px;
+    border: 2px solid #000;
+    transition: all .3s;
+}
+
+#contents article span:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#contents .contCont {
+    margin: 20px 0 10px 0;
+}
+
+#contents .contCont.tab1 {
+    display: none;
+}
+
+#contents .contCont.tab1.active {
+    display: block;
+}
+
+#contents .contCont.tab2 {
+    display: none;
+}
+
+#contents .contCont.tab2.active {
+    display: block;
+}
+
+#contents .contCont h3 {
+    font-size: 14px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#contents .contCont p {
+    color: #929292;
+    font-size: 12px;
+}
+
+#contents .rightBox h2 {
+    font-size: 20px;
+    color: #000;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#contents .rightBox div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+#contents .rightBox .listWrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#contents .rightBox .listWrap h3 {
+    font-size: 14px;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    margin: 0;
+}
+
+#contents .rightBox .listWrap p {
+    color: #929292;
+    font-size: 12px;
+    margin: 0;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+#contents .rightBox .listWrap em {
+    font-size: 12px;
+    font-style: normal;
+    width: 95px;
+    color: #fff;
+    background-color: #3073CE;
+    text-align: center;
+    padding: 4px 0;
+}
+
+#contents .rightBox .contCont {
+    display: flex;
+}
+
+#contents .rightBox .left-aria {
+    width: 40%;
+    display: flex;
+    padding-right: 50px;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+
+#contents .rightBox .right-aria {
+    width: 40%;
+    display: flex;
+    border-left: 1px solid #E9E9E9;
+    padding-left: 50px;
+    white-space: nowrap;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+
+/* footer */
+#footer {
+    overflow: hidden;
+    background-color: #263F5E;
+    height: 250px;
+}
+
+.footerInner {
+    box-sizing: border-box;
+    color: rgb(146, 151, 168);
+}
+
+.footerInner .top {
+    padding: 25px 0 20px;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgb(110, 116, 133);
+}
+
+.footerInner .top .left {
+    width: 70%;
+    display: flex;
+}
+
+.footerInner .top .familytab #tab {
+    padding: 5px 10px;
+}
+
+.footerInner .top .left span {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.footerInner .top .left span::after {
+    content: '|';
+}
+
+.footerInner .top .left span:last-child:after {
+    content: '';
+}
+
+.footerInner .top .left span:last-child {
+    border: none;
+}
+
+.footerInner .bottom {
+    box-sizing: border-box;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerInner .bottom .left {
+    display: flex;
+}
+
+.footerInner .bottom .footerlogo {
+    width: 150px;
+    height: 52px;
+    margin-right: 25px;
+}
+
+.footerInner .bottom div p {
+    display: inline-block;
+    padding: 0;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.footerInner .bottom .sns {
+    margin-top: 15px;
+}
+
+.footerInner .bottom .sns img {
+    width: 35px;
+}
+
+.footerInner .right {
+    color: #fff;
+}
+
+.footerInner .right h1 {
+    margin: 0;
+}
+
+.footerInner .right p {
+    margin: 0;
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url(../img/KITA/Coding_img4_06.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url(img/SLIDER-TYPE02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url(img/SLIDER-TYPE03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
