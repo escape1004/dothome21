@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/escape1004/dothome21/issues"
   },
-  "homepage": "https://github.com/escape1004/dothome21#readme"
-}
+  "homepage": "https://github.com/escape1004/dothome21#readme",
+
+  "tags": [
+    "swiper"
+  ],
+  "name": "Swiper - Freemode",
+  "dependencies": {
+    "swiper": "latest",
+    "parcel-bundler": "^1.6.1"
+  }
+} 
